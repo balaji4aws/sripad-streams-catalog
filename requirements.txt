@@ -1,0 +1,7 @@
+# No third-party Python packages required - fetch.py and categorize.py use
+# only the standard library (argparse, csv, json, re, subprocess, pathlib,
+# collections, datetime).
+#
+# The only external dependency is the yt-dlp command-line tool itself:
+#   brew install yt-dlp        (macOS)
+#   pip install yt-dlp         (cross-platform)
