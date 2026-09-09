@@ -1,7 +1,8 @@
-# No third-party Python packages required - fetch.py and categorize.py use
-# only the standard library (argparse, csv, json, re, subprocess, pathlib,
-# collections, datetime).
+# No third-party Python packages are required. The scripts use only the
+# standard library (argparse, calendar, collections, csv, json, pathlib, re,
+# subprocess, sys, typing) and need Python 3.10 or newer.
 #
-# The only external dependency is the yt-dlp command-line tool itself:
+# The only external dependency is the yt-dlp command-line tool, used by
+# src/fetch.py and src/fill_unknown_dates.py to read YouTube video lists:
 #   brew install yt-dlp        (macOS)
 #   pip install yt-dlp         (cross-platform)
