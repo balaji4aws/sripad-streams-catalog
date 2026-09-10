@@ -38,12 +38,14 @@ series, and it works out an order within each series.
 ```
 sripad-streams-catalog/
 ├── search.html                  the search page — open this in a browser
+├── search.js                    the search page's matching logic, kept separate so it's testable
 ├── src/
 │   ├── fetch.py                  step 1: downloads the raw video list from YouTube
 │   ├── categorize.py             step 2: sorts videos into series, works out dates
 │   ├── fill_unknown_dates.py     step 2b: fetches a real date for videos with no date in the title
 │   ├── build_sequences.py        step 3: works out watch order within each series
 │   └── catalog_paths.py          shared default input/output locations
+├── tests/                        test suite — see "Development" below
 ├── data/
 │   ├── raw_playlist.json         the raw output of step 1 (saved so you don't have to re-download)
 │   └── known_upload_dates.json   real per-video dates fetched by step 2b, for titles with no date
@@ -85,6 +87,35 @@ best, for example `python3 -m http.server 8000` from this folder, then visit
 
 Re-run all three steps any time you want to refresh the catalog with newly uploaded videos.
 
+## Development
+
+The tests need nothing installed — the Python suite uses the standard library's `unittest` and
+the JavaScript suite uses Node's built-in test runner:
+
+```bash
+make check          # everything CI runs: lint, both test suites, catalog freshness
+make test           # both test suites
+make test-py        # Python only
+make test-js        # search page only (needs Node 18+)
+make lint           # needs ruff: pip install -r requirements-dev.txt
+make catalog        # rebuild output/ from the saved playlist (offline)
+make serve          # serve the folder for search.html
+```
+
+`make` is a convenience; the underlying commands work on their own
+(`python3 -m unittest discover -v`, `node --test "tests/**/*.test.mjs"`, `ruff check .`).
+
+A note on what the tests cover, since it shaped how they're written. The date-parsing rules are
+the fiddliest part of this project and the part that got things wrong, so every date this catalog
+once reported incorrectly has a named test asserting the correct value — see `RegressionTests` in
+`tests/test_categorize.py`. `tests/test_pipeline.py` runs the real steps over the real saved
+playlist and checks properties a reader would care about (no video lost, no date guessed, watch
+order intact). `tests/page_render.test.mjs` runs the search page's own script against a small stub
+DOM, so the rendering and the accessibility attributes are checked rather than assumed.
+
+CI additionally rebuilds `output/` from `data/raw_playlist.json` and fails if the result differs
+from what's committed, which keeps the published catalog honest about the code that produced it.
+
 ## Known limitations
 
 - **No video descriptions to work with.** Every video on this channel has an empty description
@@ -109,8 +140,12 @@ Re-run all three steps any time you want to refresh the catalog with newly uploa
 
 See DESIGN.md for the reasoning behind each of these tradeoffs.
 
-## Author
+## Author and license
 
 Built by **Balaji Venkatesh**, for organizing **Sripad K**'s stream catalog. This is an
 independent personal tool built from publicly available YouTube data — it is not affiliated with
 or endorsed by the channel.
+
+The code is released under the [MIT License](LICENSE). That covers the code only: the video
+recordings remain their creator's, and the catalog metadata in `data/` and `output/` is derived
+from public YouTube listings and included so the pipeline can be re-run without re-scraping.

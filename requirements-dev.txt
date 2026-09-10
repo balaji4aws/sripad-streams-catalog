@@ -1,0 +1,12 @@
+# Development-only tooling. The scripts themselves need no third-party
+# packages (see requirements.txt); this is just the linter, pinned so that CI
+# and a local run flag the same things.
+#
+#   pip install -r requirements-dev.txt
+#
+# The test suite uses the standard library's unittest, so it needs nothing
+# installed at all:
+#
+#   python3 -m unittest discover -v
+
+ruff==0.16.6

@@ -1,0 +1,36 @@
+# Tool configuration only. This project is a set of scripts, not an installable
+# package, so there is no [project] table and no build backend - the file exists
+# so that linting is reproducible instead of depending on whatever flags
+# somebody happens to type.
+
+[tool.ruff]
+line-length = 120
+target-version = "py310"
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "I",    # import sorting
+    "UP",   # pyupgrade - flag outdated syntax
+    "B",    # bugbear - likely bugs and design problems
+    "SIM",  # simplify
+    "C4",   # comprehension style
+    "RET",  # return-statement hygiene
+    "PTH",  # prefer pathlib over os.path
+    "ARG",  # unused arguments
+    "TRY",  # exception-handling anti-patterns
+]
+ignore = [
+    # The scripts are command line tools: printing a message and returning a
+    # non-zero exit code is the intended way to report a failure, so a long
+    # message inside an `except` block is not the anti-pattern TRY003 assumes.
+    "TRY003",
+]
+
+[tool.ruff.lint.per-file-ignores]
+# Tests deliberately reach into private helpers to check the parsing rules
+# directly, and assert on hard-coded values that would be pointless to name.
+"tests/*" = ["SLF001"]

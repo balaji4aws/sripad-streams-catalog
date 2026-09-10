@@ -1,0 +1,81 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  lint:
+    name: Lint
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install the linter
+        run: pip install -r requirements-dev.txt
+      - run: ruff check --output-format=github .
+
+  test-python:
+    name: Python tests (${{ matrix.python-version }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # 3.10 is the floor: the scripts use zip(strict=True) and the
+        # `X | None` annotation syntax.
+        python-version: ["3.10", "3.11", "3.12", "3.13"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+      - name: Run the test suite
+        # No install step: the scripts have no third-party dependencies and the
+        # tests use the standard library's unittest.
+        run: python -m unittest discover -v
+
+  test-javascript:
+    name: JavaScript tests
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+      - name: Run the search-page tests
+        run: node --test "tests/**/*.test.mjs"
+
+  verify-catalog:
+    name: Committed catalog is up to date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Rebuild the catalog from the saved playlist
+        # Steps 2 and 3 are offline: they read data/raw_playlist.json, so this
+        # needs no network access and no YouTube credentials.
+        run: |
+          python src/categorize.py
+          python src/build_sequences.py
+      - name: Fail if the committed output files are stale
+        run: |
+          if ! git diff --quiet --exit-code -- output/; then
+            echo "::error::output/ does not match what the current code produces."
+            echo "Run 'make catalog' locally and commit the result."
+            git --no-pager diff --stat -- output/
+            exit 1
+          fi
+          echo "output/ is up to date."

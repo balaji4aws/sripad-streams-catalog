@@ -92,6 +92,8 @@ This project deliberately uses the smallest possible set of tools:
 | Getting data from YouTube | [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) (a free command-line tool) | Standard, well-maintained tool for reading YouTube video lists without needing an official API key. |
 | Processing the data | Python 3.10 or newer, standard library only (no third-party packages) | The processing here is straightforward text and list handling — no need for extra libraries. Keeping the dependency list at zero means anyone can run this without a package install step. |
 | The search page | Plain HTML, CSS, and JavaScript — no framework, no build step | The page does one job (search a small list and show it back nicely). A framework would add complexity without adding capability here. |
+| Tests | `unittest` (Python standard library) and `node --test` (built into Node) | Both ship with their runtime, so the tests run with nothing installed — which keeps the promise that a reader can clone this and run it immediately. |
+| Linting | [`ruff`](https://docs.astral.sh/ruff/), configured in `pyproject.toml` | The one development dependency. Config lives in the repository so a local run and CI flag the same things. |
 | Data storage between steps | Plain JSON and CSV files | No database needed for 342 rows of data. Files are easy to inspect, easy to version, and easy to hand to someone else. |
 
 There is no server, no database, and no build pipeline. Every part of this project can be run and
@@ -105,9 +107,16 @@ understood by reading it directly.
 sripad-streams-catalog/
 ├── README.md                  quick-start guide (short version of this document)
 ├── DESIGN.md                  this file
+├── LICENSE                     MIT, covering the code
+├── Makefile                    the development commands, and what CI runs
+├── pyproject.toml              lint configuration (this is not an installable package)
 ├── requirements.txt            notes that no Python packages are needed; yt-dlp is required
+├── requirements-dev.txt        the one development dependency (ruff), pinned
+├── .github/workflows/ci.yml    lint, both test suites, and a catalog-freshness check
 ├── .gitignore
 ├── search.html                 the search page — this is what a person actually opens
+├── search.js                   the page's matching logic, separated so it can be tested
+├── tests/                      the test suite (see section 7)
 ├── src/
 │   ├── fetch.py                 STEP 1 — downloads the raw video list
 │   ├── categorize.py            STEP 2 — sorts videos into series, works out dates
@@ -333,11 +342,19 @@ of videos, and a pre-built list of searchable words drawn from its own title tex
 name — this pre-built word list is what makes the search page's search instant, with no work
 needed at search time beyond comparing words that are already sitting in the file.
 
-### 4.4 `search.html` — Step 4: the search page
+### 4.4 `search.html` and `search.js` — Step 4: the search page
 
-A single, self-contained HTML file — no server, no build step, no framework. It loads
-`sequences.json` once when the page opens, then does all searching and filtering directly in the
-browser as the person types.
+Two plain static files — no server, no build step, no framework. The page loads
+`sequences.json` once when it opens, then does all searching and filtering directly in the browser
+as the person types.
+
+**Why two files rather than one.** The page was originally a single self-contained HTML file, which
+read well but left the matching rules untestable: they were closure-local functions inside an
+inline `<script>`, unreachable from anything outside the browser. `search.js` now holds the pure
+matching logic and nothing else — it has no state and never touches the DOM — while `search.html`
+holds all the rendering. That keeps the "no build step, no framework" property intact (it's still
+just a `<script src>` tag) and makes both halves testable: the matching rules directly, and the
+rendering against a small stub DOM. See section 7.
 
 **How searching works:** the search box is split into individual words as the person types (for
 example, "sandhyavandana kannada" becomes two words: "sandhyavandana" and "kannada"). A sequence
@@ -464,3 +481,89 @@ often as useful as fixing it:
   intentionally small number of matches per search this produces in practice, this has not been
   a problem, but a future version could sort sequences by some notion of relevance if the
   catalog grows large enough for that to matter.
+
+---
+
+## 7. Testing
+
+### 7.1 What is tested, and why it is tested that way
+
+The tests are shaped by where this project actually got things wrong. Four videos in an earlier
+version of this catalog carried dates that were simply incorrect — not missing, not approximate,
+but wrong — and all four came from the same file: the title-parsing rules in `categorize.py`. So
+that is where the tests are densest.
+
+`tests/test_categorize.py` opens with a class called `RegressionTests` holding one named test per
+date this catalog once reported incorrectly, each asserting the correct value and explaining in its
+docstring what went wrong. If any other test in this project were ever deleted, these are the ones
+to keep. The rest of the file covers the parsing rules more broadly: every way the channel writes a
+date, every month name and abbreviation, the "Day N" session-label rule and the cases it must *not*
+fire on, the year-carry-backward walk including its year-boundary and jitter behavior, and the
+series-matching rules where one keyword has to beat another.
+
+`tests/test_build_sequences.py` covers the language split — the thing that makes a sequence a
+sequence. Its central case is a single category taught in three languages, which must come out as
+three separately numbered tracks, plus the inverse: a category that already names its own language
+must *not* be split into two identically labelled groups.
+
+`tests/test_pipeline.py` runs the real `categorize` and `build_sequences` steps over the real saved
+`data/raw_playlist.json`, writing into a temporary directory so nothing committed is disturbed. It
+asserts the properties a reader of the catalog would care about rather than exact contents: every
+raw entry becomes exactly one row, video IDs are unique, no date is left as a guess, no date sits
+in the future relative to the newest video, every video appears in exactly one sequence, sequence
+numbering is contiguous, and no two sequences share a label. It also pins the four corrected dates
+a second time, this time end to end.
+
+`tests/search_logic.test.mjs` tests `search.js` directly, including the cases that motivated its
+odd-looking rules: a bare `"2"` must not match `"2026"`, and a one or two letter word must not
+match by substring. The second half of the file runs real searches against the committed
+`sequences.json`, so a change to the catalog that breaks a search a person would actually type is
+caught.
+
+`tests/page_render.test.mjs` covers the part that nothing checked before: the page's own script. It
+runs the real inline script against a small stub DOM implementing only the handful of methods that
+script uses, then asserts on the structure produced — that topic controls are real `<button>`
+elements with accessible labels and click handlers, that result rows come out in watch order, that
+links carry `rel="noopener noreferrer"`, that each table has a screen-reader description and
+`scope="col"` headers, that a hostile title is written as text rather than markup, and that a
+failed load explains how to fix it. The stub is deliberately dumb: if the page starts using a DOM
+method it does not implement, the test fails loudly rather than passing on a silent no-op.
+
+### 7.2 Choices worth explaining
+
+**No test framework.** The Python tests use the standard library's `unittest` and the JavaScript
+tests use Node's built-in `node --test`. Both ship with their runtime, so the whole suite runs on a
+fresh clone with nothing installed. That is a deliberate match to this project's zero-dependency
+stance (section 3) — adding `pytest` would be more idiomatic in isolation, but it would make the
+README's "no package install step" claim untrue for a small gain.
+
+**No browser or DOM library.** Testing the page against a real DOM would mean pulling in a headless
+browser or a library like `jsdom` — by a wide margin the heaviest dependency in the project, for one
+file. The stub DOM in `tests/page_render.test.mjs` is around 120 lines and covers what this page
+actually does. The tradeoff is honest: it verifies the page builds the right structure, not that a
+real browser paints it correctly, and it cannot substitute for opening the page and using it.
+
+**A freshness check instead of golden files.** Rather than committing expected output files and
+diffing against them, CI regenerates `output/` from the saved playlist and fails if the result
+differs from what is committed. This catches the two failure modes that matter — a code change that
+silently alters the published catalog, and committed output that has drifted from the code that
+produced it — without a second copy of the data to keep in sync.
+
+### 7.3 Running them
+
+```bash
+make check     # lint, both test suites, and the catalog freshness check — what CI runs
+make test      # both test suites
+make lint      # ruff (the one development dependency)
+```
+
+### 7.4 What is still not covered
+
+- **The page in a real browser.** See above: structure is tested, rendering is not.
+- **`fetch.py` and `fill_unknown_dates.py` against YouTube.** Both shell out to `yt-dlp` and need
+  network access and browser cookies, so neither is exercised by the suite or by CI. Their argument
+  handling and error paths are simple and readable; their happy paths are verified by the fact that
+  `data/raw_playlist.json` and `data/known_upload_dates.json` exist and are consumed by everything
+  downstream.
+- **The CSS.** Contrast ratios were computed by hand against the WCAG AA threshold for small text;
+  nothing checks them automatically, so a future colour change could regress them unnoticed.
