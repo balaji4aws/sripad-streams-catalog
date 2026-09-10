@@ -13,6 +13,7 @@ import io
 import json
 import tempfile
 import unittest
+from collections import Counter
 from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, ClassVar
@@ -70,6 +71,9 @@ class PipelineTests(unittest.TestCase):
     def tearDownClass(cls) -> None:
         cls._tmp.cleanup()
 
+    def row_for(self, video_id: str) -> dict[str, Any]:
+        return next(row for row in self.rows if row["video_id"] == video_id)
+
     def date_for_title(self, fragment: str) -> str:
         matches = [row for row in self.rows if fragment in row["title"]]
         self.assertEqual(len(matches), 1, f"expected exactly one title containing {fragment!r}")
@@ -122,7 +126,56 @@ class PipelineTests(unittest.TestCase):
 
     def test_month_only_dates_stay_rare_and_explicit(self):
         month_only = [row["title"] for row in self.rows if len(row["date"]) == len("2024-10")]
-        self.assertEqual(len(month_only), 2, f"month-precision dates changed: {month_only}")
+        self.assertEqual(len(month_only), 3, f"month-precision dates changed: {month_only}")
+
+    # --- both channel tabs --------------------------------------------------
+
+    def test_both_channel_tabs_are_present(self):
+        sources = Counter(row["source"] for row in self.rows)
+        self.assertEqual(dict(sources), {"streams": 342, "videos": 123})
+
+    def test_positions_are_numbered_across_the_merged_catalog(self):
+        """One continuous numbering over both tabs, not two overlapping ones."""
+        self.assertEqual([row["list_position"] for row in self.rows], list(range(1, len(self.rows) + 1)))
+
+    def test_each_tab_keeps_its_own_relative_order_after_merging(self):
+        """The merge interleaves the tabs; it must not reshuffle within one."""
+        for source in ("streams", "videos"):
+            positions = [row["source_position"] for row in self.rows if row["source"] == source]
+            with self.subTest(source=source):
+                self.assertEqual(positions, sorted(positions),
+                                 f"/{source} order was not preserved by the merge")
+
+    def test_a_series_split_across_both_tabs_is_reassembled(self):
+        """Pratah Sankalpa Gadya has sessions on both tabs; it must come out whole."""
+        sequences = [g for g in self.groups if g["category"] == "Pratah Sankalpa Gadya"]
+        self.assertEqual(len(sequences), 1, "the series should form one sequence, not one per tab")
+        videos = sequences[0]["videos"]
+        self.assertEqual(len(videos), 25)
+        sources = {self.row_for(video["video_id"])["source"] for video in videos}
+        self.assertEqual(sources, {"streams", "videos"}, "expected videos from both tabs")
+
+    def test_numbered_series_run_in_session_order(self):
+        """Where every title states a session number, that number sets the order."""
+        for group in self.groups:
+            numbers = [build_sequences.session_number(video["title"]) for video in group["videos"]]
+            if len(numbers) > 1 and all(number is not None for number in numbers):
+                with self.subTest(label=group["label"]):
+                    self.assertEqual(numbers, sorted(numbers))
+
+    def test_the_longest_series_is_complete_and_in_order(self):
+        """Bhagavata Saroddhara: 108 videos, days 1 to 102, no gaps."""
+        sequences = [g for g in self.groups if g["category"] == "Bhagavata Saroddhara"]
+        self.assertEqual(len(sequences), 1)
+        videos = sequences[0]["videos"]
+        self.assertEqual(len(videos), 108)
+
+        parsed = [build_sequences.session_number(video["title"]) for video in videos]
+        self.assertNotIn(None, parsed, "every session in this series states its number")
+        numbers = [number for number in parsed if number is not None]
+
+        self.assertEqual(numbers, sorted(numbers), "sessions are not in order")
+        self.assertEqual(sorted(set(numbers)), list(range(1, 103)), "a session number is missing")
 
     # --- output files -------------------------------------------------------
 

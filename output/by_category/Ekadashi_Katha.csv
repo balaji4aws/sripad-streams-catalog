@@ -1,2 +1,2 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-146,2025-11-16,Ekadashi Katha,Marathi - Utpatti Ekadashi katha - 16th Nov,YbVqXX7ywJk,https://www.youtube.com/watch?v=YbVqXX7ywJk,44.2,132
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+168,2025-11-16,Ekadashi Katha,Marathi - Utpatti Ekadashi katha - 16th Nov,YbVqXX7ywJk,https://www.youtube.com/watch?v=YbVqXX7ywJk,44.2,132,streams,146

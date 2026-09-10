@@ -1,2 +1,2 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-98,2026-04-02,Sandhyavandana Satsanga,Sandhyavandana Satsanga Kondapur,2pgCytAh2EM,https://www.youtube.com/watch?v=2pgCytAh2EM,61.0,81
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+110,2026-04-02,Sandhyavandana Satsanga,Sandhyavandana Satsanga Kondapur,2pgCytAh2EM,https://www.youtube.com/watch?v=2pgCytAh2EM,61.0,81,streams,98

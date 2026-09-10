@@ -179,6 +179,10 @@ await client.ready;
 const consoleErrors = [];
 const failedRequests = [];
 let sessionId;
+let expectedTopicCount = 0;
+// Relative URL as the page itself requests it, so this works for a local
+// server and for a deployed copy alike.
+const SEQUENCES_URL_FOR_PAGE = 'output/sequences.json';
 
 async function cleanup() {
   client.close();
@@ -236,17 +240,28 @@ try {
   check(failedRequests.length === 0, 'every request succeeded', failedRequests.join('; '));
   check(consoleErrors.length === 0, 'no console errors', consoleErrors.join('; '));
 
-  const loadState = await evaluate(`({
-    status: document.getElementById('status').textContent,
-    topics: document.querySelectorAll('#topics button').length,
-    title: document.title,
-    scriptLoaded: typeof window.CatalogSearch
-  })`);
+  // The expected topic count is read from the data the page itself loaded, not
+  // hardcoded, so refreshing the catalogue does not break this check.
+  const loadState = await evaluate(`(async () => {
+    const data = await fetch('${SEQUENCES_URL_FOR_PAGE}').then((r) => r.json());
+    return {
+      status: document.getElementById('status').textContent,
+      topics: document.querySelectorAll('#topics button').length,
+      expectedTopics: new Set(data.groups.map((g) => g.category)).size,
+      sequences: data.groups.length,
+      videos: data.groups.reduce((sum, g) => sum + g.count, 0),
+      title: document.title,
+      scriptLoaded: typeof window.CatalogSearch
+    };
+  })()`);
   check(/Loaded \d+ sequences/.test(loadState.status),
     'status reports the loaded catalog', loadState.status);
   check(loadState.scriptLoaded === 'object', 'search.js loaded into the page',
     `typeof window.CatalogSearch = ${loadState.scriptLoaded}`);
-  check(loadState.topics === 40, `all 40 topic buttons rendered (got ${loadState.topics})`);
+  check(loadState.topics === loadState.expectedTopics,
+    `one topic button per category (${loadState.topics} of ${loadState.expectedTopics})`,
+    `${loadState.videos} videos in ${loadState.sequences} sequences`);
+  expectedTopicCount = loadState.expectedTopics;
 
   const freshness = await evaluate(`document.getElementById('freshness').textContent`);
   check(/recordings/.test(freshness) && /last scanned \d+ \w+ \d{4}/.test(freshness),
@@ -370,8 +385,8 @@ try {
   })()`);
   check(states.noMatch.results === 0 && /No matching sequences/.test(states.noMatch.status),
     'a no-match search clears results and says so', states.noMatch.status);
-  check(states.cleared.topics === 40 && /Type a search term/.test(states.cleared.status),
-    'clearing the box restores all 40 topics', states.cleared.status);
+  check(states.cleared.topics === expectedTopicCount && /Type a search term/.test(states.cleared.status),
+    `clearing the box restores all ${expectedTopicCount} topics`, states.cleared.status);
 
   // --- 6. contrast --------------------------------------------------------
 

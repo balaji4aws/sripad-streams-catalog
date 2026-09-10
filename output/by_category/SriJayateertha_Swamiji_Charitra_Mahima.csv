@@ -1,3 +1,3 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-25,2026-08-01,SriJayateertha Swamiji (Charitra/Mahima),"SriJayateertha Swamiji Charitra ,Mahima1st Aug 2026",ewyYTS-yvww,https://www.youtube.com/watch?v=ewyYTS-yvww,86.0,191
-153,2025-07-27,SriJayateertha Swamiji (Charitra/Mahima),"SriJayateerthastiti-shloka12,13-Artha-Marathi",2Sdb_IhQypo,https://www.youtube.com/watch?v=2Sdb_IhQypo,40.2,95
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+25,2026-08-01,SriJayateertha Swamiji (Charitra/Mahima),"SriJayateertha Swamiji Charitra ,Mahima1st Aug 2026",ewyYTS-yvww,https://www.youtube.com/watch?v=ewyYTS-yvww,86.0,191,streams,25
+177,2025-07-27,SriJayateertha Swamiji (Charitra/Mahima),"SriJayateerthastiti-shloka12,13-Artha-Marathi",2Sdb_IhQypo,https://www.youtube.com/watch?v=2Sdb_IhQypo,40.2,95,streams,153

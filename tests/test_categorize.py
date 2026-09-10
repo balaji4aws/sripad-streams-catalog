@@ -63,6 +63,42 @@ class RegressionTests(unittest.TestCase):
         self.assertEqual(_format_date(TitleDate(29, 2, 2025)), "2025-02")
         self.assertEqual(_format_date(TitleDate(29, 2, 2024)), "2024-02-29")
 
+    def test_a_letter_typed_into_a_day_is_not_silently_repaired(self):
+        """"3oth Nov" uses a letter o. The month is known, the day is not."""
+        self.assertEqual(
+            parse_title_date("Day 63- Bhagavata Saroddhara -3oth Nov 2024 -"),
+            TitleDate(None, 11, 2024),
+        )
+
+
+class SlashSeparatedDateTests(unittest.TestCase):
+    """The /videos tab writes dates as DD/Mon/YYYY throughout."""
+
+    def test_slash_separated_date(self):
+        self.assertEqual(
+            parse_title_date("Day 102 Bhagavata Saroddhara -25/Jul/2026 - 227-229"),
+            TitleDate(25, 7, 2026),
+        )
+
+    def test_leading_zero_day(self):
+        self.assertEqual(
+            parse_title_date("Day 99 Bhagavata Saroddhara -04/Jul/2026 - 221"),
+            TitleDate(4, 7, 2026),
+        )
+
+    def test_a_three_digit_session_number_is_never_read_as_a_day(self):
+        """"Day 102" must not contribute a day; only the real date should."""
+        self.assertEqual(
+            parse_title_date("Day 102 Bhagavata Saroddhara -25/Jul/2026"),
+            TitleDate(25, 7, 2026),
+        )
+
+    def test_slash_form_still_rejects_a_month_glued_to_a_word(self):
+        self.assertEqual(
+            parse_title_date("Day 5 Something Marathi -12/Aug/2025"),
+            TitleDate(12, 8, 2025),
+        )
+
 
 class SessionLabelTests(unittest.TestCase):
     """The "Day N" rule must not overreach: sometimes that number IS the date."""

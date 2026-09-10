@@ -61,6 +61,10 @@ import catalog_paths
 UNCATEGORIZED = "Uncategorized / Other"
 UNKNOWN_DATE = "Unknown"
 
+#: Used when a raw entry carries no source tab, which happens only for a
+#: playlist file saved before fetch.py started recording one.
+DEFAULT_SOURCE = "streams"
+
 #: How often the channel is expected to be re-scanned. Used only to work out the
 #: date the next scan is due, which the search page shows so a reader can see how
 #: current the catalog is.
@@ -70,6 +74,16 @@ REFRESH_INTERVAL_DAYS = 14
 # title). The FIRST matching category wins, so order matters: specific series
 # names must come before generic catch-alls like "nkhk"/"satsanga".
 RULES: list[tuple[str, list[str]]] = [
+    # The channel's longest series, 100+ numbered sessions on the /videos tab.
+    # "saroddhara" is unique to it across the whole channel, so the shorter
+    # spelling is safe to match on as well.
+    ("Bhagavata Saroddhara", ["bhagavata saroddhara", "bhagavatha saroddhara", "saroddhara"]),
+    # Videos of Sri Satyatma Teertha himself, distinct from the "Satyatma
+    # Sandhya" classes below - checked first so the shared "satyatma" prefix
+    # cannot pull these into that series.
+    ("SriSatyatma Teertha (Darshana/Mangalarati)", ["satyatmatheertharu", "satyatma teertharu"]),
+    ("Rushi Panchami", ["rushi panchami", "rishi panchami"]),
+    ("Mutt Utsava / Puja", ["uttaradi mutt", "vedavyasa puja"]),
     ("Sandhya Shala (Onboarding/Classes)", ["sandhya shala", "sandhyavandana shala"]),
     ("Sumadhwavijaya (Marathi)", ["sumadhwavijaya", "sumadhwavijay", "sumadhawavijaya", "sumdhwavijaya"]),
     ("Manimanjari (Kannada)", ["manimanjari"]),
@@ -130,6 +144,10 @@ MONTH_RE = "|".join(sorted(MONTHS, key=len, reverse=True))
 # day 20 of May in the year 21, and "2026 July" as day 26 of July.
 _SMALL_NUMBER = r"(?<!\d)(\d{1,2})(?!\d)"
 _YEAR = r"(?<!\d)(\d{4}|\d{2})(?!\d)"
+# Separator between the parts of a date. Whitespace covers "4th June 2026" and
+# the run-together "3rd Sep2026"; the slash covers "25/Jul/2026", the format the
+# /videos tab uses throughout.
+_SEP = r"[\s/]*"
 # Wrapped in a non-capturing group so that making the year optional makes the
 # whole year (digits and lookarounds) optional, not just its trailing lookahead.
 _OPTIONAL_YEAR = rf"(?:{_YEAR})?"
@@ -143,12 +161,12 @@ _MONTH_TOKEN = rf"({MONTH_RE})(?![A-Za-z])"
 # an optional year with or without a space in front of it.
 # Groups: 1=day, 2=ordinal suffix (may be absent), 3=month, 4=year (optional).
 DAY_FIRST_RE = re.compile(
-    rf"{_SMALL_NUMBER}\s*{_OPTIONAL_ORDINAL}\.?\s*{_MONTH_TOKEN}\.?\s*{_OPTIONAL_YEAR}", re.I
+    rf"{_SMALL_NUMBER}{_SEP}{_OPTIONAL_ORDINAL}\.?{_SEP}{_MONTH_TOKEN}\.?{_SEP}{_OPTIONAL_YEAR}", re.I
 )
 # "Oct 2nd 2023" / "May 8th 2026": month name first, then day, then an
 # optional year. Groups: 1=month, 2=day, 3=ordinal suffix, 4=year (optional).
 MONTH_FIRST_RE = re.compile(
-    rf"{_MONTH_TOKEN}\.?\s*{_SMALL_NUMBER}\s*{_OPTIONAL_ORDINAL}\.?\s*,?\s*{_OPTIONAL_YEAR}", re.I
+    rf"{_MONTH_TOKEN}\.?{_SEP}{_SMALL_NUMBER}{_SEP}{_OPTIONAL_ORDINAL}\.?\s*,?{_SEP}{_OPTIONAL_YEAR}", re.I
 )
 # "May 2021" / "Sep2026": a month and a year with no day at all.
 MONTH_YEAR_RE = re.compile(rf"{_MONTH_TOKEN}\.?\s*(?<!\d)(\d{{4}})(?!\d)", re.I)
@@ -348,34 +366,109 @@ def resolve_dates(entries: list[dict[str, Any]], known_upload_dates: dict[str, s
     `known_upload_dates` (a ``{video_id: 'YYYY-MM-DD'}`` map of real fetched
     upload dates) when an entry is present there. Videos with neither a title
     date nor an entry in that map stay "Unknown" rather than being guessed.
+
+    The year-carry-backward pass runs SEPARATELY per source tab. Each tab is its
+    own newest-first list, so carrying a year from the end of one tab into the
+    start of another would compare unrelated positions and shift years wrongly.
     """
     known_upload_dates = known_upload_dates or {}
-    parsed = _carry_years_backward([parse_title_date(e.get("title", "")) for e in entries])
 
-    resolved = []
-    for entry, raw in zip(parsed, entries, strict=True):
-        formatted = _format_date(entry)
-        if formatted is None:
-            formatted = known_upload_dates.get(raw.get("id", ""), UNKNOWN_DATE)
-        resolved.append(formatted)
-    return resolved
+    resolved: list[str | None] = [None] * len(entries)
+    for indices in _group_indices_by_source(entries).values():
+        parsed = _carry_years_backward([parse_title_date(entries[i].get("title", "")) for i in indices])
+        for index, entry in zip(indices, parsed, strict=True):
+            resolved[index] = _format_date(entry)
+
+    return [
+        formatted if formatted is not None else known_upload_dates.get(raw.get("id", ""), UNKNOWN_DATE)
+        for formatted, raw in zip(resolved, entries, strict=True)
+    ]
+
+
+def _group_indices_by_source(entries: list[dict[str, Any]]) -> dict[str, list[int]]:
+    """Indices of `entries`, grouped by the tab each came from, order preserved."""
+    grouped: dict[str, list[int]] = defaultdict(list)
+    for index, entry in enumerate(entries):
+        grouped[str(entry.get("_source", DEFAULT_SOURCE))].append(index)
+    return dict(grouped)
+
+
+def merge_sources(entries: list[dict[str, Any]], dates: list[str]) -> list[int]:
+    """Interleave the source tabs into one newest-first ordering.
+
+    Returns the indices of `entries` in that order.
+
+    The problem: /streams and /videos are separate lists. Each is newest-first
+    within itself, but position 5 of one has no relationship to position 5 of the
+    other, so there is no single "channel position" to sort by - and one series
+    (Pratah Sankalpa Gadya) has sessions on both tabs, so its videos genuinely
+    need ordering against each other.
+
+    The fix is a stable merge on date, newest first, of two already-sorted lists.
+    Two properties follow, and both matter:
+
+    - Within a tab, relative order is exactly what the channel itself listed.
+      That is deliberately kept, because a handful of titles state a date that
+      contradicts their position, and the position is the more trustworthy of the
+      two. Sorting everything by date outright would reorder those wrongly.
+    - Across tabs, the date decides. It is the only signal the two lists share.
+
+    A video with no usable date keeps its place relative to its own tab, and
+    sorts as though it were as old as the last dated video above it - it is never
+    moved to an arbitrary end of the catalog.
+    """
+    grouped = _group_indices_by_source(entries)
+
+    # Give every entry a comparable date by carrying the last known one down its
+    # own tab, so an undated video stays beside its neighbours instead of
+    # collapsing to the top or bottom of the merged list.
+    merge_date: dict[int, str] = {}
+    for indices in grouped.values():
+        carried = ""
+        for index in indices:
+            if dates[index] != UNKNOWN_DATE:
+                carried = dates[index]
+            merge_date[index] = carried
+
+    # Stable merge: repeatedly take whichever tab's next video is newest. On a
+    # tie max() returns the first candidate, which is the earliest tab in
+    # insertion order, so the result is deterministic.
+    queues = {name: list(indices) for name, indices in grouped.items()}
+    order: list[int] = []
+    while any(queues.values()):
+        candidates = [(name, queue[0]) for name, queue in queues.items() if queue]
+        chosen_name, chosen_index = max(candidates, key=lambda pair: merge_date[pair[1]])
+        order.append(chosen_index)
+        queues[chosen_name].pop(0)
+    return order
 
 
 def build_rows(entries: list[dict[str, Any]], dates: list[str]) -> list[dict[str, Any]]:
-    """Flatten raw yt-dlp entries plus resolved dates into the master table."""
+    """Flatten raw yt-dlp entries plus resolved dates into the master table.
+
+    Rows come out in merged newest-first order across every source tab (see
+    merge_sources), and `list_position` numbers them in that order. Downstream,
+    build_sequences.py sorts by `list_position` descending to get watch order,
+    so that single number carries the whole ordering decision.
+    """
     rows = []
-    for position, (entry, date_str) in enumerate(zip(entries, dates, strict=True), start=1):
+    for position, index in enumerate(merge_sources(entries, dates), start=1):
+        entry = entries[index]
         video_id = entry.get("id", "")
         rows.append({
-            # 1 = most recent, matching the channel's own newest-first order.
+            # 1 = most recent across the whole channel, after merging the tabs.
             "list_position": position,
-            "date": date_str,
+            "date": dates[index],
             "category": categorize(entry.get("title", "")),
             "title": entry.get("title", ""),
             "video_id": video_id,
             "url": f"https://www.youtube.com/watch?v={video_id}",
             "duration_min": round((entry.get("duration") or 0) / 60, 1),
             "view_count": entry.get("view_count") or 0,
+            # Which channel tab this came from, and where it sat in that tab's
+            # own list. Kept so the merge above can be checked by hand.
+            "source": str(entry.get("_source", DEFAULT_SOURCE)),
+            "source_position": entry.get("_source_position") or position,
         })
     return rows
 
@@ -416,18 +509,19 @@ def build_catalog_markdown(
     )
 
     lines = [
-        "# Sripad K — Streams Catalog",
+        "# Sripad K — Video Catalogue",
         "",
-        f"Auto-generated from the channel's Streams tab (**{channel}**{subscriber_note}).",
-        f"Total streams: **{len(rows)}** across **{len(grouped)}** categories.",
+        f"Auto-generated from the channel's /streams and /videos tabs "
+        f"(**{channel}**{subscriber_note}).",
+        f"Total videos: **{len(rows)}** across **{len(grouped)}** categories.",
         scanned_note,
         "",
         "Categorization is by title-keyword matching (see `src/categorize.py`) — it groups",
-        "recurring series by name rather than by manually reviewing each stream. A",
+        "recurring series by name rather than by manually reviewing each video. A",
         "description-based grouping wasn't possible: every video on this channel currently",
         "has an empty description.",
         "",
-        f"Dates are parsed from the title text where possible; {unknown_dates} stream(s) had no",
+        f"Dates are parsed from the title text where possible; {unknown_dates} video(s) had no",
         "parseable date and are marked **Unknown** rather than guessed — see `src/categorize.py`",
         "for exactly how dates are resolved, including the year-carry-backward logic.",
         "",
@@ -552,7 +646,7 @@ def main(argv: list[str] | None = None) -> int:
     )
 
     unknown_dates = sum(1 for row in rows if row["date"] == UNKNOWN_DATE)
-    print(f"{len(rows)} streams -> {len(grouped)} categories ({unknown_dates} with unresolved dates)")
+    print(f"{len(rows)} videos -> {len(grouped)} categories ({unknown_dates} with unresolved dates)")
     print(f"Channel last scanned {meta['scanned_on'] or 'unknown'}; "
           f"next scan due {meta['next_scan_due'] or 'unknown'}")
     print(f"Wrote {outdir}/: streams_master.csv/.json, streams_by_category.json, "

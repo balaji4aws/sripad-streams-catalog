@@ -1,15 +1,15 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-254,2022-09-25,Vighnesha Sandhi (NKHK),NKHK Marathi Vighnesh sandhi 25th Sept,ydbtbSCjNAM,https://www.youtube.com/watch?v=ydbtbSCjNAM,49.5,60
-257,2022-09-11,Vighnesha Sandhi (NKHK),NKHK marathi Vighnesha sandhi 11th Sept 2022,2WAiSP9s-50,https://www.youtube.com/watch?v=2WAiSP9s-50,75.3,73
-259,2022-09-04,Vighnesha Sandhi (NKHK),NKHK marathi Vighnesha sandhi 4th sept,mY_AEON4C5Q,https://www.youtube.com/watch?v=mY_AEON4C5Q,45.3,50
-260,2022-08-21,Vighnesha Sandhi (NKHK),NKHK marathi Vighnesha sandhi 21Aug 2022,taLTtNm8uKc,https://www.youtube.com/watch?v=taLTtNm8uKc,41.4,50
-263,2022-08-09,Vighnesha Sandhi (NKHK),NKHK Kannada Vighnesha Sandhi Mangala 9th Aug 2022,NRx-YZyhZ7c,https://www.youtube.com/watch?v=NRx-YZyhZ7c,62.0,72
-264,2022-07-31,Vighnesha Sandhi (NKHK),NKHK marathi Vighnesha sandhi 31st July 2022,usi052S2DUc,https://www.youtube.com/watch?v=usi052S2DUc,38.8,63
-265,2022-07-27,Vighnesha Sandhi (NKHK),NKHK kannada Vighnesha Sandhi 27th July 2022,-RpS7a9dKgQ,https://www.youtube.com/watch?v=-RpS7a9dKgQ,55.2,60
-266,2022-07-26,Vighnesha Sandhi (NKHK),NKHK Kannada SriVighnesha sandhi 26th July,SogZlzLTccQ,https://www.youtube.com/watch?v=SogZlzLTccQ,47.0,65
-268,2022-07-06,Vighnesha Sandhi (NKHK),NKHK kannada Vighnesh sandhi shloka 13.14 - 6th July,GxxAAMKI4Pc,https://www.youtube.com/watch?v=GxxAAMKI4Pc,61.4,49
-269,2022-07-05,Vighnesha Sandhi (NKHK),NKHK Kannada Vighnesh Sandhi 5th July,n4DoE457h5U,https://www.youtube.com/watch?v=n4DoE457h5U,51.0,41
-270,2022-07-03,Vighnesha Sandhi (NKHK),NKHK marathi SriVighnesha Sandhi 3rd July,OIPr7lFejDA,https://www.youtube.com/watch?v=OIPr7lFejDA,77.2,105
-273,2022-06-22,Vighnesha Sandhi (NKHK),NKHK Kannada Vighnesha Sandhi 22nd June,iWgPZHXKSZc,https://www.youtube.com/watch?v=iWgPZHXKSZc,53.2,102
-276,2022-06-14,Vighnesha Sandhi (NKHK),NKHK Vighnesh Sandhi Day 3 14 June,791ulvFZ36g,https://www.youtube.com/watch?v=791ulvFZ36g,58.7,50
-280,2022-06-08,Vighnesha Sandhi (NKHK),NKHK Kannada Vighnesh Sandhi,mhOLCtifN-U,https://www.youtube.com/watch?v=mhOLCtifN-U,34.7,120
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+374,2022-09-25,Vighnesha Sandhi (NKHK),NKHK Marathi Vighnesh sandhi 25th Sept,ydbtbSCjNAM,https://www.youtube.com/watch?v=ydbtbSCjNAM,49.5,60,streams,254
+377,2022-09-11,Vighnesha Sandhi (NKHK),NKHK marathi Vighnesha sandhi 11th Sept 2022,2WAiSP9s-50,https://www.youtube.com/watch?v=2WAiSP9s-50,75.3,73,streams,257
+379,2022-09-04,Vighnesha Sandhi (NKHK),NKHK marathi Vighnesha sandhi 4th sept,mY_AEON4C5Q,https://www.youtube.com/watch?v=mY_AEON4C5Q,45.3,50,streams,259
+380,2022-08-21,Vighnesha Sandhi (NKHK),NKHK marathi Vighnesha sandhi 21Aug 2022,taLTtNm8uKc,https://www.youtube.com/watch?v=taLTtNm8uKc,41.4,50,streams,260
+383,2022-08-09,Vighnesha Sandhi (NKHK),NKHK Kannada Vighnesha Sandhi Mangala 9th Aug 2022,NRx-YZyhZ7c,https://www.youtube.com/watch?v=NRx-YZyhZ7c,62.0,72,streams,263
+384,2022-07-31,Vighnesha Sandhi (NKHK),NKHK marathi Vighnesha sandhi 31st July 2022,usi052S2DUc,https://www.youtube.com/watch?v=usi052S2DUc,38.8,63,streams,264
+385,2022-07-27,Vighnesha Sandhi (NKHK),NKHK kannada Vighnesha Sandhi 27th July 2022,-RpS7a9dKgQ,https://www.youtube.com/watch?v=-RpS7a9dKgQ,55.2,60,streams,265
+386,2022-07-26,Vighnesha Sandhi (NKHK),NKHK Kannada SriVighnesha sandhi 26th July,SogZlzLTccQ,https://www.youtube.com/watch?v=SogZlzLTccQ,47.0,65,streams,266
+388,2022-07-06,Vighnesha Sandhi (NKHK),NKHK kannada Vighnesh sandhi shloka 13.14 - 6th July,GxxAAMKI4Pc,https://www.youtube.com/watch?v=GxxAAMKI4Pc,61.4,49,streams,268
+389,2022-07-05,Vighnesha Sandhi (NKHK),NKHK Kannada Vighnesh Sandhi 5th July,n4DoE457h5U,https://www.youtube.com/watch?v=n4DoE457h5U,51.0,41,streams,269
+390,2022-07-03,Vighnesha Sandhi (NKHK),NKHK marathi SriVighnesha Sandhi 3rd July,OIPr7lFejDA,https://www.youtube.com/watch?v=OIPr7lFejDA,77.2,105,streams,270
+393,2022-06-22,Vighnesha Sandhi (NKHK),NKHK Kannada Vighnesha Sandhi 22nd June,iWgPZHXKSZc,https://www.youtube.com/watch?v=iWgPZHXKSZc,53.2,102,streams,273
+396,2022-06-14,Vighnesha Sandhi (NKHK),NKHK Vighnesh Sandhi Day 3 14 June,791ulvFZ36g,https://www.youtube.com/watch?v=791ulvFZ36g,58.7,50,streams,276
+400,2022-06-08,Vighnesha Sandhi (NKHK),NKHK Kannada Vighnesh Sandhi,mhOLCtifN-U,https://www.youtube.com/watch?v=mhOLCtifN-U,34.7,120,streams,280

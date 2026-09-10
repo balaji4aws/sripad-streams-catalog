@@ -14,7 +14,9 @@ from build_sequences import (
     category_names_language,
     detect_language,
     normalize_words,
+    order_videos,
     sequence_label,
+    session_number,
 )
 
 
@@ -175,6 +177,56 @@ class BuildGroupsTests(unittest.TestCase):
 
     def test_empty_input_produces_no_groups(self):
         self.assertEqual(build_groups([]), [])
+
+
+class SessionNumberTests(unittest.TestCase):
+    """"Day N" is a session number; a date that follows the word "Day" is not."""
+
+    def test_plain_session_labels(self):
+        self.assertEqual(session_number("Day 102 Bhagavata Saroddhara -25/Jul/2026"), 102)
+        self.assertEqual(session_number("Day1- Bhagavata Saroddhara - 8th April 2023"), 1)
+        self.assertEqual(session_number("Sumadhwavijay-Marathi-Day4-15thJan26"), 4)
+        self.assertEqual(session_number("Sumadhwavijaya Marathi 19th June Day 57"), 57)
+
+    def test_an_ordinal_after_day_is_a_date_not_a_session(self):
+        """The regression this guards: backtracking used to yield session 2 here."""
+        self.assertIsNone(session_number("Satyatma Sandhya Kannada Final Day 24th June 2023"))
+
+    def test_day_at_the_end_of_another_word_is_not_a_label(self):
+        self.assertIsNone(session_number("SatyatmaSandhya kannada Saturday 17th Sept 2022"))
+        self.assertIsNone(session_number("Marathi saturday 10th April"))
+
+    def test_no_session_label_at_all(self):
+        self.assertIsNone(session_number("Sumadhwavijaya Marathi 16th March 2026"))
+
+
+class OrderVideosTests(unittest.TestCase):
+    def test_session_numbers_win_when_every_title_has_one(self):
+        """Even when the channel listed them in a contradicting order."""
+        items = [
+            row(10, "S", "Day 3 S"),   # listed as the OLDEST
+            row(20, "S", "Day 1 S"),
+            row(30, "S", "Day 2 S"),   # listed as the NEWEST
+        ]
+        self.assertEqual([i["title"] for i in order_videos(items)], ["Day 1 S", "Day 2 S", "Day 3 S"])
+
+    def test_channel_position_is_used_when_a_title_lacks_a_session_number(self):
+        """Mixing numbered and unnumbered videos would compare incomparable keys."""
+        items = [
+            row(10, "S", "Day 3 S"),
+            row(20, "S", "S with no number"),
+            row(30, "S", "Day 1 S"),
+        ]
+        # Oldest first = highest list_position first.
+        self.assertEqual([i["list_position"] for i in order_videos(items)], [30, 20, 10])
+
+    def test_repeated_session_numbers_fall_back_to_channel_position(self):
+        items = [row(10, "S", "Day 2 S second"), row(20, "S", "Day 2 S first"), row(30, "S", "Day 1 S")]
+        self.assertEqual([i["title"] for i in order_videos(items)],
+                         ["Day 1 S", "Day 2 S first", "Day 2 S second"])
+
+    def test_a_single_video_needs_no_ordering(self):
+        self.assertEqual(len(order_videos([row(1, "S", "Day 1 S")])), 1)
 
 
 class NormalizeWordsTests(unittest.TestCase):

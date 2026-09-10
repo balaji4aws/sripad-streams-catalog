@@ -1,2 +1,2 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-324,2021-04-10,Uncategorized / Other,Marathi saturday 10th April,mxIyeGEf_kc,https://www.youtube.com/watch?v=mxIyeGEf_kc,42.5,42
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+444,2021-04-10,Uncategorized / Other,Marathi saturday 10th April,mxIyeGEf_kc,https://www.youtube.com/watch?v=mxIyeGEf_kc,42.5,42,streams,324

@@ -1,15 +1,15 @@
-# Sripad K — Streams Catalog
+# Sripad K — Video Catalogue
 
-Auto-generated from the channel's Streams tab (**Sripad K**, 1510 subscribers).
-Total streams: **342** across **40** categories.
+Auto-generated from the channel's /streams and /videos tabs (**Sripad K**, 1510 subscribers).
+Total videos: **465** across **44** categories.
 Channel last scanned **2026-09-10**; next scan due 2026-09-24.
 
 Categorization is by title-keyword matching (see `src/categorize.py`) — it groups
-recurring series by name rather than by manually reviewing each stream. A
+recurring series by name rather than by manually reviewing each video. A
 description-based grouping wasn't possible: every video on this channel currently
 has an empty description.
 
-Dates are parsed from the title text where possible; 0 stream(s) had no
+Dates are parsed from the title text where possible; 0 video(s) had no
 parseable date and are marked **Unknown** rather than guessed — see `src/categorize.py`
 for exactly how dates are resolved, including the year-carry-backward logic.
 
@@ -17,10 +17,11 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 
 | Category | Count |
 |---|---|
+| [Bhagavata Saroddhara](#bhagavata-saroddhara) | 108 |
 | [Sumadhwavijaya (Marathi)](#sumadhwavijaya-marathi) | 84 |
 | [Satyatma Sandhya](#satyatma-sandhya) | 39 |
 | [Manimanjari (Kannada)](#manimanjari-kannada) | 38 |
-| [Pratah Sankalpa Gadya](#pratah-sankalpa-gadya) | 14 |
+| [Pratah Sankalpa Gadya](#pratah-sankalpa-gadya) | 25 |
 | [Vighnesha Sandhi (NKHK)](#vighnesha-sandhi-nkhk) | 14 |
 | [Sandhyavandana Online](#sandhyavandana-online) | 13 |
 | [Deva Pooja (NKHK)](#deva-pooja-nkhk) | 13 |
@@ -49,14 +50,130 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | [Taratamya (NKHK)](#taratamya-nkhk) | 2 |
 | [Pushpahasa Satsanga](#pushpahasa-satsanga) | 2 |
 | [Paranjyothi Satsanga](#paranjyothi-satsanga) | 2 |
+| [SriSatyatma Teertha (Darshana/Mangalarati)](#srisatyatma-teertha-darshana-mangalarati) | 2 |
 | [Sandhyavandana Satsanga](#sandhyavandana-satsanga) | 1 |
 | [Panchanga Shravana](#panchanga-shravana) | 1 |
 | [Ekadashi Katha](#ekadashi-katha) | 1 |
+| [Rushi Panchami](#rushi-panchami) | 1 |
 | [Ganesha Stotra](#ganesha-stotra) | 1 |
 | [Purushottama Stotra](#purushottama-stotra) | 1 |
 | [Harikathamruta Sara](#harikathamruta-sara) | 1 |
 | [Anusandhana](#anusandhana) | 1 |
 | [Uncategorized / Other](#uncategorized-other) | 1 |
+| [Mutt Utsava / Puja](#mutt-utsava-puja) | 1 |
+
+## Bhagavata Saroddhara
+
+| Date | Title | Duration | Views | Link |
+|---|---|---|---|---|
+| 2026-07-25 | Day 102 Bhagavata Saroddhara -25/Jul/2026 - अध्यात्मप्रकरण - 227-229--by Sri Vijayananda | 61.0m | 38 | [watch](https://www.youtube.com/watch?v=EqclQ17Hlzs) |
+| 2026-07-18 | Day 101 Bhagavata Saroddhara -18/Jul/2026 - अध्यात्मप्रकरण - 223--by Sri Vijayananda | 55.2m | 15 | [watch](https://www.youtube.com/watch?v=2FXTqqT2lTQ) |
+| 2026-07-11 | Day 100 Bhagavata Saroddhara -11/Jul/2026 - अध्यात्मप्रकरण - 222--by Sri Vijayananda | 51.5m | 22 | [watch](https://www.youtube.com/watch?v=6T-eZ3O-7Nc) |
+| 2026-07-04 | Day 99 Bhagavata Saroddhara -04/Jul/2026 - बिम्बोपासकगुरुप्राप्ति - 221--by Sri Vijayananda | 43.8m | 28 | [watch](https://www.youtube.com/watch?v=GbPhQG37bjg) |
+| 2026-06-28 | Day 98 Bhagavata Saroddhara -28/Jun/2026 - बिम्बोपासकगुरुप्राप्ति - 219--by Sri Vijayananda | 65.5m | 16 | [watch](https://www.youtube.com/watch?v=ujVc2BpN2YM) |
+| 2026-06-20 | Day 97 Bhagavata Saroddhara -20/Jun/2026 - बिम्बोपासकगुरुप्राप्ति - 217--by Sri Vijayananda | 57.3m | 7 | [watch](https://www.youtube.com/watch?v=-SBeOJ0dZvY) |
+| 2026-06-16 | Day 96 Bhagavata Saroddhara -16/Jun/2026 - बिम्बोपासकगुरुप्राप्ति - 215--by Sri Vijayananda | 57.7m | 9 | [watch](https://www.youtube.com/watch?v=vwGJyDWD6s4) |
+| 2026-06-09 | Day 95 Bhagavata Saroddhara -09/Jun/2026 - बिम्बोपासकगुरुप्राप्ति - 212-by Sri Vijayananda | 57.7m | 6 | [watch](https://www.youtube.com/watch?v=8HNlaG9xgSg) |
+| 2026-04-25 | Day 94 Bhagavata Saroddhara -25/Apr/2026 - बिम्बोपासकगुरुप्राप्ति - 210-211-by Sri Vijayananda | 56.5m | 38 | [watch](https://www.youtube.com/watch?v=XKxw1zmQvck) |
+| 2026-04-18 | Day 93 Bhagavata Saroddhara -18/Apr/2026 - बिम्बोपासकगुरुप्राप्ति - 209-by Sri Vijayananda | 61.5m | 19 | [watch](https://www.youtube.com/watch?v=BwNHv5MNxTI) |
+| 2026-04-11 | Day 92 Bhagavata Saroddhara -11/Apr/2026 - ध्यानप्रकरण - 204-208-by Sri Vijayananda | 60.4m | 16 | [watch](https://www.youtube.com/watch?v=V7vb6ja5MIk) |
+| 2026-04-04 | Day 91 Bhagavata Saroddhara -04/Apr/2026 - ध्यानप्रकरण - 202-204-by Sri Vijayananda | 48.5m | 13 | [watch](https://www.youtube.com/watch?v=6AJTYdISC80) |
+| 2026-03-21 | Day 90 Bhagavata Saroddhara -21/Mar/2026 - ध्यानप्रकरण - 200-201-by Sri Vijayananda | 56.3m | 21 | [watch](https://www.youtube.com/watch?v=r4YTKQT4qHQ) |
+| 2026-02-28 | Day 89 Bhagavata Saroddhara -28/Feb/2026 - ध्यानप्रकरण - 200-by Sri Vijayananda | 64.3m | 18 | [watch](https://www.youtube.com/watch?v=07bG8qC_9Z8) |
+| 2026-02-21 | Day 88 Bhagavata Saroddhara -21/Feb/2026 - देहप्रशंसाप्रकरणम् - 193-195-by Sri Vijayananda | 62.5m | 31 | [watch](https://www.youtube.com/watch?v=ii0QjNPGLVE) |
+| 2026-02-14 | Day 87 Bhagavata Saroddhara -14/Feb/2026 - कालप्रशंसाप्रकरणम् - 191-192-by Sri Vijayananda | 59.5m | 20 | [watch](https://www.youtube.com/watch?v=RzUsRaUba-A) |
+| 2026-01-25 | Day 86 Bhagavata Saroddhara -25/Jan/2026 - देशप्रशंसाप्रकरणम् - 187-189-by Sri Vijayananda | 57.2m | 12 | [watch](https://www.youtube.com/watch?v=_i6bGauW4HE) |
+| 2026-01-18 | Day 85 Bhagavata Saroddhara -18/Jan/2026 - निवृत्तकर्मकरण+देशप्रशंसा 184-186-by Sri Vijayananda | 55.1m | 3 | [watch](https://www.youtube.com/watch?v=ecvvjW09iPA) |
+| 2025-12-27 | Day 84 Bhagavata Saroddhara -27/Dec/2025 - निवृत्तकर्मकरणप्रकरणं- 180-183-by Sri Vijayananda | 58.4m | 8 | [watch](https://www.youtube.com/watch?v=yGPK9cD0DGk) |
+| 2025-12-06 | Day 83 Bhagavata Saroddhara -06/Dec/2025 - निवृत्तकर्मकरणप्रकरणं- 178-179-by Sri Vijayananda | 48.5m | 26 | [watch](https://www.youtube.com/watch?v=mqry44WMhlk) |
+| 2025-11-29 | Day 82 Bhagavata Saroddhara -29/Nov/2025 - प्रवृत्तकर्मत्याग- 177-by Sri Vijayananda | 47.9m | 16 | [watch](https://www.youtube.com/watch?v=mtu4HmP-xfw) |
+| 2025-11-22 | Day 81- Bhagavata Saroddhara -22/Nov/2025 - प्रवृत्तकर्मत्याग- 174-176- by Sri Vijayananda | 60.2m | 18 | [watch](https://www.youtube.com/watch?v=S5H6cQt21GE) |
+| 2025-11-01 | Day 79- Bhagavata Saroddhara -1st Nov 2025 - ब्रह्मोपदेशप्रकरण- 169-171- by Sri Vijayananda | 61.2m | 22 | [watch](https://www.youtube.com/watch?v=DqaUXSSdLKY) |
+| 2025-11-15 | Day 80- Bhagavata Saroddhara -15/Nov/2025 - प्रवृत्तकर्मत्याग- 172-173- by Sri Vijayananda | 50.2m | 23 | [watch](https://www.youtube.com/watch?v=kmWF1GX3sKE) |
+| 2025-06-28 | Day 78- Bhagavata Saroddhara -28th June 2025 - ब्रह्मोपदेशप्रकरण- 168-2- by Sri Vijayananda | 48.9m | 50 | [watch](https://www.youtube.com/watch?v=bWwpkOd-Ulk) |
+| 2025-06-14 | Day 77- Bhagavata Saroddhara -14th June 2025 - ब्रह्मोपदेशप्रकरण- 168-1- by Sri Vijayananda | 60.0m | 34 | [watch](https://www.youtube.com/watch?v=PQAqZE-Ppxc) |
+| 2025-06-08 | Day 76- Bhagavata Saroddhara -8th June 2025 - ब्रह्मोपदेशप्रकरण- 167- by Sri Vijayananda | 63.0m | 49 | [watch](https://www.youtube.com/watch?v=1ZizrKd1PKM) |
+| 2025-05-31 | Day 75- Bhagavata Saroddhara -31st May 2025 - ब्रह्मोपदेशप्रकरण- 166- by Sri Vijayananda | 54.5m | 61 | [watch](https://www.youtube.com/watch?v=lm4ls5bOl08) |
+| 2025-05-18 | Day 74- Bhagavata Saroddhara -18th May 2025 - ब्रह्मोपदेशप्रकरण- 164-165- by Sri Vijayananda | 41.7m | 39 | [watch](https://www.youtube.com/watch?v=EL31KXsNUVE) |
+| 2025-04-27 | Day 73- Bhagavata Saroddhara -27th April 2025 - ब्रह्मोपदेशप्रकरण- 163- by Sri Vijayananda | 59.2m | 35 | [watch](https://www.youtube.com/watch?v=MERqr3CjqRY) |
+| 2025-04-05 | Day 73- Bhagavata Saroddhara - 5th April 2025 - ब्रह्मोपदेशप्रकरण- 163- by Sri Vijayananda | 64.1m | 22 | [watch](https://www.youtube.com/watch?v=Y2bSnmLPsgk) |
+| 2025-03-29 | Day 72- Bhagavata Saroddhara - 29th March 2025 - ब्रह्मोपदेशप्रकरण- 162- by Sri Vijayananda | 57.0m | 34 | [watch](https://www.youtube.com/watch?v=cXmcxtMgWY4) |
+| 2025-03-08 | Day 71- Bhagavata Saroddhara - 8th March 2025 - ब्रह्मोपदेशप्रकरण- 160-161 by Sri Vijayananda | 59.2m | 17 | [watch](https://www.youtube.com/watch?v=IgmO1zIXzjs) |
+| 2025-02-22 | Day 69- Bhagavata Saroddhara - 22nd Feb 2025 - ब्रह्मोपदेशप्रकरण- 158-2-by Sri Vijayananda | 54.9m | 23 | [watch](https://www.youtube.com/watch?v=8m2z2uzIpWg) |
+| 2025-03-01 | Day 70- Bhagavata Saroddhara - 1st March 2025 - ब्रह्मोपदेशप्रकरण- 159-1-by Sri Vijayananda | 48.1m | 21 | [watch](https://www.youtube.com/watch?v=GaLjhN-Vj2w) |
+| 2024-02-15 | Day 68- Bhagavata Saroddhara -15th Feb 2024 - ब्रह्मोपदेशप्रकरण- 158-1- by Sri Vijayananda | 54.3m | 23 | [watch](https://www.youtube.com/watch?v=WeHc82KzM_c) |
+| 2024-12-28 | Day 67- Bhagavata Saroddhara -28th Dec 2024 - ब्रह्मोपदेशप्रकरण- 157- by Sri Vijayananda | 56.7m | 30 | [watch](https://www.youtube.com/watch?v=YFjnKVnS2oE) |
+| 2025-01-25 | Day 66- Bhagavata Saroddhara -25th Jan 2025 - ब्रह्मोपदेशप्रकरण- 154-156- by Sri Vijayananda | 59.5m | 13 | [watch](https://www.youtube.com/watch?v=sjRSFcOZANg) |
+| 2024-12-28 | Day 65- Bhagavata Saroddhara -28th Dec 2024 - ब्रह्मोपदेशप्रकरण- 152-153- by Sri Vijayananda | 47.9m | 66 | [watch](https://www.youtube.com/watch?v=Rx9O7kUOE1s) |
+| 2024-12-07 | Day 64- Bhagavata Saroddhara -7th Dec 2024 - ब्रह्मोपदेशप्रकरण- 150-151- by Sri Vijayananda | 56.3m | 38 | [watch](https://www.youtube.com/watch?v=LC4tkuF3Ioo) |
+| 2024-11 | Day 63- Bhagavata Saroddhara -3oth Nov 2024 - ब्रह्मोपदेशप्रकरण- 149- by Sri Vijayananda | 59.1m | 41 | [watch](https://www.youtube.com/watch?v=77VSTz4yAc0) |
+| 2024-11-23 | Day 62- Bhagavata Saroddhara -23rd Nov 2024 - ब्रह्मोपदेशप्रकरण- 148- by Sri Vijayananda | 55.7m | 37 | [watch](https://www.youtube.com/watch?v=d5ETcVaLR64) |
+| 2024-11-09 | Day 61- Bhagavata Saroddhara -9th Nov 2024 - ब्रह्मोपदेशप्रकरण- 147- by Sri Vijayananda | 52.9m | 36 | [watch](https://www.youtube.com/watch?v=prE-MOVPLG8) |
+| 2024-10-26 | Day 60- Bhagavata Saroddhara -26th Oct 2024 - इन्द्रियजयप्रकरण- 144-146- by Sri Vijayananda | 53.7m | 22 | [watch](https://www.youtube.com/watch?v=-J_ISVtwFXk) |
+| 2024-10-20 | Day 59- Bhagavata Saroddhara -20th Oct 2024 - इन्द्रियजयप्रकरण- 141-143- by Sri Vijayananda | 53.4m | 60 | [watch](https://www.youtube.com/watch?v=eEN46PfWtpE) |
+| 2024-10-12 | Day 58- Bhagavata Saroddhara -12th Oct 2024 - इन्द्रियजयप्रकरण- 139-140- by Sri Vijayananda | 40.6m | 55 | [watch](https://www.youtube.com/watch?v=Sgd9KL5K35M) |
+| 2024-10-05 | Day 57- Bhagavata Saroddhara -5th Oct 2024 - इन्द्रियजयप्रकरण- 138-  by Sri Vijayananda | 59.7m | 32 | [watch](https://www.youtube.com/watch?v=rYZgNEbl8DU) |
+| 2024-09-28 | Day 56- Bhagavata Saroddhara -28th Sept 2024 - महन्निन्दावर्जनप्रकरण- 136-137-  by Sri Vijayananda | 59.9m | 52 | [watch](https://www.youtube.com/watch?v=F3ofXtUHOR8) |
+| 2024-08-15 | Day 55- Bhagavata Saroddhara -15th Aug 2024 - आत्मप्रशंसावर्जनम्- 133-135 -  by Sri Vijayananda | 54.9m | 50 | [watch](https://www.youtube.com/watch?v=fl4h2XQVkKk) |
+| 2024-06-29 | Day 53- Bhagavata Saroddhara -29th June 2024 - महन्निन्दावर्जनप्रकरण- 132(1) -  by Sri Vijayananda | 58.0m | 35 | [watch](https://www.youtube.com/watch?v=j8Z_JJx5YsY) |
+| 2024-07-13 | Day 54- Bhagavata Saroddhara -13th July 2024 - महन्निन्दावर्जनप्रकरण- 132(2)-  by Sri Vijayananda | 51.3m | 44 | [watch](https://www.youtube.com/watch?v=BSjiDL8fnjI) |
+| 2024-06-22 | Day 52- Bhagavata Saroddhara -22nd June 2024 - महन्निन्दावर्जनप्रकरण- 129-131 -  by Sri Vijayananda | 49.5m | 50 | [watch](https://www.youtube.com/watch?v=z8iANcYgV14) |
+| 2024-06-01 | Day 51- Bhagavata Saroddhara -1st June 2024 - महन्निन्दावर्जनप्रकरण- 126-128 -  by Sri Vijayananda | 50.8m | 45 | [watch](https://www.youtube.com/watch?v=phko28ruQ_A) |
+| 2024-05-19 | Day 49- Bhagavata Saroddhara -19th May 2024 - महत्सेवाप्रशंसाप्रकरण- 119-121 -  by Sri Vijayananda | 52.5m | 51 | [watch](https://www.youtube.com/watch?v=bA9UbqRDmkQ) |
+| 2024-05-26 | Day 50- Bhagavata Saroddhara -26th May 2024 - महन्निन्दावर्जनप्रकरण- 122-125 -  by Sri Vijayananda | 51.4m | 74 | [watch](https://www.youtube.com/watch?v=SBhU8FBoA98) |
+| 2024-05-04 | Day 47- Bhagavata Saroddhara -4th May 2024 - महत्सेवाप्रशमशाप्ररण- 115-116 -  by Sri Vijayananda | 62.3m | 46 | [watch](https://www.youtube.com/watch?v=dewDcQlFQ1o) |
+| 2024-05-12 | Day 48- Bhagavata Saroddhara -12th May 2024 - महत्सेवाप्रशंसाप्रकरण- 117-118 -  by Sri Vijayananda | 60.2m | 28 | [watch](https://www.youtube.com/watch?v=eDg49EbvqRI) |
+| 2024-04-20 | Day 46- Bhagavata Saroddhara -20th April 2024 - महत्सेवाप्रशमशाप्ररण- 112-114 -  by Sri Vijayananda | 52.4m | 47 | [watch](https://www.youtube.com/watch?v=3_LP5gMeRpo) |
+| 2024-04-13 | Day 45- Bhagavata Saroddhara -13th April 2024 - महत्समागमप्रकरण-Shloka 107-111 -  by Sri Vijayananda | 60.9m | 28 | [watch](https://www.youtube.com/watch?v=pJeBFGkbj7U) |
+| 2024-04-06 | Day 44- Bhagavata Saroddhara - 6th April 2024 - महत्समागमप्रकरण-Shloka 104-105 -  by Sri Vijayananda | 61.3m | 28 | [watch](https://www.youtube.com/watch?v=1F3zCmvMlZg) |
+| 2024-03-30 | Day 43- Bhagavata Saroddhara - 30th Mar 2024 - महत्समागमप्रकरण-Shloka 102-103 -  by Sri Vijayananda | 59.2m | 29 | [watch](https://www.youtube.com/watch?v=RPQfxph9COE) |
+| 2024-03-23 | Day 42- Bhagavata Saroddhara -23rdMar 2024 - Shloka 100-101 -  by Sri Vijayananda | 58.9m | 25 | [watch](https://www.youtube.com/watch?v=UnHojAwal14) |
+| 2024-03-16 | Day 41- Bhagavata Saroddhara -16thMar 2024 - Shloka 98-99 -  by Sri Vijayananda | 54.0m | 30 | [watch](https://www.youtube.com/watch?v=AC5Pfpm3sZo) |
+| 2024-02-24 | Day 40- Bhagavata Saroddhara -24thFeb  2024 - Shloka 96-97 -  by Sri Vijayananda | 48.3m | 33 | [watch](https://www.youtube.com/watch?v=ztRCdjrgNFc) |
+| 2024-02-17 | Day 39- Bhagavata Saroddhara -17thFeb  2024 - Shloka 94-95 -  by Sri Vijayananda | 40.4m | 37 | [watch](https://www.youtube.com/watch?v=Ty6sIcC1vD8) |
+| 2024-02-10 | Day 38- Bhagavata Saroddhara -10thFeb  2024 - Shloka 92-93 -  by Sri Vijayananda | 49.9m | 38 | [watch](https://www.youtube.com/watch?v=njwziALGsjA) |
+| 2024-02-03 | Day 37- Bhagavata Saroddhara -3rdFeb  2024 - Shloka 88-91 -  by Sri Vijayananda | 46.6m | 70 | [watch](https://www.youtube.com/watch?v=jDOxVPyvbaU) |
+| 2024-01-28 | Day 36- Bhagavata Saroddhara -28th Jan  2024 - Shloka 85-87 -  by Sri Vijayananda | 46.6m | 44 | [watch](https://www.youtube.com/watch?v=m-Up2q__su8) |
+| 2024-01-21 | Day 35- Bhagavata Saroddhara -21st Jan  2024 - Shloka 82-84 -  by Sri Vijayananda | 48.7m | 32 | [watch](https://www.youtube.com/watch?v=8vJATAjQEFQ) |
+| 2024-01-14 | Day 34- Bhagavata Saroddhara -14th Jan  2024 - Shloka 79-81 -  by Sri Vijayananda | 46.7m | 55 | [watch](https://www.youtube.com/watch?v=OF4FjEUQaHc) |
+| 2024-01-06 | Day 33- Bhagavata Saroddhara -6th Jan  2024 - Shloka 76-78 -  by Sri Vijayananda | 56.0m | 44 | [watch](https://www.youtube.com/watch?v=_gHJd7Gc2Cs) |
+| 2023-12-23 | Day 32(2) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 72- by Sri Vijayananda | 7.1m | 27 | [watch](https://www.youtube.com/watch?v=kNBwZwdg8ek) |
+| 2023-12-23 | Day 32(4) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 74- by Sri Vijayananda | 16.8m | 29 | [watch](https://www.youtube.com/watch?v=tZItsQ493Nw) |
+| 2023-12-23 | Day 32(5) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 75- by Sri Vijayananda | 8.8m | 19 | [watch](https://www.youtube.com/watch?v=Kv6_atigPL8) |
+| 2023-12-23 | Day 32(3) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 73- by Sri Vijayananda | 8.0m | 16 | [watch](https://www.youtube.com/watch?v=jDPLX0SDP-0) |
+| 2023-12-23 | Day 32(1) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 71- by Sri Vijayananda | 14.9m | 29 | [watch](https://www.youtube.com/watch?v=CayhiC4J_Js) |
+| 2023-12-16 | Day 31 - Bhagavata Saroddhara -16th Dec  2023 - Shloka 69-70 - by Sri Vijayananda | 55.6m | 26 | [watch](https://www.youtube.com/watch?v=yTAti5sqdP8) |
+| 2023-12-09 | Day 30 - Bhagavata Saroddhara - 9th Dec  2023 - Shloka 66-68 - by Sri Vijayananda | 54.8m | 28 | [watch](https://www.youtube.com/watch?v=ESPJCTDgsHE) |
+| 2023-11-19 | Day 29 - Bhagavata Saroddhara - 19th Nov  2023 - Shloka 63-65 - by Sri Vijayananda | 40.7m | 54 | [watch](https://www.youtube.com/watch?v=llyQJEDgFkI) |
+| 2023-11-11 | Day 28 - Bhagavata Saroddhara - 11th Nov  2023 - Shloka 60-62 - by Sri Vijayananda | 45.9m | 58 | [watch](https://www.youtube.com/watch?v=WlHkRyyEU1E) |
+| 2023-11-04 | Day 27 - Bhagavata Saroddhara - 4th Nov  2023 - Shloka 57-59 - by Sri Vijayananda | 56.5m | 32 | [watch](https://www.youtube.com/watch?v=kdqIHXitmxk) |
+| 2023-10-28 | Day 26 - Bhagavata Saroddhara - 28th Oct  2023 - Shloka 56 - by Sri Vijayananda | 49.5m | 43 | [watch](https://www.youtube.com/watch?v=OG6vigucoXM) |
+| 2023-10-23 | Day 25 - Bhagavata Saroddhara - 23rd  Oct  2023 - Shloka 53-55 - by Sri Vijayananda | 41.5m | 41 | [watch](https://www.youtube.com/watch?v=CVBXgrdWMBI) |
+| 2023-10-14 | Day 24 - Bhagavata Saroddhara - 14th Oct  2023 - Shloka 51-52 - by Sri Vijayananda | 56.1m | 50 | [watch](https://www.youtube.com/watch?v=Ge4Dx8l6ZoE) |
+| 2023-10-07 | Day 23 - Bhagavata Saroddhara - 7th Oct  2023 - Shloka 49-50 - by Sri Vijayananda | 60.5m | 44 | [watch](https://www.youtube.com/watch?v=Qw6J51Wk53M) |
+| 2023-10-01 | Day 22 - Bhagavata Saroddhara - 1st Oct  2023 - Shloka 48(2)- by Sri Vijayananda | 59.1m | 54 | [watch](https://www.youtube.com/watch?v=gNv03gYR-hM) |
+| 2023-09-24 | Day 21 - Bhagavata Saroddhara - 24th sep  2023 - Shloka 48(1)- by Sri Vijayananda | 29.6m | 33 | [watch](https://www.youtube.com/watch?v=kIldviWr4CI) |
+| 2023-09-17 | Day 20 - Bhagavata Saroddhara -17th sep  2023 - Shloka 45-47 - by Sri Vijayananda | 57.7m | 38 | [watch](https://www.youtube.com/watch?v=D1iyUyTAk7A) |
+| 2023-09-10 | Day 19- Bhagavata Saroddhara -10th sep  2023 - Shloka 43-44 - by Sri Vijayananda | 55.8m | 38 | [watch](https://www.youtube.com/watch?v=ngGRSazn7HA) |
+| 2023-08-26 | Day 18- Bhagavata Saroddhara -26th Aug  2023 - Shloka 40-42 - by Sri Vijayananda | 56.6m | 55 | [watch](https://www.youtube.com/watch?v=mvUhl1hztZo) |
+| 2023-08-19 | Day 17- Bhagavata Saroddhara -19th Aug  2023 - Shloka 39 - by Sri Vijayananda | 28.0m | 47 | [watch](https://www.youtube.com/watch?v=4o8ec96QX34) |
+| 2023-08-12 | Day 16- Bhagavata Saroddhara -12th Aug  2023 - Shloka 34-38 - by Sri Vijayananda | 49.2m | 68 | [watch](https://www.youtube.com/watch?v=j2P746LYSeU) |
+| 2023-07-29 | Day 14- Bhagavata Saroddhara -29th July  2023 - Shloka 28-30 - by Sri Vijayananda | 49.9m | 31 | [watch](https://www.youtube.com/watch?v=3anhAns-hiU) |
+| 2023-08-05 | Day 15- Bhagavata Saroddhara -5th  Aug  2023 - Shloka 31-33 - by Sri Vijayananda | 54.5m | 71 | [watch](https://www.youtube.com/watch?v=SdtKWxuEZ74) |
+| 2023-07-15 | Day 13- Bhagavata Saroddhara -15th July  2023 - Shloka 27 - by Sri Vijayananda | 45.9m | 33 | [watch](https://www.youtube.com/watch?v=X6-_3hHAcLc) |
+| 2023-06-25 | Day 12- Bhagavata Saroddhara -25th June  2023 - Shloka 26 - by Sri Vijayananda | 50.9m | 46 | [watch](https://www.youtube.com/watch?v=hQ6tn2r2J2I) |
+| 2023-07-15 | Day 13- Bhagavata Saroddhara -15th July  2023 - Shloka 27  - by Sri Vijayananda | 45.9m | 49 | [watch](https://www.youtube.com/watch?v=5JrsVoSiBLc) |
+| 2023-06-17 | Day 11- Bhagavata Saroddhara -17th June  2023 - Shloka 23 to 25 - by Sri Vijayananda | 53.5m | 65 | [watch](https://www.youtube.com/watch?v=fwIVl8uR8nY) |
+| 2023-06-10 | Day 10- Bhagavata Saroddhara -10th June  2023 - Shloka 20 to 22 - by Sri Vijayananda | 56.2m | 68 | [watch](https://www.youtube.com/watch?v=c4Bz8Pe5Zjw) |
+| 2023-06-04 | Day 9- Bhagavata Saroddhara -4th June  2023 - Shloka 17 to 19 - by Sri Vijayananda | 55.1m | 78 | [watch](https://www.youtube.com/watch?v=0mCfGtTf7oM) |
+| 2023-05-27 | Day 8- Bhagavata Saroddhara -27th May  2023 - Shloka 14 to 16 - by Sri Vijayananda | 45.2m | 91 | [watch](https://www.youtube.com/watch?v=BsX2F2Uz41o) |
+| 2023-05-20 | Day 7- Bhagavata Saroddhara -20th May  2023 - Shloka 10 to13 - by Sri Vijayananda | 54.6m | 84 | [watch](https://www.youtube.com/watch?v=QqMmi8Aj95g) |
+| 2023-05-13 | Day 6- Bhagavata Saroddhara - 13th May 2023 - Shloka 9 - by Sri Vijayananda | 18.7m | 73 | [watch](https://www.youtube.com/watch?v=W-yzdUKFjtI) |
+| 2023-04-29 | Day 5- Bhagavata Saroddhara - 29th April 2023 - Shloka 6 - by Sri Vijayananda | 47.8m | 118 | [watch](https://www.youtube.com/watch?v=jZuoX0h1Yvc) |
+| 2023-04-22 | Day 4- Bhagavata Saroddhara - 22nd April 2023 - Shloka 4&5 - by Sri Vijayananda | 48.9m | 113 | [watch](https://www.youtube.com/watch?v=-2XEzHhcwws) |
+| 2023-04-15 | Day 3- Bhagavata Saroddhara - 15th April 2023 - Shloka 3 - by Sri Vijayananda | 46.8m | 184 | [watch](https://www.youtube.com/watch?v=iq0lO3Qqujk) |
+| 2023-04-09 | Day 2- Bhagavata Saroddhara - 9th April 2023 - Shloka 1&2 - by Sri Vijayananda | 46.7m | 223 | [watch](https://www.youtube.com/watch?v=X3bhrM0isog) |
+| 2023-04-08 | Day 1- Bhagavata Saroddhara - 8th April 2023 - Shloka 1 - by Sri Vijayananda | 47.6m | 670 | [watch](https://www.youtube.com/watch?v=VpkJRP7Vz2E) |
 
 ## Sumadhwavijaya (Marathi)
 
@@ -238,16 +355,27 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
+| 2023-04-01 | Day 26- Pratahsankalpa gadya 1st April -  2023 | 69.5m | 243 | [watch](https://www.youtube.com/watch?v=H_ukTfc1Rb4) |
+| 2023-03-25 | Day 25- Pratahsankalpa gadya 25th March-  2023 | 37.1m | 126 | [watch](https://www.youtube.com/watch?v=ueIaNSilNPY) |
+| 2023-03-18 | Day 24- Pratahsankalpa gadya - 18th Mar 2023 | 51.2m | 147 | [watch](https://www.youtube.com/watch?v=LPJn6dci1dw) |
 | 2023-03-11 | pratah Sankalpa Gadya Day 23 - 11th Mar | 43.3m | 142 | [watch](https://www.youtube.com/watch?v=LMnMCK6gmSA) |
+| 2023-02-18 | Day 21 -Prathah Sankalpa Gadya -  Feb 18th | 41.4m | 143 | [watch](https://www.youtube.com/watch?v=W8Aet_VOFPY) |
+| 2023-03-04 | Day 22 Prathah Sankalpa Gadya - - Mar 4th | 37.1m | 120 | [watch](https://www.youtube.com/watch?v=QC_LPl4-v5k) |
+| 2023-02-11 | Day 20 - Prathah Sankalpa Gadya -- Feb 11th | 39.2m | 113 | [watch](https://www.youtube.com/watch?v=fWfbEsh2E2Y) |
+| 2023-02-04 | Day 19 - Prathah Sankalpa Gadya - Feb 4th | 42.8m | 107 | [watch](https://www.youtube.com/watch?v=-2EKSbIhhpg) |
 | 2023-01-21 | Prathah Sankalpa Gadya - Day 18 - Jan 21st | 46.4m | 159 | [watch](https://www.youtube.com/watch?v=LAxEZAy-6Tc) |
 | 2023-01-14 | Prathah sankalpa Gadya - JAN 14th - Day 17 | 46.7m | 168 | [watch](https://www.youtube.com/watch?v=1yrUce1Zc-I) |
+| 2023-01-07 | Day16 - Prathah Sankalpa Gadya - Jan7th | 43.9m | 179 | [watch](https://www.youtube.com/watch?v=oyoAp0PeY2o) |
+| 2022-12-31 | Day15 - Prathah Sankalpa Gadya - Dec 31st | 35.9m | 143 | [watch](https://www.youtube.com/watch?v=pPtyXFBMHns) |
 | 2022-12-24 | Pratah Sankalpa Gadya - Day14 - Dec 24th | 46.2m | 193 | [watch](https://www.youtube.com/watch?v=bult3oFcrjw) |
 | 2022-12-17 | Pratah Sankalpa Gadya - Dec17th - Day13 | 48.2m | 160 | [watch](https://www.youtube.com/watch?v=tiYISoHt8w0) |
 | 2022-12-10 | Pratah Sankalpa Gadya - Dec 10th - Day 12 | 45.2m | 206 | [watch](https://www.youtube.com/watch?v=ioSWky5gNgY) |
 | 2022-12-03 | Prathah Sankalpa Gadya - Dec 3rd - Day 11 | 45.6m | 192 | [watch](https://www.youtube.com/watch?v=AwY8EDBUSNE) |
 | 2022-11-26 | Prathah Sankalpa Gadya - Nov 26th - Day 10 | 50.2m | 230 | [watch](https://www.youtube.com/watch?v=P1h9G4Wh734) |
 | 2022-11-19 | Prathak Sankalpa Gadya - Nov 19th - Day9 | 46.4m | 217 | [watch](https://www.youtube.com/watch?v=xauSaPisqzc) |
+| 2022-11-12 | Day 8 - Prathah Sankalpa Gadya - Nov 12th | 44.0m | 242 | [watch](https://www.youtube.com/watch?v=QsIRAnUITyE) |
 | 2022-11-05 | Prataha Sankalpa Gadya 5th Nov - Day 7 | 40.1m | 286 | [watch](https://www.youtube.com/watch?v=UiA6-CnxJWo) |
+| 2022-10-29 | Day 6 - Pratah Sankalpa Gadya - October 29th 2022 - | 39.8m | 384 | [watch](https://www.youtube.com/watch?v=pMfJk7mm6vM) |
 | 2022-10-15 | Pratah Sankalpa Gadya Day 4 - 15th Oct | 42.0m | 618 | [watch](https://www.youtube.com/watch?v=geWtLnCFXvo) |
 | 2022-10-08 | Pratah Sankalpa Gadya Day3- 8th Oct | 39.8m | 761 | [watch](https://www.youtube.com/watch?v=EaTq9lzhTj8) |
 | 2022-10-06 | Prataha sankalpa Gadya Day2 - 6th Oct 2022 | 16.9m | 788 | [watch](https://www.youtube.com/watch?v=wO_sONZDn3o) |
@@ -445,7 +573,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 |---|---|---|---|---|
 | 2026-06-28 | SriSriSripadarajateertha and SriSriSatyabhinvateertha Charitra,mahima- 28th Jun 2026 | 88.1m | 162 | [watch](https://www.youtube.com/watch?v=kRtB8hIev4U) |
 | 2021-06-27 | NKHK Marathi Satsanga Sri Sripadarajara charitra 27th June 2021 | 74.4m | 140 | [watch](https://www.youtube.com/watch?v=-J0Q7HQ-LbI) |
-| 2021-06-25 | NKHK Kannada Satsanga Sri Sri Satyabhinava Teerthara Charitre/Mahima | 80.2m | 216 | [watch](https://www.youtube.com/watch?v=0NOgydhptRw) |
+| 2021-06-25 | NKHK Kannada Satsanga Sri Sri Satyabhinava Teerthara Charitre/Mahima | 80.2m | 217 | [watch](https://www.youtube.com/watch?v=0NOgydhptRw) |
 | 2021-06-23 | NKHK Satsanga Sri Sripadarajara Mahima 23June2021 | 67.0m | 245 | [watch](https://www.youtube.com/watch?v=b14Pp63z-do) |
 
 ## Dhyana (NKHK)
@@ -552,6 +680,13 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2021-08-15 | NKHK Marathi Satsanga "Paranjyothi" Part 2- 15th Aug 2021 | 90.5m | 94 | [watch](https://www.youtube.com/watch?v=StQZDl5EukM) |
 | 2021-08-08 | NKHK Marathi Paranjyothi 8th Aug 2021 | 82.3m | 197 | [watch](https://www.youtube.com/watch?v=kAc11tBOnoA) |
 
+## SriSatyatma Teertha (Darshana/Mangalarati)
+
+| Date | Title | Duration | Views | Link |
+|---|---|---|---|---|
+| 2015-03-30 | Satyatmatheertharu - Mahamangalarati - 1 | 1.0m | 92 | [watch](https://www.youtube.com/watch?v=42Ch0hQkVjQ) |
+| 2015-03-30 | Satyatmatheertharu | 2.6m | 114 | [watch](https://www.youtube.com/watch?v=coWBbQ6NM8M) |
+
 ## Sandhyavandana Satsanga
 
 | Date | Title | Duration | Views | Link |
@@ -569,6 +704,12 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
 | 2025-11-16 | Marathi - Utpatti Ekadashi katha - 16th Nov | 44.2m | 132 | [watch](https://www.youtube.com/watch?v=YbVqXX7ywJk) |
+
+## Rushi Panchami
+
+| Date | Title | Duration | Views | Link |
+|---|---|---|---|---|
+| 2023-09-19 | Rushi Panchami | 19th September 2023 | 66.7m | 468 | [watch](https://www.youtube.com/watch?v=Yc1UTYaM7Do) |
 
 ## Ganesha Stotra
 
@@ -599,3 +740,9 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
 | 2021-04-10 | Marathi saturday 10th April | 42.5m | 42 | [watch](https://www.youtube.com/watch?v=mxIyeGEf_kc) |
+
+## Mutt Utsava / Puja
+
+| Date | Title | Duration | Views | Link |
+|---|---|---|---|---|
+| 2015-03-30 | Vedavyasa Puja at Uttaradi Mutt | 6.7m | 2400 | [watch](https://www.youtube.com/watch?v=PRZOdFwtayA) |

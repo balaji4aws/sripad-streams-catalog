@@ -1,5 +1,5 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-46,2026-06-28,Sripadaraja/Satyabhinava Teertha,"SriSriSripadarajateertha and SriSriSatyabhinvateertha Charitra,mahima- 28th Jun 2026",kRtB8hIev4U,https://www.youtube.com/watch?v=kRtB8hIev4U,88.1,162
-311,2021-06-27,Sripadaraja/Satyabhinava Teertha,NKHK Marathi Satsanga Sri Sripadarajara charitra 27th June 2021,-J0Q7HQ-LbI,https://www.youtube.com/watch?v=-J0Q7HQ-LbI,74.4,140
-313,2021-06-25,Sripadaraja/Satyabhinava Teertha,NKHK Kannada Satsanga Sri Sri Satyabhinava Teerthara Charitre/Mahima,0NOgydhptRw,https://www.youtube.com/watch?v=0NOgydhptRw,80.2,216
-314,2021-06-23,Sripadaraja/Satyabhinava Teertha,NKHK Satsanga Sri Sripadarajara Mahima 23June2021,b14Pp63z-do,https://www.youtube.com/watch?v=b14Pp63z-do,67.0,245
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+54,2026-06-28,Sripadaraja/Satyabhinava Teertha,"SriSriSripadarajateertha and SriSriSatyabhinvateertha Charitra,mahima- 28th Jun 2026",kRtB8hIev4U,https://www.youtube.com/watch?v=kRtB8hIev4U,88.1,162,streams,46
+431,2021-06-27,Sripadaraja/Satyabhinava Teertha,NKHK Marathi Satsanga Sri Sripadarajara charitra 27th June 2021,-J0Q7HQ-LbI,https://www.youtube.com/watch?v=-J0Q7HQ-LbI,74.4,140,streams,311
+433,2021-06-25,Sripadaraja/Satyabhinava Teertha,NKHK Kannada Satsanga Sri Sri Satyabhinava Teerthara Charitre/Mahima,0NOgydhptRw,https://www.youtube.com/watch?v=0NOgydhptRw,80.2,217,streams,313
+434,2021-06-23,Sripadaraja/Satyabhinava Teertha,NKHK Satsanga Sri Sripadarajara Mahima 23June2021,b14Pp63z-do,https://www.youtube.com/watch?v=b14Pp63z-do,67.0,245,streams,314

@@ -1,12 +1,13 @@
 # Sripad K — Streams Catalog
 
-A catalogue of the live-stream recordings on the [Sripad K](https://www.youtube.com/@sripadk8492/streams)
-YouTube channel, so they can be watched **in order**.
+A catalogue of the recordings on the [Sripad K](https://www.youtube.com/@sripadk8492) YouTube
+channel, so they can be watched **in order**.
 
-The channel has 342 recorded streams — devotional classes, satsangs and readings in Kannada,
-Marathi and English — and no playlists. They sit in one long list sorted by upload date, which
-makes a series hard to follow: you can't tell which videos belong together, or which one comes
-first. This project groups them into series and works out a watch order within each one.
+The channel has 465 recordings going back to 2015 — devotional classes, satsangs and readings in
+Kannada, Marathi and English — spread across its Streams and Videos tabs, with no playlists. They
+sit in long lists sorted by upload date, which makes a series hard to follow: you can't tell which
+videos belong together, or which one comes first. Some series are even split across both tabs. This
+project gathers them into series and works out a watch order within each one.
 
 ### ▶ [Open the search page](https://balaji4aws.github.io/sripad-streams-catalog/search.html)
 
@@ -26,8 +27,8 @@ Four small steps, each writing a file the next one reads:
 
 ```
 fetch.py  →  categorize.py  →  build_sequences.py  →  search.html
- get the      sort into         work out watch         search it
- video list   series + dates    order per series       in a browser
+ read both     sort into         work out watch         search it
+ channel tabs  series + dates    order per series       in a browser
 ```
 
 Grouping and ordering work from the video **titles**, because every description on the channel is
@@ -75,14 +76,13 @@ need `pip install -r requirements-dev.txt`. Details of what's covered are in
 
 Worth knowing before trusting a date or a grouping:
 
-- **Seven dates disagree with the channel's own ordering**, because those titles contain typos
-  (`Sumadhwavijaya Marathi 4th June 2026` sits between videos dated 5 July and 2 July). Titles are
-  reproduced as written rather than silently corrected. Watch order is unaffected — it comes from
-  the channel's listing order, not the dates.
-- **78 videos don't say which language they're in**, so they're grouped separately and labelled
+- **Some dates disagree with the channel's own ordering**, because those titles contain typos
+  (`Sumadhwavijaya Marathi 4th June 2026` sits between videos dated 5 July and 2 July; one reads
+  `3oth Nov` with a letter o). Titles are reproduced as written rather than silently corrected.
+- **201 videos don't say which language they're in**, so they're grouped separately and labelled
   "Language not stated". The language is never guessed.
 - **One video matched no series** and sits in a catch-all group.
-- **Two videos are dated to the month only**, because their titles give no day.
+- **Three videos are dated to the month only**, because their titles give no usable day.
 
 Grouping is by title keyword, not by watching each video, so an unusually worded title could be
 misfiled. [DESIGN.md section 6](DESIGN.md#6-limitations-and-possible-future-work) covers the

@@ -1,4 +1,4 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-340,2021-02-05,Sri Gopaladasara Charitre,Sri Gopaladasara Charitre Day3 -Mangala,yYfdqm4j0F0,https://www.youtube.com/watch?v=yYfdqm4j0F0,91.5,82
-341,2021-02-03,Sri Gopaladasara Charitre,Sri Gopaladasara Charitre Day 2 Feb 3rd.,x2rxjq4-7d0,https://www.youtube.com/watch?v=x2rxjq4-7d0,70.3,164
-342,2021-02-02,Sri Gopaladasara Charitre,Sri Gopaladasara Jeevana Charitre 2nd Feb,pQZm7EtnAT4,https://www.youtube.com/watch?v=pQZm7EtnAT4,80.3,166
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+460,2021-02-05,Sri Gopaladasara Charitre,Sri Gopaladasara Charitre Day3 -Mangala,yYfdqm4j0F0,https://www.youtube.com/watch?v=yYfdqm4j0F0,91.5,82,streams,340
+461,2021-02-03,Sri Gopaladasara Charitre,Sri Gopaladasara Charitre Day 2 Feb 3rd.,x2rxjq4-7d0,https://www.youtube.com/watch?v=x2rxjq4-7d0,70.3,164,streams,341
+462,2021-02-02,Sri Gopaladasara Charitre,Sri Gopaladasara Jeevana Charitre 2nd Feb,pQZm7EtnAT4,https://www.youtube.com/watch?v=pQZm7EtnAT4,80.3,166,streams,342

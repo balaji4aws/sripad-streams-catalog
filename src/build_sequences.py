@@ -54,6 +54,15 @@ REQUIRED_FIELDS = ("category", "title", "list_position", "date", "video_id", "ur
 
 _WORD_RE = re.compile(r"[a-z0-9]+")
 
+# A "Day N" session label. The number must NOT carry an ordinal suffix: "Day 6"
+# is session six, but "Final Day 24th June" is a date that happens to sit after
+# the word "Day". This is the same distinction categorize.py draws when parsing
+# dates, for the same reason.
+# The `(?!\d)` matters: without it the engine backtracks to a shorter digit run
+# to satisfy the ordinal guard, so "Final Day 24th June" yields session 2 by
+# matching just the "2" and finding "4th" acceptable after it.
+_SESSION_RE = re.compile(r"(?:^|[^a-z])day[\s\-_:.]*(\d{1,3})(?!\d)(?!\s*(?:st|nd|rd|th)\b)", re.I)
+
 
 def detect_language(title: str) -> str | None:
     """Return the first known language named in `title`, or None."""
@@ -83,6 +92,48 @@ def category_names_language(category: str) -> str | None:
 def normalize_words(text: str) -> list[str]:
     """Split text into lowercase alphanumeric tokens for the search index."""
     return _WORD_RE.findall(text.lower())
+
+
+def session_number(title: str) -> int | None:
+    """Return the "Day N" session number stated in a title, or None."""
+    match = _SESSION_RE.search(title)
+    return int(match.group(1)) if match else None
+
+
+def order_videos(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Put a sequence's videos into watch order, oldest first.
+
+    Two signals, and the choice between them matters.
+
+    Where EVERY video in the sequence states a session number - "Day 1",
+    "Day 2", and so on - that number is used. It is the teacher's own statement
+    of the order, which beats anything this project could infer. It matters in
+    practice: the 108-session Bhagavata Saroddhara series is listed by the
+    channel in an order that contradicts its own day numbers in ten places, and
+    several of its dates carry typos ("3oth Nov", and a "2024" that plainly
+    means 2025). The day numbers run 1 to 102 with no gaps.
+
+    Otherwise the merged channel position is used, highest first, since
+    position 1 is the newest video. Most series on this channel do not number
+    their sessions, so this remains the common path - and it is deliberately
+    preferred over sorting by date, because a handful of titles state a date
+    that contradicts where the channel itself placed the video.
+
+    Requiring the number on EVERY video, rather than most, is the safe choice: a
+    sequence where only some titles are numbered would interleave numbered and
+    unnumbered videos on incomparable keys.
+    """
+    numbers = [session_number(item["title"]) for item in items]
+    if len(items) > 1 and all(number is not None for number in numbers):
+        # Ties on a repeated day number fall back to channel position, oldest
+        # first, so the result stays deterministic.
+        return [
+            item for _, _, item in sorted(
+                ((number, -item["list_position"], item) for number, item in zip(numbers, items, strict=True)),
+                key=lambda triple: (triple[0], triple[1]),
+            )
+        ]
+    return sorted(items, key=lambda item: item["list_position"], reverse=True)
 
 
 def sequence_label(category: str, language: str | None, *, has_language_siblings: bool = False) -> str:
@@ -121,8 +172,7 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
 
     groups: list[dict[str, Any]] = []
     for (category, language), items in groups_map.items():
-        # list_position 1 is the newest video, so descending gives oldest-first.
-        ordered = sorted(items, key=lambda row: row["list_position"], reverse=True)
+        ordered = order_videos(items)
 
         search_text = " ".join([
             category.lower(),

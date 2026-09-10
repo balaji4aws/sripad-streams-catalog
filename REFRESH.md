@@ -147,16 +147,18 @@ rules; `search.html` holds only rendering. `DESIGN.md` explains why each of them
 does — read the relevant section before changing behaviour, because most of the odd-looking rules
 exist to handle a specific real title.
 
-**Known-good numbers**, as of the 2026-09-10 scan — useful as a baseline for "did this change more
+**Known-good numbers**, as of the 2026-09-10 scan of both tabs — useful as a baseline for "did this change more
 than I expected":
 
 | | |
 |---|---|
-| Streams | 342 |
-| Categories | 40 |
-| Sequences | 71 (43 with 2+ videos) |
+| Videos | 465 (342 from /streams, 123 from /videos) |
+| Categories | 44 |
+| Sequences | 75 (45 with 2+ videos) |
+| Date range | 2015-03-30 to 2026-09-06 |
 | Unresolved dates | 0 |
-| Month-precision dates | 2 |
+| Month-precision dates | 3 |
 | Uncategorized | 1 |
-| Date/order disagreements | 7 from title typos, 1 from a fetched upload date |
-| Videos with no stated language | 78, across 24 sequences |
+| Videos with no stated language | 201, across 28 sequences |
+| Largest series | Bhagavata Saroddhara, 108 videos, sessions 1-102 |
+| Sequences ordered by session number | 5 |

@@ -1,11 +1,11 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-184,2023-10-22,Srinivasa Kalyana (NKHK),NKHK Marathi Srinivasa Kalyana Mangala Day2 22nd Oct 2023,VRxv-rmn1gE,https://www.youtube.com/watch?v=VRxv-rmn1gE,103.9,122
-186,2023-10-21,Srinivasa Kalyana (NKHK),NKHK marathi Srinivasa kalyana Day1- 21st Oct 2023,nZQ_72_DCPQ,https://www.youtube.com/watch?v=nZQ_72_DCPQ,72.7,234
-251,2022-09-28,Srinivasa Kalyana (NKHK),NKHK kannada Srinivasakalyana Tatwagalu SriVadirajacharya Karanam 28th Sept,pclLLxcYBm0,https://www.youtube.com/watch?v=pclLLxcYBm0,43.6,111
-252,2022-09-27,Srinivasa Kalyana (NKHK),NKHK kannada Srinivasa kalyana dalli tatwagalu 27th Sep,LcJ2gsL3PAo,https://www.youtube.com/watch?v=LcJ2gsL3PAo,24.7,102
-291,2021-10-20,Srinivasa Kalyana (NKHK),NKHK kannada Srinivasa kalyana mangala 20th Oct 2021,98n8sXYMHE4,https://www.youtube.com/watch?v=98n8sXYMHE4,74.5,104
-292,2021-10-19,Srinivasa Kalyana (NKHK),NKHK Kannada Srinivasa Kalyana Day3 mangala 19th Oct,HEcT5b9hi1M,https://www.youtube.com/watch?v=HEcT5b9hi1M,67.2,66
-293,2021-10-17,Srinivasa Kalyana (NKHK),NKHK marathi Srinivasa kalyana mangala 17th Oct,R16sddJuSMQ,https://www.youtube.com/watch?v=R16sddJuSMQ,107.1,71
-294,2021-10-13,Srinivasa Kalyana (NKHK),NKHK Kannada Srinivasa Kalyana Day2 13th Oct,CCnqGipOmxQ,https://www.youtube.com/watch?v=CCnqGipOmxQ,70.7,80
-295,2021-10-12,Srinivasa Kalyana (NKHK),NKHK Kannada Srinivasa Kalyana 12th Oct,hnaxd_H69GU,https://www.youtube.com/watch?v=hnaxd_H69GU,62.7,124
-296,2021-10-11,Srinivasa Kalyana (NKHK),NKHK marathi Srinivasa Kalyana,9aEOhGcfnxc,https://www.youtube.com/watch?v=9aEOhGcfnxc,75.5,249
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+267,2023-10-22,Srinivasa Kalyana (NKHK),NKHK Marathi Srinivasa Kalyana Mangala Day2 22nd Oct 2023,VRxv-rmn1gE,https://www.youtube.com/watch?v=VRxv-rmn1gE,103.9,122,streams,184
+269,2023-10-21,Srinivasa Kalyana (NKHK),NKHK marathi Srinivasa kalyana Day1- 21st Oct 2023,nZQ_72_DCPQ,https://www.youtube.com/watch?v=nZQ_72_DCPQ,72.7,234,streams,186
+371,2022-09-28,Srinivasa Kalyana (NKHK),NKHK kannada Srinivasakalyana Tatwagalu SriVadirajacharya Karanam 28th Sept,pclLLxcYBm0,https://www.youtube.com/watch?v=pclLLxcYBm0,43.6,111,streams,251
+372,2022-09-27,Srinivasa Kalyana (NKHK),NKHK kannada Srinivasa kalyana dalli tatwagalu 27th Sep,LcJ2gsL3PAo,https://www.youtube.com/watch?v=LcJ2gsL3PAo,24.7,102,streams,252
+411,2021-10-20,Srinivasa Kalyana (NKHK),NKHK kannada Srinivasa kalyana mangala 20th Oct 2021,98n8sXYMHE4,https://www.youtube.com/watch?v=98n8sXYMHE4,74.5,104,streams,291
+412,2021-10-19,Srinivasa Kalyana (NKHK),NKHK Kannada Srinivasa Kalyana Day3 mangala 19th Oct,HEcT5b9hi1M,https://www.youtube.com/watch?v=HEcT5b9hi1M,67.2,66,streams,292
+413,2021-10-17,Srinivasa Kalyana (NKHK),NKHK marathi Srinivasa kalyana mangala 17th Oct,R16sddJuSMQ,https://www.youtube.com/watch?v=R16sddJuSMQ,107.1,71,streams,293
+414,2021-10-13,Srinivasa Kalyana (NKHK),NKHK Kannada Srinivasa Kalyana Day2 13th Oct,CCnqGipOmxQ,https://www.youtube.com/watch?v=CCnqGipOmxQ,70.7,80,streams,294
+415,2021-10-12,Srinivasa Kalyana (NKHK),NKHK Kannada Srinivasa Kalyana 12th Oct,hnaxd_H69GU,https://www.youtube.com/watch?v=hnaxd_H69GU,62.7,124,streams,295
+416,2021-10-11,Srinivasa Kalyana (NKHK),NKHK marathi Srinivasa Kalyana,9aEOhGcfnxc,https://www.youtube.com/watch?v=9aEOhGcfnxc,75.5,249,streams,296

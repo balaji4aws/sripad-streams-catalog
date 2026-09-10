@@ -1,5 +1,5 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-147,2025-10-12,Dhyana (NKHK),Pranayama and Dhyana Marathi Satsanga 12th Oct 2025,S_AlMTCHjlI,https://www.youtube.com/watch?v=S_AlMTCHjlI,69.6,230
-318,2021-05-16,Dhyana (NKHK),NKHK Dhyana Day1 Marathi 16th May 2021,AMaTn9XgvPw,https://www.youtube.com/watch?v=AMaTn9XgvPw,97.8,720
-319,2021-05-14,Dhyana (NKHK),NKHK Dhyana Day2 14th May 2021,vn4HRCP7Ptk,https://www.youtube.com/watch?v=vn4HRCP7Ptk,40.5,109
-320,2021-05-13,Dhyana (NKHK),NKHK Dhyana day1 13th May 2021,yheudmgodT4,https://www.youtube.com/watch?v=yheudmgodT4,65.7,167
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+171,2025-10-12,Dhyana (NKHK),Pranayama and Dhyana Marathi Satsanga 12th Oct 2025,S_AlMTCHjlI,https://www.youtube.com/watch?v=S_AlMTCHjlI,69.6,230,streams,147
+438,2021-05-16,Dhyana (NKHK),NKHK Dhyana Day1 Marathi 16th May 2021,AMaTn9XgvPw,https://www.youtube.com/watch?v=AMaTn9XgvPw,97.8,720,streams,318
+439,2021-05-14,Dhyana (NKHK),NKHK Dhyana Day2 14th May 2021,vn4HRCP7Ptk,https://www.youtube.com/watch?v=vn4HRCP7Ptk,40.5,109,streams,319
+440,2021-05-13,Dhyana (NKHK),NKHK Dhyana day1 13th May 2021,yheudmgodT4,https://www.youtube.com/watch?v=yheudmgodT4,65.7,167,streams,320

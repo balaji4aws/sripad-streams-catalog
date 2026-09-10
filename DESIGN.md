@@ -646,3 +646,81 @@ any pair drops below AA, so a future colour change cannot quietly regress this.
   the real software.
 - **Browsers other than Chrome.** The browser check drives Chrome or Chromium. The page uses no
   Chrome-specific APIs, but Firefox and Safari are not exercised.
+
+---
+
+## 9. Reading the whole channel, not one tab
+
+The catalogue originally covered only the channel's Streams tab, 342 recordings. That turned out to
+be a real gap rather than a scoping choice: YouTube splits this channel's recordings across
+`/streams` (live sessions, 342) and `/videos` (regular uploads, 123), and the second tab is not
+incidental.
+
+### 9.1 What was missing
+
+- **Bhagavata Saroddhara — 108 videos, sessions 1 to 102, no gaps, 92 hours.** The channel's longest
+  and most complete series, larger than anything on the Streams tab, and entirely absent from the
+  catalogue.
+- **Eleven more Pratah Sankalpa Gadya sessions.** This is the worse of the two problems, because it
+  was not merely missing — it was actively misleading. That series is split across both tabs:
+  sessions 1, 2, 3, 4, 7, 9-14, 17, 18 and 23 are live streams, while 6, 8, 15, 16, 19-22 and 24-26
+  are regular uploads. The catalogue presented the 14 it could see as a complete numbered sequence,
+  so a viewer following it hit a wall after session 4 with no indication that session 6 existed
+  somewhere else.
+- **Three videos from 2015**, which pushed the catalogue's earliest recording back from February 2021.
+
+### 9.2 Two lists, one ordering
+
+The tabs are separate lists. Each is newest-first within itself, but position 5 of one has no
+relationship to position 5 of the other, so there is no single channel-wide position to sort by — and
+because one series spans both tabs, its videos genuinely need ordering against each other.
+
+`categorize.py` handles this with a **stable merge on date**, in `merge_sources()`. Two properties
+follow, and both are deliberate:
+
+- **Within a tab, the relative order is exactly what the channel listed.** That is kept because a
+  handful of titles state a date contradicting their position, and the position is usually the more
+  trustworthy of the two. Sorting everything by date outright would reorder those wrongly.
+- **Across tabs, the date decides**, because it is the only signal the two lists share.
+
+A video with no usable date inherits the date of the last dated video above it in its own tab, so it
+stays beside its neighbours rather than collapsing to one end of the catalogue. The year-carry-backward
+pass (section 4.2.2) also runs per tab, since carrying a year from the end of one list into the start
+of another would compare unrelated positions.
+
+### 9.3 A third ordering signal: the session number
+
+Merging exposed something the Streams-only catalogue never had to face. Bhagavata Saroddhara is
+listed by the channel in an order that **contradicts its own session numbers in ten places**, and
+several of its dates carry typos — one reads `3oth Nov` with a letter *o*, and a `15th Feb 2024` sits
+between December 2024 and February 2025 and plainly means 2025. Neither the listing order nor the
+dates can be trusted for this series.
+
+But its titles number every session, 1 to 102, with no gaps. That is the teacher's own statement of
+the order, which beats anything this project could infer from position or date. So `order_videos()`
+in `build_sequences.py` uses the session number **when every video in a sequence states one**, and
+falls back to merged channel position otherwise.
+
+Requiring it on *every* video, rather than most, is the safe choice: a sequence mixing numbered and
+unnumbered videos would be sorting on two incomparable keys. In practice five sequences qualify —
+including the two that needed it most, Bhagavata Saroddhara and the reassembled Pratah Sankalpa
+Gadya — and the other seventy are unaffected, so the change is narrow by construction.
+
+Parsing the number needs the same care as parsing dates, for the same reason: `Day 6` is session six,
+but `Final Day 24th June` is a date that happens to follow the word "Day". The ordinal suffix tells
+them apart. The first version of that pattern had a subtle bug worth recording — the regex engine
+backtracked to a shorter digit run to satisfy the ordinal guard, matching just the `2` of `24th` and
+reporting session 2. Requiring the number not to be followed by another digit fixes it, and
+`SessionNumberTests` pins the case.
+
+### 9.4 What the merge did NOT change
+
+Verified rather than assumed:
+
+- **No existing video changed category.** The four new rules matched only new content.
+- **Uncategorized stayed at one video** — the same `Marathi saturday 10th April` as before.
+- **Neither tab was reshuffled internally** by the merge; a test asserts each tab's relative order
+  survives.
+- **The repository was not renamed.** The published URL is in circulation, so the name stays even
+  though the catalogue now covers more than streams. Only the page heading and generated document
+  titles were reworded.

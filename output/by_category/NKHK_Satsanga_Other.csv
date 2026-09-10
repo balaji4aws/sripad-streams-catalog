@@ -1,9 +1,9 @@
-list_position,date,category,title,video_id,url,duration_min,view_count
-208,2023-06-25,NKHK Satsanga (Other),NKHK Jamshedpur satsang 25th June 2023,cwog-PtWY2s,https://www.youtube.com/watch?v=cwog-PtWY2s,20.6,248
-315,2021-06-16,NKHK Satsanga (Other),NKHK-Spl.Satsanga -GO Mahima-Pt.Sri Sanjeevaacharya 16th June,xdoNNw_m6HE,https://www.youtube.com/watch?v=xdoNNw_m6HE,96.3,351
-316,2021-06-13,NKHK Satsanga (Other),Marathi Satsanga 13th June Ramapanchakam,NdJQ7cmSeuI,https://www.youtube.com/watch?v=NdJQ7cmSeuI,86.6,112
-317,2021-05-30,NKHK Satsanga (Other),Marathi Satsanga 30th May,RnIG-rGXLO4,https://www.youtube.com/watch?v=RnIG-rGXLO4,86.6,152
-321,2021-05-12,NKHK Satsanga (Other),NKHK Satsanga 12th May,3Km59EwAJaY,https://www.youtube.com/watch?v=3Km59EwAJaY,45.9,54
-323,2021-04-14,NKHK Satsanga (Other),kannada satsanga 14th April,8wegu7tsvpY,https://www.youtube.com/watch?v=8wegu7tsvpY,53.4,53
-329,2021-03-24,NKHK Satsanga (Other),Kannada satsanga 24th March 2021,Az3_i9X9tOU,https://www.youtube.com/watch?v=Az3_i9X9tOU,46.2,62
-330,2021-03-21,NKHK Satsanga (Other),Marathi satsanga 21st March,jC1WfNDElkk,https://www.youtube.com/watch?v=jC1WfNDElkk,136.8,198
+list_position,date,category,title,video_id,url,duration_min,view_count,source,source_position
+304,2023-06-25,NKHK Satsanga (Other),NKHK Jamshedpur satsang 25th June 2023,cwog-PtWY2s,https://www.youtube.com/watch?v=cwog-PtWY2s,20.6,248,streams,208
+435,2021-06-16,NKHK Satsanga (Other),NKHK-Spl.Satsanga -GO Mahima-Pt.Sri Sanjeevaacharya 16th June,xdoNNw_m6HE,https://www.youtube.com/watch?v=xdoNNw_m6HE,96.3,351,streams,315
+436,2021-06-13,NKHK Satsanga (Other),Marathi Satsanga 13th June Ramapanchakam,NdJQ7cmSeuI,https://www.youtube.com/watch?v=NdJQ7cmSeuI,86.6,112,streams,316
+437,2021-05-30,NKHK Satsanga (Other),Marathi Satsanga 30th May,RnIG-rGXLO4,https://www.youtube.com/watch?v=RnIG-rGXLO4,86.6,152,streams,317
+441,2021-05-12,NKHK Satsanga (Other),NKHK Satsanga 12th May,3Km59EwAJaY,https://www.youtube.com/watch?v=3Km59EwAJaY,45.9,54,streams,321
+443,2021-04-14,NKHK Satsanga (Other),kannada satsanga 14th April,8wegu7tsvpY,https://www.youtube.com/watch?v=8wegu7tsvpY,53.4,53,streams,323
+449,2021-03-24,NKHK Satsanga (Other),Kannada satsanga 24th March 2021,Az3_i9X9tOU,https://www.youtube.com/watch?v=Az3_i9X9tOU,46.2,62,streams,329
+450,2021-03-21,NKHK Satsanga (Other),Marathi satsanga 21st March,jC1WfNDElkk,https://www.youtube.com/watch?v=jC1WfNDElkk,136.8,198,streams,330
