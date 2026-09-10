@@ -1,7 +1,7 @@
 /**
  * Tests for search.js, the matching logic behind the search page.
  *
- * Run with:  node --test tests/
+ * Run with:  node --test tests/*.test.mjs
  *
  * These use Node's built-in test runner and assert module, so like the Python
  * tests they need nothing installed. They exercise the real search.js the page

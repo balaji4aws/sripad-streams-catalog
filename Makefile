@@ -19,7 +19,9 @@ test-py: ## Python tests (standard library unittest, nothing to install)
 	python3 -m unittest discover -v
 
 test-js: ## JavaScript tests (Node's built-in runner, nothing to install)
-	node --test "tests/**/*.test.mjs"
+	# The shell expands the paths rather than handing --test a glob pattern,
+	# which it only accepts from Node 22 onwards.
+	node --test tests/*.test.mjs
 
 catalog: ## Rebuild the catalog from the saved playlist (offline; no network)
 	python3 src/categorize.py

@@ -1,7 +1,7 @@
 /**
  * Tests for the rendering half of search.html.
  *
- * Run with:  node --test "tests/**\/*.test.mjs"
+ * Run with:  node --test tests/*.test.mjs
  *
  * search.js holds the matching logic and is tested directly in
  * search_logic.test.mjs. This file covers the part that was previously not

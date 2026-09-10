@@ -18,8 +18,8 @@ jobs:
     name: Lint
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Install the linter
@@ -36,8 +36,8 @@ jobs:
         # `X | None` annotation syntax.
         python-version: ["3.10", "3.11", "3.12", "3.13"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: ${{ matrix.python-version }}
       - name: Run the test suite
@@ -46,22 +46,30 @@ jobs:
         run: python -m unittest discover -v
 
   test-javascript:
-    name: JavaScript tests
+    name: JavaScript tests (Node ${{ matrix.node-version }})
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        # Node 20 up. The suite also passes on 18, but that line is end of
+        # life so it is not worth a CI slot.
+        node-version: ["20", "22", "24"]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
         with:
-          node-version: "20"
+          node-version: ${{ matrix.node-version }}
       - name: Run the search-page tests
-        run: node --test "tests/**/*.test.mjs"
+        # The shell expands the paths rather than handing --test a glob
+        # pattern, which it only accepts from Node 22 onwards.
+        run: node --test tests/*.test.mjs
 
   verify-catalog:
     name: Committed catalog is up to date
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
       - name: Rebuild the catalog from the saved playlist

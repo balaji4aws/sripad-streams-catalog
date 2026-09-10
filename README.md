@@ -96,14 +96,14 @@ the JavaScript suite uses Node's built-in test runner:
 make check          # everything CI runs: lint, both test suites, catalog freshness
 make test           # both test suites
 make test-py        # Python only
-make test-js        # search page only (needs Node 18+)
+make test-js        # search page only (needs Node 18 or newer)
 make lint           # needs ruff: pip install -r requirements-dev.txt
 make catalog        # rebuild output/ from the saved playlist (offline)
 make serve          # serve the folder for search.html
 ```
 
 `make` is a convenience; the underlying commands work on their own
-(`python3 -m unittest discover -v`, `node --test "tests/**/*.test.mjs"`, `ruff check .`).
+(`python3 -m unittest discover -v`, `node --test tests/*.test.mjs`, `ruff check .`).
 
 A note on what the tests cover, since it shaped how they're written. The date-parsing rules are
 the fiddliest part of this project and the part that got things wrong, so every date this catalog
