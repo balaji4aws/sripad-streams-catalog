@@ -24,9 +24,17 @@
   // everything and narrows nothing down.
   const MIN_SUBSTRING_LENGTH = 3;
 
-  /** Split text into lowercase alphanumeric words. */
+  /**
+   * Split text into lowercase words.
+   *
+   * Letters and digits in ANY script, so a Devanagari section name typed or
+   * pasted into the search box matches the index. \p{M} keeps combining
+   * marks - Devanagari matras and the virama - attached to their syllable,
+   * or a word breaks into fragments. Must stay in step with
+   * normalize_words() in src/build_sequences.py, which builds that index.
+   */
   function tokenize(text) {
-    return String(text).toLowerCase().match(/[a-z0-9]+/g) || [];
+    return String(text).toLowerCase().match(/[\p{L}\p{N}\p{M}]+/gu) || [];
   }
 
   function isNumeric(text) {

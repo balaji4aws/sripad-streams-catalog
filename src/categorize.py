@@ -52,7 +52,7 @@ import datetime as dt
 import json
 import re
 import sys
-from collections import defaultdict
+from collections import defaultdict, deque
 from pathlib import Path
 from typing import Any, NamedTuple
 
@@ -432,14 +432,15 @@ def merge_sources(entries: list[dict[str, Any]], dates: list[str]) -> list[int]:
 
     # Stable merge: repeatedly take whichever tab's next video is newest. On a
     # tie max() returns the first candidate, which is the earliest tab in
-    # insertion order, so the result is deterministic.
-    queues = {name: list(indices) for name, indices in grouped.items()}
+    # insertion order, so the result is deterministic. A cursor per tab rather
+    # than popping from the front, which would rescan the list each time.
+    queues = {name: deque(indices) for name, indices in grouped.items()}
     order: list[int] = []
     while any(queues.values()):
         candidates = [(name, queue[0]) for name, queue in queues.items() if queue]
         chosen_name, chosen_index = max(candidates, key=lambda pair: merge_date[pair[1]])
         order.append(chosen_index)
-        queues[chosen_name].pop(0)
+        queues[chosen_name].popleft()
     return order
 
 
@@ -573,7 +574,9 @@ def build_catalog_meta(raw: dict[str, Any], rows: list[dict[str, Any]], category
     )
     return {
         "channel": raw.get("channel"),
-        "channel_url": raw.get("webpage_url"),
+        # The channel itself, not the tab that happened to be fetched first.
+        "channel_url": raw.get("channel_url") or raw.get("webpage_url"),
+        "tabs": raw.get("tabs") or {},
         "scanned_on": scanned_on,
         "refresh_interval_days": REFRESH_INTERVAL_DAYS,
         "next_scan_due": next_due,

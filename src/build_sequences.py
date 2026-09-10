@@ -38,6 +38,7 @@ import argparse
 import json
 import re
 import sys
+import unicodedata
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -52,7 +53,11 @@ UNKNOWN_LANGUAGE_LABEL = "Language not stated"
 
 REQUIRED_FIELDS = ("category", "title", "list_position", "date", "video_id", "url")
 
-_WORD_RE = re.compile(r"[a-z0-9]+")
+#: Unicode categories for combining marks - the matras and the virama that
+#: Devanagari uses to build a syllable. They are not alphanumeric, so a word
+#: like "अध्यात्मप्रकरण" splits into fragments without them. Python's `re` has no
+#: \p{M}, hence the explicit check in normalize_words().
+_COMBINING_CATEGORIES = frozenset({"Mn", "Mc"})
 
 # A "Day N" session label. The number must NOT carry an ordinal suffix: "Day 6"
 # is session six, but "Final Day 24th June" is a date that happens to sit after
@@ -94,9 +99,34 @@ def category_names_language(category: str) -> str | None:
     return None
 
 
+def _is_word_character(char: str) -> bool:
+    """True for a letter or digit in any script, or a combining mark."""
+    return char.isalnum() or unicodedata.category(char) in _COMBINING_CATEGORIES
+
+
 def normalize_words(text: str) -> list[str]:
-    """Split text into lowercase alphanumeric tokens for the search index."""
-    return _WORD_RE.findall(text.lower())
+    """Split text into lowercase words for the search index.
+
+    Words in any script, not just Latin: the /videos titles carry Devanagari
+    section names ("अध्यात्मप्रकरण") which an ASCII-only tokenizer dropped
+    entirely, leaving those terms unsearchable. Combining marks count as part of
+    a word, or a Devanagari syllable would break apart at every matra and fill
+    the index with fragments.
+
+    Must stay in step with tokenize() in search.js, which does the same job on
+    the query side with \\p{L}, \\p{N} and \\p{M}.
+    """
+    words: list[str] = []
+    current: list[str] = []
+    for char in text.lower():
+        if _is_word_character(char):
+            current.append(char)
+        elif current:
+            words.append("".join(current))
+            current = []
+    if current:
+        words.append("".join(current))
+    return words
 
 
 def session_number(title: str) -> int | None:
@@ -195,7 +225,10 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     for (category, language), items in groups_map.items():
         ordered = order_videos(items)
 
-        search_text = " ".join([
+        # Only the word list is published. The joined text it is built from was
+        # also written out originally, but nothing ever read it - it was 26 KB of
+        # the file the page downloads on every visit.
+        searchable = " ".join([
             category.lower(),
             language or "",
             *(item["title"].lower() for item in ordered),
@@ -223,8 +256,7 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
                 has_language_siblings=category in categories_with_a_language,
             ),
             "count": len(videos),
-            "search_text": search_text,
-            "search_words": sorted(set(normalize_words(search_text))),
+            "search_words": sorted(set(normalize_words(searchable))),
             "videos": videos,
         })
 

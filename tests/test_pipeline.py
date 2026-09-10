@@ -25,6 +25,22 @@ from tests import REPO_ROOT
 
 RAW_PLAYLIST = catalog_paths.RAW_PLAYLIST
 
+# Counts from the last scan of the channel, kept in ONE place on purpose.
+#
+# These assertions are deliberately exact: they are how an unexpected change in
+# the catalogue gets noticed. That also means a legitimate refresh - the channel
+# gaining new videos - will fail them, which is intended. When that happens,
+# update these numbers here and in REFRESH.md's baseline table together, having
+# first checked the change is the one you expected. Nothing else in the suite
+# hardcodes a count.
+BASELINE: dict[str, Any] = {
+    "videos_per_tab": {"streams": 342, "videos": 123},
+    "month_precision_dates": 3,
+    "max_uncategorized": 1,
+    "split_series_sessions": 25,   # Pratah Sankalpa Gadya, spanning both tabs
+    "longest_series_videos": 108,  # Bhagavata Saroddhara
+}
+
 
 @unittest.skipUnless(RAW_PLAYLIST.exists(), f"{RAW_PLAYLIST} not present")
 class PipelineTests(unittest.TestCase):
@@ -111,7 +127,8 @@ class PipelineTests(unittest.TestCase):
     def test_at_most_one_video_is_uncategorized(self):
         """A rule change that starts dumping videos into the catch-all is a regression."""
         uncategorized = [row["title"] for row in self.rows if row["category"] == categorize.UNCATEGORIZED]
-        self.assertLessEqual(len(uncategorized), 1, f"unexpectedly uncategorized: {uncategorized}")
+        self.assertLessEqual(len(uncategorized), BASELINE["max_uncategorized"],
+                             f"unexpectedly uncategorized: {uncategorized}")
 
     # --- the dates that were once wrong ------------------------------------
 
@@ -126,13 +143,14 @@ class PipelineTests(unittest.TestCase):
 
     def test_month_only_dates_stay_rare_and_explicit(self):
         month_only = [row["title"] for row in self.rows if len(row["date"]) == len("2024-10")]
-        self.assertEqual(len(month_only), 3, f"month-precision dates changed: {month_only}")
+        self.assertEqual(len(month_only), BASELINE["month_precision_dates"],
+                         f"month-precision dates changed: {month_only}")
 
     # --- both channel tabs --------------------------------------------------
 
     def test_both_channel_tabs_are_present(self):
         sources = Counter(row["source"] for row in self.rows)
-        self.assertEqual(dict(sources), {"streams": 342, "videos": 123})
+        self.assertEqual(dict(sources), BASELINE["videos_per_tab"])
 
     def test_positions_are_numbered_across_the_merged_catalog(self):
         """One continuous numbering over both tabs, not two overlapping ones."""
@@ -151,7 +169,7 @@ class PipelineTests(unittest.TestCase):
         sequences = [g for g in self.groups if g["category"] == "Pratah Sankalpa Gadya"]
         self.assertEqual(len(sequences), 1, "the series should form one sequence, not one per tab")
         videos = sequences[0]["videos"]
-        self.assertEqual(len(videos), 25)
+        self.assertEqual(len(videos), BASELINE["split_series_sessions"])
         sources = {self.row_for(video["video_id"])["source"] for video in videos}
         self.assertEqual(sources, {"streams", "videos"}, "expected videos from both tabs")
 
@@ -168,14 +186,17 @@ class PipelineTests(unittest.TestCase):
         sequences = [g for g in self.groups if g["category"] == "Bhagavata Saroddhara"]
         self.assertEqual(len(sequences), 1)
         videos = sequences[0]["videos"]
-        self.assertEqual(len(videos), 108)
+        self.assertEqual(len(videos), BASELINE["longest_series_videos"])
 
         parsed = [build_sequences.session_number(video["title"]) for video in videos]
         self.assertNotIn(None, parsed, "every session in this series states its number")
         numbers = [number for number in parsed if number is not None]
 
         self.assertEqual(numbers, sorted(numbers), "sessions are not in order")
-        self.assertEqual(sorted(set(numbers)), list(range(1, 103)), "a session number is missing")
+        # Contiguous from 1 to whatever the highest session is, so this keeps
+        # working as the series grows rather than pinning today's last session.
+        self.assertEqual(sorted(set(numbers)), list(range(1, max(numbers) + 1)),
+                         "a session number is missing from the run")
 
     # --- output files -------------------------------------------------------
 

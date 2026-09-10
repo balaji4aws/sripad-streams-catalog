@@ -270,6 +270,25 @@ class NormalizeWordsTests(unittest.TestCase):
     def test_empty_text(self):
         self.assertEqual(normalize_words(""), [])
 
+    def test_devanagari_words_are_indexed(self):
+        """An ASCII-only tokenizer dropped these, leaving the terms unsearchable."""
+        self.assertEqual(
+            normalize_words("Bhagavata Saroddhara अध्यात्मप्रकरण 227"),
+            ["bhagavata", "saroddhara", "अध्यात्मप्रकरण", "227"],
+        )
+
+    def test_a_devanagari_syllable_is_not_split_at_its_matras(self):
+        """Combining marks belong to the word; without them it breaks into pieces."""
+        word = "ब्रह्मोपदेशप्रकरण"
+        self.assertEqual(normalize_words(word), [word])
+        self.assertEqual(len(normalize_words(f"x {word} y")), 3)
+
+    def test_scripts_are_separated_from_each_other_by_punctuation_only(self):
+        self.assertEqual(normalize_words("अध्यात्मप्रकरण-227"), ["अध्यात्मप्रकरण", "227"])
+
+    def test_underscore_is_not_part_of_a_word(self):
+        self.assertEqual(normalize_words("day_2"), ["day", "2"])
+
 
 if __name__ == "__main__":
     unittest.main()

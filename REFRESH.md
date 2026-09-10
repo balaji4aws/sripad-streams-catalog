@@ -147,7 +147,9 @@ rules; `search.html` holds only rendering. `DESIGN.md` explains why each of them
 does — read the relevant section before changing behaviour, because most of the odd-looking rules
 exist to handle a specific real title.
 
-**Known-good numbers**, as of the 2026-09-10 scan of both tabs — useful as a baseline for "did this change more
+**Known-good numbers**, as of the 2026-09-10 scan of both tabs. The same counts are
+asserted by `BASELINE` at the top of `tests/test_pipeline.py` — when the channel gains
+videos those tests will fail on purpose, and both places should be updated together — useful as a baseline for "did this change more
 than I expected":
 
 | | |

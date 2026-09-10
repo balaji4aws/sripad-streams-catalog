@@ -713,7 +713,25 @@ backtracked to a shorter digit run to satisfy the ordinal guard, matching just t
 reporting session 2. Requiring the number not to be followed by another digit fixes it, and
 `SessionNumberTests` pins the case.
 
-### 9.4 What the merge did NOT change
+### 9.4 Two things the wider catalogue exposed
+
+**Non-Latin text was silently dropped from the search index.** The /videos titles carry Devanagari
+section names — `अध्यात्मप्रकरण`, `ब्रह्मोपदेशप्रकरण` — and the tokenizer matched `[a-z0-9]+`, so
+those words never reached the index and could not be searched for at all. Widening it to letters and
+digits in any script was the obvious fix, and it was wrong on its own: Devanagari builds a syllable
+from a consonant plus combining marks, and matras and the virama are not alphanumeric, so
+`अध्यात्मप्रकरण` shattered into `अध य त मप रकरण` — five fragments that match nothing a reader would
+type, while polluting the index. Combining marks have to count as part of a word. Python's `re` has
+no `\p{M}`, so `normalize_words()` checks the Unicode category directly; `search.js` uses
+`[\p{L}\p{N}\p{M}]`. The two must stay in step, since one builds the index and the other parses
+the query, and `NormalizeWordsTests` pins the behaviour on both sides.
+
+**A video listed on both tabs would have been counted twice.** It does not happen on this channel
+today — checked, zero overlap — but the tabs are YouTube's data, not ours, and a duplicate would show
+up as an inflated count and the same video twice inside its series, which is easy to publish and hard
+to notice. `merge_tabs()` now keeps the first occurrence and renumbers positions so no gap appears.
+
+### 9.5 What the merge did NOT change
 
 Verified rather than assumed:
 

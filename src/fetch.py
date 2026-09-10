@@ -16,7 +16,7 @@ tab shows a viewer an incomplete sequence with no sign that anything is
 missing. Each tab is fetched separately, because that is how YouTube exposes
 them, and every entry is tagged with the tab it came from plus its position
 within that tab. categorize.py needs both facts to merge the two lists into a
-single ordering (see its `_merge_sources`).
+single ordering (see its `merge_sources`).
 
 Notes:
 - Uses yt-dlp's --flat-playlist mode: one request per tab, fast, and it returns
@@ -108,13 +108,26 @@ def merge_tabs(tabs: dict[str, dict[str, Any]]) -> dict[str, Any]:
     """
     merged_entries = []
     counts = {}
+    seen_ids: set[str] = set()
     first = next(iter(tabs.values()))
 
     for tab_name, payload in tabs.items():
         entries = payload.get("entries") or []
-        counts[tab_name] = len(entries)
-        for position, entry in enumerate(entries, start=1):
-            merged_entries.append({**entry, "_source": tab_name, "_source_position": position})
+        kept = 0
+        for entry in entries:
+            video_id = str(entry.get("id", ""))
+            # A video listed on more than one tab would otherwise be counted
+            # twice and appear twice in its series. YouTube does not do this on
+            # this channel today, but the tabs are its data, not ours, and a
+            # silent duplicate is hard to spot once published.
+            if video_id and video_id in seen_ids:
+                print(f"  note: skipping {video_id} on /{tab_name}; already seen on an earlier tab",
+                      file=sys.stderr)
+                continue
+            seen_ids.add(video_id)
+            kept += 1
+            merged_entries.append({**entry, "_source": tab_name, "_source_position": kept})
+        counts[tab_name] = kept
 
     return {
         "channel": first.get("channel"),
@@ -125,7 +138,9 @@ def merge_tabs(tabs: dict[str, dict[str, Any]]) -> dict[str, Any]:
         # a later reader can see the split without recounting.
         "tabs": counts,
         "webpage_url": first.get("webpage_url"),
-        "epoch": first.get("epoch"),
+        # The latest fetch time across the tabs, so the recorded scan date
+        # reflects when the whole scan finished rather than its first request.
+        "epoch": max((p.get("epoch") or 0 for p in tabs.values()), default=None) or None,
         "entries": merged_entries,
     }
 
