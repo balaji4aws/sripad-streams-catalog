@@ -201,6 +201,7 @@
     Search returns the videos grouped into watch-in-order sequences (oldest first), not a flat pile of results.
     Try e.g. <code>sandhyavandana kannada</code>, <code>sandhyavandana english</code>, <code>manimanjari</code>.
   </p>
+  <p id="freshness" class="hint"></p>
 
   <noscript>
     <p><strong>This page needs JavaScript.</strong> Without it, browse
@@ -234,8 +235,38 @@
       const statusEl = document.getElementById('status');
       const qEl = document.getElementById('q');
       const topicsEl = document.getElementById('topics');
+      const freshnessEl = document.getElementById('freshness');
 
       let groups = [];
+
+      // "2026-09-07" -> "7 September 2026", left as-is if it isn't a date.
+      function formatDate(iso) {
+        const parsed = /^(\d{4})-(\d{2})-(\d{2})$/.exec(iso || '');
+        if (!parsed) return iso || '';
+        const date = new Date(Date.UTC(+parsed[1], +parsed[2] - 1, +parsed[3]));
+        return date.toLocaleDateString('en-GB', {
+          day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'
+        });
+      }
+
+      // How current the catalog is. The channel keeps streaming, so a reader
+      // needs to know the date this snapshot was taken - and whether a refresh
+      // is already overdue - to judge whether anything is missing from it.
+      function renderFreshness(meta) {
+        if (!meta || !meta.scanned_on) {
+          freshnessEl.textContent = '';
+          return;
+        }
+        const parts = [`${meta.video_count} recordings`,
+          `channel last scanned ${formatDate(meta.scanned_on)}`];
+        if (meta.next_scan_due) {
+          const today = new Date().toISOString().slice(0, 10);
+          parts.push(today > meta.next_scan_due
+            ? `next scan was due ${formatDate(meta.next_scan_due)} — anything newer than the scan date is missing`
+            : `next scan due ${formatDate(meta.next_scan_due)}`);
+        }
+        freshnessEl.textContent = parts.join(' · ');
+      }
 
       function buildSequenceTable(group) {
         const table = document.createElement('table');
@@ -390,6 +421,7 @@
         })
         .then(function (data) {
           groups = (data && data.groups) || [];
+          renderFreshness(data && data.meta);
           if (groups.length === 0) {
             statusEl.textContent = SEQUENCES_URL + ' loaded but contains no sequences. ' +
               'Re-run src/build_sequences.py.';

@@ -66,7 +66,21 @@ class SequenceLabelTests(unittest.TestCase):
     def test_language_is_not_repeated(self):
         self.assertEqual(sequence_label("Manimanjari (Kannada)", "kannada"), "Manimanjari (Kannada)")
 
-    def test_no_language_leaves_the_category_alone(self):
+    def test_unknown_language_is_marked_when_the_category_has_language_siblings(self):
+        """A bare label beside "(Kannada)" reads as a tool failure, so say it plainly."""
+        self.assertEqual(
+            sequence_label("Satyatma Sandhya", None, has_language_siblings=True),
+            "Satyatma Sandhya (Language not stated)",
+        )
+
+    def test_unknown_language_is_not_marked_when_no_sibling_names_one(self):
+        """Where a whole category names no language, the marker is noise."""
+        self.assertEqual(
+            sequence_label("Pratah Sankalpa Gadya", None, has_language_siblings=False),
+            "Pratah Sankalpa Gadya",
+        )
+
+    def test_no_language_leaves_the_category_alone_by_default(self):
         self.assertEqual(sequence_label("Pratah Sankalpa Gadya", None), "Pratah Sankalpa Gadya")
 
 
@@ -117,6 +131,19 @@ class BuildGroupsTests(unittest.TestCase):
         ]
         groups = build_groups(rows)
         self.assertEqual({group["language"] for group in groups}, {"kannada", None})
+
+    def test_an_unknown_language_sequence_says_so_beside_a_known_one(self):
+        rows = [
+            row(1, "Series", "Series Kannada Day1"),
+            row(2, "Series", "Series Day1"),
+        ]
+        labels = {group["label"] for group in build_groups(rows)}
+        self.assertEqual(labels, {"Series (Kannada)", "Series (Language not stated)"})
+
+    def test_a_wholly_unknown_language_category_is_left_unmarked(self):
+        rows = [row(1, "Series", "Series Day1"), row(2, "Series", "Series Day2")]
+        groups = build_groups(rows)
+        self.assertEqual([group["label"] for group in groups], ["Series"])
 
     def test_larger_sequences_come_first(self):
         rows = [

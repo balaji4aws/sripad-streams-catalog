@@ -1,159 +1,92 @@
 # Sripad K — Streams Catalog
 
-This project turns one YouTube channel's giant, unsorted list of live-stream recordings into
-something a viewer can actually use: a small search page that returns videos **in the order you
-should watch them**, not just a pile of loosely related links.
+A catalogue of the live-stream recordings on the [Sripad K](https://www.youtube.com/@sripadk8492/streams)
+YouTube channel, so they can be watched **in order**.
 
-It scrapes the [Sripad K channel's Streams tab](https://www.youtube.com/@sripadk8492/streams)
-(342 recordings as of this writing — devotional classes, satsangs, and readings in Kannada,
-Marathi, and English), groups the videos into named series, works out a watch order for each
-series, and serves all of that through one search page (`search.html`).
+The channel has 342 recorded streams — devotional classes, satsangs and readings in Kannada,
+Marathi and English — and no playlists. They sit in one long list sorted by upload date, which
+makes a series hard to follow: you can't tell which videos belong together, or which one comes
+first. This project groups them into series and works out a watch order within each one.
 
-For the full problem statement, the approach, and how every part of the code works, see
-**[DESIGN.md](DESIGN.md)**. This file is the quick-start.
+**[Open the search page](search.html)** — type a few words and you get matching series as small
+ordered lists ("video 1 of 12", "video 2 of 12"), rather than a flat pile of links. Or browse
+[the full catalogue](output/CATALOG.md) as a single page.
 
-## The problem, in one paragraph
+Content and recordings belong to the channel. This is an independent, unofficial index built from
+the channel's public listing, made with appreciation for the work that went into the streams.
 
-YouTube's "Streams" tab is just one long list, sorted by upload date, with no concept of
-"series" or "which video comes next." A channel that has been running lecture series for years
-ends up with hundreds of videos where a viewer has no way to tell what a given video is part of,
-or what to watch before or after it. Searching by keyword makes this worse, not better — a
-keyword like "sandhyavandana" matches videos from several unrelated series, and YouTube search
-returns them as a flat, unordered pile. This project fixes both problems: it groups videos into
-series, and it works out an order within each series.
+## How it works
 
-## What you get
-
-- **A search page** (`search.html`) where typing a few words returns matching series as small,
-  ordered lists (video 1 of 12, video 2 of 12, and so on) instead of a wall of unordered results.
-- **Topic boxes** under the search bar showing every series and how many videos it has (for
-  example, "Sumadhwavijaya (Marathi) (84)"). Click one to load that series name into the search
-  box and see its videos — then edit the search text to narrow it down further (add a language
-  name, for instance).
-- **Plain data files** (CSV, JSON, and a Markdown catalog) if you'd rather browse or process the
-  data yourself instead of using the search page.
-
-## Project layout
+Four small steps, each writing a file the next one reads:
 
 ```
-sripad-streams-catalog/
-├── search.html                  the search page — open this in a browser
-├── search.js                    the search page's matching logic, kept separate so it's testable
-├── src/
-│   ├── fetch.py                  step 1: downloads the raw video list from YouTube
-│   ├── categorize.py             step 2: sorts videos into series, works out dates
-│   ├── fill_unknown_dates.py     step 2b: fetches a real date for videos with no date in the title
-│   ├── build_sequences.py        step 3: works out watch order within each series
-│   └── catalog_paths.py          shared default input/output locations
-├── tests/                        test suites — see "Development" below
-├── data/
-│   ├── raw_playlist.json         the raw output of step 1 (saved so you don't have to re-download)
-│   └── known_upload_dates.json   real per-video dates fetched by step 2b, for titles with no date
-└── output/                        everything steps 2 and 3 produce
-    ├── streams_master.csv/.json      every video, one row each
-    ├── streams_by_category.json      videos grouped by series
-    ├── by_category/*.csv             one file per series
-    ├── sequences.json                 the file search.html actually reads
-    └── CATALOG.md                     a browsable Markdown version of the whole catalog
+fetch.py  →  categorize.py  →  build_sequences.py  →  search.html
+ get the      sort into         work out watch         search it
+ video list   series + dates    order per series       in a browser
 ```
 
-Every file's exact job, and the logic behind it, is explained in **[DESIGN.md](DESIGN.md)**.
+Grouping and ordering work from the video **titles**, because every description on the channel is
+empty. Titles are informal and inconsistent, so most of the care in this project goes into reading
+them reliably. [DESIGN.md](DESIGN.md) explains every decision and the reasoning behind it.
 
-## How to run it
+```
+search.html / search.js       the search page
+src/                          the four pipeline steps
+data/raw_playlist.json        the saved video list, so steps 2-4 run offline
+output/                       the catalogue: CSV, JSON, and CATALOG.md
+tests/                        see REFRESH.md
+```
 
-You need [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) (a free command-line tool for reading
-YouTube video lists — install with `brew install yt-dlp` on a Mac) and a Chrome browser that is
-logged into YouTube (the scraper borrows your browser's login cookies locally, on your own
-machine, so YouTube doesn't block the request as a bot — nothing is uploaded anywhere).
+## Running it
+
+You need [`yt-dlp`](https://github.com/yt-dlp/yt-dlp) (`brew install yt-dlp`) and a Chrome logged
+into YouTube — the fetch borrows your browser's own cookies locally so YouTube doesn't refuse the
+request. Nothing is uploaded anywhere.
 
 ```bash
-python3 src/fetch.py               # step 1:  download the video list
-python3 src/categorize.py          # step 2:  sort into series, work out dates
-python3 src/fill_unknown_dates.py  # step 2b: fill any remaining Unknown dates
-python3 src/categorize.py          # step 2 again: pick up the filled-in dates
-python3 src/build_sequences.py     # step 3:  work out watch order
+python3 src/fetch.py               # download the video list
+python3 src/categorize.py          # sort into series, work out dates
+python3 src/fill_unknown_dates.py  # fill any dates the titles didn't give
+python3 src/categorize.py          # pick up those dates
+python3 src/build_sequences.py     # work out watch order
+make serve                         # then open http://localhost:8000/search.html
 ```
 
-Every script defaults its input and output locations relative to the repository root, so these
-commands work from any directory. Pass `--help` to any of them to see the flags for overriding
-those locations.
-
-Step 2b only needs to run once for a given set of videos — it saves what it fetches to
-`data/known_upload_dates.json`, and on future runs it skips any video already in that file.
-
-Then open `search.html` in a browser (serving the folder with a simple local web server works
-best, for example `python3 -m http.server 8000` from this folder, then visit
-`http://localhost:8000/search.html`).
-
-Re-run all three steps any time you want to refresh the catalog with newly uploaded videos.
+Steps 2 to 5 need no network — they read the saved `data/raw_playlist.json`. Every script takes
+`--help`. To refresh the catalogue with newly uploaded videos, see **[REFRESH.md](REFRESH.md)**.
 
 ## Development
 
-The tests need nothing installed — the Python suite uses the standard library's `unittest` and
-the JavaScript suite uses Node's built-in test runner:
-
 ```bash
-make check          # the everyday command: lint, type-check, both suites, catalog freshness
-make test           # both test suites
-make test-py        # Python only
-make test-js        # search page logic only (needs Node 18 or newer)
-make test-browser   # load the page in a real browser and check it (needs Chrome)
-make lint           # ruff        \  pip install -r requirements-dev.txt
-make typecheck      # mypy --strict  /
-make catalog        # rebuild output/ from the saved playlist (offline)
-make serve          # serve the folder for search.html
+make check          # lint, type-check, both test suites, catalogue freshness
+make test-browser   # load the page in a real browser, including contrast (needs Chrome)
 ```
 
-`make` is a convenience; the underlying commands work on their own
-(`python3 -m unittest discover -v`, `node --test tests/*.test.mjs`, `ruff check .`, `mypy`).
+`make help` lists the rest. The tests need nothing installed; `make lint` and `make typecheck`
+need `pip install -r requirements-dev.txt`. Details of what's covered are in
+[DESIGN.md section 7](DESIGN.md#7-testing).
 
-A note on what the tests cover, since it shaped how they're written. The date-parsing rules are
-the fiddliest part of this project and the part that got things wrong, so every date this catalog
-once reported incorrectly has a named test asserting the correct value — see `RegressionTests` in
-`tests/test_categorize.py`. `tests/test_pipeline.py` runs the real steps over the real saved
-playlist and checks properties a reader would care about (no video lost, no date guessed, watch
-order intact). `tests/page_render.test.mjs` runs the search page's own script against a small stub
-DOM, so the rendering and the accessibility attributes are checked rather than assumed.
+## What it gets wrong
 
-`tests/browser_check.mjs` goes further and loads the page into a real Chrome, driven over the
-DevTools Protocol with no packages to install. It searches, tabs to a topic button and presses
-Enter, checks for horizontal overflow down to 375px wide, watches the console for errors — and
-measures WCAG contrast from *computed* styles, so a colour change that fails the AA threshold
-breaks the build instead of shipping quietly.
+Worth knowing before trusting a date or a grouping:
 
-CI additionally rebuilds `output/` from `data/raw_playlist.json` and fails if the result differs
-from what's committed, which keeps the published catalog honest about the code that produced it.
+- **Seven dates disagree with the channel's own ordering**, because those titles contain typos
+  (`Sumadhwavijaya Marathi 4th June 2026` sits between videos dated 5 July and 2 July). Titles are
+  reproduced as written rather than silently corrected. Watch order is unaffected — it comes from
+  the channel's listing order, not the dates.
+- **78 videos don't say which language they're in**, so they're grouped separately and labelled
+  "Language not stated". The language is never guessed.
+- **One video matched no series** and sits in a catch-all group.
+- **Two videos are dated to the month only**, because their titles give no day.
 
-## Known limitations
-
-- **No video descriptions to work with.** Every video on this channel has an empty description
-  field, so all the grouping and ordering logic works from the video *title* text alone.
-- **A small number of videos have no date in their title at all.** For those, the catalog falls
-  back to the video's real YouTube upload date instead (fetched individually, just for that
-  handful of videos — see `src/fill_unknown_dates.py`). Every video in the catalog now has a
-  date; none are left marked `Unknown` in the current run.
-- **Two videos are dated to the month only.** Their titles name a month and year but no day
-  (`Sandhyavandana Online Oct 2024`), so they show as `2024-10`. A day is never invented to fill
-  the gap.
-- **A title's stated date and its real YouTube upload date don't always match exactly.** In a
-  spot-check, most were one calendar day apart (most likely late-night uploads rolling into the
-  next day), so a small mismatch between the two is expected and not a bug.
-- **Some titles contain their own typos, and the catalog repeats them faithfully.** A handful of
-  videos state a date that contradicts their position in the channel's listing (for example
-  `Sumadhwavijaya Marathi 4th June 2026`, sitting between videos dated the 5th and the 2nd of
-  July). The stated date is kept as-is rather than being silently corrected. Watch order is
-  unaffected, because sequences are ordered by channel listing position rather than by date.
-- **Grouping is keyword-based, not manually checked video by video.** One video out of 342 didn't
-  match any of the known series names and landed in a catch-all "Uncategorized" group.
-
-See DESIGN.md for the reasoning behind each of these tradeoffs.
+Grouping is by title keyword, not by watching each video, so an unusually worded title could be
+misfiled. [DESIGN.md section 6](DESIGN.md#6-limitations-and-possible-future-work) covers the
+tradeoffs.
 
 ## Author and license
 
-Built by **Balaji Venkatesh**, for organizing **Sripad K**'s stream catalog. This is an
-independent personal tool built from publicly available YouTube data — it is not affiliated with
-or endorsed by the channel.
+Built by **Balaji Venkatesh** (balaji4aws@gmail.com). Code is [MIT licensed](LICENSE).
 
-The code is released under the [MIT License](LICENSE). That covers the code only: the video
-recordings remain their creator's, and the catalog metadata in `data/` and `output/` is derived
-from public YouTube listings and included so the pipeline can be re-run without re-scraping.
+That covers the code only. The recordings remain the channel's, and the catalogue metadata in
+`data/` and `output/` is derived from the channel's public listing — it's committed so the pipeline
+can be re-run and the search page used without re-scraping.

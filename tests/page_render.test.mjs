@@ -116,7 +116,8 @@ function loadPage({ fetchResult, initialQuery = '' } = {}) {
     results: new StubElement('div'),
     status: new StubElement('div'),
     q: new StubElement('input'),
-    topics: new StubElement('div')
+    topics: new StubElement('div'),
+    freshness: new StubElement('p')
   };
   elements.q.value = initialQuery;
 
@@ -151,6 +152,14 @@ function loadPage({ fetchResult, initialQuery = '' } = {}) {
 }
 
 const catalog = {
+  meta: {
+    channel: 'Sripad K',
+    scanned_on: '2026-09-07',
+    refresh_interval_days: 14,
+    next_scan_due: '2026-09-21',
+    video_count: 342,
+    category_count: 40
+  },
   groups: [
     {
       label: 'Satyatma Sandhya (Kannada)', category: 'Satyatma Sandhya', language: 'kannada', count: 2,
@@ -335,4 +344,41 @@ test('an empty catalog is reported rather than looking like a broken page', asyn
   const page = loadPage({ fetchResult: { body: { groups: [] } } });
   await page.settle();
   assert.match(page.elements.status.textContent, /contains no sequences/);
+});
+
+// --- how current the catalogue is ------------------------------------------
+
+test('the page states when the channel was last scanned', async () => {
+  const page = loadPage({ fetchResult: { body: catalog } });
+  await page.settle();
+
+  const text = page.elements.freshness.textContent;
+  assert.match(text, /342 recordings/);
+  assert.match(text, /last scanned 7 September 2026/);
+  assert.match(text, /next scan due 21 September 2026/);
+});
+
+test('an overdue refresh says so, and warns what is missing', async () => {
+  // A scan far enough in the past that the next one is certainly due.
+  const stale = structuredClone(catalog);
+  stale.meta.scanned_on = '2020-01-01';
+  stale.meta.next_scan_due = '2020-01-15';
+
+  const page = loadPage({ fetchResult: { body: stale } });
+  await page.settle();
+
+  const text = page.elements.freshness.textContent;
+  assert.match(text, /next scan was due 15 January 2020/);
+  assert.match(text, /anything newer than the scan date is missing/);
+});
+
+test('a catalogue with no scan date simply omits the line', async () => {
+  const bare = structuredClone(catalog);
+  delete bare.meta;
+  const page = loadPage({ fetchResult: { body: bare } });
+  await page.settle();
+
+  assert.equal(page.elements.freshness.textContent, '');
+  // and the rest of the page still works
+  assert.equal(page.elements.topics.children.length, 2);
 });

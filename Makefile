@@ -35,9 +35,11 @@ catalog: ## Rebuild the catalog from the saved playlist (offline; no network)
 	python3 src/build_sequences.py
 
 verify-catalog: catalog ## Fail if the committed output files are stale
-	@git diff --quiet --exit-code -- output/ \
+	# `git status --porcelain` rather than `git diff`, so a NEW output file that
+	# was never committed is caught too, not just changes to existing ones.
+	@test -z "$$(git status --porcelain -- output/)" \
 		|| { echo "error: output/ is stale - run 'make catalog' and commit the result."; \
-		     git --no-pager diff --stat -- output/; exit 1; }
+		     git status --short -- output/; exit 1; }
 	@echo "output/ matches what the current code produces."
 
 serve: ## Serve the folder so search.html can load its data

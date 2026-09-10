@@ -105,14 +105,16 @@ understood by reading it directly.
 
 ```
 sripad-streams-catalog/
-├── README.md                  quick-start guide (short version of this document)
-├── DESIGN.md                  this file
+├── README.md                  what this is and how to run it
+├── DESIGN.md                  this file — every decision and why
+├── REFRESH.md                  runbook for re-scanning the channel, and the checks that matter
+├── .kiro/steering/             the same rules, loaded automatically when working in this repository
 ├── LICENSE                     MIT, covering the code
 ├── Makefile                    the development commands, and what CI runs
-├── pyproject.toml              lint configuration (this is not an installable package)
+├── pyproject.toml              lint and type-checker configuration (not an installable package)
 ├── requirements.txt            notes that no Python packages are needed; yt-dlp is required
-├── requirements-dev.txt        the one development dependency (ruff), pinned
-├── .github/workflows/ci.yml    lint, both test suites, and a catalog-freshness check
+├── requirements-dev.txt        the development dependencies (ruff, mypy), pinned
+├── .github/workflows/ci.yml    lint, types, both test suites, browser check, catalog freshness
 ├── .gitignore
 ├── search.html                 the search page — this is what a person actually opens
 ├── search.js                   the page's matching logic, separated so it can be tested
@@ -132,6 +134,7 @@ sripad-streams-catalog/
     ├── streams_master.csv        every video, one row each, with its series and date
     ├── streams_master.json       the same data as JSON
     ├── streams_by_category.json  the same videos, grouped by series
+    ├── catalog_meta.json         when the channel was scanned, when the next scan is due, counts
     ├── by_category/*.csv          one small CSV file per series (40 files)
     ├── sequences.json             the final file — series split by language, with watch order.
     │                              This is the ONE file search.html actually loads.
@@ -324,6 +327,15 @@ video's title text. This deliberately does not require the language name to stan
 separate word — some titles jam it directly onto the next word with no space at all (for
 example, "Sandhyavandanakannada"), and a plain word-by-word check would miss those.
 
+**When the title names no language, it is left unknown — and said out loud.** 78 videos, in 24
+sequences, have titles that never state a language. Guessing one would be inventing information, so
+they are grouped separately. But a bare "Satyatma Sandhya" sitting directly beside "Satyatma Sandhya
+(Kannada)" reads as though the language were missing from *this tool* rather than from the source
+title, so where a category also produced language-specific sequences the unknown one is labelled
+"(Language not stated)". Where a whole category names no language anywhere — "Pratah Sankalpa
+Gadya", for instance — the marker would be noise on every one of its sequences, so it is left off.
+That is 18 sequences labelled and 6 left plain.
+
 One extra rule avoids a subtle duplicate: some series names *already* state their language in
 the series name itself (for example, "Manimanjari (Kannada)"). For those, the language check is
 skipped, and the whole series is treated as one sequence — otherwise, a video in that series
@@ -481,6 +493,32 @@ often as useful as fixing it:
   intentionally small number of matches per search this produces in practice, this has not been
   a problem, but a future version could sort sequences by some notion of relevance if the
   catalog grows large enough for that to matter.
+
+---
+
+## 8. Keeping it current
+
+The channel keeps streaming, so a catalogue built once is wrong soon after. Two things address that.
+
+**The page says how current it is.** `output/catalog_meta.json` records the date the channel was
+scanned and the date the next scan is due, and `search.html` shows both under the heading — "342
+recordings · channel last scanned 7 September 2026 · next scan due 21 September 2026". Once that due
+date passes, the wording changes to say the scan is overdue and that anything newer is missing, so a
+reader can tell a stale catalogue from a complete one without having to check the commit history.
+
+The scan date is deliberately read from the timestamp `yt-dlp` records **inside** the saved playlist
+at fetch time, not from the clock when the build runs. That keeps every output file a pure function
+of its input, which is what allows CI to rebuild the catalogue and assert the committed files still
+match — a `datetime.now()` anywhere in the output would make that check fail on every run and it
+would have to be abandoned.
+
+**The refresh has a runbook.** [REFRESH.md](REFRESH.md) lists the steps and, more usefully, the five
+things to check afterwards that no test can judge: whether a new video failed to match any series
+rule, whether a new title defeated the date parser, whether the scan date actually moved, whether a
+sequence lost its order, and whether the diff is the size it should be. It also records the
+known-good numbers from the last scan as a baseline, so "more changed than I expected" is a question
+that can actually be answered. `.kiro/steering/` carries the same rules in a form that is loaded
+automatically when working in this repository.
 
 ---
 

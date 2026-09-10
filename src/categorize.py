@@ -48,6 +48,7 @@ How dates are resolved:
 import argparse
 import calendar
 import csv
+import datetime as dt
 import json
 import re
 import sys
@@ -59,6 +60,11 @@ import catalog_paths
 
 UNCATEGORIZED = "Uncategorized / Other"
 UNKNOWN_DATE = "Unknown"
+
+#: How often the channel is expected to be re-scanned. Used only to work out the
+#: date the next scan is due, which the search page shows so a reader can see how
+#: current the catalog is.
+REFRESH_INTERVAL_DAYS = 14
 
 # Ordered rules: (category name, substrings to match against a lowercased
 # title). The FIRST matching category wins, so order matters: specific series
@@ -397,16 +403,24 @@ def build_catalog_markdown(
     grouped: dict[str, list[dict[str, Any]]],
     channel: str,
     subscribers: int | None,
+    meta: dict[str, Any] | None = None,
 ) -> str:
     """Render the whole catalog as a single browsable Markdown document."""
     unknown_dates = sum(1 for row in rows if row["date"] == UNKNOWN_DATE)
     subscriber_note = f", {subscribers} subscribers" if subscribers else ""
+    meta = meta or {}
+    scanned_note = (
+        f"Channel last scanned **{meta['scanned_on']}**; next scan due {meta.get('next_scan_due')}."
+        if meta.get("scanned_on")
+        else "Scan date unknown."
+    )
 
     lines = [
         "# Sripad K — Streams Catalog",
         "",
         f"Auto-generated from the channel's Streams tab (**{channel}**{subscriber_note}).",
         f"Total streams: **{len(rows)}** across **{len(grouped)}** categories.",
+        scanned_note,
         "",
         "Categorization is by title-keyword matching (see `src/categorize.py`) — it groups",
         "recurring series by name rather than by manually reviewing each stream. A",
@@ -441,6 +455,39 @@ def build_catalog_markdown(
         lines.append("")
 
     return "\n".join(lines)
+
+
+def build_catalog_meta(raw: dict[str, Any], rows: list[dict[str, Any]], category_count: int) -> dict[str, Any]:
+    """Summarise the catalog, including when the channel was last scanned.
+
+    The scan date comes from the timestamp yt-dlp records in the raw playlist at
+    fetch time, NOT from the clock when this script runs. That keeps the output
+    a pure function of the input: re-running the offline steps on the same saved
+    playlist produces byte-identical files, which is what lets CI check that the
+    committed catalog still matches the code that made it.
+    """
+    epoch = raw.get("epoch")
+    scanned_on = (
+        dt.datetime.fromtimestamp(epoch, dt.timezone.utc).date().isoformat()
+        if isinstance(epoch, (int, float))
+        else None
+    )
+    next_due = (
+        (dt.date.fromisoformat(scanned_on) + dt.timedelta(days=REFRESH_INTERVAL_DAYS)).isoformat()
+        if scanned_on
+        else None
+    )
+    return {
+        "channel": raw.get("channel"),
+        "channel_url": raw.get("webpage_url"),
+        "scanned_on": scanned_on,
+        "refresh_interval_days": REFRESH_INTERVAL_DAYS,
+        "next_scan_due": next_due,
+        "video_count": len(rows),
+        "category_count": category_count,
+        "newest_video_date": rows[0]["date"] if rows else None,
+        "oldest_video_date": rows[-1]["date"] if rows else None,
+    }
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
@@ -495,16 +542,21 @@ def main(argv: list[str] | None = None) -> int:
     for category, items in grouped.items():
         _write_csv(category_dir / f"{_slugify(category)}.csv", items, fieldnames)
 
+    meta = build_catalog_meta(raw, rows, len(grouped))
+    _write_json(outdir / "catalog_meta.json", meta)
+
     (outdir / "CATALOG.md").write_text(
         build_catalog_markdown(rows, grouped, raw.get("channel", "unknown channel"),
-                               raw.get("channel_follower_count")),
+                               raw.get("channel_follower_count"), meta),
         encoding="utf-8",
     )
 
     unknown_dates = sum(1 for row in rows if row["date"] == UNKNOWN_DATE)
     print(f"{len(rows)} streams -> {len(grouped)} categories ({unknown_dates} with unresolved dates)")
+    print(f"Channel last scanned {meta['scanned_on'] or 'unknown'}; "
+          f"next scan due {meta['next_scan_due'] or 'unknown'}")
     print(f"Wrote {outdir}/: streams_master.csv/.json, streams_by_category.json, "
-          f"CATALOG.md, by_category/*.csv")
+          f"catalog_meta.json, CATALOG.md, by_category/*.csv")
     return 0
 
 

@@ -13,6 +13,7 @@ import io
 import json
 import tempfile
 import unittest
+from datetime import date, datetime, timezone
 from pathlib import Path
 from typing import Any, ClassVar
 
@@ -34,6 +35,7 @@ class PipelineTests(unittest.TestCase):
     outdir: ClassVar[Path]
     rows: ClassVar[list[dict[str, Any]]]
     groups: ClassVar[list[dict[str, Any]]]
+    meta: ClassVar[dict[str, Any]]
 
     @classmethod
     def setUpClass(cls) -> None:
@@ -54,12 +56,15 @@ class PipelineTests(unittest.TestCase):
             exit_code = build_sequences.main([
                 "--in", str(outdir / "streams_master.json"),
                 "--out", str(sequences_path),
+                "--meta", str(outdir / "catalog_meta.json"),
             ])
             assert exit_code == 0, "build_sequences.py failed"
 
         cls.outdir = outdir
         cls.rows = json.loads((outdir / "streams_master.json").read_text(encoding="utf-8"))
-        cls.groups = json.loads(sequences_path.read_text(encoding="utf-8"))["groups"]
+        sequences = json.loads(sequences_path.read_text(encoding="utf-8"))
+        cls.groups = sequences["groups"]
+        cls.meta = sequences["meta"]
 
     @classmethod
     def tearDownClass(cls) -> None:
@@ -173,6 +178,45 @@ class PipelineTests(unittest.TestCase):
         for group in kannada:
             with self.subTest(label=group["label"]):
                 self.assertNotIn("(English)", group["label"])
+
+    def test_an_unknown_language_sequence_is_labelled_where_it_could_be_mistaken(self):
+        """Beside a language-specific sibling, an unlabelled sequence must say why."""
+        by_category: dict[str, list[dict[str, Any]]] = {}
+        for group in self.groups:
+            by_category.setdefault(group["category"], []).append(group)
+
+        for category, siblings in by_category.items():
+            has_known = any(group["language"] for group in siblings)
+            for group in siblings:
+                if group["language"] is None and has_known:
+                    with self.subTest(category=category):
+                        self.assertIn(build_sequences.UNKNOWN_LANGUAGE_LABEL, group["label"])
+
+    # --- catalog metadata ---------------------------------------------------
+
+    def test_metadata_records_when_the_channel_was_scanned(self):
+        self.assertRegex(self.meta["scanned_on"], r"^\d{4}-\d{2}-\d{2}$")
+        self.assertRegex(self.meta["next_scan_due"], r"^\d{4}-\d{2}-\d{2}$")
+        self.assertGreater(self.meta["next_scan_due"], self.meta["scanned_on"])
+
+    def test_the_next_scan_is_one_interval_after_the_last(self):
+        scanned = date.fromisoformat(self.meta["scanned_on"])
+        due = date.fromisoformat(self.meta["next_scan_due"])
+        self.assertEqual((due - scanned).days, self.meta["refresh_interval_days"])
+
+    def test_the_scan_date_is_not_before_the_newest_video(self):
+        """A scan cannot predate the newest thing it found."""
+        self.assertGreaterEqual(self.meta["scanned_on"], self.meta["newest_video_date"])
+
+    def test_metadata_counts_match_the_catalog(self):
+        self.assertEqual(self.meta["video_count"], len(self.rows))
+        self.assertEqual(self.meta["category_count"], len({row["category"] for row in self.rows}))
+
+    def test_the_scan_date_comes_from_the_input_not_the_clock(self):
+        """Output must stay a pure function of the input, or CI's freshness check breaks."""
+        epoch = json.loads(RAW_PLAYLIST.read_text(encoding="utf-8"))["epoch"]
+        expected = datetime.fromtimestamp(epoch, timezone.utc).date().isoformat()
+        self.assertEqual(self.meta["scanned_on"], expected)
 
 
 @unittest.skipUnless(RAW_PLAYLIST.exists(), f"{RAW_PLAYLIST} not present")

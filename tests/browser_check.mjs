@@ -243,6 +243,10 @@ try {
     `typeof window.CatalogSearch = ${loadState.scriptLoaded}`);
   check(loadState.topics === 40, `all 40 topic buttons rendered (got ${loadState.topics})`);
 
+  const freshness = await evaluate(`document.getElementById('freshness').textContent`);
+  check(/recordings/.test(freshness) && /last scanned \d+ \w+ \d{4}/.test(freshness),
+    'page states how current the catalogue is', freshness);
+
   // --- 2. searching -------------------------------------------------------
 
   section('2. Typing a search');

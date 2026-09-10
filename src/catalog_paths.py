@@ -19,6 +19,7 @@ OUTPUT_DIR = REPO_ROOT / "output"
 RAW_PLAYLIST = DATA_DIR / "raw_playlist.json"
 KNOWN_UPLOAD_DATES = DATA_DIR / "known_upload_dates.json"
 STREAMS_MASTER_JSON = OUTPUT_DIR / "streams_master.json"
+CATALOG_META_JSON = OUTPUT_DIR / "catalog_meta.json"
 SEQUENCES_JSON = OUTPUT_DIR / "sequences.json"
 
 

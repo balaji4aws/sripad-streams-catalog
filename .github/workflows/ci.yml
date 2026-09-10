@@ -98,11 +98,13 @@ jobs:
           python src/categorize.py
           python src/build_sequences.py
       - name: Fail if the committed output files are stale
+        # `git status --porcelain` rather than `git diff`, so a NEW output file
+        # that was never committed is caught too, not just modified ones.
         run: |
-          if ! git diff --quiet --exit-code -- output/; then
+          if [ -n "$(git status --porcelain -- output/)" ]; then
             echo "::error::output/ does not match what the current code produces."
             echo "Run 'make catalog' locally and commit the result."
-            git --no-pager diff --stat -- output/
+            git status --short -- output/
             exit 1
           fi
           echo "output/ is up to date."

@@ -46,6 +46,10 @@ import catalog_paths
 
 LANGUAGES = ["kannada", "english", "marathi", "hindi", "telugu", "tamil", "sanskrit"]
 
+#: Shown in place of a language when a title names none. The language is never
+#: inferred from anything other than the title text.
+UNKNOWN_LANGUAGE_LABEL = "Language not stated"
+
 REQUIRED_FIELDS = ("category", "title", "list_position", "date", "video_id", "url")
 
 _WORD_RE = re.compile(r"[a-z0-9]+")
@@ -81,11 +85,23 @@ def normalize_words(text: str) -> list[str]:
     return _WORD_RE.findall(text.lower())
 
 
-def sequence_label(category: str, language: str | None) -> str:
-    """Build the display label, avoiding a redundant "(Kannada) (Kannada)"."""
-    if language and f"({language})" not in category.lower():
-        return f"{category} ({language.title()})"
-    return category
+def sequence_label(category: str, language: str | None, *, has_language_siblings: bool = False) -> str:
+    """Build the display label for a sequence.
+
+    Avoids a redundant "(Kannada) (Kannada)" when the category name already
+    states the language.
+
+    When a video's title names no language, the language is left unknown rather
+    than guessed. That is only worth saying out loud when the same category ALSO
+    produced language-specific sequences: there, a bare "Satyatma Sandhya"
+    sitting beside "Satyatma Sandhya (Kannada)" reads as if the language were
+    missing from the tool rather than from the source titles, so it is labelled
+    explicitly. Where a whole category names no language anywhere, the marker
+    would be noise on every one of its sequences, so it is omitted.
+    """
+    if language:
+        return category if f"({language})" in category.lower() else f"{category} ({language.title()})"
+    return f"{category} ({UNKNOWN_LANGUAGE_LABEL})" if has_language_siblings else category
 
 
 def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -95,6 +111,13 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         category = row["category"]
         language = category_names_language(category) or detect_language(row["title"])
         groups_map[(category, language)].append(row)
+
+    # Categories that produced at least one language-specific sequence. Used to
+    # decide whether an unknown-language sequence needs to say so - see
+    # sequence_label().
+    categories_with_a_language = {
+        category for (category, language) in groups_map if language is not None
+    }
 
     groups: list[dict[str, Any]] = []
     for (category, language), items in groups_map.items():
@@ -124,7 +147,10 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         groups.append({
             "category": category,
             "language": language,
-            "label": sequence_label(category, language),
+            "label": sequence_label(
+                category, language,
+                has_language_siblings=category in categories_with_a_language,
+            ),
             "count": len(videos),
             "search_text": search_text,
             "search_words": sorted(set(normalize_words(search_text))),
@@ -147,12 +173,32 @@ def _validate(rows: object) -> list[dict[str, Any]]:
     return rows
 
 
+def load_meta(path: Path) -> dict[str, Any]:
+    """Load the catalog summary categorize.py wrote, if it is there.
+
+    It is folded into sequences.json so the search page can show how current the
+    catalog is without a second request. Missing or unreadable metadata is not
+    fatal: the sequences are still perfectly usable without it.
+    """
+    if not path.exists():
+        print(f"warning: {path} not found; the page will not show a scan date.", file=sys.stderr)
+        return {}
+    try:
+        loaded = json.loads(path.read_text(encoding="utf-8"))
+    except json.JSONDecodeError as err:
+        print(f"warning: ignoring unreadable {path}: {err}", file=sys.stderr)
+        return {}
+    return loaded if isinstance(loaded, dict) else {}
+
+
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--in", dest="infile", default=str(catalog_paths.STREAMS_MASTER_JSON),
                         help="Master stream table written by categorize.py")
     parser.add_argument("--out", dest="outfile", default=str(catalog_paths.SEQUENCES_JSON),
                         help="Sequence JSON file the search page loads")
+    parser.add_argument("--meta", dest="metafile", default=str(catalog_paths.CATALOG_META_JSON),
+                        help="Catalog summary written by categorize.py")
     return parser.parse_args(argv)
 
 
@@ -170,10 +216,14 @@ def main(argv: list[str] | None = None) -> int:
         return 1
 
     groups = build_groups(rows)
+    meta = load_meta(catalog_paths.resolve(args.metafile))
 
     out_path: Path = catalog_paths.resolve(args.outfile)
     out_path.parent.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps({"groups": groups}, indent=2, ensure_ascii=False), encoding="utf-8")
+    out_path.write_text(
+        json.dumps({"meta": meta, "groups": groups}, indent=2, ensure_ascii=False),
+        encoding="utf-8",
+    )
 
     multi = sum(1 for group in groups if group["count"] > 1)
     print(f"{len(rows)} videos -> {len(groups)} sequences "

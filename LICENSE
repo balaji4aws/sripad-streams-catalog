@@ -19,12 +19,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
----
-
-The license above covers the code in this repository.
-
-It does not cover the underlying video recordings, which remain the property of
-their creator, nor the catalog metadata in `data/` and `output/`, which is
-derived from publicly available YouTube listings and is included only so the
-scripts can be re-run and the search page can be used without re-scraping.

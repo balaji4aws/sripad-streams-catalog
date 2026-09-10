@@ -1,4 +1,15 @@
 {
+  "meta": {
+    "channel": "Sripad K",
+    "channel_url": "https://www.youtube.com/@sripadk8492/streams",
+    "scanned_on": "2026-09-07",
+    "refresh_interval_days": 14,
+    "next_scan_due": "2026-09-21",
+    "video_count": 342,
+    "category_count": 40,
+    "newest_video_date": "2026-09-06",
+    "oldest_video_date": "2021-02-02"
+  },
   "groups": [
     {
       "category": "Sumadhwavijaya (Marathi)",
@@ -1763,7 +1774,7 @@
     {
       "category": "Sandhyavandana Online",
       "language": null,
-      "label": "Sandhyavandana Online",
+      "label": "Sandhyavandana Online (Language not stated)",
       "count": 11,
       "search_text": "sandhyavandana online  sandhyavandana online oct 2024 - sandhyavandana online oct 2024 sandhyaonline 3rd nov sandhyaonline 17th nov sandhyaonline 24th nov sandhyaonline 1st dec 2024 sandhyaonline 8th dec 2024 sandhyaonline 15th dec sandhyaonline 29th dec 2024 sandhyaonline 5th jan 2025 sandhyaonline -17th august 2025",
       "search_words": [
@@ -2979,7 +2990,7 @@
     {
       "category": "Satyatma Sandhya",
       "language": null,
-      "label": "Satyatma Sandhya",
+      "label": "Satyatma Sandhya (Language not stated)",
       "count": 5,
       "search_text": "satyatma sandhya  satyatma batch 2 & 3 - 10th sept satyatma sandhya session 4 - 22nd oct satyatma sandhya batch1 - 18th june 2023 satyatma sandhya batch1 - sri vishnusahasranama 9th july 2023 satyatma sandhya- devapooja 31st dec 2023",
       "search_words": [
@@ -3062,7 +3073,7 @@
     {
       "category": "SriRaghoottama Teertha",
       "language": null,
-      "label": "SriRaghoottama Teertha",
+      "label": "SriRaghoottama Teertha (Language not stated)",
       "count": 5,
       "search_text": "sriraghoottama teertha  sriraghoottamastotra artha sriraghoottamastotra artha sriraghottamateertha stotra managala 24th march 2025 nkhk sriraghoottamateertha stotra 1st april nkhk sriraghoottama teertha charitre + parayana",
       "search_words": [
@@ -3409,7 +3420,7 @@
     {
       "category": "SriKrishna Stotra/Stuti",
       "language": null,
-      "label": "SriKrishna Stotra/Stuti",
+      "label": "SriKrishna Stotra/Stuti (Language not stated)",
       "count": 4,
       "search_text": "srikrishna stotra/stuti  srikrishnashtaka stotra by sri vadirajateertha - 3rd sept srikrishna ashtottarashatanama stotra 4th aug 2026 srikrishnaashtottarashatanamastotra day2 5th aug 2026 srikrishnaashtottarashatanama stotra day3 6th aug 2026",
       "search_words": [
@@ -3542,7 +3553,7 @@
     {
       "category": "NKHK Satsanga (Other)",
       "language": null,
-      "label": "NKHK Satsanga (Other)",
+      "label": "NKHK Satsanga (Other) (Language not stated)",
       "count": 3,
       "search_text": "nkhk satsanga (other)  nkhk satsanga 12th may nkhk-spl.satsanga -go mahima-pt.sri sanjeevaacharya 16th june nkhk jamshedpur satsang 25th june 2023",
       "search_words": [
@@ -3816,7 +3827,7 @@
     {
       "category": "SriJayateertha Stuti",
       "language": null,
-      "label": "SriJayateertha Stuti",
+      "label": "SriJayateertha Stuti (Language not stated)",
       "count": 3,
       "search_text": "srijayateertha stuti  srijayateertha stuti day1 - 17th july 2026 jayateertha stuti day2 16thjuly srijayateertha stuti day3 ,20th july 2026",
       "search_words": [
@@ -3911,7 +3922,7 @@
     {
       "category": "Deva Pooja (NKHK)",
       "language": null,
-      "label": "Deva Pooja (NKHK)",
+      "label": "Deva Pooja (NKHK) (Language not stated)",
       "count": 2,
       "search_text": "deva pooja (nkhk)  nkhk devapooja day2 - oct 2nd 2023 satyatma sandya deva pooja 17th dec 2023",
       "search_words": [
@@ -3954,7 +3965,7 @@
     {
       "category": "Dhyana (NKHK)",
       "language": null,
-      "label": "Dhyana (NKHK)",
+      "label": "Dhyana (NKHK) (Language not stated)",
       "count": 2,
       "search_text": "dhyana (nkhk)  nkhk dhyana day1 13th may 2021 nkhk dhyana day2 14th may 2021",
       "search_words": [
@@ -4360,7 +4371,7 @@
     {
       "category": "Sripadaraja/Satyabhinava Teertha",
       "language": null,
-      "label": "Sripadaraja/Satyabhinava Teertha",
+      "label": "Sripadaraja/Satyabhinava Teertha (Language not stated)",
       "count": 2,
       "search_text": "sripadaraja/satyabhinava teertha  nkhk satsanga sri sripadarajara mahima 23june2021 srisrisripadarajateertha and srisrisatyabhinvateertha charitra,mahima- 28th jun 2026",
       "search_words": [
@@ -4446,7 +4457,7 @@
     {
       "category": "28 Moorthi Stuti (NKHK)",
       "language": null,
-      "label": "28 Moorthi Stuti (NKHK)",
+      "label": "28 Moorthi Stuti (NKHK) (Language not stated)",
       "count": 1,
       "search_text": "28 moorthi stuti (nkhk)  28moorti 27th june - mangala",
       "search_words": [
@@ -4561,32 +4572,6 @@
     },
     {
       "category": "Anusandhana + Dhyana (NKHK)",
-      "language": null,
-      "label": "Anusandhana + Dhyana (NKHK)",
-      "count": 1,
-      "search_text": "anusandhana + dhyana (nkhk)  nkhk anusandhana+dhyana 19th dec",
-      "search_words": [
-        "19th",
-        "anusandhana",
-        "dec",
-        "dhyana",
-        "nkhk"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2021-12-19",
-          "title": "NKHK Anusandhana+Dhyana 19th Dec",
-          "video_id": "HGfdH6qIw0k",
-          "url": "https://www.youtube.com/watch?v=HGfdH6qIw0k",
-          "duration_min": 87.2,
-          "view_count": 151
-        }
-      ]
-    },
-    {
-      "category": "Anusandhana + Dhyana (NKHK)",
       "language": "kannada",
       "label": "Anusandhana + Dhyana (NKHK) (Kannada)",
       "count": 1,
@@ -4607,6 +4592,32 @@
           "url": "https://www.youtube.com/watch?v=M_UY2qkx6Gk",
           "duration_min": 67.4,
           "view_count": 116
+        }
+      ]
+    },
+    {
+      "category": "Anusandhana + Dhyana (NKHK)",
+      "language": null,
+      "label": "Anusandhana + Dhyana (NKHK) (Language not stated)",
+      "count": 1,
+      "search_text": "anusandhana + dhyana (nkhk)  nkhk anusandhana+dhyana 19th dec",
+      "search_words": [
+        "19th",
+        "anusandhana",
+        "dec",
+        "dhyana",
+        "nkhk"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 1,
+          "date": "2021-12-19",
+          "title": "NKHK Anusandhana+Dhyana 19th Dec",
+          "video_id": "HGfdH6qIw0k",
+          "url": "https://www.youtube.com/watch?v=HGfdH6qIw0k",
+          "duration_min": 87.2,
+          "view_count": 151
         }
       ]
     },
@@ -4695,7 +4706,7 @@
     {
       "category": "NKHK (Other)",
       "language": null,
-      "label": "NKHK (Other)",
+      "label": "NKHK (Other) (Language not stated)",
       "count": 1,
       "search_text": "nkhk (other)  nkhk vighneshsandhi day4 15 june",
       "search_words": [
@@ -4778,7 +4789,7 @@
     {
       "category": "Pushpahasa Satsanga",
       "language": null,
-      "label": "Pushpahasa Satsanga",
+      "label": "Pushpahasa Satsanga (Language not stated)",
       "count": 1,
       "search_text": "pushpahasa satsanga  nkhk satsanga pushpahasa 12th sept 2021",
       "search_words": [
@@ -4831,33 +4842,6 @@
     },
     {
       "category": "Sandhyavandana (Other)",
-      "language": null,
-      "label": "Sandhyavandana (Other)",
-      "count": 1,
-      "search_text": "sandhyavandana (other)  sandhyavandana part2 nkhk 27june 2021",
-      "search_words": [
-        "2021",
-        "27june",
-        "nkhk",
-        "other",
-        "part2",
-        "sandhyavandana"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2021-06-27",
-          "title": "sandhyavandana Part2 NKHK 27June 2021",
-          "video_id": "883vDhuxzhM",
-          "url": "https://www.youtube.com/watch?v=883vDhuxzhM",
-          "duration_min": 71.9,
-          "view_count": 111
-        }
-      ]
-    },
-    {
-      "category": "Sandhyavandana (Other)",
       "language": "kannada",
       "label": "Sandhyavandana (Other) (Kannada)",
       "count": 1,
@@ -4883,6 +4867,33 @@
           "url": "https://www.youtube.com/watch?v=H3WvfkcdeYA",
           "duration_min": 98.2,
           "view_count": 1400
+        }
+      ]
+    },
+    {
+      "category": "Sandhyavandana (Other)",
+      "language": null,
+      "label": "Sandhyavandana (Other) (Language not stated)",
+      "count": 1,
+      "search_text": "sandhyavandana (other)  sandhyavandana part2 nkhk 27june 2021",
+      "search_words": [
+        "2021",
+        "27june",
+        "nkhk",
+        "other",
+        "part2",
+        "sandhyavandana"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 1,
+          "date": "2021-06-27",
+          "title": "sandhyavandana Part2 NKHK 27June 2021",
+          "video_id": "883vDhuxzhM",
+          "url": "https://www.youtube.com/watch?v=883vDhuxzhM",
+          "duration_min": 71.9,
+          "view_count": 111
         }
       ]
     },
@@ -4913,7 +4924,7 @@
     {
       "category": "SriJayateertha Swamiji (Charitra/Mahima)",
       "language": null,
-      "label": "SriJayateertha Swamiji (Charitra/Mahima)",
+      "label": "SriJayateertha Swamiji (Charitra/Mahima) (Language not stated)",
       "count": 1,
       "search_text": "srijayateertha swamiji (charitra/mahima)  srijayateertha swamiji charitra ,mahima1st aug 2026",
       "search_words": [
@@ -4971,7 +4982,7 @@
     {
       "category": "SriRaghavendra Swami",
       "language": null,
-      "label": "SriRaghavendra Swami",
+      "label": "SriRaghavendra Swami (Language not stated)",
       "count": 1,
       "search_text": "sriraghavendra swami  sriraghavendra swamincha charitra ,mahima - 3rd aug 2025",
       "search_words": [
@@ -5123,7 +5134,7 @@
     {
       "category": "Tulasi Stotra",
       "language": null,
-      "label": "Tulasi Stotra",
+      "label": "Tulasi Stotra (Language not stated)",
       "count": 1,
       "search_text": "tulasi stotra  nkhk marati tulasi 22nd may",
       "search_words": [
@@ -5205,7 +5216,7 @@
     {
       "category": "Vighnesha Sandhi (NKHK)",
       "language": null,
-      "label": "Vighnesha Sandhi (NKHK)",
+      "label": "Vighnesha Sandhi (NKHK) (Language not stated)",
       "count": 1,
       "search_text": "vighnesha sandhi (nkhk)  nkhk vighnesh sandhi day 3 14 june",
       "search_words": [

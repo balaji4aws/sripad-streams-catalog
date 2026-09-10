@@ -2,6 +2,7 @@
 
 Auto-generated from the channel's Streams tab (**Sripad K**, 1500 subscribers).
 Total streams: **342** across **40** categories.
+Channel last scanned **2026-09-07**; next scan due 2026-09-21.
 
 Categorization is by title-keyword matching (see `src/categorize.py`) — it groups
 recurring series by name rather than by manually reviewing each stream. A
