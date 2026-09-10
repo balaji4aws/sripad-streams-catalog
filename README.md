@@ -8,9 +8,14 @@ Marathi and English — and no playlists. They sit in one long list sorted by up
 makes a series hard to follow: you can't tell which videos belong together, or which one comes
 first. This project groups them into series and works out a watch order within each one.
 
-**[Open the search page](search.html)** — type a few words and you get matching series as small
-ordered lists ("video 1 of 12", "video 2 of 12"), rather than a flat pile of links. Or browse
-[the full catalogue](output/CATALOG.md) as a single page.
+### ▶ [Open the search page](https://balaji4aws.github.io/sripad-streams-catalog/search.html)
+
+Type a few words and you get matching series as small ordered lists ("video 1 of 12", "video 2 of
+12"), rather than a flat pile of links. Or browse [the full catalogue](output/CATALOG.md) as a
+single page.
+
+The page shows when the channel was last scanned and when the next scan is due, so you can tell
+whether anything newer is missing.
 
 Content and recordings belong to the channel. This is an independent, unofficial index built from
 the channel's public listing, made with appreciation for the work that went into the streams.

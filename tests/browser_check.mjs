@@ -165,8 +165,13 @@ function connect(url) {
 
 // --- main ------------------------------------------------------------------
 
+// With no argument the page is served from this folder, which is what CI does.
+// Pass a URL to run the same checks against a deployed copy:
+//   node tests/browser_check.mjs https://example.github.io/repo/search.html
+const targetUrl = process.argv[2];
+
 const { server, port } = await startServer();
-const pageUrl = `http://127.0.0.1:${port}/search.html`;
+const pageUrl = targetUrl ?? `http://127.0.0.1:${port}/search.html`;
 const { chrome, profile, webSocketDebuggerUrl, binary } = await launchChrome();
 const client = connect(webSocketDebuggerUrl);
 await client.ready;

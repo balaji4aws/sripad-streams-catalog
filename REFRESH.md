@@ -95,15 +95,27 @@ Then look at what actually changed, and check these five things:
       rows, not a rewrite. A large diff on old rows means a rule change altered history — deliberate
       or not, understand it before committing.
 
-## 4. Commit
+## 4. Commit and publish
 
 ```bash
 git add data/ output/ && git commit
+git push
 ```
 
 Commit the data and the generated output together, in one commit, with the new stream count in the
 message. CI rebuilds `output/` from `data/raw_playlist.json` and fails if the committed files don't
 match, so they must be regenerated and committed together or the build breaks.
+
+The live page is served by GitHub Pages from `main`, so pushing publishes it. Give Pages a minute,
+then run the same browser checks against the deployed copy — this catches a path that works locally
+but breaks under the Pages URL prefix:
+
+```bash
+node tests/browser_check.mjs https://balaji4aws.github.io/sripad-streams-catalog/search.html
+```
+
+Confirm the scan date shown on the live page is the new one. If it still shows the old date, the
+browser is serving a cached copy — hard-reload before concluding anything is wrong.
 
 ---
 
