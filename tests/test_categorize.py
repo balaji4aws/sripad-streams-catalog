@@ -241,6 +241,13 @@ class CategorizeTests(unittest.TestCase):
             with self.subTest(title=title):
                 self.assertEqual(categorize_title(title), "Sumadhwavijaya (Marathi)")
 
+    def test_a_run_together_series_name_still_matches(self):
+        """"VighneshSandhi" fell through to the generic NKHK bucket, splitting
+        one short series across two categories - day 3 in one, day 4 in another."""
+        for title in ("NKHK Vighnesh Sandhi Day 3 14 June", "NKHK VighneshSandhi Day4 15 June"):
+            with self.subTest(title=title):
+                self.assertEqual(categorize_title(title), "Vighnesha Sandhi (NKHK)")
+
     def test_specific_rule_beats_the_general_one(self):
         """"Sandhya Shala" must not be swallowed by the broader "Sandhyavandana"."""
         self.assertEqual(

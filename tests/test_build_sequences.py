@@ -10,6 +10,7 @@ import unittest
 from typing import Any
 
 from build_sequences import (
+    LANGUAGE_SPELLINGS,
     build_groups,
     category_names_language,
     detect_language,
@@ -48,6 +49,26 @@ class DetectLanguageTests(unittest.TestCase):
 
     def test_no_language_is_not_guessed(self):
         self.assertIsNone(detect_language("Pratah Sankalpa Gadya Day 3"))
+
+    def test_real_misspellings_are_recognised(self):
+        """Both of these occur on the channel and split a video from its series."""
+        self.assertEqual(detect_language("NKHK marati Tulasi 22nd May"), "marathi")
+        self.assertEqual(detect_language("Sumadhwavijaya Marath 7July 2026"), "marathi")
+
+    def test_a_misspelling_maps_to_the_canonical_name(self):
+        """The label must read "(Marathi)", never "(Marati)"."""
+        self.assertEqual(sequence_label("Tulasi Stotra", detect_language("NKHK marati Tulasi")),
+                         "Tulasi Stotra (Marathi)")
+
+    def test_the_full_spelling_wins_over_its_own_truncation(self):
+        """"marath" is a prefix of "marathi", so order of matching matters."""
+        self.assertEqual(detect_language("NKHK Marathi Tulasi Stotra"), "marathi")
+
+    def test_every_spelling_maps_to_a_known_language(self):
+        for language, spellings in LANGUAGE_SPELLINGS.items():
+            for spelling in spellings:
+                with self.subTest(spelling=spelling):
+                    self.assertEqual(detect_language(f"Something {spelling} here"), language)
 
 
 class CategoryNamesLanguageTests(unittest.TestCase):

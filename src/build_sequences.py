@@ -45,7 +45,31 @@ from typing import Any
 
 import catalog_paths
 
-LANGUAGES = ["kannada", "english", "marathi", "hindi", "telugu", "tamil", "sanskrit"]
+#: Language name to the spellings that appear in titles, longest first so a full
+#: spelling is preferred over a truncated one. The variants are not guesswork:
+#: "marati" and "marath" are actual typos on this channel, and without them their
+#: videos split away from their own series into a separate unknown-language
+#: sequence - Tulasi Stotra came out as two sequences of one video each.
+LANGUAGE_SPELLINGS: dict[str, list[str]] = {
+    "kannada": ["kannada", "kannad"],
+    "english": ["english"],
+    "marathi": ["marathi", "marath", "marati"],
+    "hindi": ["hindi"],
+    "telugu": ["telugu"],
+    "tamil": ["tamil"],
+    "sanskrit": ["sanskrit"],
+}
+
+#: The canonical language names, used for labels and for reading a language out
+#: of a category name.
+LANGUAGES = list(LANGUAGE_SPELLINGS)
+
+#: Every spelling paired with the language it means, longest first so that
+#: "marathi" is matched before its truncation "marath".
+_LANGUAGE_BY_SPELLING: list[tuple[str, str]] = sorted(
+    ((spelling, language) for language, spellings in LANGUAGE_SPELLINGS.items() for spelling in spellings),
+    key=lambda pair: -len(pair[0]),
+)
 
 #: Shown in place of a language when a title names none. The language is never
 #: inferred from anything other than the title text.
@@ -75,10 +99,15 @@ _SESSION_PART_RE = re.compile(r"(?:^|[^a-z])day[\s\-_:.]*\d{1,3}\s*\((\d{1,2})\)
 
 
 def detect_language(title: str) -> str | None:
-    """Return the first known language named in `title`, or None."""
+    """Return the language named in `title`, or None if none is named.
+
+    Recognises the misspellings that actually occur, so a typo does not exile a
+    video from its own series. Spellings are tried longest first, so "marathi"
+    wins over its truncation "marath".
+    """
     lowered = title.lower()
-    for language in LANGUAGES:
-        if language in lowered:
+    for spelling, language in _LANGUAGE_BY_SPELLING:
+        if spelling in lowered:
             return language
     return None
 

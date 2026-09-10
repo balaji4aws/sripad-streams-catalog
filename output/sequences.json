@@ -5955,6 +5955,86 @@
       ]
     },
     {
+      "category": "Tulasi Stotra",
+      "language": "marathi",
+      "label": "Tulasi Stotra (Marathi)",
+      "count": 2,
+      "search_words": [
+        "22nd",
+        "29",
+        "day2",
+        "marathi",
+        "marati",
+        "may",
+        "nkhk",
+        "stotra",
+        "tulasi"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 2,
+          "date": "2022-05-22",
+          "title": "NKHK marati Tulasi 22nd May",
+          "video_id": "RjgBtXbG4gY",
+          "url": "https://www.youtube.com/watch?v=RjgBtXbG4gY",
+          "duration_min": 53.5,
+          "view_count": 54
+        },
+        {
+          "seq": 2,
+          "total": 2,
+          "date": "2022-05-29",
+          "title": "NKHK Marathi Tulasi Stotra Day2 29 may",
+          "video_id": "Pj3u4LciwOo",
+          "url": "https://www.youtube.com/watch?v=Pj3u4LciwOo",
+          "duration_min": 57.7,
+          "view_count": 43
+        }
+      ]
+    },
+    {
+      "category": "Vighnesha Sandhi (NKHK)",
+      "language": null,
+      "label": "Vighnesha Sandhi (NKHK) (Language not stated)",
+      "count": 2,
+      "search_words": [
+        "14",
+        "15",
+        "3",
+        "day",
+        "day4",
+        "june",
+        "nkhk",
+        "sandhi",
+        "vighnesh",
+        "vighnesha",
+        "vighneshsandhi"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 2,
+          "date": "2022-06-14",
+          "title": "NKHK Vighnesh Sandhi Day 3 14 June",
+          "video_id": "791ulvFZ36g",
+          "url": "https://www.youtube.com/watch?v=791ulvFZ36g",
+          "duration_min": 58.7,
+          "view_count": 50
+        },
+        {
+          "seq": 2,
+          "total": 2,
+          "date": "2022-06-15",
+          "title": "NKHK VighneshSandhi Day4 15 June",
+          "video_id": "kuXrAG8Sf1s",
+          "url": "https://www.youtube.com/watch?v=kuXrAG8Sf1s",
+          "duration_min": 26.0,
+          "view_count": 22
+        }
+      ]
+    },
+    {
       "category": "28 Moorthi Stuti (NKHK)",
       "language": null,
       "label": "28 Moorthi Stuti (NKHK) (Language not stated)",
@@ -6217,32 +6297,6 @@
           "url": "https://www.youtube.com/watch?v=PRZOdFwtayA",
           "duration_min": 6.7,
           "view_count": 2400
-        }
-      ]
-    },
-    {
-      "category": "NKHK (Other)",
-      "language": null,
-      "label": "NKHK (Other) (Language not stated)",
-      "count": 1,
-      "search_words": [
-        "15",
-        "day4",
-        "june",
-        "nkhk",
-        "other",
-        "vighneshsandhi"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2022-06-15",
-          "title": "NKHK VighneshSandhi Day4 15 June",
-          "video_id": "kuXrAG8Sf1s",
-          "url": "https://www.youtube.com/watch?v=kuXrAG8Sf1s",
-          "duration_min": 26.0,
-          "view_count": 22
         }
       ]
     },
@@ -6659,59 +6713,6 @@
       ]
     },
     {
-      "category": "Tulasi Stotra",
-      "language": null,
-      "label": "Tulasi Stotra (Language not stated)",
-      "count": 1,
-      "search_words": [
-        "22nd",
-        "marati",
-        "may",
-        "nkhk",
-        "stotra",
-        "tulasi"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2022-05-22",
-          "title": "NKHK marati Tulasi 22nd May",
-          "video_id": "RjgBtXbG4gY",
-          "url": "https://www.youtube.com/watch?v=RjgBtXbG4gY",
-          "duration_min": 53.5,
-          "view_count": 54
-        }
-      ]
-    },
-    {
-      "category": "Tulasi Stotra",
-      "language": "marathi",
-      "label": "Tulasi Stotra (Marathi)",
-      "count": 1,
-      "search_words": [
-        "29",
-        "day2",
-        "marathi",
-        "may",
-        "nkhk",
-        "stotra",
-        "tulasi"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2022-05-29",
-          "title": "NKHK Marathi Tulasi Stotra Day2 29 may",
-          "video_id": "Pj3u4LciwOo",
-          "url": "https://www.youtube.com/watch?v=Pj3u4LciwOo",
-          "duration_min": 57.7,
-          "view_count": 43
-        }
-      ]
-    },
-    {
       "category": "Uncategorized / Other",
       "language": "marathi",
       "label": "Uncategorized / Other (Marathi)",
@@ -6734,34 +6735,6 @@
           "url": "https://www.youtube.com/watch?v=mxIyeGEf_kc",
           "duration_min": 42.5,
           "view_count": 42
-        }
-      ]
-    },
-    {
-      "category": "Vighnesha Sandhi (NKHK)",
-      "language": null,
-      "label": "Vighnesha Sandhi (NKHK) (Language not stated)",
-      "count": 1,
-      "search_words": [
-        "14",
-        "3",
-        "day",
-        "june",
-        "nkhk",
-        "sandhi",
-        "vighnesh",
-        "vighnesha"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2022-06-14",
-          "title": "NKHK Vighnesh Sandhi Day 3 14 June",
-          "video_id": "791ulvFZ36g",
-          "url": "https://www.youtube.com/watch?v=791ulvFZ36g",
-          "duration_min": 58.7,
-          "view_count": 50
         }
       ]
     }

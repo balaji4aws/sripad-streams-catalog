@@ -156,11 +156,11 @@ than I expected":
 |---|---|
 | Videos | 465 (342 from /streams, 123 from /videos) |
 | Categories | 44 |
-| Sequences | 75 (45 with 2+ videos) |
+| Sequences | 73 (47 with 2+ videos) |
 | Date range | 2015-03-30 to 2026-09-06 |
 | Unresolved dates | 0 |
 | Month-precision dates | 3 |
 | Uncategorized | 1 |
-| Videos with no stated language | 201, across 28 sequences |
+| Videos with no stated language | 200, across 26 sequences |
 | Largest series | Bhagavata Saroddhara, 108 videos, sessions 1-102 |
 | Sequences ordered by session number | 5 |

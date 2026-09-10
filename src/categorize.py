@@ -95,7 +95,11 @@ RULES: list[tuple[str, list[str]]] = [
     ("SriJayateertha Swamiji (Charitra/Mahima)", ["jayateertha"]),
     ("SriRaghoottama Teertha", ["raghoottama", "raghottama"]),
     ("SriRaghavendra Swami", ["raghavendra"]),
-    ("Vighnesha Sandhi (NKHK)", ["vighnesha sandhi", "vighnesh sandhi"]),
+    # The run-together spellings matter: "NKHK VighneshSandhi Day4" was falling
+    # through to the generic "NKHK (Other)" bucket while "Vighnesh Sandhi Day 3"
+    # matched here, splitting one short series across two categories.
+    ("Vighnesha Sandhi (NKHK)", ["vighnesha sandhi", "vighnesh sandhi",
+                                 "vighneshasandhi", "vighneshsandhi"]),
     ("Srinivasa Kalyana (NKHK)", ["srinivasa kalyana", "srinivasakalyana"]),
     ("Deva Pooja (NKHK)", ["devapooja", "deva pooja", "devara pooja"]),
     ("28 Moorthi Stuti (NKHK)", ["28moorthi", "28 moorthi", "28moorti"]),

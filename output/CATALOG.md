@@ -22,16 +22,16 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | [Satyatma Sandhya](#satyatma-sandhya) | 39 |
 | [Manimanjari (Kannada)](#manimanjari-kannada) | 38 |
 | [Pratah Sankalpa Gadya](#pratah-sankalpa-gadya) | 25 |
-| [Vighnesha Sandhi (NKHK)](#vighnesha-sandhi-nkhk) | 14 |
+| [Vighnesha Sandhi (NKHK)](#vighnesha-sandhi-nkhk) | 15 |
 | [Sandhyavandana Online](#sandhyavandana-online) | 13 |
 | [Deva Pooja (NKHK)](#deva-pooja-nkhk) | 13 |
 | [SriJayateertha Stuti](#srijayateertha-stuti) | 11 |
 | [Srinivasa Kalyana (NKHK)](#srinivasa-kalyana-nkhk) | 10 |
 | [Sandhya Shala (Onboarding/Classes)](#sandhya-shala-onboarding-classes) | 9 |
-| [NKHK (Other)](#nkhk-other) | 9 |
 | [SriJayateertha (Teekacharya) Charitra](#srijayateertha-teekacharya-charitra) | 8 |
 | [SriRaghoottama Teertha](#sriraghoottama-teertha) | 8 |
 | [NKHK Satsanga (Other)](#nkhk-satsanga-other) | 8 |
+| [NKHK (Other)](#nkhk-other) | 8 |
 | [28 Moorthi Stuti (NKHK)](#28-moorthi-stuti-nkhk) | 7 |
 | [SriKrishna Stotra/Stuti](#srikrishna-stotra-stuti) | 6 |
 | [Navabrindavana Mahima (NKHK)](#navabrindavana-mahima-nkhk) | 5 |
@@ -397,6 +397,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2022-07-05 | NKHK Kannada Vighnesh Sandhi 5th July | 51.0m | 41 | [watch](https://www.youtube.com/watch?v=n4DoE457h5U) |
 | 2022-07-03 | NKHK marathi SriVighnesha Sandhi 3rd July | 77.2m | 105 | [watch](https://www.youtube.com/watch?v=OIPr7lFejDA) |
 | 2022-06-22 | NKHK Kannada Vighnesha Sandhi 22nd June | 53.2m | 102 | [watch](https://www.youtube.com/watch?v=iWgPZHXKSZc) |
+| 2022-06-15 | NKHK VighneshSandhi Day4 15 June | 26.0m | 22 | [watch](https://www.youtube.com/watch?v=kuXrAG8Sf1s) |
 | 2022-06-14 | NKHK Vighnesh Sandhi Day 3 14 June | 58.7m | 50 | [watch](https://www.youtube.com/watch?v=791ulvFZ36g) |
 | 2022-06-08 | NKHK Kannada Vighnesh Sandhi | 34.7m | 120 | [watch](https://www.youtube.com/watch?v=mhOLCtifN-U) |
 
@@ -481,20 +482,6 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2026-08-12 | Sandhyavandana Shala Onboarding session -12th Aug 2026 | 70.1m | 884 | [watch](https://www.youtube.com/watch?v=cQvHGTAp-qE) |
 | 2026-08-11 | Sandhyavandana Shala -Onboarding session1 -11th Aug 2026 | 53.1m | 1400 | [watch](https://www.youtube.com/watch?v=OLEOCYxZz2g) |
 
-## NKHK (Other)
-
-| Date | Title | Duration | Views | Link |
-|---|---|---|---|---|
-| 2023-06-13 | NKHK kannada 28 Moorti stuti day1 13th June | 85.2m | 222 | [watch](https://www.youtube.com/watch?v=bdEAwaHNda8) |
-| 2022-07-24 | NKHK Marathi Dwadasha Stotra day1 | 51.9m | 77 | [watch](https://www.youtube.com/watch?v=8JnMcAX0JRw) |
-| 2022-06-02 | NKHK marathi 2nd June 2022 | 53.8m | 71 | [watch](https://www.youtube.com/watch?v=U_3bX9JCBFw) |
-| 2022-06-15 | NKHK VighneshSandhi Day4 15 June | 26.0m | 22 | [watch](https://www.youtube.com/watch?v=kuXrAG8Sf1s) |
-| 2022-06-12 | NKHK Marathi Sri Sri  Raghuvaryateertha Stuti 12June | 76.8m | 117 | [watch](https://www.youtube.com/watch?v=FpkvtK-4gcY) |
-| 2021-09-11 | NKHK Marathi 11th Sept.2021 | 48.4m | 52 | [watch](https://www.youtube.com/watch?v=jOO3eBCr7iE) |
-| 2021-08-14 | NKHK Sandhya Marathi 14th Aug | 31.6m | 74 | [watch](https://www.youtube.com/watch?v=c6lVtLM22x4) |
-| 2021-07-17 | NKHK marathi 17th July 2021 | 1.3m | 53 | [watch](https://www.youtube.com/watch?v=6PHWExuS2b4) |
-| 2021-07-11 | NKHK kannada karyashala 11th July 2021 | 76.5m | 99 | [watch](https://www.youtube.com/watch?v=GnbFc8sh804) |
-
 ## SriJayateertha (Teekacharya) Charitra
 
 | Date | Title | Duration | Views | Link |
@@ -533,6 +520,19 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2021-04-14 | kannada satsanga 14th April | 53.4m | 53 | [watch](https://www.youtube.com/watch?v=8wegu7tsvpY) |
 | 2021-03-24 | Kannada satsanga 24th March 2021 | 46.2m | 62 | [watch](https://www.youtube.com/watch?v=Az3_i9X9tOU) |
 | 2021-03-21 | Marathi satsanga 21st March | 136.8m | 198 | [watch](https://www.youtube.com/watch?v=jC1WfNDElkk) |
+
+## NKHK (Other)
+
+| Date | Title | Duration | Views | Link |
+|---|---|---|---|---|
+| 2023-06-13 | NKHK kannada 28 Moorti stuti day1 13th June | 85.2m | 222 | [watch](https://www.youtube.com/watch?v=bdEAwaHNda8) |
+| 2022-07-24 | NKHK Marathi Dwadasha Stotra day1 | 51.9m | 77 | [watch](https://www.youtube.com/watch?v=8JnMcAX0JRw) |
+| 2022-06-02 | NKHK marathi 2nd June 2022 | 53.8m | 71 | [watch](https://www.youtube.com/watch?v=U_3bX9JCBFw) |
+| 2022-06-12 | NKHK Marathi Sri Sri  Raghuvaryateertha Stuti 12June | 76.8m | 117 | [watch](https://www.youtube.com/watch?v=FpkvtK-4gcY) |
+| 2021-09-11 | NKHK Marathi 11th Sept.2021 | 48.4m | 52 | [watch](https://www.youtube.com/watch?v=jOO3eBCr7iE) |
+| 2021-08-14 | NKHK Sandhya Marathi 14th Aug | 31.6m | 74 | [watch](https://www.youtube.com/watch?v=c6lVtLM22x4) |
+| 2021-07-17 | NKHK marathi 17th July 2021 | 1.3m | 53 | [watch](https://www.youtube.com/watch?v=6PHWExuS2b4) |
+| 2021-07-11 | NKHK kannada karyashala 11th July 2021 | 76.5m | 99 | [watch](https://www.youtube.com/watch?v=GnbFc8sh804) |
 
 ## 28 Moorthi Stuti (NKHK)
 
