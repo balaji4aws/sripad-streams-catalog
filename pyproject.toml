@@ -30,6 +30,24 @@ ignore = [
     "TRY003",
 ]
 
+[tool.mypy]
+python_version = "3.10"
+files = ["src", "tests"]
+# The scripts live in src/ and import each other by plain module name, so mypy
+# needs the same import root the scripts get at runtime.
+mypy_path = "src"
+strict = true
+warn_unreachable = true
+pretty = true
+
+[[tool.mypy.overrides]]
+# Test methods take no arguments and return nothing, so requiring an explicit
+# `-> None` on every one of them adds annotations without adding information.
+# Everything else stays strict here, including the type errors that matter.
+module = "tests.*"
+disallow_untyped_defs = false
+disallow_incomplete_defs = false
+
 [tool.ruff.lint.per-file-ignores]
 # Tests deliberately reach into private helpers to check the parsing rules
 # directly, and assert on hard-coded values that would be pointless to name.

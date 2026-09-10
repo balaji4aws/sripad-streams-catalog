@@ -520,14 +520,24 @@ match by substring. The second half of the file runs real searches against the c
 `sequences.json`, so a change to the catalog that breaks a search a person would actually type is
 caught.
 
-`tests/page_render.test.mjs` covers the part that nothing checked before: the page's own script. It
-runs the real inline script against a small stub DOM implementing only the handful of methods that
-script uses, then asserts on the structure produced — that topic controls are real `<button>`
-elements with accessible labels and click handlers, that result rows come out in watch order, that
-links carry `rel="noopener noreferrer"`, that each table has a screen-reader description and
-`scope="col"` headers, that a hostile title is written as text rather than markup, and that a
-failed load explains how to fix it. The stub is deliberately dumb: if the page starts using a DOM
-method it does not implement, the test fails loudly rather than passing on a silent no-op.
+`tests/page_render.test.mjs` covers the page's own script. It runs the real inline script against a
+small stub DOM implementing only the handful of methods that script uses, then asserts on the
+structure produced — that topic controls are real `<button>` elements with accessible labels and
+click handlers, that result rows come out in watch order, that links carry
+`rel="noopener noreferrer"`, that each table has a screen-reader description and `scope="col"`
+headers, that a hostile title is written as text rather than markup, and that a failed load explains
+how to fix it. The stub is deliberately dumb: if the page starts using a DOM method it does not
+implement, the test fails loudly rather than passing on a silent no-op.
+
+`tests/browser_check.mjs` then loads the page into a real Chrome, which is the only way to check the
+things a stub cannot represent. It types into the search box and confirms the rendered results are
+all one language; tabs from the search field and confirms focus lands on a topic button that
+announces itself, presses Enter and confirms the search runs and focus returns to the box so the
+query can be narrowed; confirms the screen-reader table caption really does measure as visually
+hidden rather than merely carrying the class that should hide it; confirms the focus ring is actually
+visible in computed styles; checks for horizontal overflow at 1200, 768 and 375 pixels wide; watches
+the console and network for errors; and measures contrast from computed styles (section 7.4). It
+also writes a screenshot, which is how the page was eyeballed rather than assumed.
 
 ### 7.2 Choices worth explaining
 
@@ -537,11 +547,21 @@ fresh clone with nothing installed. That is a deliberate match to this project's
 stance (section 3) — adding `pytest` would be more idiomatic in isolation, but it would make the
 README's "no package install step" claim untrue for a small gain.
 
-**No browser or DOM library.** Testing the page against a real DOM would mean pulling in a headless
-browser or a library like `jsdom` — by a wide margin the heaviest dependency in the project, for one
-file. The stub DOM in `tests/page_render.test.mjs` is around 120 lines and covers what this page
-actually does. The tradeoff is honest: it verifies the page builds the right structure, not that a
-real browser paints it correctly, and it cannot substitute for opening the page and using it.
+**Two layers for the page, and no browser library for either.** The page is checked twice, at
+different costs. `tests/page_render.test.mjs` runs its script against a stub DOM of around 120
+lines — fast, dependency-free, part of every `make check`, and enough to catch a broken selector or
+a missing accessibility attribute. What it cannot do is prove a real browser paints the result
+correctly, because it has no CSS engine and no layout.
+
+So `tests/browser_check.mjs` covers that, also without a dependency. Instead of pulling in
+Playwright or `jsdom` — by a wide margin the heaviest thing in the project, for one file — it drives
+Chrome over the DevTools Protocol using Node's built-in `WebSocket`, and serves the folder from a
+small built-in HTTP server. That buys a real CSS engine and real layout, which is what makes
+section 7.4 possible.
+
+**A separate `make test-browser`, outside `make check`.** The browser check needs Chrome installed,
+which the Python and Node CI jobs do not have, so it is its own target and its own CI job. Keeping
+it out of `make check` means the everyday command still runs anywhere with no browser.
 
 **A freshness check instead of golden files.** Rather than committing expected output files and
 diffing against them, CI regenerates `output/` from the saved playlist and fails if the result
@@ -552,18 +572,41 @@ produced it — without a second copy of the data to keep in sync.
 ### 7.3 Running them
 
 ```bash
-make check     # lint, both test suites, and the catalog freshness check — what CI runs
-make test      # both test suites
-make lint      # ruff (the one development dependency)
+make check          # lint, type-check, both suites, catalog freshness — the everyday command
+make test-browser   # the real-browser check, including contrast (needs Chrome)
+make typecheck      # mypy --strict
+make lint           # ruff
 ```
 
-### 7.4 What is still not covered
+### 7.4 Contrast, measured rather than calculated
 
-- **The page in a real browser.** See above: structure is tested, rendering is not.
+The greys on this page were originally chosen by computing WCAG ratios by hand, which is both
+error-prone and unverifiable — and it cannot account for the cascade, since what a reader sees is the
+*computed* colour after inheritance, not the value written in the stylesheet.
+
+The browser check now measures it properly. It walks every element that renders its own visible text,
+reads back the computed `color`, resolves the effective background by walking up ancestors until it
+finds something opaque, reads the computed font size and weight to decide whether WCAG's "large
+text" allowance applies (3:1 rather than 4.5:1), and computes the ratio from relative luminance.
+Elements that are visually hidden — the screen-reader table captions — are skipped by their measured
+box size rather than by name, so a future hidden element is handled without touching the check.
+
+At the time of writing this measures 434 text-bearing elements, collapsing to 18 distinct
+colour/size/weight pairs, and every one clears its AA threshold. The tightest is the video count
+inside a topic button at 5.05:1 against the button's own `#f7f7f7` fill, comfortably above the 4.5:1
+it needs. Fifteen of the eighteen also clear the stricter AAA threshold. The check fails the build if
+any pair drops below AA, so a future colour change cannot quietly regress this.
+
+### 7.5 What is still not covered
+
 - **`fetch.py` and `fill_unknown_dates.py` against YouTube.** Both shell out to `yt-dlp` and need
   network access and browser cookies, so neither is exercised by the suite or by CI. Their argument
   handling and error paths are simple and readable; their happy paths are verified by the fact that
   `data/raw_playlist.json` and `data/known_upload_dates.json` exist and are consumed by everything
   downstream.
-- **The CSS.** Contrast ratios were computed by hand against the WCAG AA threshold for small text;
-  nothing checks them automatically, so a future colour change could regress them unnoticed.
+- **Screen readers.** The markup is checked for the attributes assistive technology depends on -
+  accessible names, table descriptions, header scopes, focus order - but nothing drives an actual
+  screen reader. Confirming the page is genuinely pleasant to use with one still needs a person and
+  the real software.
+- **Browsers other than Chrome.** The browser check drives Chrome or Chromium. The page uses no
+  Chrome-specific APIs, but Firefox and Safari are not exercised.

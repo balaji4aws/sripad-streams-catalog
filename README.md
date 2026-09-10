@@ -1,8 +1,5 @@
 # Sripad K — Streams Catalog
 
-[![CI](https://github.com/balaji4aws/sripad-streams-catalog/actions/workflows/ci.yml/badge.svg)](https://github.com/balaji4aws/sripad-streams-catalog/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-
 This project turns one YouTube channel's giant, unsorted list of live-stream recordings into
 something a viewer can actually use: a small search page that returns videos **in the order you
 should watch them**, not just a pile of loosely related links.
@@ -48,7 +45,7 @@ sripad-streams-catalog/
 │   ├── fill_unknown_dates.py     step 2b: fetches a real date for videos with no date in the title
 │   ├── build_sequences.py        step 3: works out watch order within each series
 │   └── catalog_paths.py          shared default input/output locations
-├── tests/                        test suite — see "Development" below
+├── tests/                        test suites — see "Development" below
 ├── data/
 │   ├── raw_playlist.json         the raw output of step 1 (saved so you don't have to re-download)
 │   └── known_upload_dates.json   real per-video dates fetched by step 2b, for titles with no date
@@ -96,17 +93,19 @@ The tests need nothing installed — the Python suite uses the standard library'
 the JavaScript suite uses Node's built-in test runner:
 
 ```bash
-make check          # everything CI runs: lint, both test suites, catalog freshness
+make check          # the everyday command: lint, type-check, both suites, catalog freshness
 make test           # both test suites
 make test-py        # Python only
-make test-js        # search page only (needs Node 18 or newer)
-make lint           # needs ruff: pip install -r requirements-dev.txt
+make test-js        # search page logic only (needs Node 18 or newer)
+make test-browser   # load the page in a real browser and check it (needs Chrome)
+make lint           # ruff        \  pip install -r requirements-dev.txt
+make typecheck      # mypy --strict  /
 make catalog        # rebuild output/ from the saved playlist (offline)
 make serve          # serve the folder for search.html
 ```
 
 `make` is a convenience; the underlying commands work on their own
-(`python3 -m unittest discover -v`, `node --test tests/*.test.mjs`, `ruff check .`).
+(`python3 -m unittest discover -v`, `node --test tests/*.test.mjs`, `ruff check .`, `mypy`).
 
 A note on what the tests cover, since it shaped how they're written. The date-parsing rules are
 the fiddliest part of this project and the part that got things wrong, so every date this catalog
@@ -115,6 +114,12 @@ once reported incorrectly has a named test asserting the correct value — see `
 playlist and checks properties a reader would care about (no video lost, no date guessed, watch
 order intact). `tests/page_render.test.mjs` runs the search page's own script against a small stub
 DOM, so the rendering and the accessibility attributes are checked rather than assumed.
+
+`tests/browser_check.mjs` goes further and loads the page into a real Chrome, driven over the
+DevTools Protocol with no packages to install. It searches, tabs to a topic button and presses
+Enter, checks for horizontal overflow down to 375px wide, watches the console for errors — and
+measures WCAG contrast from *computed* styles, so a colour change that fails the AA threshold
+breaks the build instead of shipping quietly.
 
 CI additionally rebuilds `output/` from `data/raw_playlist.json` and fails if the result differs
 from what's committed, which keeps the published catalog honest about the code that produced it.

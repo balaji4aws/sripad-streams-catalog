@@ -7,6 +7,7 @@ that avoids saying the language twice.
 """
 
 import unittest
+from typing import Any
 
 from build_sequences import (
     build_groups,
@@ -17,7 +18,7 @@ from build_sequences import (
 )
 
 
-def row(position, category, title, date="2024-01-01"):
+def row(position: int, category: str, title: str, date: str = "2024-01-01") -> dict[str, Any]:
     """A minimal master-table row, so each test only states what it cares about."""
     return {
         "list_position": position,

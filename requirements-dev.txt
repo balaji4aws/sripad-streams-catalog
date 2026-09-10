@@ -1,12 +1,19 @@
 # Development-only tooling. The scripts themselves need no third-party
-# packages (see requirements.txt); this is just the linter, pinned so that CI
-# and a local run flag the same things.
+# packages (see requirements.txt); these are the linter and the type checker,
+# pinned so that CI and a local run flag the same things.
 #
 #   pip install -r requirements-dev.txt
 #
-# The test suite uses the standard library's unittest, so it needs nothing
-# installed at all:
+# The test suites need nothing installed at all - the Python tests use the
+# standard library's unittest, and the JavaScript tests use Node's built-in
+# runner:
 #
 #   python3 -m unittest discover -v
+#   node --test tests/*.test.mjs
+#
+# The browser check (make test-browser) needs Chrome or Chromium installed,
+# but no packages: it drives the browser over the DevTools Protocol using
+# Node's built-in WebSocket.
 
 ruff==0.16.6
+mypy==2.3.1

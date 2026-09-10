@@ -14,6 +14,7 @@ import json
 import tempfile
 import unittest
 from pathlib import Path
+from typing import Any, ClassVar
 
 import build_sequences
 import catalog_paths
@@ -27,8 +28,15 @@ RAW_PLAYLIST = catalog_paths.RAW_PLAYLIST
 class PipelineTests(unittest.TestCase):
     """Run categorize.py then build_sequences.py into a temp directory."""
 
+    # Declared here rather than only assigned in setUpClass, so the shared
+    # state this class builds once is visible to a reader and to a type checker.
+    _tmp: ClassVar[tempfile.TemporaryDirectory[str]]
+    outdir: ClassVar[Path]
+    rows: ClassVar[list[dict[str, Any]]]
+    groups: ClassVar[list[dict[str, Any]]]
+
     @classmethod
-    def setUpClass(cls):
+    def setUpClass(cls) -> None:
         cls._tmp = tempfile.TemporaryDirectory()
         outdir = Path(cls._tmp.name)
 
@@ -54,13 +62,13 @@ class PipelineTests(unittest.TestCase):
         cls.groups = json.loads(sequences_path.read_text(encoding="utf-8"))["groups"]
 
     @classmethod
-    def tearDownClass(cls):
+    def tearDownClass(cls) -> None:
         cls._tmp.cleanup()
 
-    def date_for_title(self, fragment):
+    def date_for_title(self, fragment: str) -> str:
         matches = [row for row in self.rows if fragment in row["title"]]
         self.assertEqual(len(matches), 1, f"expected exactly one title containing {fragment!r}")
-        return matches[0]["date"]
+        return str(matches[0]["date"])
 
     # --- the catalog as a whole ---------------------------------------------
 

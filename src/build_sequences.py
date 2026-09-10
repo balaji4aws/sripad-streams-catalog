@@ -96,7 +96,7 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         language = category_names_language(category) or detect_language(row["title"])
         groups_map[(category, language)].append(row)
 
-    groups = []
+    groups: list[dict[str, Any]] = []
     for (category, language), items in groups_map.items():
         # list_position 1 is the newest video, so descending gives oldest-first.
         ordered = sorted(items, key=lambda row: row["list_position"], reverse=True)

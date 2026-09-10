@@ -254,9 +254,11 @@ def parse_title_date(title: str) -> TitleDate:
             continue
         return TitleDate(day, month, _normalize_year(match.group(4)))
 
-    match = MONTH_YEAR_RE.search(title)
-    if match:
-        return TitleDate(None, MONTHS[match.group(1).lower()], int(match.group(2)))
+    # A separate name: the loops above bind `match` to a guaranteed Match,
+    # whereas search() can return None.
+    month_year = MONTH_YEAR_RE.search(title)
+    if month_year:
+        return TitleDate(None, MONTHS[month_year.group(1).lower()], int(month_year.group(2)))
 
     return NO_DATE
 

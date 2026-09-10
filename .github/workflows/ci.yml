@@ -15,16 +15,35 @@ concurrency:
 
 jobs:
   lint:
-    name: Lint
+    name: Lint and type-check
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
-      - name: Install the linter
+      - name: Install the linter and type checker
         run: pip install -r requirements-dev.txt
-      - run: ruff check --output-format=github .
+      - name: Lint
+        run: ruff check --output-format=github .
+      - name: Type-check
+        # Runs even if linting failed, so one push surfaces both sets of problems.
+        if: ${{ !cancelled() }}
+        run: mypy
+
+  browser:
+    name: Browser check
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version: "22"
+      - name: Load the page in Chrome and check it
+        # ubuntu-latest ships Chrome, and the check drives it over the DevTools
+        # Protocol with no packages to install. It exercises the search box and
+        # topic buttons, then measures WCAG contrast from computed styles.
+        run: node tests/browser_check.mjs
 
   test-python:
     name: Python tests (${{ matrix.python-version }})
