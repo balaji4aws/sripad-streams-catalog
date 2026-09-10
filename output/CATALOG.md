@@ -1,8 +1,8 @@
 # Sripad K — Streams Catalog
 
-Auto-generated from the channel's Streams tab (**Sripad K**, 1500 subscribers).
+Auto-generated from the channel's Streams tab (**Sripad K**, 1510 subscribers).
 Total streams: **342** across **40** categories.
-Channel last scanned **2026-09-07**; next scan due 2026-09-21.
+Channel last scanned **2026-09-10**; next scan due 2026-09-24.
 
 Categorization is by title-keyword matching (see `src/categorize.py`) — it groups
 recurring series by name rather than by manually reviewing each stream. A
@@ -62,15 +62,15 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
-| 2026-09-03 | Sumadhwavijaya Marathi - 3rd Sep2026 | 37.0m | 189 | [watch](https://www.youtube.com/watch?v=CUIrNKGnVNY) |
-| 2026-08-26 | Sumadhwavijaya Marathi 26th Aug 2026 | 26.5m | 105 | [watch](https://www.youtube.com/watch?v=06iNO-yjt68) |
-| 2026-08-25 | Sumadhwavijaya Marathi 25th Aug 2026 | 38.6m | 188 | [watch](https://www.youtube.com/watch?v=dzhnKEGZFwI) |
-| 2026-08-20 | Sumadhwavijaya Marathi 20th Aug 2026 | 33.8m | 238 | [watch](https://www.youtube.com/watch?v=XI1p-C4kUhw) |
+| 2026-09-03 | Sumadhwavijaya Marathi - 3rd Sep2026 | 37.0m | 234 | [watch](https://www.youtube.com/watch?v=CUIrNKGnVNY) |
+| 2026-08-26 | Sumadhwavijaya Marathi 26th Aug 2026 | 26.5m | 106 | [watch](https://www.youtube.com/watch?v=06iNO-yjt68) |
+| 2026-08-25 | Sumadhwavijaya Marathi 25th Aug 2026 | 38.6m | 189 | [watch](https://www.youtube.com/watch?v=dzhnKEGZFwI) |
+| 2026-08-20 | Sumadhwavijaya Marathi 20th Aug 2026 | 33.8m | 285 | [watch](https://www.youtube.com/watch?v=XI1p-C4kUhw) |
 | 2026-08-18 | Sumadhwavijaya Marathi 18th Aug 2026 | 32.7m | 75 | [watch](https://www.youtube.com/watch?v=2RNaoaaP2Xo) |
 | 2026-08-17 | Sumadhwavijaya Marathi 17th Aug 2026 | 38.1m | 58 | [watch](https://www.youtube.com/watch?v=hkvFD-GdwBQ) |
-| 2026-08-14 | Sumadhwavijaya Marathi 14th Aug 2026 | 41.4m | 108 | [watch](https://www.youtube.com/watch?v=CetDxo9qS1U) |
+| 2026-08-14 | Sumadhwavijaya Marathi 14th Aug 2026 | 41.4m | 109 | [watch](https://www.youtube.com/watch?v=CetDxo9qS1U) |
 | 2026-08-12 | Sumadhwavijaya Marathi 12th Aug 2026 | 46.9m | 78 | [watch](https://www.youtube.com/watch?v=6xBnpW-lf2g) |
-| 2026-08-11 | Sumadhwavijaya Marathi 11th Aug 2026 | 36.9m | 53 | [watch](https://www.youtube.com/watch?v=INd_l3fSnW4) |
+| 2026-08-11 | Sumadhwavijaya Marathi 11th Aug 2026 | 36.9m | 54 | [watch](https://www.youtube.com/watch?v=INd_l3fSnW4) |
 | 2026-08-07 | Sumadhwavijaya Marathi 7th Aug 2026 | 31.6m | 39 | [watch](https://www.youtube.com/watch?v=4IUwdijserk) |
 | 2026-08-06 | Sumadhwavijaya Marathi 6th Aug 2026 | 36.9m | 69 | [watch](https://www.youtube.com/watch?v=JAjc8g3pdMw) |
 | 2026-07-31 | Sumadhwavijaya Marathi 31st July 2026 | 38.0m | 47 | [watch](https://www.youtube.com/watch?v=cvMff2O_BNw) |
@@ -111,7 +111,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2026-03-24 | Sumadhwavijaya Marathi 24th March 2026 | 37.8m | 27 | [watch](https://www.youtube.com/watch?v=jMYvVTZvoG0) |
 | 2026-03-18 | Sumadhwavijaya Marathi 18th March 2026 | 47.9m | 34 | [watch](https://www.youtube.com/watch?v=HHIN6p1jkXo) |
 | 2026-03-17 | SuMadhwavijaya Marathi 17th March 2026 | 44.6m | 60 | [watch](https://www.youtube.com/watch?v=nNFaNi1uGsQ) |
-| 2026-03-16 | Sumadhwavijaya Marathi 16thMarch 2026 | 49.4m | 163 | [watch](https://www.youtube.com/watch?v=Q79MOVLL1Yw) |
+| 2026-03-16 | Sumadhwavijaya Marathi 16thMarch 2026 | 49.4m | 166 | [watch](https://www.youtube.com/watch?v=Q79MOVLL1Yw) |
 | 2026-03-13 | Sumadhwavijaya Marathi 13th March 2026 | 47.2m | 87 | [watch](https://www.youtube.com/watch?v=Mp0ACSJMa8E) |
 | 2026-03-12 | Sumadhwavijaya Marathi 12th March 2026 | 32.0m | 69 | [watch](https://www.youtube.com/watch?v=MLfnmtfdkPk) |
 | 2026-03-12 | Sumadhwavijaya Marathi 12th March 2026 | 1.2m | 17 | [watch](https://www.youtube.com/watch?v=HDMGNTxcM-0) |
@@ -144,7 +144,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2026-01-16 | Sumadhwavijaya Day5 16th Jan 26 | 42.6m | 148 | [watch](https://www.youtube.com/watch?v=pf_M-AEN99E) |
 | 2026-01-15 | Sumadhwavijay-Marathi-Day4-15thJan26 | 39.5m | 68 | [watch](https://www.youtube.com/watch?v=555zFWs6GGA) |
 | 2026-01-14 | Sumadhwavijaya Day 3 -14th Jan26 | 46.2m | 82 | [watch](https://www.youtube.com/watch?v=zUgmj0vKSw8) |
-| 2026-01-12 | Sumadhwavijaya Marathi-day2-12thJan26 | 46.4m | 193 | [watch](https://www.youtube.com/watch?v=O0Ghctl1VMA) |
+| 2026-01-12 | Sumadhwavijaya Marathi-day2-12thJan26 | 46.4m | 194 | [watch](https://www.youtube.com/watch?v=O0Ghctl1VMA) |
 | 2026-01-11 | Sumadhawavijaya Marathi Day1-11th Jan26 | 64.8m | 352 | [watch](https://www.youtube.com/watch?v=dPThhZyeH2I) |
 
 ## Satyatma Sandhya
@@ -157,16 +157,16 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2023-09-10 | SatyatmaSandhya Marathi 10th Sept 2023 | 116.7m | 133 | [watch](https://www.youtube.com/watch?v=7dH8Lnewp0M) |
 | 2023-08-03 | Satyatma Sandhya Marathi 3rd Aug | 108.4m | 386 | [watch](https://www.youtube.com/watch?v=Gm83lEBWuEc) |
 | 2023-08-27 | Satyatmasandhya Marathi 27Aug | 120.0m | 180 | [watch](https://www.youtube.com/watch?v=2g1tpA74KuI) |
-| 2023-08-13 | Satyatma Sandhya marathi 13th Aug 2023 | 117.6m | 516 | [watch](https://www.youtube.com/watch?v=ZcAZJi7E2JA) |
+| 2023-08-13 | Satyatma Sandhya marathi 13th Aug 2023 | 117.6m | 520 | [watch](https://www.youtube.com/watch?v=ZcAZJi7E2JA) |
 | 2023-07-30 | satyatmaSandhya Marathi 30th July 2023 | 104.3m | 206 | [watch](https://www.youtube.com/watch?v=wD7xDIlcaoM) |
 | 2023-07-16 | Satyatma Sandhya Marathi 16th July | 105.1m | 441 | [watch](https://www.youtube.com/watch?v=H44HOgn1g40) |
 | 2023-07-09 | Satyatma Sandhya batch1 - Sri Vishnusahasranama 9th July 2023 | 71.7m | 625 | [watch](https://www.youtube.com/watch?v=FUPpFq172rk) |
-| 2023-07-09 | Satyatma Sandhya Marathi Day2 - 9th July 2023 | 80.0m | 654 | [watch](https://www.youtube.com/watch?v=dPoZbs6l2Ic) |
+| 2023-07-09 | Satyatma Sandhya Marathi Day2 - 9th July 2023 | 80.0m | 684 | [watch](https://www.youtube.com/watch?v=dPoZbs6l2Ic) |
 | 2023-07-02 | Satyatma sandhya Marathi Day1 -2nd July | 84.3m | 1000 | [watch](https://www.youtube.com/watch?v=p-TP9cWB1Kc) |
 | 2023-06-24 | Satyatma Sandhya Kannada Final Day 24th June 2023 | 22.2m | 618 | [watch](https://www.youtube.com/watch?v=zngLVgpavXA) |
 | 2023-06-18 | Satyatma Sandhya Batch1 - 18th June 2023 | 61.9m | 341 | [watch](https://www.youtube.com/watch?v=6-5ume6DZn8) |
 | 2023-03-26 | Satyatma sandhya English - anusandhana in Sandhya -26th March 23 | 75.4m | 366 | [watch](https://www.youtube.com/watch?v=ypU_yIP3U2I) |
-| 2023-03-25 | Satyatma Sandhya Kannada anusandhana 25th March 23 | 70.1m | 366 | [watch](https://www.youtube.com/watch?v=b4aFJLtvyiM) |
+| 2023-03-25 | Satyatma Sandhya Kannada anusandhana 25th March 23 | 70.1m | 370 | [watch](https://www.youtube.com/watch?v=b4aFJLtvyiM) |
 | 2023-01-15 | Satyatma Sandhya English - session 10 - 15th jan 2023 | 51.9m | 281 | [watch](https://www.youtube.com/watch?v=YolyjEzLp-E) |
 | 2023-01-14 | Satyatma Sandhya Kannada session 14th Jan 2023 | 37.8m | 146 | [watch](https://www.youtube.com/watch?v=TckmFbbimzk) |
 | 2022-11-27 | satyatma Sandhya English session 9 - 27th Nov 2022 | 87.9m | 188 | [watch](https://www.youtube.com/watch?v=gG_HVusoTDo) |
@@ -176,18 +176,18 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2022-11-12 | Satyatma Sandhya Kannada 6th session 12th Nov | 43.9m | 182 | [watch](https://www.youtube.com/watch?v=YX3yH-AQx3s) |
 | 2022-11-06 | Satyatma Sandhya English session 7 - 6th Nov 2022 | 94.2m | 231 | [watch](https://www.youtube.com/watch?v=t1soM5PCEx8) |
 | 2022-10-30 | Satyatma Sandhya English session 6 - 30th October 2022 | 76.0m | 182 | [watch](https://www.youtube.com/watch?v=RJqGfzPYnFc) |
-| 2022-10-29 | Satyatma Sandhya kannada session 5 - 29th October | 96.2m | 342 | [watch](https://www.youtube.com/watch?v=aL1_c07MkAI) |
+| 2022-10-29 | Satyatma Sandhya kannada session 5 - 29th October | 96.2m | 343 | [watch](https://www.youtube.com/watch?v=aL1_c07MkAI) |
 | 2022-10-23 | Satyatma Sandhya English session 5 - 23 Oct 2022 | 68.5m | 304 | [watch](https://www.youtube.com/watch?v=43pCAoKwd5I) |
 | 2022-10-22 | Satyatma Sandhya Session 4 - 22nd Oct | 46.0m | 348 | [watch](https://www.youtube.com/watch?v=wYKTo6WUVoM) |
 | 2022-10-16 | Satyatma sandhya English Session 4 - 16th Oct | 84.0m | 276 | [watch](https://www.youtube.com/watch?v=cXRq1Fms2mw) |
 | 2022-10-15 | satyatma sandhya kannada day4 15th Oct | 36.3m | 148 | [watch](https://www.youtube.com/watch?v=qHVhssaaMVI) |
 | 2022-10-09 | Satyatma Sandhya English Session 3- 9th October | 106.5m | 578 | [watch](https://www.youtube.com/watch?v=dv5uXY4mbPI) |
 | 2022-10-08 | Satyatma Sandhya kannada Day3 - 8th Oct 2022 | 109.0m | 352 | [watch](https://www.youtube.com/watch?v=zM6OHBGqMFs) |
-| 2022-10-02 | Satyatma Sandhya English Day 2/  2nd October | 84.2m | 640 | [watch](https://www.youtube.com/watch?v=wIp1dIa787c) |
+| 2022-10-02 | Satyatma Sandhya English Day 2/  2nd October | 84.2m | 641 | [watch](https://www.youtube.com/watch?v=wIp1dIa787c) |
 | 2022-10-01 | Satyatma Sandhya Kannada day 3  --- 1 th Oct | 93.3m | 428 | [watch](https://www.youtube.com/watch?v=oq2Fkv1_RSk) |
 | 2022-10-01 | Satyatma Sandhya Kannada Friday batch Day1 | 93.1m | 929 | [watch](https://www.youtube.com/watch?v=wEFfQeYprEQ) |
 | 2022-09-25 | Satyatma Sandhya English Day1 25th Sept | 87.0m | 565 | [watch](https://www.youtube.com/watch?v=QL-LY2r1HeQ) |
-| 2022-09-24 | Satyatma sandhya kannada Day2 24th Sept 2022 | 90.5m | 601 | [watch](https://www.youtube.com/watch?v=xp-jjD8ZOTY) |
+| 2022-09-24 | Satyatma sandhya kannada Day2 24th Sept 2022 | 90.5m | 604 | [watch](https://www.youtube.com/watch?v=xp-jjD8ZOTY) |
 | 2022-09-17 | SatyatmaSandhya kannada Saturday 17th Sept 2022 | 85.5m | 346 | [watch](https://www.youtube.com/watch?v=UqO6wtiVWug) |
 | 2022-09-10 | satyatma batch 2 & 3 - 10th Sept | 92.0m | 270 | [watch](https://www.youtube.com/watch?v=KBINRXyD9Yg) |
 
@@ -241,7 +241,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2023-03-11 | pratah Sankalpa Gadya Day 23 - 11th Mar | 43.3m | 142 | [watch](https://www.youtube.com/watch?v=LMnMCK6gmSA) |
 | 2023-01-21 | Prathah Sankalpa Gadya - Day 18 - Jan 21st | 46.4m | 159 | [watch](https://www.youtube.com/watch?v=LAxEZAy-6Tc) |
 | 2023-01-14 | Prathah sankalpa Gadya - JAN 14th - Day 17 | 46.7m | 168 | [watch](https://www.youtube.com/watch?v=1yrUce1Zc-I) |
-| 2022-12-24 | Pratah Sankalpa Gadya - Day14 - Dec 24th | 46.2m | 192 | [watch](https://www.youtube.com/watch?v=bult3oFcrjw) |
+| 2022-12-24 | Pratah Sankalpa Gadya - Day14 - Dec 24th | 46.2m | 193 | [watch](https://www.youtube.com/watch?v=bult3oFcrjw) |
 | 2022-12-17 | Pratah Sankalpa Gadya - Dec17th - Day13 | 48.2m | 160 | [watch](https://www.youtube.com/watch?v=tiYISoHt8w0) |
 | 2022-12-10 | Pratah Sankalpa Gadya - Dec 10th - Day 12 | 45.2m | 206 | [watch](https://www.youtube.com/watch?v=ioSWky5gNgY) |
 | 2022-12-03 | Prathah Sankalpa Gadya - Dec 3rd - Day 11 | 45.6m | 192 | [watch](https://www.youtube.com/watch?v=AwY8EDBUSNE) |
@@ -250,7 +250,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2022-11-05 | Prataha Sankalpa Gadya 5th Nov - Day 7 | 40.1m | 286 | [watch](https://www.youtube.com/watch?v=UiA6-CnxJWo) |
 | 2022-10-15 | Pratah Sankalpa Gadya Day 4 - 15th Oct | 42.0m | 618 | [watch](https://www.youtube.com/watch?v=geWtLnCFXvo) |
 | 2022-10-08 | Pratah Sankalpa Gadya Day3- 8th Oct | 39.8m | 761 | [watch](https://www.youtube.com/watch?v=EaTq9lzhTj8) |
-| 2022-10-06 | Prataha sankalpa Gadya Day2 - 6th Oct 2022 | 16.9m | 787 | [watch](https://www.youtube.com/watch?v=wO_sONZDn3o) |
+| 2022-10-06 | Prataha sankalpa Gadya Day2 - 6th Oct 2022 | 16.9m | 788 | [watch](https://www.youtube.com/watch?v=wO_sONZDn3o) |
 | 2022-10-05 | Prataha Sankalpa Gadya - Day1- 5th Oct | 25.1m | 1700 | [watch](https://www.youtube.com/watch?v=mdEw4fcmyWk) |
 
 ## Vighnesha Sandhi (NKHK)
@@ -276,10 +276,10 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
-| 2025-08-17 | Sandhyaonline -17th August 2025 | 100.1m | 504 | [watch](https://www.youtube.com/watch?v=ZIEGQiINJcw) |
+| 2025-08-17 | Sandhyaonline -17th August 2025 | 100.1m | 509 | [watch](https://www.youtube.com/watch?v=ZIEGQiINJcw) |
 | 2025-08-03 | Sandhyavandana-ONLINE-Kannada-3rd Aug 2025 | 110.0m | 501 | [watch](https://www.youtube.com/watch?v=yUnSVjNTGlE) |
 | 2025-07-20 | Sandhyavandana-ONLINE- kannada-day2-20thJuly2025 | 104.9m | 1600 | [watch](https://www.youtube.com/watch?v=dA0jeaxVFkw) |
-| 2025-01-05 | Sandhyaonline 5th Jan 2025 | 105.5m | 226 | [watch](https://www.youtube.com/watch?v=yD2g0eaGojI) |
+| 2025-01-05 | Sandhyaonline 5th Jan 2025 | 105.5m | 227 | [watch](https://www.youtube.com/watch?v=yD2g0eaGojI) |
 | 2024-12-29 | sandhyaonline 29th Dec 2024 | 84.0m | 158 | [watch](https://www.youtube.com/watch?v=OO4_u5cyB9s) |
 | 2024-12-15 | Sandhyaonline 15th Dec | 104.5m | 100 | [watch](https://www.youtube.com/watch?v=pDOsgnL1sqc) |
 | 2024-12-08 | sandhyaonline 8th Dec 2024 | 78.6m | 137 | [watch](https://www.youtube.com/watch?v=2rqWFPNo3o4) |
@@ -343,14 +343,14 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
-| 2026-09-06 | Sandhya Shala Class3(slot2) 6th Sep2026 | 100.6m | 973 | [watch](https://www.youtube.com/watch?v=6810aNatEy0) |
-| 2026-09-05 | Sandhya Shala Class 3 (slot1) 5th Sep2026 | 97.3m | 1800 | [watch](https://www.youtube.com/watch?v=dhK4_Svjy0U) |
-| 2026-08-28 | Sandhya Shala Class 2 ( Repeat)- 28th Aug 2026 | 100.7m | 1300 | [watch](https://www.youtube.com/watch?v=zbOVSea4q8M) |
-| 2026-08-27 | Sandhya Shala Class2 - 27th Aug 2026 | 109.3m | 6900 | [watch](https://www.youtube.com/watch?v=Ud8W8NBAlAM) |
+| 2026-09-06 | Sandhya Shala Class3(slot2) 6th Sep2026 | 100.6m | 1300 | [watch](https://www.youtube.com/watch?v=6810aNatEy0) |
+| 2026-09-05 | Sandhya Shala Class 3 (slot1) 5th Sep2026 | 97.3m | 2200 | [watch](https://www.youtube.com/watch?v=dhK4_Svjy0U) |
+| 2026-08-28 | Sandhya Shala Class 2 ( Repeat)- 28th Aug 2026 | 100.7m | 1400 | [watch](https://www.youtube.com/watch?v=zbOVSea4q8M) |
+| 2026-08-27 | Sandhya Shala Class2 - 27th Aug 2026 | 109.3m | 7000 | [watch](https://www.youtube.com/watch?v=Ud8W8NBAlAM) |
 | 2026-08-22 | Sandhya Shala Module1 Class1- 22nd Aug 2026 | 107.5m | 1500 | [watch](https://www.youtube.com/watch?v=kDJDS2RZZqU) |
 | 2026-08-21 | Sandhya Shala Module1-Class1-21st Aug 2026 | 108.4m | 1700 | [watch](https://www.youtube.com/watch?v=eofsHe6Vuxk) |
-| 2026-08-12 | Sandhyavandana Shala Onboarding session 12th Aug 2026 | 59.5m | 271 | [watch](https://www.youtube.com/watch?v=1d5ZCFUGiT8) |
-| 2026-08-12 | Sandhyavandana Shala Onboarding session -12th Aug 2026 | 70.1m | 877 | [watch](https://www.youtube.com/watch?v=cQvHGTAp-qE) |
+| 2026-08-12 | Sandhyavandana Shala Onboarding session 12th Aug 2026 | 59.5m | 283 | [watch](https://www.youtube.com/watch?v=1d5ZCFUGiT8) |
+| 2026-08-12 | Sandhyavandana Shala Onboarding session -12th Aug 2026 | 70.1m | 884 | [watch](https://www.youtube.com/watch?v=cQvHGTAp-qE) |
 | 2026-08-11 | Sandhyavandana Shala -Onboarding session1 -11th Aug 2026 | 53.1m | 1400 | [watch](https://www.youtube.com/watch?v=OLEOCYxZz2g) |
 
 ## NKHK (Other)
@@ -470,7 +470,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
-| 2026-03-27 | SriSatyadhyana Teertha Jeevan Charitra Mahima in Marathi-27thMarch 2026 | 64.2m | 109 | [watch](https://www.youtube.com/watch?v=B90eM1suC0k) |
+| 2026-03-27 | SriSatyadhyana Teertha Jeevan Charitra Mahima in Marathi-27thMarch 2026 | 64.2m | 110 | [watch](https://www.youtube.com/watch?v=B90eM1suC0k) |
 | 2026-02-01 | SriSatyagnanateertha Charitra MahimaMarathi -1st Feb mangala | 86.2m | 189 | [watch](https://www.youtube.com/watch?v=sV21hTytu0w) |
 | 2026-01-31 | SriSriSatyaGnanateertha Charitra Mahima in Marathi 31st Jan 2026 | 81.4m | 215 | [watch](https://www.youtube.com/watch?v=UnFM6QRh7Hc) |
 
@@ -480,7 +480,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 |---|---|---|---|---|
 | 2021-02-05 | Sri Gopaladasara Charitre Day3 -Mangala | 91.5m | 82 | [watch](https://www.youtube.com/watch?v=yYfdqm4j0F0) |
 | 2021-02-03 | Sri Gopaladasara Charitre Day 2 Feb 3rd. | 70.3m | 164 | [watch](https://www.youtube.com/watch?v=x2rxjq4-7d0) |
-| 2021-02-02 | Sri Gopaladasara Jeevana Charitre 2nd Feb | 80.3m | 165 | [watch](https://www.youtube.com/watch?v=pQZm7EtnAT4) |
+| 2021-02-02 | Sri Gopaladasara Jeevana Charitre 2nd Feb | 80.3m | 166 | [watch](https://www.youtube.com/watch?v=pQZm7EtnAT4) |
 
 ## SriJayateertha Swamiji (Charitra/Mahima)
 
@@ -556,7 +556,7 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
-| 2026-04-02 | Sandhyavandana Satsanga Kondapur | 61.0m | 80 | [watch](https://www.youtube.com/watch?v=2pgCytAh2EM) |
+| 2026-04-02 | Sandhyavandana Satsanga Kondapur | 61.0m | 81 | [watch](https://www.youtube.com/watch?v=2pgCytAh2EM) |
 
 ## Panchanga Shravana
 
