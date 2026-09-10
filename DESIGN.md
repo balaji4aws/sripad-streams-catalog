@@ -769,8 +769,22 @@ catalogue infers:
 Only the first three are read from the source. Steps 4 and 5 are inferences, and the label says so -
 "Pratah Sankalpa Gadya (Kannada, assumed)". This is a real change to the project's "never guess"
 rule, made deliberately and at the channel's direction, and the way it is kept honest is that the
-guess is never hidden. An assumed-Kannada sequence is also kept as its own group rather than merged
-into a confirmed-Kannada one, so an assumption cannot quietly swell a run that was actually stated.
+guess is never hidden.
+
+Getting the grouping right took a second attempt worth recording. The first version treated "assumed"
+as part of a sequence's identity, so an assumed-Kannada run stayed separate from a stated-Kannada one
+— the intent being that a guess should not quietly swell a run the channel had actually named. The
+effect on a reader was worse than the problem it solved: **thirteen** categories came out as two
+groups of the same language, "Deva Pooja (NKHK) (Kannada)" sitting directly above "Deva Pooja (NKHK)
+(Kannada, assumed)", which reads as two different series. It also defeated the `swamincha` marker
+entirely: that marker exists to reunite two videos of one series, and it correctly identified the
+language, only for the assumed flag to split the pair straight back apart.
+
+So the flag is now recorded per video and never used to group. A sequence is labelled
+"(Kannada, assumed)" only when *nothing* in it names a language; where some videos state it and
+others do not, the label reads plainly and a note carries the detail — "5 of these 18 videos do not
+name a language; Kannada is assumed for them." That took 73 sequences down to 55, with no series
+split by an assumption, and the disclosure is still there for anyone who wants it.
 
 Step 4 deserves a note on restraint. It would be easy to build a long list of Marathi word endings
 and infer a language from grammar across the whole catalogue. There is exactly one marker,

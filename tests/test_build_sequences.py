@@ -15,6 +15,7 @@ from build_sequences import (
     build_groups,
     category_names_language,
     detect_language,
+    language_notes,
     normalize_words,
     order_videos,
     resolve_language,
@@ -154,14 +155,39 @@ class BuildGroupsTests(unittest.TestCase):
         self.assertEqual([video["seq"] for video in videos], [1, 2, 3])
         self.assertTrue(all(video["total"] == 3 for video in videos))
 
-    def test_an_assumed_language_does_not_merge_into_a_stated_one(self):
-        """Assuming Kannada must not quietly swell the confirmed Kannada track."""
+    def test_a_partly_assumed_language_stays_one_sequence(self):
+        """Splitting on it produced "Series (Kannada)" beside "Series (Kannada,
+        assumed)", making one series look like two."""
         rows = [
             row(1, "Series", "Series Kannada Day1"),
             row(2, "Series", "Series Day2"),
         ]
-        labels = {group["label"] for group in build_groups(rows)}
-        self.assertEqual(labels, {"Series (Kannada)", "Series (Kannada, assumed)"})
+        groups = build_groups(rows)
+        self.assertEqual(len(groups), 1)
+        self.assertEqual(groups[0]["label"], "Series (Kannada)")
+        self.assertEqual(groups[0]["count"], 2)
+        self.assertEqual(groups[0]["assumed_count"], 1)
+        self.assertFalse(groups[0]["language_assumed"], "one video states it, so not wholly assumed")
+
+    def test_a_partly_assumed_sequence_discloses_it_in_a_note(self):
+        """The label reads plainly, so without a note the guess would be hidden."""
+        rows = [
+            row(1, "Series", "Series Kannada Day1"),
+            row(2, "Series", "Series Day2"),
+        ]
+        notes = build_groups(rows)[0]["notes"]
+        self.assertEqual(
+            notes,
+            ["1 of these 2 videos does not name a language; Kannada is assumed for it."],
+        )
+
+    def test_a_wholly_assumed_sequence_needs_no_note(self):
+        """The label already says "assumed"; a note would just repeat it."""
+        rows = [row(1, "Series", "Series Day1"), row(2, "Series", "Series Day2")]
+        group = build_groups(rows)[0]
+        self.assertEqual(group["label"], "Series (Kannada, assumed)")
+        self.assertTrue(group["language_assumed"])
+        self.assertEqual(group["notes"], [])
 
     def test_a_category_naming_no_language_anywhere_is_assumed_kannada(self):
         rows = [row(1, "Series", "Series Day1"), row(2, "Series", "Series Day2")]
@@ -394,3 +420,24 @@ class NormalizeWordsTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class LanguageNotesTests(unittest.TestCase):
+    def test_nothing_assumed_needs_no_note(self):
+        self.assertEqual(language_notes("kannada", assumed_count=0, total=5), [])
+
+    def test_everything_assumed_needs_no_note(self):
+        """The label already carries it."""
+        self.assertEqual(language_notes("kannada", assumed_count=5, total=5), [])
+
+    def test_one_assumed_video_reads_correctly(self):
+        self.assertEqual(
+            language_notes("marathi", assumed_count=1, total=2),
+            ["1 of these 2 videos does not name a language; Marathi is assumed for it."],
+        )
+
+    def test_several_assumed_videos_read_correctly(self):
+        self.assertEqual(
+            language_notes("kannada", assumed_count=5, total=18),
+            ["5 of these 18 videos do not name a language; Kannada is assumed for them."],
+        )

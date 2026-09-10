@@ -211,6 +211,23 @@ def session_part(title: str) -> int:
     return int(match.group(1)) if match else 0
 
 
+def language_notes(language: str, *, assumed_count: int, total: int) -> list[str]:
+    """Disclose an assumption that the label alone cannot express.
+
+    When every video in a sequence needed the assumption, the label already says
+    "(Kannada, assumed)" and no note is needed. The awkward case is a sequence
+    where only SOME titles name the language: the label reads plainly, so without
+    a note a reader would have no way to know part of it was inferred.
+    """
+    if assumed_count == 0 or assumed_count == total:
+        return []
+    one = assumed_count == 1
+    return [
+        f"{assumed_count} of these {total} videos {'does' if one else 'do'} not name a language; "
+        f"{language.title()} is assumed for {'it' if one else 'them'}."
+    ]
+
+
 def sequence_notes(videos: list[dict[str, Any]]) -> list[str]:
     """Things a reader should know about a sequence before working through it.
 
@@ -356,17 +373,27 @@ def sequence_label(category: str, language: str, *, assumed: bool = False) -> st
 
 def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Group rows into (category, language) sequences, ordered oldest-first."""
-    # Keyed on whether the language was assumed as well as what it is, so an
-    # assumed-Kannada run stays separate from a confirmed-Kannada one rather than
-    # quietly merging into it.
-    groups_map: dict[tuple[str, str, bool], list[dict[str, Any]]] = defaultdict(list)
+    # Keyed on category and language only. Whether the language was stated or
+    # assumed is recorded per video, NOT used to split the group: doing that put
+    # "Deva Pooja (Kannada)" beside "Deva Pooja (Kannada, assumed)" and made one
+    # series look like two, in thirteen categories. Where only some videos needed
+    # the assumption, the sequence says so in a note instead.
+    groups_map: dict[tuple[str, str], list[dict[str, Any]]] = defaultdict(list)
+    assumed_ids: set[str] = set()
     for row in rows:
         category = row["category"]
         language, assumed = resolve_language(category, row["title"])
-        groups_map[(category, language, assumed)].append(row)
+        if assumed:
+            assumed_ids.add(row["video_id"])
+        groups_map[(category, language)].append(row)
 
     groups: list[dict[str, Any]] = []
-    for (category, language, assumed), items in groups_map.items():
+    for (category, language), items in groups_map.items():
+        assumed_here = sum(1 for item in items if item["video_id"] in assumed_ids)
+        # Only call the whole sequence's language assumed when nothing in it
+        # states one. If even one video names the language, the sequence is
+        # labelled plainly and the note carries the detail.
+        assumed = assumed_here == len(items)
         ordered = order_videos(items)
 
         # Only the word list is published. The joined text it is built from was
@@ -398,7 +425,10 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
             "language_assumed": assumed,
             "label": sequence_label(category, language, assumed=assumed),
             "count": len(videos),
-            "notes": sequence_notes(videos),
+            "assumed_count": assumed_here,
+            "notes": sequence_notes(videos) + language_notes(
+                language, assumed_count=assumed_here, total=len(videos),
+            ),
             "search_words": sorted(set(normalize_words(searchable))),
             "videos": videos,
         })
