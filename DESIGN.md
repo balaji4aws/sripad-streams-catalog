@@ -108,7 +108,6 @@ sripad-streams-catalog/
 ├── README.md                  what this is and how to run it
 ├── DESIGN.md                  this file — every decision and why
 ├── REFRESH.md                  runbook for re-scanning the channel, and the checks that matter
-├── .kiro/steering/             the same rules, loaded automatically when working in this repository
 ├── LICENSE                     MIT, covering the code
 ├── Makefile                    the development commands, and what CI runs
 ├── pyproject.toml              lint and type-checker configuration (not an installable package)
@@ -517,8 +516,7 @@ things to check afterwards that no test can judge: whether a new video failed to
 rule, whether a new title defeated the date parser, whether the scan date actually moved, whether a
 sequence lost its order, and whether the diff is the size it should be. It also records the
 known-good numbers from the last scan as a baseline, so "more changed than I expected" is a question
-that can actually be answered. `.kiro/steering/` carries the same rules in a form that is loaded
-automatically when working in this repository.
+that can actually be answered.
 
 ---
 
