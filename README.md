@@ -1,5 +1,8 @@
 # Sripad K — Streams Catalog
 
+[![CI](https://github.com/balaji4aws/sripad-streams-catalog/actions/workflows/ci.yml/badge.svg)](https://github.com/balaji4aws/sripad-streams-catalog/actions/workflows/ci.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+
 This project turns one YouTube channel's giant, unsorted list of live-stream recordings into
 something a viewer can actually use: a small search page that returns videos **in the order you
 should watch them**, not just a pile of loosely related links.
