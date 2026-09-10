@@ -10,13 +10,16 @@ import unittest
 from typing import Any
 
 from build_sequences import (
+    ASSUMED_LANGUAGE,
     LANGUAGE_SPELLINGS,
     build_groups,
     category_names_language,
     detect_language,
     normalize_words,
     order_videos,
+    resolve_language,
     sequence_label,
+    sequence_notes,
     session_number,
     session_part,
 )
@@ -57,8 +60,9 @@ class DetectLanguageTests(unittest.TestCase):
 
     def test_a_misspelling_maps_to_the_canonical_name(self):
         """The label must read "(Marathi)", never "(Marati)"."""
-        self.assertEqual(sequence_label("Tulasi Stotra", detect_language("NKHK marati Tulasi")),
-                         "Tulasi Stotra (Marathi)")
+        language = detect_language("NKHK marati Tulasi")
+        assert language is not None
+        self.assertEqual(sequence_label("Tulasi Stotra", language), "Tulasi Stotra (Marathi)")
 
     def test_the_full_spelling_wins_over_its_own_truncation(self):
         """"marath" is a prefix of "marathi", so order of matching matters."""
@@ -90,22 +94,24 @@ class SequenceLabelTests(unittest.TestCase):
     def test_language_is_not_repeated(self):
         self.assertEqual(sequence_label("Manimanjari (Kannada)", "kannada"), "Manimanjari (Kannada)")
 
-    def test_unknown_language_is_marked_when_the_category_has_language_siblings(self):
-        """A bare label beside "(Kannada)" reads as a tool failure, so say it plainly."""
+    def test_an_assumed_language_says_so(self):
+        """A reader must be able to tell a guess from something the channel said."""
         self.assertEqual(
-            sequence_label("Satyatma Sandhya", None, has_language_siblings=True),
-            "Satyatma Sandhya (Language not stated)",
+            sequence_label("Pratah Sankalpa Gadya", "kannada", assumed=True),
+            "Pratah Sankalpa Gadya (Kannada, assumed)",
         )
 
-    def test_unknown_language_is_not_marked_when_no_sibling_names_one(self):
-        """Where a whole category names no language, the marker is noise."""
+    def test_a_stated_language_is_not_marked_as_assumed(self):
         self.assertEqual(
-            sequence_label("Pratah Sankalpa Gadya", None, has_language_siblings=False),
-            "Pratah Sankalpa Gadya",
+            sequence_label("Satyatma Sandhya", "kannada"),
+            "Satyatma Sandhya (Kannada)",
         )
 
-    def test_no_language_leaves_the_category_alone_by_default(self):
-        self.assertEqual(sequence_label("Pratah Sankalpa Gadya", None), "Pratah Sankalpa Gadya")
+    def test_an_assumed_language_is_not_repeated_when_the_category_states_it(self):
+        self.assertEqual(
+            sequence_label("Manimanjari (Kannada)", "kannada", assumed=True),
+            "Manimanjari (Kannada)",
+        )
 
 
 class BuildGroupsTests(unittest.TestCase):
@@ -148,26 +154,20 @@ class BuildGroupsTests(unittest.TestCase):
         self.assertEqual([video["seq"] for video in videos], [1, 2, 3])
         self.assertTrue(all(video["total"] == 3 for video in videos))
 
-    def test_videos_with_no_language_form_their_own_sequence(self):
+    def test_an_assumed_language_does_not_merge_into_a_stated_one(self):
+        """Assuming Kannada must not quietly swell the confirmed Kannada track."""
         rows = [
             row(1, "Series", "Series Kannada Day1"),
-            row(2, "Series", "Series Day1"),
-        ]
-        groups = build_groups(rows)
-        self.assertEqual({group["language"] for group in groups}, {"kannada", None})
-
-    def test_an_unknown_language_sequence_says_so_beside_a_known_one(self):
-        rows = [
-            row(1, "Series", "Series Kannada Day1"),
-            row(2, "Series", "Series Day1"),
+            row(2, "Series", "Series Day2"),
         ]
         labels = {group["label"] for group in build_groups(rows)}
-        self.assertEqual(labels, {"Series (Kannada)", "Series (Language not stated)"})
+        self.assertEqual(labels, {"Series (Kannada)", "Series (Kannada, assumed)"})
 
-    def test_a_wholly_unknown_language_category_is_left_unmarked(self):
+    def test_a_category_naming_no_language_anywhere_is_assumed_kannada(self):
         rows = [row(1, "Series", "Series Day1"), row(2, "Series", "Series Day2")]
         groups = build_groups(rows)
-        self.assertEqual([group["label"] for group in groups], ["Series"])
+        self.assertEqual([group["label"] for group in groups], ["Series (Kannada, assumed)"])
+        self.assertTrue(groups[0]["language_assumed"])
 
     def test_larger_sequences_come_first(self):
         rows = [
@@ -266,6 +266,87 @@ class OrderVideosTests(unittest.TestCase):
         items = [row(10, "S", "Day 33 S"), row(20, "S", "Day 32(2) S"), row(30, "S", "Day 32(1) S")]
         self.assertEqual([i["title"] for i in order_videos(items)],
                          ["Day 32(1) S", "Day 32(2) S", "Day 33 S"])
+
+
+class ResolveLanguageTests(unittest.TestCase):
+    """The ladder from "the source says so" down to "we assumed"."""
+
+    def test_the_category_naming_it_wins(self):
+        self.assertEqual(resolve_language("Manimanjari (Kannada)", "Manimanjari Day 5"),
+                         ("kannada", False))
+
+    def test_the_title_naming_it_is_not_an_assumption(self):
+        self.assertEqual(resolve_language("Satyatma Sandhya", "Satyatma Sandhya English Day1"),
+                         ("english", False))
+
+    def test_a_channel_confirmed_series_is_not_an_assumption(self):
+        """Told to us for the whole series, so it is not marked assumed."""
+        self.assertEqual(resolve_language("Bhagavata Saroddhara", "Day 5 Bhagavata Saroddhara"),
+                         ("kannada", False))
+
+    def test_marathi_grammar_without_the_language_name_is_an_assumption(self):
+        self.assertEqual(resolve_language("SriRaghavendra Swami",
+                                          "SriRaghavendra swamincha Charitra ,mahima"),
+                         ("marathi", True))
+
+    def test_nothing_at_all_falls_back_to_assumed_kannada(self):
+        self.assertEqual(resolve_language("Pratah Sankalpa Gadya", "Day 6 - Pratah Sankalpa Gadya"),
+                         (ASSUMED_LANGUAGE, True))
+
+    def test_a_stated_language_beats_a_marathi_marker(self):
+        self.assertEqual(
+            resolve_language("SriRaghavendra Swami", "SriRaghavendra Swamincha Charitra Marathi"),
+            ("marathi", False),
+        )
+
+
+class SequenceNotesTests(unittest.TestCase):
+    def video(self, title: str, date: str = "2024-01-01", minutes: float = 50.0) -> dict[str, Any]:
+        return {"title": title, "date": date, "duration_min": minutes}
+
+    def numbered(self, *numbers: int) -> list[dict[str, Any]]:
+        return [self.video(f"Day {n} S") for n in numbers]
+
+    def test_a_missing_session_is_explained(self):
+        notes = sequence_notes(self.numbered(1, 2, 3, 5, 6))
+        self.assertEqual(len(notes), 1)
+        self.assertIn("Session 4 is not on the channel", notes[0])
+
+    def test_several_missing_sessions_read_naturally(self):
+        notes = sequence_notes(self.numbered(1, 2, 5, 6, 7))
+        self.assertIn("Sessions 3, 4 are not on the channel", notes[0])
+
+    def test_a_complete_run_says_nothing(self):
+        self.assertEqual(sequence_notes(self.numbered(1, 2, 3, 4, 5)), [])
+
+    def test_the_same_recording_uploaded_twice(self):
+        """Same session number, same date, same length: one upload done twice."""
+        videos = self.numbered(1, 2, 3, 4)
+        videos.append(self.video("Day 4 S  again", date="2024-01-01", minutes=50.0))
+        notes = sequence_notes(videos)
+        self.assertTrue(any("uploaded more than once" in note for note in notes), notes)
+
+    def test_two_different_recordings_sharing_a_number(self):
+        videos = self.numbered(1, 2, 3, 4)
+        videos.append(self.video("Day 3 S other", date="2024-03-03", minutes=61.0))
+        notes = sequence_notes(videos)
+        self.assertTrue(any("may be numbered wrongly" in note for note in notes), notes)
+        self.assertTrue(any("2024-01-01, 2024-03-03" in note for note in notes), notes)
+
+    def test_a_session_split_into_parts_is_not_called_a_duplicate(self):
+        videos = self.numbered(1, 2, 3)
+        videos += [self.video(f"Day 4({p}) S", minutes=9.0) for p in (1, 2, 3)]
+        notes = sequence_notes(videos)
+        self.assertEqual(notes, ["Session 4 was uploaded in 3 parts, listed here in order."])
+
+    def test_a_barely_numbered_sequence_produces_no_notes(self):
+        """With most titles unnumbered, a gap says nothing about missing videos."""
+        videos = [self.video("Day 1 S"), self.video("S no number"), self.video("S none either"),
+                  self.video("S nor this"), self.video("Day 9 S")]
+        self.assertEqual(sequence_notes(videos), [])
+
+    def test_an_unnumbered_sequence_produces_no_notes(self):
+        self.assertEqual(sequence_notes([self.video("S one"), self.video("S two")]), [])
 
 
 class SessionPartTests(unittest.TestCase):

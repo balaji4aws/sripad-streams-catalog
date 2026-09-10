@@ -742,3 +742,78 @@ Verified rather than assumed:
 - **The repository was not renamed.** The published URL is in circulation, so the name stays even
   though the catalogue now covers more than streams. Only the page heading and generated document
   titles were reworded.
+
+---
+
+## 10. Content decisions taken with the channel
+
+Some problems in the catalogue are not code problems. They were put to the channel and settled by it,
+and this section records what was decided and why, so nobody quietly reverses it later.
+
+### 10.1 An assumed language, stated as assumed
+
+200 videos name no language anywhere in their titles - 108 of them the whole Bhagavata Saroddhara
+series. Leaving them in a separate "Language not stated" group was accurate but not much use to a
+reader trying to find Kannada teaching.
+
+The channel confirmed Bhagavata Saroddhara is Kannada, and that Kannada is the right assumption
+elsewhere. So `resolve_language()` now works down a ladder, from what the source states to what the
+catalogue infers:
+
+1. the category name states it, e.g. "Manimanjari (Kannada)";
+2. the title states it, including known misspellings;
+3. the channel has confirmed it for the whole series;
+4. the title carries Marathi grammar without naming the language;
+5. nothing identifies it, so Kannada is assumed.
+
+Only the first three are read from the source. Steps 4 and 5 are inferences, and the label says so -
+"Pratah Sankalpa Gadya (Kannada, assumed)". This is a real change to the project's "never guess"
+rule, made deliberately and at the channel's direction, and the way it is kept honest is that the
+guess is never hidden. An assumed-Kannada sequence is also kept as its own group rather than merged
+into a confirmed-Kannada one, so an assumption cannot quietly swell a run that was actually stated.
+
+Step 4 deserves a note on restraint. It would be easy to build a long list of Marathi word endings
+and infer a language from grammar across the whole catalogue. There is exactly one marker,
+`swamincha`, a Marathi possessive, and it is there because two videos of one series carry it while
+only one of them also says "Marathi" - so without it that pair splits in half. Candidates like
+`ancha` were tested and rejected for matching "Panchanga" and "Panchami". The list is evidence-driven,
+not a general-purpose language detector.
+
+### 10.2 Notes instead of hiding things
+
+Four oddities came out of the content audit: a session the channel never posted, a session uploaded
+twice, two different recordings sharing one number, and one class uploaded as five short parts. The
+channel's answer in each case was the same - show everything, and explain it.
+
+So `sequence_notes()` derives a short note per sequence from the data itself rather than from a
+hand-written list, which means the notes stay true as the channel grows. It distinguishes cases that
+look alike but are not: two uploads with the same date and length are a duplicate upload ("either
+copy will do"), two with different dates are different recordings ("one of them may be numbered
+wrongly"), and consecutive part numbers are one class in several files ("uploaded in 3 parts, listed
+here in order"). Notes appear below the video list, where they are read after the thing they explain.
+
+A sequence needs at least four numbered sessions, and most of its videos numbered, before notes are
+generated at all: below that a "gap" is far more likely to be an unnumbered title than a missing
+video, and a confident note about a missing session would be wrong.
+
+### 10.3 Short videos are kept
+
+Nine videos run under three minutes and sit inside real series - almost certainly streams that failed
+on starting. The channel chose to keep them in sequence rather than hide them, on the grounds that a
+catalogue should show what is there. They are left in place and not flagged.
+
+### 10.4 Categories merged
+
+Four buckets were split by wording rather than by subject, which made the topic list harder to read
+than the data warranted:
+
+- "Dhyana", "Anusandhana" and "Anusandhana + Dhyana" - one, four and two videos - became
+  **Dhyana & Anusandhana (NKHK)**. One strand of teaching, three near-empty categories.
+- "SriJayateertha (Teekacharya) Charitra" and "SriJayateertha Swamiji (Charitra/Mahima)" became
+  **SriJayateertha (Teekacharya) Charitra & Mahima**. Teekacharya is Jayateertha's title, not a
+  different person, so these were the same subject under two names. The *stuti* stays separate: a
+  hymn is not a life story.
+- "NKHK (Other)" and "NKHK Satsanga (Other)" - eight videos each - became **NKHK Satsanga & Other
+  Talks**. Two catch-alls distinguishable only by whether a title used the word "satsanga".
+
+That took 44 categories to 40, and exactly the intended 33 videos moved.

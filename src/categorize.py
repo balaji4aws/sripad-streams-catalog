@@ -91,8 +91,12 @@ RULES: list[tuple[str, list[str]]] = [
     ("Sandhyavandana Online", ["sandhyaonline", "sandhya online", "sandhyavandana-online",
                                "sandhyavandana online", "sandhyavandana-onl"]),
     ("Pratah Sankalpa Gadya", ["sankalpa gadya"]),
-    ("SriJayateertha (Teekacharya) Charitra", ["teekacharya", "teekachrayara", "teekachrya"]),
-    ("SriJayateertha Swamiji (Charitra/Mahima)", ["jayateertha"]),
+    # Teekacharya IS Sri Jayateertha - it is his title, not a different person -
+    # so his charitra and mahima were being split into two buckets that read as
+    # separate subjects to anyone browsing. The stuti (the hymn) stays separate,
+    # handled by the check at the top of categorize().
+    ("SriJayateertha (Teekacharya) Charitra & Mahima",
+     ["teekacharya", "teekachrayara", "teekachrya", "jayateertha"]),
     ("SriRaghoottama Teertha", ["raghoottama", "raghottama"]),
     ("SriRaghavendra Swami", ["raghavendra"]),
     # The run-together spellings matter: "NKHK VighneshSandhi Day4" was falling
@@ -109,8 +113,11 @@ RULES: list[tuple[str, list[str]]] = [
     ("Sripadaraja/Satyabhinava Teertha", ["sripadarajateertha", "satyabhinva", "satyabhinava", "sripadaraja"]),
     ("Sandhyavandana Satsanga", ["sandhyavandana satsanga", "kondapur"]),
     ("Sandhyavandana (Other)", ["sandhyavandana"]),
-    ("Dhyana (NKHK)", ["dhyana"]),
-    ("Anusandhana", ["anusandhana"]),
+    # Dhyana and anusandhana were three separate buckets of one, two and four
+    # videos - "Dhyana", "Anusandhana", and "Anusandhana + Dhyana" for the
+    # sessions covering both. They are one short strand of teaching, and three
+    # near-empty categories only made it harder to find.
+    ("Dhyana & Anusandhana (NKHK)", ["dhyana", "anusandhana"]),
     ("Narasimha Stuti/Stotra", ["narasimha"]),
     ("Purushottama Stotra", ["purushottama"]),
     ("Tulasi Stotra", ["tulasi"]),
@@ -122,9 +129,12 @@ RULES: list[tuple[str, list[str]]] = [
     ("Adhika Masa Mahatmya", ["adhika masa", "adhikamasa"]),
     ("Ganesha Stotra", ["ganesha", "ganesh dwadash"]),
     ("Ekadashi Katha", ["ekadashi"]),
-    ("NKHK Satsanga (Other)", ["satsanga", "satsang"]),
     ("Naham Karta Hari Karta (Meeting Room)", ["naham karta"]),
-    ("NKHK (Other)", ["nkhk"]),
+    # The last resort. There were two catch-alls here, "NKHK (Other)" and
+    # "NKHK Satsanga (Other)", holding eight videos each and distinguishable only
+    # by whether a title happened to use the word "satsanga" - a difference of
+    # wording, not of subject. One bucket is more honest about what it is.
+    ("NKHK Satsanga & Other Talks", ["satsanga", "satsang", "nkhk"]),
 ]
 
 _TEEKACHARYA_SPELLINGS = ("teekacharya", "teekachrayara", "teekachrya")
@@ -224,10 +234,6 @@ def categorize(title: str) -> str:
     # as this series when the title also names a kind of recitation.
     if "krishna" in text and any(word in text for word in _RECITATION_WORDS):
         return "SriKrishna Stotra/Stuti"
-    # A combined session gets its own name rather than being forced into
-    # either "Dhyana" or "Anusandhana" alone.
-    if "dhyana" in text and "anusandhana" in text:
-        return "Anusandhana + Dhyana (NKHK)"
     for category, needles in RULES:
         if any(needle in text for needle in needles):
             return category

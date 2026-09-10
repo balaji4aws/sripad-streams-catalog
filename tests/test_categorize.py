@@ -264,18 +264,22 @@ class CategorizeTests(unittest.TestCase):
         )
         self.assertNotEqual(categorize_title("NKHK Krishna satsanga"), "SriKrishna Stotra/Stuti")
 
-    def test_combined_session_gets_its_own_series(self):
-        self.assertEqual(
-            categorize_title("NKHK Anusandhana+Dhyana 19th Dec"),
-            "Anusandhana + Dhyana (NKHK)",
-        )
+    def test_dhyana_and_anusandhana_share_one_category(self):
+        """Three near-empty buckets for one strand of teaching only hid it."""
+        for title in ("NKHK Anusandhana+Dhyana 19th Dec", "NKHK Dhyana day1 13th May 2021",
+                      "Marathi Sandhya Anusandhana 3rd July 2021"):
+            with self.subTest(title=title):
+                self.assertEqual(categorize_title(title), "Dhyana & Anusandhana (NKHK)")
 
-    def test_jayateertha_stuti_is_distinct_from_teekacharya_charitra(self):
+    def test_the_stuti_stays_separate_from_the_charitra(self):
+        """Teekacharya is Jayateertha's title, so both charitra buckets merged -
+        but the stuti is a hymn, a different thing, and must not merge in."""
         self.assertEqual(categorize_title("Jayateertha Stuti Day2 16thJuly"), "SriJayateertha Stuti")
-        self.assertEqual(
-            categorize_title("Teekacharya's charitra in Marathi -Day2- 13th July 2025"),
-            "SriJayateertha (Teekacharya) Charitra",
-        )
+        for title in ("Teekacharya's charitra in Marathi -Day2- 13th July 2025",
+                      "SriJayateertha Swamiji Charitra ,Mahima1st Aug 2026"):
+            with self.subTest(title=title):
+                self.assertEqual(categorize_title(title),
+                                 "SriJayateertha (Teekacharya) Charitra & Mahima")
 
     def test_unmatched_title_is_not_forced_into_a_series(self):
         self.assertEqual(categorize_title("something entirely unrelated"), UNCATEGORIZED)

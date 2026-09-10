@@ -281,12 +281,17 @@ try {
       topics: document.querySelectorAll('#topics button').length
     };
   })()`);
-  check(typed.labels.length === 3, `three sequences rendered (got ${typed.labels.length})`,
-    typed.labels.join(' | '));
+  check(typed.labels.length > 0, `results rendered (${typed.labels.length} sequences)`,
+    typed.labels.slice(0, 3).join(' | '));
+  // The point of the language split: an English or Marathi track must never
+  // appear in a Kannada search, however many Kannada ones there are.
   check(typed.labels.every((label) => /Kannada/i.test(label)),
     'every result is a Kannada track', typed.labels.join(' | '));
+  check(typed.labels.every((label) => !/\((English|Marathi)/i.test(label)),
+    'no other-language track leaked in');
   check(/sequence\(s\) found/.test(typed.status), 'status updated', typed.status);
-  check(typed.topics === 3, `topic buttons filtered down to the matches (got ${typed.topics})`);
+  check(typed.topics > 0 && typed.topics < expectedTopicCount,
+    `topic buttons filtered down to the matches (${typed.topics} of ${expectedTopicCount})`);
 
   section('3. Result rows');
   const rows = await evaluate(`(() => {
@@ -318,6 +323,20 @@ try {
     'that description is visually hidden but still in the accessibility tree');
   check(rows.headerScopes.every((scope) => scope === 'col'),
     'all column headers declare scope="col"');
+
+  // A sequence with something worth explaining - a session the channel never
+  // posted, or one uploaded twice - must say so below its list.
+  const notes = await evaluate(`(() => {
+    const q = document.getElementById('q');
+    q.value = 'bhagavata saroddhara';
+    q.dispatchEvent(new Event('input', { bubbles: true }));
+    const section = document.querySelector('#results .group');
+    const rendered = [...section.querySelectorAll('p.note')].map((p) => p.textContent);
+    return { rendered, afterTable: [...section.children].pop().className };
+  })()`);
+  check(notes.rendered.length >= 1, `sequence notes render (${notes.rendered.length} shown)`,
+    notes.rendered[0] || 'none');
+  check(notes.afterTable === 'note', 'notes sit below the video list, not above it');
 
   // --- 4. keyboard ---------------------------------------------------------
 

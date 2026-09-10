@@ -253,18 +253,28 @@ class PipelineTests(unittest.TestCase):
             with self.subTest(label=group["label"]):
                 self.assertNotIn("(English)", group["label"])
 
-    def test_an_unknown_language_sequence_is_labelled_where_it_could_be_mistaken(self):
-        """Beside a language-specific sibling, an unlabelled sequence must say why."""
-        by_category: dict[str, list[dict[str, Any]]] = {}
+    def test_every_sequence_has_a_language(self):
+        """Nothing is left unlabelled: it is stated, confirmed, or assumed."""
         for group in self.groups:
-            by_category.setdefault(group["category"], []).append(group)
+            with self.subTest(label=group["label"]):
+                self.assertTrue(group["language"])
 
-        for category, siblings in by_category.items():
-            has_known = any(group["language"] for group in siblings)
-            for group in siblings:
-                if group["language"] is None and has_known:
-                    with self.subTest(category=category):
-                        self.assertIn(build_sequences.UNKNOWN_LANGUAGE_LABEL, group["label"])
+    def test_an_assumed_language_is_always_shown_as_assumed(self):
+        """A reader must never mistake an assumption for something the channel said."""
+        for group in self.groups:
+            with self.subTest(label=group["label"]):
+                if group["language_assumed"]:
+                    self.assertIn(build_sequences.ASSUMED_SUFFIX, group["label"])
+                else:
+                    self.assertNotIn(build_sequences.ASSUMED_SUFFIX, group["label"])
+
+    def test_an_assumed_sequence_never_merges_into_a_stated_one(self):
+        """Otherwise a guess would silently pad a run the channel actually named."""
+        seen: set[tuple[str, str, bool]] = set()
+        for group in self.groups:
+            key = (group["category"], group["language"], group["language_assumed"])
+            self.assertNotIn(key, seen)
+            seen.add(key)
 
     # --- catalog metadata ---------------------------------------------------
 

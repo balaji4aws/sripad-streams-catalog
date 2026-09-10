@@ -1,7 +1,7 @@
 # Sripad K — Video Catalogue
 
 Auto-generated from the channel's /streams and /videos tabs (**Sripad K**, 1510 subscribers).
-Total videos: **465** across **44** categories.
+Total videos: **465** across **40** categories.
 Channel last scanned **2026-09-10**; next scan due 2026-09-24.
 
 Categorization is by title-keyword matching (see `src/categorize.py`) — it groups
@@ -22,31 +22,28 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | [Satyatma Sandhya](#satyatma-sandhya) | 39 |
 | [Manimanjari (Kannada)](#manimanjari-kannada) | 38 |
 | [Pratah Sankalpa Gadya](#pratah-sankalpa-gadya) | 25 |
+| [NKHK Satsanga & Other Talks](#nkhk-satsanga-other-talks) | 16 |
 | [Vighnesha Sandhi (NKHK)](#vighnesha-sandhi-nkhk) | 15 |
 | [Sandhyavandana Online](#sandhyavandana-online) | 13 |
 | [Deva Pooja (NKHK)](#deva-pooja-nkhk) | 13 |
 | [SriJayateertha Stuti](#srijayateertha-stuti) | 11 |
+| [SriJayateertha (Teekacharya) Charitra & Mahima](#srijayateertha-teekacharya-charitra-mahima) | 10 |
 | [Srinivasa Kalyana (NKHK)](#srinivasa-kalyana-nkhk) | 10 |
 | [Sandhya Shala (Onboarding/Classes)](#sandhya-shala-onboarding-classes) | 9 |
-| [SriJayateertha (Teekacharya) Charitra](#srijayateertha-teekacharya-charitra) | 8 |
 | [SriRaghoottama Teertha](#sriraghoottama-teertha) | 8 |
-| [NKHK Satsanga (Other)](#nkhk-satsanga-other) | 8 |
-| [NKHK (Other)](#nkhk-other) | 8 |
+| [Dhyana & Anusandhana (NKHK)](#dhyana-anusandhana-nkhk) | 7 |
 | [28 Moorthi Stuti (NKHK)](#28-moorthi-stuti-nkhk) | 7 |
 | [SriKrishna Stotra/Stuti](#srikrishna-stotra-stuti) | 6 |
 | [Navabrindavana Mahima (NKHK)](#navabrindavana-mahima-nkhk) | 5 |
 | [Sripadaraja/Satyabhinava Teertha](#sripadaraja-satyabhinava-teertha) | 4 |
-| [Dhyana (NKHK)](#dhyana-nkhk) | 4 |
 | [Naham Karta Hari Karta (Meeting Room)](#naham-karta-hari-karta-meeting-room) | 4 |
 | [Satyadhyana/Satyagnana Teertha Charitra](#satyadhyana-satyagnana-teertha-charitra) | 3 |
 | [Sri Gopaladasara Charitre](#sri-gopaladasara-charitre) | 3 |
-| [SriJayateertha Swamiji (Charitra/Mahima)](#srijayateertha-swamiji-charitra-mahima) | 2 |
 | [SriRaghavendra Swami](#sriraghavendra-swami) | 2 |
 | [Sandhyavandana (Other)](#sandhyavandana-other) | 2 |
 | [Adhika Masa Mahatmya](#adhika-masa-mahatmya) | 2 |
 | [Narasimha Stuti/Stotra](#narasimha-stuti-stotra) | 2 |
 | [Tulasi Stotra](#tulasi-stotra) | 2 |
-| [Anusandhana + Dhyana (NKHK)](#anusandhana-dhyana-nkhk) | 2 |
 | [Taratamya (NKHK)](#taratamya-nkhk) | 2 |
 | [Pushpahasa Satsanga](#pushpahasa-satsanga) | 2 |
 | [Paranjyothi Satsanga](#paranjyothi-satsanga) | 2 |
@@ -58,7 +55,6 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | [Ganesha Stotra](#ganesha-stotra) | 1 |
 | [Purushottama Stotra](#purushottama-stotra) | 1 |
 | [Harikathamruta Sara](#harikathamruta-sara) | 1 |
-| [Anusandhana](#anusandhana) | 1 |
 | [Uncategorized / Other](#uncategorized-other) | 1 |
 | [Mutt Utsava / Puja](#mutt-utsava-puja) | 1 |
 
@@ -381,6 +377,27 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2022-10-06 | Prataha sankalpa Gadya Day2 - 6th Oct 2022 | 16.9m | 788 | [watch](https://www.youtube.com/watch?v=wO_sONZDn3o) |
 | 2022-10-05 | Prataha Sankalpa Gadya - Day1- 5th Oct | 25.1m | 1700 | [watch](https://www.youtube.com/watch?v=mdEw4fcmyWk) |
 
+## NKHK Satsanga & Other Talks
+
+| Date | Title | Duration | Views | Link |
+|---|---|---|---|---|
+| 2023-06-25 | NKHK Jamshedpur satsang 25th June 2023 | 20.6m | 248 | [watch](https://www.youtube.com/watch?v=cwog-PtWY2s) |
+| 2023-06-13 | NKHK kannada 28 Moorti stuti day1 13th June | 85.2m | 222 | [watch](https://www.youtube.com/watch?v=bdEAwaHNda8) |
+| 2022-07-24 | NKHK Marathi Dwadasha Stotra day1 | 51.9m | 77 | [watch](https://www.youtube.com/watch?v=8JnMcAX0JRw) |
+| 2022-06-02 | NKHK marathi 2nd June 2022 | 53.8m | 71 | [watch](https://www.youtube.com/watch?v=U_3bX9JCBFw) |
+| 2022-06-12 | NKHK Marathi Sri Sri  Raghuvaryateertha Stuti 12June | 76.8m | 117 | [watch](https://www.youtube.com/watch?v=FpkvtK-4gcY) |
+| 2021-09-11 | NKHK Marathi 11th Sept.2021 | 48.4m | 52 | [watch](https://www.youtube.com/watch?v=jOO3eBCr7iE) |
+| 2021-08-14 | NKHK Sandhya Marathi 14th Aug | 31.6m | 74 | [watch](https://www.youtube.com/watch?v=c6lVtLM22x4) |
+| 2021-07-17 | NKHK marathi 17th July 2021 | 1.3m | 53 | [watch](https://www.youtube.com/watch?v=6PHWExuS2b4) |
+| 2021-07-11 | NKHK kannada karyashala 11th July 2021 | 76.5m | 99 | [watch](https://www.youtube.com/watch?v=GnbFc8sh804) |
+| 2021-06-16 | NKHK-Spl.Satsanga -GO Mahima-Pt.Sri Sanjeevaacharya 16th June | 96.3m | 351 | [watch](https://www.youtube.com/watch?v=xdoNNw_m6HE) |
+| 2021-06-13 | Marathi Satsanga 13th June Ramapanchakam | 86.6m | 112 | [watch](https://www.youtube.com/watch?v=NdJQ7cmSeuI) |
+| 2021-05-30 | Marathi Satsanga 30th May | 86.6m | 152 | [watch](https://www.youtube.com/watch?v=RnIG-rGXLO4) |
+| 2021-05-12 | NKHK Satsanga 12th May | 45.9m | 54 | [watch](https://www.youtube.com/watch?v=3Km59EwAJaY) |
+| 2021-04-14 | kannada satsanga 14th April | 53.4m | 53 | [watch](https://www.youtube.com/watch?v=8wegu7tsvpY) |
+| 2021-03-24 | Kannada satsanga 24th March 2021 | 46.2m | 62 | [watch](https://www.youtube.com/watch?v=Az3_i9X9tOU) |
+| 2021-03-21 | Marathi satsanga 21st March | 136.8m | 198 | [watch](https://www.youtube.com/watch?v=jC1WfNDElkk) |
+
 ## Vighnesha Sandhi (NKHK)
 
 | Date | Title | Duration | Views | Link |
@@ -453,6 +470,21 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2025-07-20 | -Artha-Marathi-Shloka2-SriJayateerthastuti | 21.0m | 146 | [watch](https://www.youtube.com/watch?v=nKuu16YNE-g) |
 | 2025-07-16 | SriJayateerthastuti artha-Marathi-Shloka1-Day1-16th July 2025 | 18.5m | 282 | [watch](https://www.youtube.com/watch?v=mQt31SV3Ytw) |
 
+## SriJayateertha (Teekacharya) Charitra & Mahima
+
+| Date | Title | Duration | Views | Link |
+|---|---|---|---|---|
+| 2026-08-02 | SriJayateertha Swamiji ( Teekacharya) Charitra,Mahima-Marathi-2nd Aug 2026 | 98.1m | 269 | [watch](https://www.youtube.com/watch?v=5On2RYgO1AA) |
+| 2026-08-01 | SriJayateertha Swamiji Charitra ,Mahima1st Aug 2026 | 86.0m | 191 | [watch](https://www.youtube.com/watch?v=ewyYTS-yvww) |
+| 2025-07-27 | SriJayateerthastiti-shloka12,13-Artha-Marathi | 40.2m | 95 | [watch](https://www.youtube.com/watch?v=2Sdb_IhQypo) |
+| 2025-07-13 | Teekacharya's charitra in Marathi -Day2- 13th July 2025 | 71.0m | 411 | [watch](https://www.youtube.com/watch?v=imRci11Ezpg) |
+| 2025-07-12 | SriTeekacharya Charitra and mahima-Marathi-12th July2025 | 79.9m | 609 | [watch](https://www.youtube.com/watch?v=JGUmLHow8QQ) |
+| 2021-08-03 | NKHK Kannada SriTeekachrayara Charitre Day3 3rd Aug 2021 | 56.8m | 131 | [watch](https://www.youtube.com/watch?v=LFxw5wTnsto) |
+| 2021-08-01 | NKHK Marathi SriTeekacharya Charitra 1st Aug 2021 | 96.7m | 125 | [watch](https://www.youtube.com/watch?v=k9yL2sLIt1o) |
+| 2021-07-29 | NKHK Kannada SriTeekacharyara charitre Day2 | 46.1m | 93 | [watch](https://www.youtube.com/watch?v=iYxFXwf_uuI) |
+| 2021-07-28 | NKHK Kannada Sri Teekacharyara Charitre Day2 28th July | 2.5m | 36 | [watch](https://www.youtube.com/watch?v=0YQ88JVHcrM) |
+| 2021-07-27 | NKHK Kannada SriTeekacharyara charitre mahima 27th July | 72.3m | 254 | [watch](https://www.youtube.com/watch?v=pJnmp1Qi-Xo) |
+
 ## Srinivasa Kalyana (NKHK)
 
 | Date | Title | Duration | Views | Link |
@@ -482,19 +514,6 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2026-08-12 | Sandhyavandana Shala Onboarding session -12th Aug 2026 | 70.1m | 884 | [watch](https://www.youtube.com/watch?v=cQvHGTAp-qE) |
 | 2026-08-11 | Sandhyavandana Shala -Onboarding session1 -11th Aug 2026 | 53.1m | 1400 | [watch](https://www.youtube.com/watch?v=OLEOCYxZz2g) |
 
-## SriJayateertha (Teekacharya) Charitra
-
-| Date | Title | Duration | Views | Link |
-|---|---|---|---|---|
-| 2026-08-02 | SriJayateertha Swamiji ( Teekacharya) Charitra,Mahima-Marathi-2nd Aug 2026 | 98.1m | 269 | [watch](https://www.youtube.com/watch?v=5On2RYgO1AA) |
-| 2025-07-13 | Teekacharya's charitra in Marathi -Day2- 13th July 2025 | 71.0m | 411 | [watch](https://www.youtube.com/watch?v=imRci11Ezpg) |
-| 2025-07-12 | SriTeekacharya Charitra and mahima-Marathi-12th July2025 | 79.9m | 609 | [watch](https://www.youtube.com/watch?v=JGUmLHow8QQ) |
-| 2021-08-03 | NKHK Kannada SriTeekachrayara Charitre Day3 3rd Aug 2021 | 56.8m | 131 | [watch](https://www.youtube.com/watch?v=LFxw5wTnsto) |
-| 2021-08-01 | NKHK Marathi SriTeekacharya Charitra 1st Aug 2021 | 96.7m | 125 | [watch](https://www.youtube.com/watch?v=k9yL2sLIt1o) |
-| 2021-07-29 | NKHK Kannada SriTeekacharyara charitre Day2 | 46.1m | 93 | [watch](https://www.youtube.com/watch?v=iYxFXwf_uuI) |
-| 2021-07-28 | NKHK Kannada Sri Teekacharyara Charitre Day2 28th July | 2.5m | 36 | [watch](https://www.youtube.com/watch?v=0YQ88JVHcrM) |
-| 2021-07-27 | NKHK Kannada SriTeekacharyara charitre mahima 27th July | 72.3m | 254 | [watch](https://www.youtube.com/watch?v=pJnmp1Qi-Xo) |
-
 ## SriRaghoottama Teertha
 
 | Date | Title | Duration | Views | Link |
@@ -508,31 +527,17 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2025-02-23 | SriSriRaghoottamateertha Stotra - Marathi class- 23rd Feb | 47.7m | 163 | [watch](https://www.youtube.com/watch?v=7oe12NjhZMo) |
 | 2025-02-09 | SriRaghoottama stotra -Marathi -09th Feb 2025 | 47.2m | 196 | [watch](https://www.youtube.com/watch?v=LQsUQBsp8EI) |
 
-## NKHK Satsanga (Other)
+## Dhyana & Anusandhana (NKHK)
 
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
-| 2023-06-25 | NKHK Jamshedpur satsang 25th June 2023 | 20.6m | 248 | [watch](https://www.youtube.com/watch?v=cwog-PtWY2s) |
-| 2021-06-16 | NKHK-Spl.Satsanga -GO Mahima-Pt.Sri Sanjeevaacharya 16th June | 96.3m | 351 | [watch](https://www.youtube.com/watch?v=xdoNNw_m6HE) |
-| 2021-06-13 | Marathi Satsanga 13th June Ramapanchakam | 86.6m | 112 | [watch](https://www.youtube.com/watch?v=NdJQ7cmSeuI) |
-| 2021-05-30 | Marathi Satsanga 30th May | 86.6m | 152 | [watch](https://www.youtube.com/watch?v=RnIG-rGXLO4) |
-| 2021-05-12 | NKHK Satsanga 12th May | 45.9m | 54 | [watch](https://www.youtube.com/watch?v=3Km59EwAJaY) |
-| 2021-04-14 | kannada satsanga 14th April | 53.4m | 53 | [watch](https://www.youtube.com/watch?v=8wegu7tsvpY) |
-| 2021-03-24 | Kannada satsanga 24th March 2021 | 46.2m | 62 | [watch](https://www.youtube.com/watch?v=Az3_i9X9tOU) |
-| 2021-03-21 | Marathi satsanga 21st March | 136.8m | 198 | [watch](https://www.youtube.com/watch?v=jC1WfNDElkk) |
-
-## NKHK (Other)
-
-| Date | Title | Duration | Views | Link |
-|---|---|---|---|---|
-| 2023-06-13 | NKHK kannada 28 Moorti stuti day1 13th June | 85.2m | 222 | [watch](https://www.youtube.com/watch?v=bdEAwaHNda8) |
-| 2022-07-24 | NKHK Marathi Dwadasha Stotra day1 | 51.9m | 77 | [watch](https://www.youtube.com/watch?v=8JnMcAX0JRw) |
-| 2022-06-02 | NKHK marathi 2nd June 2022 | 53.8m | 71 | [watch](https://www.youtube.com/watch?v=U_3bX9JCBFw) |
-| 2022-06-12 | NKHK Marathi Sri Sri  Raghuvaryateertha Stuti 12June | 76.8m | 117 | [watch](https://www.youtube.com/watch?v=FpkvtK-4gcY) |
-| 2021-09-11 | NKHK Marathi 11th Sept.2021 | 48.4m | 52 | [watch](https://www.youtube.com/watch?v=jOO3eBCr7iE) |
-| 2021-08-14 | NKHK Sandhya Marathi 14th Aug | 31.6m | 74 | [watch](https://www.youtube.com/watch?v=c6lVtLM22x4) |
-| 2021-07-17 | NKHK marathi 17th July 2021 | 1.3m | 53 | [watch](https://www.youtube.com/watch?v=6PHWExuS2b4) |
-| 2021-07-11 | NKHK kannada karyashala 11th July 2021 | 76.5m | 99 | [watch](https://www.youtube.com/watch?v=GnbFc8sh804) |
+| 2025-10-12 | Pranayama and Dhyana Marathi Satsanga 12th Oct 2025 | 69.6m | 230 | [watch](https://www.youtube.com/watch?v=S_AlMTCHjlI) |
+| 2021-12-09 | NKHK kannada Anusandhana+Dhyana | 67.4m | 116 | [watch](https://www.youtube.com/watch?v=M_UY2qkx6Gk) |
+| 2021-12-19 | NKHK Anusandhana+Dhyana 19th Dec | 87.2m | 151 | [watch](https://www.youtube.com/watch?v=HGfdH6qIw0k) |
+| 2021-07-03 | Marathi Sandhya Anusandhana 3rd July 2021 | 42.4m | 113 | [watch](https://www.youtube.com/watch?v=JhIvP3cMvoI) |
+| 2021-05-16 | NKHK Dhyana Day1 Marathi 16th May 2021 | 97.8m | 720 | [watch](https://www.youtube.com/watch?v=AMaTn9XgvPw) |
+| 2021-05-14 | NKHK Dhyana Day2 14th May 2021 | 40.5m | 109 | [watch](https://www.youtube.com/watch?v=vn4HRCP7Ptk) |
+| 2021-05-13 | NKHK Dhyana day1 13th May 2021 | 65.7m | 167 | [watch](https://www.youtube.com/watch?v=yheudmgodT4) |
 
 ## 28 Moorthi Stuti (NKHK)
 
@@ -576,15 +581,6 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2021-06-25 | NKHK Kannada Satsanga Sri Sri Satyabhinava Teerthara Charitre/Mahima | 80.2m | 217 | [watch](https://www.youtube.com/watch?v=0NOgydhptRw) |
 | 2021-06-23 | NKHK Satsanga Sri Sripadarajara Mahima 23June2021 | 67.0m | 245 | [watch](https://www.youtube.com/watch?v=b14Pp63z-do) |
 
-## Dhyana (NKHK)
-
-| Date | Title | Duration | Views | Link |
-|---|---|---|---|---|
-| 2025-10-12 | Pranayama and Dhyana Marathi Satsanga 12th Oct 2025 | 69.6m | 230 | [watch](https://www.youtube.com/watch?v=S_AlMTCHjlI) |
-| 2021-05-16 | NKHK Dhyana Day1 Marathi 16th May 2021 | 97.8m | 720 | [watch](https://www.youtube.com/watch?v=AMaTn9XgvPw) |
-| 2021-05-14 | NKHK Dhyana Day2 14th May 2021 | 40.5m | 109 | [watch](https://www.youtube.com/watch?v=vn4HRCP7Ptk) |
-| 2021-05-13 | NKHK Dhyana day1 13th May 2021 | 65.7m | 167 | [watch](https://www.youtube.com/watch?v=yheudmgodT4) |
-
 ## Naham Karta Hari Karta (Meeting Room)
 
 | Date | Title | Duration | Views | Link |
@@ -609,13 +605,6 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | 2021-02-05 | Sri Gopaladasara Charitre Day3 -Mangala | 91.5m | 82 | [watch](https://www.youtube.com/watch?v=yYfdqm4j0F0) |
 | 2021-02-03 | Sri Gopaladasara Charitre Day 2 Feb 3rd. | 70.3m | 164 | [watch](https://www.youtube.com/watch?v=x2rxjq4-7d0) |
 | 2021-02-02 | Sri Gopaladasara Jeevana Charitre 2nd Feb | 80.3m | 166 | [watch](https://www.youtube.com/watch?v=pQZm7EtnAT4) |
-
-## SriJayateertha Swamiji (Charitra/Mahima)
-
-| Date | Title | Duration | Views | Link |
-|---|---|---|---|---|
-| 2026-08-01 | SriJayateertha Swamiji Charitra ,Mahima1st Aug 2026 | 86.0m | 191 | [watch](https://www.youtube.com/watch?v=ewyYTS-yvww) |
-| 2025-07-27 | SriJayateerthastiti-shloka12,13-Artha-Marathi | 40.2m | 95 | [watch](https://www.youtube.com/watch?v=2Sdb_IhQypo) |
 
 ## SriRaghavendra Swami
 
@@ -651,13 +640,6 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 |---|---|---|---|---|
 | 2022-05-29 | NKHK Marathi Tulasi Stotra Day2 29 may | 57.7m | 43 | [watch](https://www.youtube.com/watch?v=Pj3u4LciwOo) |
 | 2022-05-22 | NKHK marati Tulasi 22nd May | 53.5m | 54 | [watch](https://www.youtube.com/watch?v=RjgBtXbG4gY) |
-
-## Anusandhana + Dhyana (NKHK)
-
-| Date | Title | Duration | Views | Link |
-|---|---|---|---|---|
-| 2021-12-09 | NKHK kannada Anusandhana+Dhyana | 67.4m | 116 | [watch](https://www.youtube.com/watch?v=M_UY2qkx6Gk) |
-| 2021-12-19 | NKHK Anusandhana+Dhyana 19th Dec | 87.2m | 151 | [watch](https://www.youtube.com/watch?v=HGfdH6qIw0k) |
 
 ## Taratamya (NKHK)
 
@@ -728,12 +710,6 @@ for exactly how dates are resolved, including the year-carry-backward logic.
 | Date | Title | Duration | Views | Link |
 |---|---|---|---|---|
 | 2022-06-08 | NKHK Kannada Harikathamruta sara Day 2-  8th June | 60.3m | 61 | [watch](https://www.youtube.com/watch?v=v_QyikGTyIo) |
-
-## Anusandhana
-
-| Date | Title | Duration | Views | Link |
-|---|---|---|---|---|
-| 2021-07-03 | Marathi Sandhya Anusandhana 3rd July 2021 | 42.4m | 113 | [watch](https://www.youtube.com/watch?v=JhIvP3cMvoI) |
 
 ## Uncategorized / Other
 

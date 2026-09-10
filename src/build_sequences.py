@@ -71,9 +71,26 @@ _LANGUAGE_BY_SPELLING: list[tuple[str, str]] = sorted(
     key=lambda pair: -len(pair[0]),
 )
 
-#: Shown in place of a language when a title names none. The language is never
-#: inferred from anything other than the title text.
-UNKNOWN_LANGUAGE_LABEL = "Language not stated"
+#: Marathi grammatical forms that identify the language without naming it.
+#: Deliberately tiny and evidence-based: "swamincha" is a Marathi possessive, and
+#: it appears on two videos of one series where only the other one says
+#: "Marathi", so without it that pair splits apart. Candidates like "ancha" were
+#: rejected for matching "Panchanga" and "Panchami".
+MARATHI_MARKERS = ["swamincha"]
+
+#: Languages confirmed by the channel for a whole series, where no title says so.
+#: These are told to us, not inferred, so they are not marked as assumed.
+CONFIRMED_CATEGORY_LANGUAGES = {
+    "Bhagavata Saroddhara": "kannada",
+}
+
+#: Where nothing identifies the language, the catalogue assumes this one - most
+#: of the channel's teaching is in it. The assumption is always shown to the
+#: reader rather than hidden (see sequence_label), because it IS an assumption.
+ASSUMED_LANGUAGE = "kannada"
+
+#: Suffix marking a language the catalogue worked out rather than read.
+ASSUMED_SUFFIX = "assumed"
 
 REQUIRED_FIELDS = ("category", "title", "list_position", "date", "video_id", "url")
 
@@ -87,15 +104,29 @@ _COMBINING_CATEGORIES = frozenset({"Mn", "Mc"})
 # is session six, but "Final Day 24th June" is a date that happens to sit after
 # the word "Day". This is the same distinction categorize.py draws when parsing
 # dates, for the same reason.
-# The `(?!\d)` matters: without it the engine backtracks to a shorter digit run
-# to satisfy the ordinal guard, so "Final Day 24th June" yields session 2 by
+# A "Day N" session label.
+#
+# The label may run straight onto the preceding word - "manimanjariDay19" - so it
+# cannot require a separator before it. Instead the weekday names are excluded
+# explicitly, since those are the words that end in "day" and would otherwise
+# make "Saturday 17th Sept" look like session 17.
+#
+# The `(?!\d)` matters too: without it the engine backtracks to a shorter digit
+# run to satisfy the ordinal guard, so "Final Day 24th June" yields session 2 by
 # matching just the "2" and finding "4th" acceptable after it.
-_SESSION_RE = re.compile(r"(?:^|[^a-z])day[\s\-_:.]*(\d{1,3})(?!\d)(?!\s*(?:st|nd|rd|th)\b)", re.I)
+_NOT_A_WEEKDAY = "".join(
+    f"(?<!{stem})" for stem in ("mon", "tues", "wednes", "thurs", "fri", "satur", "sun", "birth")
+)
+_SESSION_RE = re.compile(
+    rf"{_NOT_A_WEEKDAY}day[\s\-_:.]*(\d{{1,3}})(?!\d)(?!\s*(?:st|nd|rd|th)\b)", re.I
+)
 
 # A part number attached to a session label: "Day 32(4)". Anchored to the day
 # label so a verse number elsewhere in the title ("Shloka 48(2)") is not read as
 # a part.
-_SESSION_PART_RE = re.compile(r"(?:^|[^a-z])day[\s\-_:.]*\d{1,3}\s*\((\d{1,2})\)", re.I)
+_SESSION_PART_RE = re.compile(
+    rf"{_NOT_A_WEEKDAY}day[\s\-_:.]*\d{{1,3}}\s*\((\d{{1,2}})\)", re.I
+)
 
 
 def detect_language(title: str) -> str | None:
@@ -180,6 +211,73 @@ def session_part(title: str) -> int:
     return int(match.group(1)) if match else 0
 
 
+def sequence_notes(videos: list[dict[str, Any]]) -> list[str]:
+    """Things a reader should know about a sequence before working through it.
+
+    Derived from the data, not written by hand, so they stay true as the channel
+    grows. Two things get flagged, both of which are otherwise puzzling:
+
+    - A session number missing from an otherwise continuous run. The video is
+      not on the channel; nothing is being hidden.
+    - A session number used twice. Two identical uploads and two different
+      recordings sharing a number are different problems, so they are worded
+      differently, distinguished by whether date and length match.
+
+    Sequences whose titles are not numbered produce no notes: there is nothing
+    to check a run against.
+    """
+    by_number: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    for video in videos:
+        number = session_number(video["title"])
+        if number is not None:
+            by_number[number].append(video)
+
+    # Below this, the numbered videos are too small a share of the sequence for a
+    # "run" to mean anything, and a gap would more likely be an unnumbered title
+    # than a missing video.
+    if len(by_number) < 4 or len(by_number) < 0.6 * len(videos):
+        return []
+
+    notes: list[str] = []
+    present = sorted(by_number)
+
+    missing = [number for number in range(min(present), max(present) + 1) if number not in by_number]
+    if missing:
+        listed = ", ".join(str(number) for number in missing)
+        singular = len(missing) == 1
+        notes.append(
+            f"{'Session' if singular else 'Sessions'} {listed} "
+            f"{'is' if singular else 'are'} not on the channel, so the numbering skips "
+            f"{'it' if singular else 'them'}."
+        )
+
+    for number in present:
+        copies = by_number[number]
+        if len(copies) < 2:
+            continue
+
+        # One class uploaded as several videos - "Day 32(1)" .. "Day 32(5)" - is
+        # not a duplicate. It is worth explaining, since those parts are much
+        # shorter than a normal session.
+        parts = {session_part(video["title"]) for video in copies}
+        if len(parts) == len(copies) and 0 not in parts:
+            notes.append(f"Session {number} was uploaded in {len(copies)} parts, listed here in order.")
+            continue
+
+        if len({(video["date"], video["duration_min"]) for video in copies}) == 1:
+            notes.append(
+                f"Session {number} appears {len(copies)} times because the same recording was "
+                f"uploaded more than once. Either copy will do."
+            )
+        else:
+            dates = ", ".join(sorted(video["date"] for video in copies))
+            notes.append(
+                f"Session {number} appears {len(copies)} times as different recordings ({dates}). "
+                f"Both are kept here; one of them may be numbered wrongly."
+            )
+    return notes
+
+
 def order_videos(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Put a sequence's videos into watch order, oldest first.
 
@@ -216,42 +314,59 @@ def order_videos(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     return sorted(items, key=lambda item: item["list_position"], reverse=True)
 
 
-def sequence_label(category: str, language: str | None, *, has_language_siblings: bool = False) -> str:
+def resolve_language(category: str, title: str) -> tuple[str, bool]:
+    """Work out a sequence's language. Returns (language, was_it_assumed).
+
+    In order of how much the source actually tells us:
+
+    1. The category name states it, e.g. "Manimanjari (Kannada)".
+    2. The title states it, including known misspellings.
+    3. The channel has confirmed it for the whole series.
+    4. The title carries Marathi grammar without naming the language.
+    5. Nothing identifies it, so Kannada is assumed.
+
+    Only the first three are read from the source. Cases 4 and 5 are inferences,
+    and are reported as such so the label can say so - a reader should be able to
+    tell what was written down from what was worked out.
+    """
+    stated = category_names_language(category) or detect_language(title)
+    if stated:
+        return stated, False
+    confirmed = CONFIRMED_CATEGORY_LANGUAGES.get(category)
+    if confirmed:
+        return confirmed, False
+    lowered = title.lower()
+    if any(marker in lowered for marker in MARATHI_MARKERS):
+        return "marathi", True
+    return ASSUMED_LANGUAGE, True
+
+
+def sequence_label(category: str, language: str, *, assumed: bool = False) -> str:
     """Build the display label for a sequence.
 
     Avoids a redundant "(Kannada) (Kannada)" when the category name already
-    states the language.
-
-    When a video's title names no language, the language is left unknown rather
-    than guessed. That is only worth saying out loud when the same category ALSO
-    produced language-specific sequences: there, a bare "Satyatma Sandhya"
-    sitting beside "Satyatma Sandhya (Kannada)" reads as if the language were
-    missing from the tool rather than from the source titles, so it is labelled
-    explicitly. Where a whole category names no language anywhere, the marker
-    would be noise on every one of its sequences, so it is omitted.
+    states the language, and marks an assumed language so a reader is never
+    misled into thinking the channel said it.
     """
-    if language:
-        return category if f"({language})" in category.lower() else f"{category} ({language.title()})"
-    return f"{category} ({UNKNOWN_LANGUAGE_LABEL})" if has_language_siblings else category
+    if f"({language})" in category.lower():
+        return category
+    suffix = f"{language.title()}, {ASSUMED_SUFFIX}" if assumed else language.title()
+    return f"{category} ({suffix})"
 
 
 def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Group rows into (category, language) sequences, ordered oldest-first."""
-    groups_map: dict[tuple[str, str | None], list[dict[str, Any]]] = defaultdict(list)
+    # Keyed on whether the language was assumed as well as what it is, so an
+    # assumed-Kannada run stays separate from a confirmed-Kannada one rather than
+    # quietly merging into it.
+    groups_map: dict[tuple[str, str, bool], list[dict[str, Any]]] = defaultdict(list)
     for row in rows:
         category = row["category"]
-        language = category_names_language(category) or detect_language(row["title"])
-        groups_map[(category, language)].append(row)
-
-    # Categories that produced at least one language-specific sequence. Used to
-    # decide whether an unknown-language sequence needs to say so - see
-    # sequence_label().
-    categories_with_a_language = {
-        category for (category, language) in groups_map if language is not None
-    }
+        language, assumed = resolve_language(category, row["title"])
+        groups_map[(category, language, assumed)].append(row)
 
     groups: list[dict[str, Any]] = []
-    for (category, language), items in groups_map.items():
+    for (category, language, assumed), items in groups_map.items():
         ordered = order_videos(items)
 
         # Only the word list is published. The joined text it is built from was
@@ -259,7 +374,7 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         # the file the page downloads on every visit.
         searchable = " ".join([
             category.lower(),
-            language or "",
+            language,
             *(item["title"].lower() for item in ordered),
         ])
 
@@ -280,11 +395,10 @@ def build_groups(rows: list[dict[str, Any]]) -> list[dict[str, Any]]:
         groups.append({
             "category": category,
             "language": language,
-            "label": sequence_label(
-                category, language,
-                has_language_siblings=category in categories_with_a_language,
-            ),
+            "language_assumed": assumed,
+            "label": sequence_label(category, language, assumed=assumed),
             "count": len(videos),
+            "notes": sequence_notes(videos),
             "search_words": sorted(set(normalize_words(searchable))),
             "videos": videos,
         })

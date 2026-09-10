@@ -10,16 +10,22 @@
     "refresh_interval_days": 14,
     "next_scan_due": "2026-09-24",
     "video_count": 465,
-    "category_count": 44,
+    "category_count": 40,
     "newest_video_date": "2026-09-06",
     "oldest_video_date": "2015-03-30"
   },
   "groups": [
     {
       "category": "Bhagavata Saroddhara",
-      "language": null,
-      "label": "Bhagavata Saroddhara",
+      "language": "kannada",
+      "language_assumed": false,
+      "label": "Bhagavata Saroddhara (Kannada)",
       "count": 108,
+      "notes": [
+        "Session 13 appears 2 times because the same recording was uploaded more than once. Either copy will do.",
+        "Session 32 was uploaded in 5 parts, listed here in order.",
+        "Session 73 appears 2 times as different recordings (2025-04-05, 2025-04-27). Both are kept here; one of them may be numbered wrongly."
+      ],
       "search_words": [
         "04",
         "06",
@@ -268,6 +274,7 @@
         "july",
         "jun",
         "june",
+        "kannada",
         "mar",
         "march",
         "may",
@@ -1385,8 +1392,10 @@
     {
       "category": "Sumadhwavijaya (Marathi)",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Sumadhwavijaya (Marathi)",
       "count": 84,
+      "notes": [],
       "search_words": [
         "10th",
         "11th",
@@ -2318,8 +2327,13 @@
     {
       "category": "Manimanjari (Kannada)",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Manimanjari (Kannada)",
       "count": 38,
+      "notes": [
+        "Session 20 appears 2 times as different recordings (2026-05-20, 2026-05-22). Both are kept here; one of them may be numbered wrongly.",
+        "Session 24 appears 2 times as different recordings (2026-06-09, 2026-06-18). Both are kept here; one of them may be numbered wrongly."
+      ],
       "search_words": [
         "10th",
         "11th",
@@ -2769,9 +2783,13 @@
     },
     {
       "category": "Pratah Sankalpa Gadya",
-      "language": null,
-      "label": "Pratah Sankalpa Gadya",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Pratah Sankalpa Gadya (Kannada, assumed)",
       "count": 25,
+      "notes": [
+        "Session 5 is not on the channel, so the numbering skips it."
+      ],
       "search_words": [
         "10",
         "10th",
@@ -2827,6 +2845,7 @@
         "gadya",
         "jan",
         "jan7th",
+        "kannada",
         "mar",
         "march",
         "nov",
@@ -3095,8 +3114,10 @@
     {
       "category": "Satyatma Sandhya",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Satyatma Sandhya (Kannada)",
       "count": 13,
+      "notes": [],
       "search_words": [
         "1",
         "12th",
@@ -3275,9 +3296,11 @@
     },
     {
       "category": "Sandhyavandana Online",
-      "language": null,
-      "label": "Sandhyavandana Online (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Sandhyavandana Online (Kannada, assumed)",
       "count": 11,
+      "notes": [],
       "search_words": [
         "15th",
         "17th",
@@ -3292,6 +3315,7 @@
         "august",
         "dec",
         "jan",
+        "kannada",
         "nov",
         "oct",
         "online",
@@ -3414,8 +3438,10 @@
     {
       "category": "Satyatma Sandhya",
       "language": "english",
+      "language_assumed": false,
       "label": "Satyatma Sandhya (English)",
       "count": 11,
+      "notes": [],
       "search_words": [
         "10",
         "15th",
@@ -3570,8 +3596,10 @@
     {
       "category": "Satyatma Sandhya",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Satyatma Sandhya (Marathi)",
       "count": 10,
+      "notes": [],
       "search_words": [
         "10th",
         "13th",
@@ -3701,10 +3729,143 @@
       ]
     },
     {
-      "category": "Sandhya Shala (Onboarding/Classes)",
-      "language": null,
-      "label": "Sandhya Shala (Onboarding/Classes)",
+      "category": "NKHK Satsanga & Other Talks",
+      "language": "marathi",
+      "language_assumed": false,
+      "label": "NKHK Satsanga & Other Talks (Marathi)",
       "count": 9,
+      "notes": [],
+      "search_words": [
+        "11th",
+        "12june",
+        "13th",
+        "14th",
+        "17th",
+        "2021",
+        "2022",
+        "21st",
+        "2nd",
+        "30th",
+        "aug",
+        "day1",
+        "dwadasha",
+        "july",
+        "june",
+        "marathi",
+        "march",
+        "may",
+        "nkhk",
+        "other",
+        "raghuvaryateertha",
+        "ramapanchakam",
+        "sandhya",
+        "satsanga",
+        "sept",
+        "sri",
+        "stotra",
+        "stuti",
+        "talks"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 9,
+          "date": "2021-03-21",
+          "title": "Marathi satsanga 21st March",
+          "video_id": "jC1WfNDElkk",
+          "url": "https://www.youtube.com/watch?v=jC1WfNDElkk",
+          "duration_min": 136.8,
+          "view_count": 198
+        },
+        {
+          "seq": 2,
+          "total": 9,
+          "date": "2021-05-30",
+          "title": "Marathi Satsanga 30th May",
+          "video_id": "RnIG-rGXLO4",
+          "url": "https://www.youtube.com/watch?v=RnIG-rGXLO4",
+          "duration_min": 86.6,
+          "view_count": 152
+        },
+        {
+          "seq": 3,
+          "total": 9,
+          "date": "2021-06-13",
+          "title": "Marathi Satsanga 13th June Ramapanchakam",
+          "video_id": "NdJQ7cmSeuI",
+          "url": "https://www.youtube.com/watch?v=NdJQ7cmSeuI",
+          "duration_min": 86.6,
+          "view_count": 112
+        },
+        {
+          "seq": 4,
+          "total": 9,
+          "date": "2021-07-17",
+          "title": "NKHK marathi 17th July 2021",
+          "video_id": "6PHWExuS2b4",
+          "url": "https://www.youtube.com/watch?v=6PHWExuS2b4",
+          "duration_min": 1.3,
+          "view_count": 53
+        },
+        {
+          "seq": 5,
+          "total": 9,
+          "date": "2021-08-14",
+          "title": "NKHK Sandhya Marathi 14th Aug",
+          "video_id": "c6lVtLM22x4",
+          "url": "https://www.youtube.com/watch?v=c6lVtLM22x4",
+          "duration_min": 31.6,
+          "view_count": 74
+        },
+        {
+          "seq": 6,
+          "total": 9,
+          "date": "2021-09-11",
+          "title": "NKHK Marathi 11th Sept.2021",
+          "video_id": "jOO3eBCr7iE",
+          "url": "https://www.youtube.com/watch?v=jOO3eBCr7iE",
+          "duration_min": 48.4,
+          "view_count": 52
+        },
+        {
+          "seq": 7,
+          "total": 9,
+          "date": "2022-06-12",
+          "title": "NKHK Marathi Sri Sri  Raghuvaryateertha Stuti 12June",
+          "video_id": "FpkvtK-4gcY",
+          "url": "https://www.youtube.com/watch?v=FpkvtK-4gcY",
+          "duration_min": 76.8,
+          "view_count": 117
+        },
+        {
+          "seq": 8,
+          "total": 9,
+          "date": "2022-06-02",
+          "title": "NKHK marathi 2nd June 2022",
+          "video_id": "U_3bX9JCBFw",
+          "url": "https://www.youtube.com/watch?v=U_3bX9JCBFw",
+          "duration_min": 53.8,
+          "view_count": 71
+        },
+        {
+          "seq": 9,
+          "total": 9,
+          "date": "2022-07-24",
+          "title": "NKHK Marathi Dwadasha Stotra day1",
+          "video_id": "8JnMcAX0JRw",
+          "url": "https://www.youtube.com/watch?v=8JnMcAX0JRw",
+          "duration_min": 51.9,
+          "view_count": 77
+        }
+      ]
+    },
+    {
+      "category": "Sandhya Shala (Onboarding/Classes)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Sandhya Shala (Onboarding/Classes) (Kannada, assumed)",
+      "count": 9,
+      "notes": [],
       "search_words": [
         "11th",
         "12th",
@@ -3723,6 +3884,7 @@
         "class2",
         "class3",
         "classes",
+        "kannada",
         "module1",
         "onboarding",
         "repeat",
@@ -3831,8 +3993,10 @@
     {
       "category": "SriJayateertha Stuti",
       "language": "marathi",
+      "language_assumed": false,
       "label": "SriJayateertha Stuti (Marathi)",
       "count": 8,
+      "notes": [],
       "search_words": [
         "11",
         "14",
@@ -3951,8 +4115,10 @@
     {
       "category": "Vighnesha Sandhi (NKHK)",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Vighnesha Sandhi (NKHK) (Kannada)",
       "count": 7,
+      "notes": [],
       "search_words": [
         "13",
         "14",
@@ -4051,8 +4217,10 @@
     {
       "category": "Deva Pooja (NKHK)",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Deva Pooja (NKHK) (Marathi)",
       "count": 6,
+      "notes": [],
       "search_words": [
         "13th",
         "2023",
@@ -4136,101 +4304,12 @@
       ]
     },
     {
-      "category": "NKHK (Other)",
-      "language": "marathi",
-      "label": "NKHK (Other) (Marathi)",
-      "count": 6,
-      "search_words": [
-        "11th",
-        "12june",
-        "14th",
-        "17th",
-        "2021",
-        "2022",
-        "2nd",
-        "aug",
-        "day1",
-        "dwadasha",
-        "july",
-        "june",
-        "marathi",
-        "nkhk",
-        "other",
-        "raghuvaryateertha",
-        "sandhya",
-        "sept",
-        "sri",
-        "stotra",
-        "stuti"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 6,
-          "date": "2021-07-17",
-          "title": "NKHK marathi 17th July 2021",
-          "video_id": "6PHWExuS2b4",
-          "url": "https://www.youtube.com/watch?v=6PHWExuS2b4",
-          "duration_min": 1.3,
-          "view_count": 53
-        },
-        {
-          "seq": 2,
-          "total": 6,
-          "date": "2021-08-14",
-          "title": "NKHK Sandhya Marathi 14th Aug",
-          "video_id": "c6lVtLM22x4",
-          "url": "https://www.youtube.com/watch?v=c6lVtLM22x4",
-          "duration_min": 31.6,
-          "view_count": 74
-        },
-        {
-          "seq": 3,
-          "total": 6,
-          "date": "2021-09-11",
-          "title": "NKHK Marathi 11th Sept.2021",
-          "video_id": "jOO3eBCr7iE",
-          "url": "https://www.youtube.com/watch?v=jOO3eBCr7iE",
-          "duration_min": 48.4,
-          "view_count": 52
-        },
-        {
-          "seq": 4,
-          "total": 6,
-          "date": "2022-06-12",
-          "title": "NKHK Marathi Sri Sri  Raghuvaryateertha Stuti 12June",
-          "video_id": "FpkvtK-4gcY",
-          "url": "https://www.youtube.com/watch?v=FpkvtK-4gcY",
-          "duration_min": 76.8,
-          "view_count": 117
-        },
-        {
-          "seq": 5,
-          "total": 6,
-          "date": "2022-06-02",
-          "title": "NKHK marathi 2nd June 2022",
-          "video_id": "U_3bX9JCBFw",
-          "url": "https://www.youtube.com/watch?v=U_3bX9JCBFw",
-          "duration_min": 53.8,
-          "view_count": 71
-        },
-        {
-          "seq": 6,
-          "total": 6,
-          "date": "2022-07-24",
-          "title": "NKHK Marathi Dwadasha Stotra day1",
-          "video_id": "8JnMcAX0JRw",
-          "url": "https://www.youtube.com/watch?v=8JnMcAX0JRw",
-          "duration_min": 51.9,
-          "view_count": 77
-        }
-      ]
-    },
-    {
       "category": "Srinivasa Kalyana (NKHK)",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Srinivasa Kalyana (NKHK) (Kannada)",
       "count": 6,
+      "notes": [],
       "search_words": [
         "12th",
         "13th",
@@ -4321,8 +4400,10 @@
     {
       "category": "Vighnesha Sandhi (NKHK)",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Vighnesha Sandhi (NKHK) (Marathi)",
       "count": 6,
+      "notes": [],
       "search_words": [
         "11th",
         "2022",
@@ -4406,8 +4487,10 @@
     {
       "category": "Deva Pooja (NKHK)",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Deva Pooja (NKHK) (Kannada)",
       "count": 5,
+      "notes": [],
       "search_words": [
         "14th",
         "2021",
@@ -4480,9 +4563,11 @@
     },
     {
       "category": "Satyatma Sandhya",
-      "language": null,
-      "label": "Satyatma Sandhya (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Satyatma Sandhya (Kannada, assumed)",
       "count": 5,
+      "notes": [],
       "search_words": [
         "10th",
         "18th",
@@ -4499,6 +4584,7 @@
         "devapooja",
         "july",
         "june",
+        "kannada",
         "oct",
         "sandhya",
         "satyatma",
@@ -4561,10 +4647,100 @@
       ]
     },
     {
-      "category": "SriRaghoottama Teertha",
-      "language": null,
-      "label": "SriRaghoottama Teertha (Language not stated)",
+      "category": "SriJayateertha (Teekacharya) Charitra & Mahima",
+      "language": "marathi",
+      "language_assumed": false,
+      "label": "SriJayateertha (Teekacharya) Charitra & Mahima (Marathi)",
       "count": 5,
+      "notes": [],
+      "search_words": [
+        "12th",
+        "13",
+        "13th",
+        "1st",
+        "2021",
+        "2025",
+        "2026",
+        "2nd",
+        "and",
+        "artha",
+        "aug",
+        "charitra",
+        "day2",
+        "in",
+        "july",
+        "july2025",
+        "mahima",
+        "marathi",
+        "nkhk",
+        "s",
+        "shloka12",
+        "srijayateertha",
+        "srijayateerthastiti",
+        "sriteekacharya",
+        "swamiji",
+        "teekacharya"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 5,
+          "date": "2021-08-01",
+          "title": "NKHK Marathi SriTeekacharya Charitra 1st Aug 2021",
+          "video_id": "k9yL2sLIt1o",
+          "url": "https://www.youtube.com/watch?v=k9yL2sLIt1o",
+          "duration_min": 96.7,
+          "view_count": 125
+        },
+        {
+          "seq": 2,
+          "total": 5,
+          "date": "2025-07-12",
+          "title": "SriTeekacharya Charitra and mahima-Marathi-12th July2025",
+          "video_id": "JGUmLHow8QQ",
+          "url": "https://www.youtube.com/watch?v=JGUmLHow8QQ",
+          "duration_min": 79.9,
+          "view_count": 609
+        },
+        {
+          "seq": 3,
+          "total": 5,
+          "date": "2025-07-13",
+          "title": "Teekacharya's charitra in Marathi -Day2- 13th July 2025",
+          "video_id": "imRci11Ezpg",
+          "url": "https://www.youtube.com/watch?v=imRci11Ezpg",
+          "duration_min": 71.0,
+          "view_count": 411
+        },
+        {
+          "seq": 4,
+          "total": 5,
+          "date": "2025-07-27",
+          "title": "SriJayateerthastiti-shloka12,13-Artha-Marathi",
+          "video_id": "2Sdb_IhQypo",
+          "url": "https://www.youtube.com/watch?v=2Sdb_IhQypo",
+          "duration_min": 40.2,
+          "view_count": 95
+        },
+        {
+          "seq": 5,
+          "total": 5,
+          "date": "2026-08-02",
+          "title": "SriJayateertha Swamiji ( Teekacharya) Charitra,Mahima-Marathi-2nd Aug 2026",
+          "video_id": "5On2RYgO1AA",
+          "url": "https://www.youtube.com/watch?v=5On2RYgO1AA",
+          "duration_min": 98.1,
+          "view_count": 269
+        }
+      ]
+    },
+    {
+      "category": "SriRaghoottama Teertha",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "SriRaghoottama Teertha (Kannada, assumed)",
+      "count": 5,
+      "notes": [],
       "search_words": [
         "1st",
         "2025",
@@ -4572,6 +4748,7 @@
         "april",
         "artha",
         "charitre",
+        "kannada",
         "managala",
         "march",
         "nkhk",
@@ -4639,8 +4816,10 @@
     {
       "category": "28 Moorthi Stuti (NKHK)",
       "language": "marathi",
+      "language_assumed": false,
       "label": "28 Moorthi Stuti (NKHK) (Marathi)",
       "count": 4,
+      "notes": [],
       "search_words": [
         "1",
         "11th",
@@ -4705,12 +4884,86 @@
       ]
     },
     {
-      "category": "Naham Karta Hari Karta (Meeting Room)",
-      "language": null,
-      "label": "Naham Karta Hari Karta (Meeting Room)",
+      "category": "NKHK Satsanga & Other Talks",
+      "language": "kannada",
+      "language_assumed": false,
+      "label": "NKHK Satsanga & Other Talks (Kannada)",
       "count": 4,
+      "notes": [],
+      "search_words": [
+        "11th",
+        "13th",
+        "14th",
+        "2021",
+        "24th",
+        "28",
+        "april",
+        "day1",
+        "july",
+        "june",
+        "kannada",
+        "karyashala",
+        "march",
+        "moorti",
+        "nkhk",
+        "other",
+        "satsanga",
+        "stuti",
+        "talks"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 4,
+          "date": "2021-03-24",
+          "title": "Kannada satsanga 24th March 2021",
+          "video_id": "Az3_i9X9tOU",
+          "url": "https://www.youtube.com/watch?v=Az3_i9X9tOU",
+          "duration_min": 46.2,
+          "view_count": 62
+        },
+        {
+          "seq": 2,
+          "total": 4,
+          "date": "2021-04-14",
+          "title": "kannada satsanga 14th April",
+          "video_id": "8wegu7tsvpY",
+          "url": "https://www.youtube.com/watch?v=8wegu7tsvpY",
+          "duration_min": 53.4,
+          "view_count": 53
+        },
+        {
+          "seq": 3,
+          "total": 4,
+          "date": "2021-07-11",
+          "title": "NKHK kannada karyashala 11th July 2021",
+          "video_id": "GnbFc8sh804",
+          "url": "https://www.youtube.com/watch?v=GnbFc8sh804",
+          "duration_min": 76.5,
+          "view_count": 99
+        },
+        {
+          "seq": 4,
+          "total": 4,
+          "date": "2023-06-13",
+          "title": "NKHK kannada 28 Moorti stuti day1 13th June",
+          "video_id": "bdEAwaHNda8",
+          "url": "https://www.youtube.com/watch?v=bdEAwaHNda8",
+          "duration_min": 85.2,
+          "view_count": 222
+        }
+      ]
+    },
+    {
+      "category": "Naham Karta Hari Karta (Meeting Room)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Naham Karta Hari Karta (Meeting Room) (Kannada, assumed)",
+      "count": 4,
+      "notes": [],
       "search_words": [
         "hari",
+        "kannada",
         "karta",
         "meeting",
         "naham",
@@ -4762,10 +5015,12 @@
       ]
     },
     {
-      "category": "SriJayateertha (Teekacharya) Charitra",
+      "category": "SriJayateertha (Teekacharya) Charitra & Mahima",
       "language": "kannada",
-      "label": "SriJayateertha (Teekacharya) Charitra (Kannada)",
+      "language_assumed": false,
+      "label": "SriJayateertha (Teekacharya) Charitra & Mahima (Kannada)",
       "count": 4,
+      "notes": [],
       "search_words": [
         "2021",
         "27th",
@@ -4831,82 +5086,12 @@
       ]
     },
     {
-      "category": "SriJayateertha (Teekacharya) Charitra",
-      "language": "marathi",
-      "label": "SriJayateertha (Teekacharya) Charitra (Marathi)",
-      "count": 4,
-      "search_words": [
-        "12th",
-        "13th",
-        "1st",
-        "2021",
-        "2025",
-        "2026",
-        "2nd",
-        "and",
-        "aug",
-        "charitra",
-        "day2",
-        "in",
-        "july",
-        "july2025",
-        "mahima",
-        "marathi",
-        "nkhk",
-        "s",
-        "srijayateertha",
-        "sriteekacharya",
-        "swamiji",
-        "teekacharya"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 4,
-          "date": "2021-08-01",
-          "title": "NKHK Marathi SriTeekacharya Charitra 1st Aug 2021",
-          "video_id": "k9yL2sLIt1o",
-          "url": "https://www.youtube.com/watch?v=k9yL2sLIt1o",
-          "duration_min": 96.7,
-          "view_count": 125
-        },
-        {
-          "seq": 2,
-          "total": 4,
-          "date": "2025-07-12",
-          "title": "SriTeekacharya Charitra and mahima-Marathi-12th July2025",
-          "video_id": "JGUmLHow8QQ",
-          "url": "https://www.youtube.com/watch?v=JGUmLHow8QQ",
-          "duration_min": 79.9,
-          "view_count": 609
-        },
-        {
-          "seq": 3,
-          "total": 4,
-          "date": "2025-07-13",
-          "title": "Teekacharya's charitra in Marathi -Day2- 13th July 2025",
-          "video_id": "imRci11Ezpg",
-          "url": "https://www.youtube.com/watch?v=imRci11Ezpg",
-          "duration_min": 71.0,
-          "view_count": 411
-        },
-        {
-          "seq": 4,
-          "total": 4,
-          "date": "2026-08-02",
-          "title": "SriJayateertha Swamiji ( Teekacharya) Charitra,Mahima-Marathi-2nd Aug 2026",
-          "video_id": "5On2RYgO1AA",
-          "url": "https://www.youtube.com/watch?v=5On2RYgO1AA",
-          "duration_min": 98.1,
-          "view_count": 269
-        }
-      ]
-    },
-    {
       "category": "SriKrishna Stotra/Stuti",
-      "language": null,
-      "label": "SriKrishna Stotra/Stuti (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "SriKrishna Stotra/Stuti (Kannada, assumed)",
       "count": 4,
+      "notes": [],
       "search_words": [
         "2026",
         "3rd",
@@ -4918,6 +5103,7 @@
         "by",
         "day2",
         "day3",
+        "kannada",
         "sept",
         "sri",
         "srikrishna",
@@ -4974,8 +5160,10 @@
     {
       "category": "Srinivasa Kalyana (NKHK)",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Srinivasa Kalyana (NKHK) (Marathi)",
       "count": 4,
+      "notes": [],
       "search_words": [
         "17th",
         "2023",
@@ -5034,10 +5222,125 @@
       ]
     },
     {
-      "category": "NKHK Satsanga (Other)",
-      "language": null,
-      "label": "NKHK Satsanga (Other) (Language not stated)",
+      "category": "Dhyana & Anusandhana (NKHK)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Dhyana & Anusandhana (NKHK) (Kannada, assumed)",
       "count": 3,
+      "notes": [],
+      "search_words": [
+        "13th",
+        "14th",
+        "19th",
+        "2021",
+        "anusandhana",
+        "day1",
+        "day2",
+        "dec",
+        "dhyana",
+        "kannada",
+        "may",
+        "nkhk"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 3,
+          "date": "2021-05-13",
+          "title": "NKHK Dhyana day1 13th May 2021",
+          "video_id": "yheudmgodT4",
+          "url": "https://www.youtube.com/watch?v=yheudmgodT4",
+          "duration_min": 65.7,
+          "view_count": 167
+        },
+        {
+          "seq": 2,
+          "total": 3,
+          "date": "2021-05-14",
+          "title": "NKHK Dhyana Day2 14th May 2021",
+          "video_id": "vn4HRCP7Ptk",
+          "url": "https://www.youtube.com/watch?v=vn4HRCP7Ptk",
+          "duration_min": 40.5,
+          "view_count": 109
+        },
+        {
+          "seq": 3,
+          "total": 3,
+          "date": "2021-12-19",
+          "title": "NKHK Anusandhana+Dhyana 19th Dec",
+          "video_id": "HGfdH6qIw0k",
+          "url": "https://www.youtube.com/watch?v=HGfdH6qIw0k",
+          "duration_min": 87.2,
+          "view_count": 151
+        }
+      ]
+    },
+    {
+      "category": "Dhyana & Anusandhana (NKHK)",
+      "language": "marathi",
+      "language_assumed": false,
+      "label": "Dhyana & Anusandhana (NKHK) (Marathi)",
+      "count": 3,
+      "notes": [],
+      "search_words": [
+        "12th",
+        "16th",
+        "2021",
+        "2025",
+        "3rd",
+        "and",
+        "anusandhana",
+        "day1",
+        "dhyana",
+        "july",
+        "marathi",
+        "may",
+        "nkhk",
+        "oct",
+        "pranayama",
+        "sandhya",
+        "satsanga"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 3,
+          "date": "2021-05-16",
+          "title": "NKHK Dhyana Day1 Marathi 16th May 2021",
+          "video_id": "AMaTn9XgvPw",
+          "url": "https://www.youtube.com/watch?v=AMaTn9XgvPw",
+          "duration_min": 97.8,
+          "view_count": 720
+        },
+        {
+          "seq": 2,
+          "total": 3,
+          "date": "2021-07-03",
+          "title": "Marathi Sandhya Anusandhana 3rd July 2021",
+          "video_id": "JhIvP3cMvoI",
+          "url": "https://www.youtube.com/watch?v=JhIvP3cMvoI",
+          "duration_min": 42.4,
+          "view_count": 113
+        },
+        {
+          "seq": 3,
+          "total": 3,
+          "date": "2025-10-12",
+          "title": "Pranayama and Dhyana Marathi Satsanga 12th Oct 2025",
+          "video_id": "S_AlMTCHjlI",
+          "url": "https://www.youtube.com/watch?v=S_AlMTCHjlI",
+          "duration_min": 69.6,
+          "view_count": 230
+        }
+      ]
+    },
+    {
+      "category": "NKHK Satsanga & Other Talks",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "NKHK Satsanga & Other Talks (Kannada, assumed)",
+      "count": 3,
+      "notes": [],
       "search_words": [
         "12th",
         "16th",
@@ -5046,6 +5349,7 @@
         "go",
         "jamshedpur",
         "june",
+        "kannada",
         "mahima",
         "may",
         "nkhk",
@@ -5055,7 +5359,8 @@
         "satsang",
         "satsanga",
         "spl",
-        "sri"
+        "sri",
+        "talks"
       ],
       "videos": [
         {
@@ -5091,61 +5396,12 @@
       ]
     },
     {
-      "category": "NKHK Satsanga (Other)",
-      "language": "marathi",
-      "label": "NKHK Satsanga (Other) (Marathi)",
-      "count": 3,
-      "search_words": [
-        "13th",
-        "21st",
-        "30th",
-        "june",
-        "marathi",
-        "march",
-        "may",
-        "nkhk",
-        "other",
-        "ramapanchakam",
-        "satsanga"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 3,
-          "date": "2021-03-21",
-          "title": "Marathi satsanga 21st March",
-          "video_id": "jC1WfNDElkk",
-          "url": "https://www.youtube.com/watch?v=jC1WfNDElkk",
-          "duration_min": 136.8,
-          "view_count": 198
-        },
-        {
-          "seq": 2,
-          "total": 3,
-          "date": "2021-05-30",
-          "title": "Marathi Satsanga 30th May",
-          "video_id": "RnIG-rGXLO4",
-          "url": "https://www.youtube.com/watch?v=RnIG-rGXLO4",
-          "duration_min": 86.6,
-          "view_count": 152
-        },
-        {
-          "seq": 3,
-          "total": 3,
-          "date": "2021-06-13",
-          "title": "Marathi Satsanga 13th June Ramapanchakam",
-          "video_id": "NdJQ7cmSeuI",
-          "url": "https://www.youtube.com/watch?v=NdJQ7cmSeuI",
-          "duration_min": 86.6,
-          "view_count": 112
-        }
-      ]
-    },
-    {
       "category": "Navabrindavana Mahima (NKHK)",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Navabrindavana Mahima (NKHK) (Marathi)",
       "count": 3,
+      "notes": [],
       "search_words": [
         "19th",
         "6th",
@@ -5195,8 +5451,10 @@
     {
       "category": "Satyadhyana/Satyagnana Teertha Charitra",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Satyadhyana/Satyagnana Teertha Charitra (Marathi)",
       "count": 3,
+      "notes": [],
       "search_words": [
         "1st",
         "2026",
@@ -5253,9 +5511,11 @@
     },
     {
       "category": "Sri Gopaladasara Charitre",
-      "language": null,
-      "label": "Sri Gopaladasara Charitre",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Sri Gopaladasara Charitre (Kannada, assumed)",
       "count": 3,
+      "notes": [],
       "search_words": [
         "2",
         "2nd",
@@ -5266,6 +5526,7 @@
         "feb",
         "gopaladasara",
         "jeevana",
+        "kannada",
         "mangala",
         "sri"
       ],
@@ -5304,9 +5565,11 @@
     },
     {
       "category": "SriJayateertha Stuti",
-      "language": null,
-      "label": "SriJayateertha Stuti (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "SriJayateertha Stuti (Kannada, assumed)",
       "count": 3,
+      "notes": [],
       "search_words": [
         "16thjuly",
         "17th",
@@ -5317,6 +5580,7 @@
         "day3",
         "jayateertha",
         "july",
+        "kannada",
         "srijayateertha",
         "stuti"
       ],
@@ -5356,8 +5620,10 @@
     {
       "category": "28 Moorthi Stuti (NKHK)",
       "language": "kannada",
+      "language_assumed": false,
       "label": "28 Moorthi Stuti (NKHK) (Kannada)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "2023",
         "20th",
@@ -5397,9 +5663,11 @@
     },
     {
       "category": "Deva Pooja (NKHK)",
-      "language": null,
-      "label": "Deva Pooja (NKHK) (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Deva Pooja (NKHK) (Kannada, assumed)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "17th",
         "2023",
@@ -5408,6 +5676,7 @@
         "dec",
         "deva",
         "devapooja",
+        "kannada",
         "nkhk",
         "oct",
         "pooja",
@@ -5438,173 +5707,12 @@
       ]
     },
     {
-      "category": "Dhyana (NKHK)",
-      "language": null,
-      "label": "Dhyana (NKHK) (Language not stated)",
-      "count": 2,
-      "search_words": [
-        "13th",
-        "14th",
-        "2021",
-        "day1",
-        "day2",
-        "dhyana",
-        "may",
-        "nkhk"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 2,
-          "date": "2021-05-13",
-          "title": "NKHK Dhyana day1 13th May 2021",
-          "video_id": "yheudmgodT4",
-          "url": "https://www.youtube.com/watch?v=yheudmgodT4",
-          "duration_min": 65.7,
-          "view_count": 167
-        },
-        {
-          "seq": 2,
-          "total": 2,
-          "date": "2021-05-14",
-          "title": "NKHK Dhyana Day2 14th May 2021",
-          "video_id": "vn4HRCP7Ptk",
-          "url": "https://www.youtube.com/watch?v=vn4HRCP7Ptk",
-          "duration_min": 40.5,
-          "view_count": 109
-        }
-      ]
-    },
-    {
-      "category": "Dhyana (NKHK)",
-      "language": "marathi",
-      "label": "Dhyana (NKHK) (Marathi)",
-      "count": 2,
-      "search_words": [
-        "12th",
-        "16th",
-        "2021",
-        "2025",
-        "and",
-        "day1",
-        "dhyana",
-        "marathi",
-        "may",
-        "nkhk",
-        "oct",
-        "pranayama",
-        "satsanga"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 2,
-          "date": "2021-05-16",
-          "title": "NKHK Dhyana Day1 Marathi 16th May 2021",
-          "video_id": "AMaTn9XgvPw",
-          "url": "https://www.youtube.com/watch?v=AMaTn9XgvPw",
-          "duration_min": 97.8,
-          "view_count": 720
-        },
-        {
-          "seq": 2,
-          "total": 2,
-          "date": "2025-10-12",
-          "title": "Pranayama and Dhyana Marathi Satsanga 12th Oct 2025",
-          "video_id": "S_AlMTCHjlI",
-          "url": "https://www.youtube.com/watch?v=S_AlMTCHjlI",
-          "duration_min": 69.6,
-          "view_count": 230
-        }
-      ]
-    },
-    {
-      "category": "NKHK (Other)",
-      "language": "kannada",
-      "label": "NKHK (Other) (Kannada)",
-      "count": 2,
-      "search_words": [
-        "11th",
-        "13th",
-        "2021",
-        "28",
-        "day1",
-        "july",
-        "june",
-        "kannada",
-        "karyashala",
-        "moorti",
-        "nkhk",
-        "other",
-        "stuti"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 2,
-          "date": "2021-07-11",
-          "title": "NKHK kannada karyashala 11th July 2021",
-          "video_id": "GnbFc8sh804",
-          "url": "https://www.youtube.com/watch?v=GnbFc8sh804",
-          "duration_min": 76.5,
-          "view_count": 99
-        },
-        {
-          "seq": 2,
-          "total": 2,
-          "date": "2023-06-13",
-          "title": "NKHK kannada 28 Moorti stuti day1 13th June",
-          "video_id": "bdEAwaHNda8",
-          "url": "https://www.youtube.com/watch?v=bdEAwaHNda8",
-          "duration_min": 85.2,
-          "view_count": 222
-        }
-      ]
-    },
-    {
-      "category": "NKHK Satsanga (Other)",
-      "language": "kannada",
-      "label": "NKHK Satsanga (Other) (Kannada)",
-      "count": 2,
-      "search_words": [
-        "14th",
-        "2021",
-        "24th",
-        "april",
-        "kannada",
-        "march",
-        "nkhk",
-        "other",
-        "satsanga"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 2,
-          "date": "2021-03-24",
-          "title": "Kannada satsanga 24th March 2021",
-          "video_id": "Az3_i9X9tOU",
-          "url": "https://www.youtube.com/watch?v=Az3_i9X9tOU",
-          "duration_min": 46.2,
-          "view_count": 62
-        },
-        {
-          "seq": 2,
-          "total": 2,
-          "date": "2021-04-14",
-          "title": "kannada satsanga 14th April",
-          "video_id": "8wegu7tsvpY",
-          "url": "https://www.youtube.com/watch?v=8wegu7tsvpY",
-          "duration_min": 53.4,
-          "view_count": 53
-        }
-      ]
-    },
-    {
       "category": "Narasimha Stuti/Stotra",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Narasimha Stuti/Stotra (Marathi)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "11june",
         "25th",
@@ -5642,8 +5750,10 @@
     {
       "category": "Navabrindavana Mahima (NKHK)",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Navabrindavana Mahima (NKHK) (Kannada)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "kannada",
         "kshetra",
@@ -5678,8 +5788,10 @@
     {
       "category": "Paranjyothi Satsanga",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Paranjyothi Satsanga (Marathi)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "15th",
         "2",
@@ -5718,8 +5830,10 @@
     {
       "category": "Sandhyavandana Online",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Sandhyavandana Online (Kannada)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "2025",
         "20thjuly2025",
@@ -5756,8 +5870,10 @@
     {
       "category": "SriKrishna Stotra/Stuti",
       "language": "kannada",
+      "language_assumed": false,
       "label": "SriKrishna Stotra/Stuti (Kannada)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "16th",
         "17th",
@@ -5796,8 +5912,10 @@
     {
       "category": "SriRaghoottama Teertha",
       "language": "marathi",
+      "language_assumed": false,
       "label": "SriRaghoottama Teertha (Marathi)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "09th",
         "2025",
@@ -5835,12 +5953,15 @@
     },
     {
       "category": "SriSatyatma Teertha (Darshana/Mangalarati)",
-      "language": null,
-      "label": "SriSatyatma Teertha (Darshana/Mangalarati)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "SriSatyatma Teertha (Darshana/Mangalarati) (Kannada, assumed)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "1",
         "darshana",
+        "kannada",
         "mahamangalarati",
         "mangalarati",
         "satyatmatheertharu",
@@ -5872,9 +5993,11 @@
     },
     {
       "category": "Sripadaraja/Satyabhinava Teertha",
-      "language": null,
-      "label": "Sripadaraja/Satyabhinava Teertha (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Sripadaraja/Satyabhinava Teertha (Kannada, assumed)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "2026",
         "23june2021",
@@ -5882,6 +6005,7 @@
         "and",
         "charitra",
         "jun",
+        "kannada",
         "mahima",
         "nkhk",
         "satsanga",
@@ -5919,8 +6043,10 @@
     {
       "category": "Taratamya (NKHK)",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Taratamya (NKHK) (Marathi)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "2021",
         "21nov",
@@ -5957,8 +6083,10 @@
     {
       "category": "Tulasi Stotra",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Tulasi Stotra (Marathi)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "22nd",
         "29",
@@ -5995,9 +6123,11 @@
     },
     {
       "category": "Vighnesha Sandhi (NKHK)",
-      "language": null,
-      "label": "Vighnesha Sandhi (NKHK) (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Vighnesha Sandhi (NKHK) (Kannada, assumed)",
       "count": 2,
+      "notes": [],
       "search_words": [
         "14",
         "15",
@@ -6005,6 +6135,7 @@
         "day",
         "day4",
         "june",
+        "kannada",
         "nkhk",
         "sandhi",
         "vighnesh",
@@ -6036,14 +6167,17 @@
     },
     {
       "category": "28 Moorthi Stuti (NKHK)",
-      "language": null,
-      "label": "28 Moorthi Stuti (NKHK) (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "28 Moorthi Stuti (NKHK) (Kannada, assumed)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "27th",
         "28",
         "28moorti",
         "june",
+        "kannada",
         "mangala",
         "moorthi",
         "nkhk",
@@ -6065,8 +6199,10 @@
     {
       "category": "Adhika Masa Mahatmya",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Adhika Masa Mahatmya (Kannada)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "12th",
         "adhika",
@@ -6093,8 +6229,10 @@
     {
       "category": "Adhika Masa Mahatmya",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Adhika Masa Mahatmya (Marathi)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "16th",
         "2023",
@@ -6121,36 +6259,12 @@
       ]
     },
     {
-      "category": "Anusandhana",
-      "language": "marathi",
-      "label": "Anusandhana (Marathi)",
-      "count": 1,
-      "search_words": [
-        "2021",
-        "3rd",
-        "anusandhana",
-        "july",
-        "marathi",
-        "sandhya"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2021-07-03",
-          "title": "Marathi Sandhya Anusandhana 3rd July 2021",
-          "video_id": "JhIvP3cMvoI",
-          "url": "https://www.youtube.com/watch?v=JhIvP3cMvoI",
-          "duration_min": 42.4,
-          "view_count": 113
-        }
-      ]
-    },
-    {
-      "category": "Anusandhana + Dhyana (NKHK)",
+      "category": "Dhyana & Anusandhana (NKHK)",
       "language": "kannada",
-      "label": "Anusandhana + Dhyana (NKHK) (Kannada)",
+      "language_assumed": false,
+      "label": "Dhyana & Anusandhana (NKHK) (Kannada)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "anusandhana",
         "dhyana",
@@ -6171,35 +6285,12 @@
       ]
     },
     {
-      "category": "Anusandhana + Dhyana (NKHK)",
-      "language": null,
-      "label": "Anusandhana + Dhyana (NKHK) (Language not stated)",
-      "count": 1,
-      "search_words": [
-        "19th",
-        "anusandhana",
-        "dec",
-        "dhyana",
-        "nkhk"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2021-12-19",
-          "title": "NKHK Anusandhana+Dhyana 19th Dec",
-          "video_id": "HGfdH6qIw0k",
-          "url": "https://www.youtube.com/watch?v=HGfdH6qIw0k",
-          "duration_min": 87.2,
-          "view_count": 151
-        }
-      ]
-    },
-    {
       "category": "Ekadashi Katha",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Ekadashi Katha (Marathi)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "16th",
         "ekadashi",
@@ -6224,8 +6315,10 @@
     {
       "category": "Ganesha Stotra",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Ganesha Stotra (Marathi)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "dwadashanama",
         "ganesha",
@@ -6249,8 +6342,10 @@
     {
       "category": "Harikathamruta Sara",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Harikathamruta Sara (Kannada)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "2",
         "8th",
@@ -6276,11 +6371,14 @@
     },
     {
       "category": "Mutt Utsava / Puja",
-      "language": null,
-      "label": "Mutt Utsava / Puja",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Mutt Utsava / Puja (Kannada, assumed)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "at",
+        "kannada",
         "mutt",
         "puja",
         "utsava",
@@ -6302,11 +6400,14 @@
     },
     {
       "category": "Panchanga Shravana",
-      "language": null,
-      "label": "Panchanga Shravana",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Panchanga Shravana (Kannada, assumed)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "19thmarch2026",
+        "kannada",
         "panchanga",
         "parabhavanama",
         "samvatsara",
@@ -6328,8 +6429,10 @@
     {
       "category": "Purushottama Stotra",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Purushottama Stotra (Marathi)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "2023",
         "9th",
@@ -6356,12 +6459,15 @@
     },
     {
       "category": "Pushpahasa Satsanga",
-      "language": null,
-      "label": "Pushpahasa Satsanga (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Pushpahasa Satsanga (Kannada, assumed)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "12th",
         "2021",
+        "kannada",
         "nkhk",
         "pushpahasa",
         "satsanga",
@@ -6383,8 +6489,10 @@
     {
       "category": "Pushpahasa Satsanga",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Pushpahasa Satsanga (Marathi)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "22nd",
         "aug",
@@ -6408,12 +6516,15 @@
     },
     {
       "category": "Rushi Panchami",
-      "language": null,
-      "label": "Rushi Panchami",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Rushi Panchami (Kannada, assumed)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "19th",
         "2023",
+        "kannada",
         "panchami",
         "rushi",
         "september"
@@ -6434,8 +6545,10 @@
     {
       "category": "Sandhyavandana (Other)",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Sandhyavandana (Other) (Kannada)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "13th",
         "day1",
@@ -6462,12 +6575,15 @@
     },
     {
       "category": "Sandhyavandana (Other)",
-      "language": null,
-      "label": "Sandhyavandana (Other) (Language not stated)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Sandhyavandana (Other) (Kannada, assumed)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "2021",
         "27june",
+        "kannada",
         "nkhk",
         "other",
         "part2",
@@ -6488,10 +6604,13 @@
     },
     {
       "category": "Sandhyavandana Satsanga",
-      "language": null,
-      "label": "Sandhyavandana Satsanga",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Sandhyavandana Satsanga (Kannada, assumed)",
       "count": 1,
+      "notes": [],
       "search_words": [
+        "kannada",
         "kondapur",
         "sandhyavandana",
         "satsanga"
@@ -6510,18 +6629,22 @@
       ]
     },
     {
-      "category": "SriJayateertha Swamiji (Charitra/Mahima)",
-      "language": null,
-      "label": "SriJayateertha Swamiji (Charitra/Mahima) (Language not stated)",
+      "category": "SriJayateertha (Teekacharya) Charitra & Mahima",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "SriJayateertha (Teekacharya) Charitra & Mahima (Kannada, assumed)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "2026",
         "aug",
         "charitra",
+        "kannada",
         "mahima",
         "mahima1st",
         "srijayateertha",
-        "swamiji"
+        "swamiji",
+        "teekacharya"
       ],
       "videos": [
         {
@@ -6537,67 +6660,12 @@
       ]
     },
     {
-      "category": "SriJayateertha Swamiji (Charitra/Mahima)",
-      "language": "marathi",
-      "label": "SriJayateertha Swamiji (Charitra/Mahima) (Marathi)",
-      "count": 1,
-      "search_words": [
-        "13",
-        "artha",
-        "charitra",
-        "mahima",
-        "marathi",
-        "shloka12",
-        "srijayateertha",
-        "srijayateerthastiti",
-        "swamiji"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2025-07-27",
-          "title": "SriJayateerthastiti-shloka12,13-Artha-Marathi",
-          "video_id": "2Sdb_IhQypo",
-          "url": "https://www.youtube.com/watch?v=2Sdb_IhQypo",
-          "duration_min": 40.2,
-          "view_count": 95
-        }
-      ]
-    },
-    {
-      "category": "SriRaghavendra Swami",
-      "language": null,
-      "label": "SriRaghavendra Swami (Language not stated)",
-      "count": 1,
-      "search_words": [
-        "2025",
-        "3rd",
-        "aug",
-        "charitra",
-        "mahima",
-        "sriraghavendra",
-        "swami",
-        "swamincha"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 1,
-          "date": "2025-08-03",
-          "title": "SriRaghavendra swamincha Charitra ,mahima - 3rd Aug 2025",
-          "video_id": "ZolOn6Jrp-w",
-          "url": "https://www.youtube.com/watch?v=ZolOn6Jrp-w",
-          "duration_min": 111.4,
-          "view_count": 262
-        }
-      ]
-    },
-    {
       "category": "SriRaghavendra Swami",
       "language": "marathi",
+      "language_assumed": false,
       "label": "SriRaghavendra Swami (Marathi)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "2025",
         "2nd",
@@ -6624,10 +6692,43 @@
       ]
     },
     {
+      "category": "SriRaghavendra Swami",
+      "language": "marathi",
+      "language_assumed": true,
+      "label": "SriRaghavendra Swami (Marathi, assumed)",
+      "count": 1,
+      "notes": [],
+      "search_words": [
+        "2025",
+        "3rd",
+        "aug",
+        "charitra",
+        "mahima",
+        "marathi",
+        "sriraghavendra",
+        "swami",
+        "swamincha"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 1,
+          "date": "2025-08-03",
+          "title": "SriRaghavendra swamincha Charitra ,mahima - 3rd Aug 2025",
+          "video_id": "ZolOn6Jrp-w",
+          "url": "https://www.youtube.com/watch?v=ZolOn6Jrp-w",
+          "duration_min": 111.4,
+          "view_count": 262
+        }
+      ]
+    },
+    {
       "category": "SriRaghoottama Teertha",
       "language": "kannada",
+      "language_assumed": false,
       "label": "SriRaghoottama Teertha (Kannada)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "31st",
         "kannada",
@@ -6653,8 +6754,10 @@
     {
       "category": "Sripadaraja/Satyabhinava Teertha",
       "language": "kannada",
+      "language_assumed": false,
       "label": "Sripadaraja/Satyabhinava Teertha (Kannada)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "charitre",
         "kannada",
@@ -6683,8 +6786,10 @@
     {
       "category": "Sripadaraja/Satyabhinava Teertha",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Sripadaraja/Satyabhinava Teertha (Marathi)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "2021",
         "27th",
@@ -6715,8 +6820,10 @@
     {
       "category": "Uncategorized / Other",
       "language": "marathi",
+      "language_assumed": false,
       "label": "Uncategorized / Other (Marathi)",
       "count": 1,
+      "notes": [],
       "search_words": [
         "10th",
         "april",

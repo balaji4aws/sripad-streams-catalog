@@ -180,6 +180,16 @@
       text-decoration: underline;
     }
 
+    .note {
+      margin: 10px 0 0;
+      padding: 8px 10px;
+      font-size: 13px;
+      color: var(--ink-muted);
+      background: #fbf7ec;
+      border-left: 3px solid #b98b2e;
+      border-radius: 0 4px 4px 0;
+    }
+
     .visually-hidden {
       position: absolute;
       width: 1px;
@@ -367,6 +377,18 @@
           section.appendChild(heading);
 
           section.appendChild(buildSequenceTable(group));
+
+          // Anything a reader needs to know before working through this
+          // sequence: a session the channel never posted, one uploaded twice,
+          // one split into parts. Shown below the list, where it is read after
+          // the reader has seen the thing it explains.
+          (group.notes || []).forEach(function (note) {
+            const paragraph = document.createElement('p');
+            paragraph.className = 'note';
+            paragraph.textContent = note;
+            section.appendChild(paragraph);
+          });
+
           resultsEl.appendChild(section);
         });
       }
