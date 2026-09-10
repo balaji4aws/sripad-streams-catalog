@@ -17,6 +17,7 @@ from build_sequences import (
     order_videos,
     sequence_label,
     session_number,
+    session_part,
 )
 
 
@@ -224,6 +225,39 @@ class OrderVideosTests(unittest.TestCase):
         items = [row(10, "S", "Day 2 S second"), row(20, "S", "Day 2 S first"), row(30, "S", "Day 1 S")]
         self.assertEqual([i["title"] for i in order_videos(items)],
                          ["Day 1 S", "Day 2 S first", "Day 2 S second"])
+
+    def test_a_split_session_runs_in_part_order(self):
+        """One sitting uploaded as several videos: "Day 32(1)" .. "Day 32(5)"."""
+        # Deliberately shuffled, and with channel positions that disagree.
+        items = [
+            row(10, "S", "Day 32(3) S"),
+            row(40, "S", "Day 32(1) S"),
+            row(20, "S", "Day 32(5) S"),
+            row(50, "S", "Day 32(2) S"),
+            row(30, "S", "Day 32(4) S"),
+        ]
+        self.assertEqual(
+            [i["title"] for i in order_videos(items)],
+            ["Day 32(1) S", "Day 32(2) S", "Day 32(3) S", "Day 32(4) S", "Day 32(5) S"],
+        )
+
+    def test_a_split_session_sorts_inside_its_own_session(self):
+        items = [row(10, "S", "Day 33 S"), row(20, "S", "Day 32(2) S"), row(30, "S", "Day 32(1) S")]
+        self.assertEqual([i["title"] for i in order_videos(items)],
+                         ["Day 32(1) S", "Day 32(2) S", "Day 33 S"])
+
+
+class SessionPartTests(unittest.TestCase):
+    def test_part_number_after_a_day_label(self):
+        self.assertEqual(session_part("Day 32(4) - Bhagavata Saroddhara"), 4)
+        self.assertEqual(session_part("Day 32 (1) - Bhagavata Saroddhara"), 1)
+
+    def test_no_part_number(self):
+        self.assertEqual(session_part("Day 33- Bhagavata Saroddhara"), 0)
+
+    def test_a_verse_number_elsewhere_is_not_a_part(self):
+        """"Shloka 48(2)" is a verse reference, not a session part."""
+        self.assertEqual(session_part("Day 22 - Bhagavata Saroddhara - Shloka 48(2)"), 0)
 
     def test_a_single_video_needs_no_ordering(self):
         self.assertEqual(len(order_videos([row(1, "S", "Day 1 S")])), 1)

@@ -63,6 +63,11 @@ _WORD_RE = re.compile(r"[a-z0-9]+")
 # matching just the "2" and finding "4th" acceptable after it.
 _SESSION_RE = re.compile(r"(?:^|[^a-z])day[\s\-_:.]*(\d{1,3})(?!\d)(?!\s*(?:st|nd|rd|th)\b)", re.I)
 
+# A part number attached to a session label: "Day 32(4)". Anchored to the day
+# label so a verse number elsewhere in the title ("Shloka 48(2)") is not read as
+# a part.
+_SESSION_PART_RE = re.compile(r"(?:^|[^a-z])day[\s\-_:.]*\d{1,3}\s*\((\d{1,2})\)", re.I)
+
 
 def detect_language(title: str) -> str | None:
     """Return the first known language named in `title`, or None."""
@@ -100,6 +105,22 @@ def session_number(title: str) -> int | None:
     return int(match.group(1)) if match else None
 
 
+def session_part(title: str) -> int:
+    """Return the part number from a split session, or 0 when there is none.
+
+    One session can be uploaded as several videos: "Day 32(1)" through
+    "Day 32(5)", five short videos covering consecutive verses of the same
+    sitting. Without reading that bracketed number they all share session 32
+    and fall back to channel position, which puts them in the order the channel
+    happened to list them - shlokas 71, 73, 75, 74, 72 in the case above.
+
+    The bracket must directly follow the day label. Verse numbers elsewhere in a
+    title, like "Shloka 48(2)", are not part numbers and must not be read as one.
+    """
+    match = _SESSION_PART_RE.search(title)
+    return int(match.group(1)) if match else 0
+
+
 def order_videos(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """Put a sequence's videos into watch order, oldest first.
 
@@ -125,14 +146,14 @@ def order_videos(items: list[dict[str, Any]]) -> list[dict[str, Any]]:
     """
     numbers = [session_number(item["title"]) for item in items]
     if len(items) > 1 and all(number is not None for number in numbers):
-        # Ties on a repeated day number fall back to channel position, oldest
-        # first, so the result stays deterministic.
-        return [
-            item for _, _, item in sorted(
-                ((number, -item["list_position"], item) for number, item in zip(numbers, items, strict=True)),
-                key=lambda triple: (triple[0], triple[1]),
-            )
+        # Sort by session, then by part within a split session, then by channel
+        # position (oldest first) so a genuinely duplicated upload is still
+        # ordered deterministically.
+        decorated = [
+            (number, session_part(item["title"]), -item["list_position"], index)
+            for index, (number, item) in enumerate(zip(numbers, items, strict=True))
         ]
+        return [items[key[-1]] for key in sorted(decorated)]
     return sorted(items, key=lambda item: item["list_position"], reverse=True)
 
 
