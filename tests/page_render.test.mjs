@@ -349,13 +349,31 @@ test('an empty catalog is reported rather than looking like a broken page', asyn
 // --- how current the catalogue is ------------------------------------------
 
 test('the page states when the channel was last scanned', async () => {
-  const page = loadPage({ fetchResult: { body: catalog } });
+  // The dates are derived from today, not pinned. This test names the
+  // not-yet-due wording, and the page chooses that wording by comparing the due
+  // date against the clock - so a fixed due date quietly moves the test onto the
+  // overdue branch the day it passes, and stops checking what it says it checks.
+  const dayMs = 24 * 60 * 60 * 1000;
+  const todayUtc = Date.parse(new Date().toISOString().slice(0, 10));
+  const isoDay = (ms) => new Date(ms).toISOString().slice(0, 10);
+  const spelled = (ms) => new Date(ms).toLocaleDateString('en-GB', {
+    day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC'
+  });
+  const scanned = todayUtc - dayMs;
+  const due = todayUtc + 13 * dayMs;
+
+  const fresh = structuredClone(catalog);
+  fresh.meta.scanned_on = isoDay(scanned);
+  fresh.meta.next_scan_due = isoDay(due);
+
+  const page = loadPage({ fetchResult: { body: fresh } });
   await page.settle();
 
   const text = page.elements.freshness.textContent;
   assert.match(text, /342 recordings/);
-  assert.match(text, /last scanned 7 September 2026/);
-  assert.match(text, /next scan due 21 September 2026/);
+  assert.match(text, new RegExp(`last scanned ${spelled(scanned)}`));
+  assert.match(text, new RegExp(`next scan due ${spelled(due)}`));
+  assert.doesNotMatch(text, /was due/, 'a scan due in two weeks is not overdue');
 });
 
 test('an overdue refresh says so, and warns what is missing', async () => {

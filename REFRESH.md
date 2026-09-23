@@ -78,10 +78,12 @@ Then look at what actually changed, and check these five things:
           prev = r['date']
       PY
       ```
-      **Seven results are expected** and are typos in the source titles (see README). More than
-      seven means a new title needs looking at. If the parser mis-read it — rather than the title
-      being wrong — add a case to `RegressionTests` in `tests/test_categorize.py` first, then fix
-      it.
+      **Twenty results are expected** and are typos in the source titles (see README). More than
+      twenty means a new title needs looking at. Compare against the previous run rather than
+      against this number alone — `git show HEAD:output/streams_master.json` through the same script
+      gives the count before the refresh, which is the honest baseline. If the parser mis-read a
+      title — rather than the title being wrong — add a case to `RegressionTests` in
+      `tests/test_categorize.py` first, then fix it.
 
 - [ ] **Did the scan date update?** `output/catalog_meta.json` should show today-ish in
       `scanned_on`, and `next_scan_due` two weeks out. If `scanned_on` didn't move, step 1 didn't
@@ -147,21 +149,22 @@ rules; `search.html` holds only rendering. `DESIGN.md` explains why each of them
 does — read the relevant section before changing behaviour, because most of the odd-looking rules
 exist to handle a specific real title.
 
-**Known-good numbers**, as of the 2026-09-10 scan of both tabs. The same counts are
+**Known-good numbers**, as of the 2026-09-23 scan of both tabs. The same counts are
 asserted by `BASELINE` at the top of `tests/test_pipeline.py` — when the channel gains
 videos those tests will fail on purpose, and both places should be updated together — useful as a baseline for "did this change more
 than I expected":
 
 | | |
 |---|---|
-| Videos | 465 (342 from /streams, 123 from /videos) |
+| Videos | 473 (345 from /streams, 128 from /videos) |
 | Categories | 40 |
 | Sequences | 55 (41 with 2+ videos) |
-| Date range | 2015-03-30 to 2026-09-06 |
+| Date range | 2015-03-30 to 2026-09-19 |
 | Unresolved dates | 0 |
 | Month-precision dates | 3 |
 | Uncategorized | 1 |
-| Videos with an assumed language | 92, labelled "Kannada, assumed" |
-| Largest series | Bhagavata Saroddhara, 108 videos, sessions 1-102 |
+| Videos with an assumed language | 93 — 92 "Kannada, assumed", 1 "Marathi, assumed" |
+| Largest series | Bhagavata Saroddhara, 113 videos, sessions 1-107 |
 | Sequences ordered by session number | 5 |
 | Sequences carrying a note | 16 |
+| Date/order disagreements | 20, all from typos in the source titles |

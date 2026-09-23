@@ -1,6 +1,6 @@
 # Sripad K — Video Catalogue
 
-**A YouTube channel with 465 recorded classes and no playlists. This turns it into something you
+**A YouTube channel with 473 recorded classes and no playlists. This turns it into something you
 can actually watch in order.**
 
 ### ▶ [Try it here](https://balaji4aws.github.io/sripad-streams-catalog/search.html)
@@ -9,13 +9,13 @@ can actually watch in order.**
 
 ## The problem
 
-The [Sripad K](https://www.youtube.com/@sripadk8492) channel has 465 recordings going back to 2015 —
+The [Sripad K](https://www.youtube.com/@sripadk8492) channel has 473 recordings going back to 2015 —
 devotional classes and readings in Kannada, Marathi and English. They are taught as *series*: one
 subject over dozens of weekly sessions.
 
 YouTube shows them as one long list in upload order, with no playlists. So:
 
-- The 108 sessions of one series are scattered among 465 videos.
+- The 113 sessions of one series are scattered among 473 videos.
 - Nothing tells you which session comes first, or what to watch next.
 - Some series were taught more than once in different languages, and the two runs are interleaved.
 - Some series are split across the channel's two tabs, so part of the series is easy to miss.
@@ -29,10 +29,10 @@ through*, you can't.
 A search page. Type a topic, and you get the matching series as **numbered, ordered lists**:
 
 ```
-Bhagavata Saroddhara (Kannada)          108 videos, watch in order below
-   1/108   2023-04-08   Day 1 - Bhagavata Saroddhara - Shloka 1
-   2/108   2023-04-15   Day 2 - Bhagavata Saroddhara - Shloka 2-3
-   3/108   2023-04-22   Day 3 - Bhagavata Saroddhara - Shloka 4
+Bhagavata Saroddhara (Kannada)          113 videos, watch in order below
+   1/113   2023-04-08   Day 1 - Bhagavata Saroddhara - Shloka 1
+   2/113   2023-04-15   Day 2 - Bhagavata Saroddhara - Shloka 2-3
+   3/113   2023-04-22   Day 3 - Bhagavata Saroddhara - Shloka 4
    ...
 ```
 
@@ -112,7 +112,7 @@ and JavaScript with no framework and no build step. Even the tests need nothing 
 uses `unittest`, JavaScript uses Node's built-in runner. `ruff` and `mypy --strict` are the only dev
 tools.
 
-**148 Python tests, 33 JavaScript, 34 in a real browser.** Worth knowing what they're for: four dates
+**156 Python tests, 33 JavaScript, 34 in a real browser.** Worth knowing what they're for: four dates
 in this catalogue were once wrong, and each has a named regression test that spells out the bug. The
 browser check drives actual Chrome — searching, tabbing to a button and pressing Enter, checking for
 overflow at phone width — and measures colour contrast from *computed* styles, so a colour change
@@ -129,7 +129,9 @@ first. It's the interesting read if you want the reasoning rather than the summa
 - **A few dates contradict the channel's own ordering**, because those titles have typos. Reproduced
   as written, not corrected. Watch order is unaffected — it comes from session numbers and listing
   position, not dates.
-- **200 videos don't state a language**, so they're labelled "Kannada, assumed".
+- **206 videos don't state a language.** For 113 of them — the whole Bhagavata Saroddhara series —
+  the channel confirmed it, so they're labelled plainly. The remaining 93 are a guess, and say so:
+  92 read "Kannada, assumed" and one "Marathi, assumed".
 - **One video matches no series** and sits in a catch-all.
 - **Three videos are dated to the month only**, because their titles give no usable day.
 

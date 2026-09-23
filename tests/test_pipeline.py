@@ -34,11 +34,11 @@ RAW_PLAYLIST = catalog_paths.RAW_PLAYLIST
 # first checked the change is the one you expected. Nothing else in the suite
 # hardcodes a count.
 BASELINE: dict[str, Any] = {
-    "videos_per_tab": {"streams": 342, "videos": 123},
+    "videos_per_tab": {"streams": 345, "videos": 128},
     "month_precision_dates": 3,
     "max_uncategorized": 1,
     "split_series_sessions": 25,   # Pratah Sankalpa Gadya, spanning both tabs
-    "longest_series_videos": 108,  # Bhagavata Saroddhara
+    "longest_series_videos": 113,  # Bhagavata Saroddhara
 }
 
 
@@ -182,7 +182,7 @@ class PipelineTests(unittest.TestCase):
                     self.assertEqual(numbers, sorted(numbers))
 
     def test_the_longest_series_is_complete_and_in_order(self):
-        """Bhagavata Saroddhara: 108 videos, days 1 to 102, no gaps."""
+        """Bhagavata Saroddhara: 113 videos, days 1 to 107, no gaps."""
         sequences = [g for g in self.groups if g["category"] == "Bhagavata Saroddhara"]
         self.assertEqual(len(sequences), 1)
         videos = sequences[0]["videos"]

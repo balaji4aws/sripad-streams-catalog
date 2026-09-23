@@ -2,14 +2,104 @@
   "channel": "Sripad K",
   "channel_id": "UC06VQ5SSISjb-QI0iE0OWag",
   "channel_url": "https://www.youtube.com/channel/UC06VQ5SSISjb-QI0iE0OWag",
-  "channel_follower_count": 1510,
+  "channel_follower_count": 1550,
   "tabs": {
-    "streams": 342,
-    "videos": 123
+    "streams": 345,
+    "videos": 128
   },
   "webpage_url": "https://www.youtube.com/@sripadk8492/streams",
-  "epoch": 1789023270,
+  "epoch": 1790171412,
   "entries": [
+    {
+      "title": "Sandhya Shala Class4 12th Sep2026",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/mh9ksJ1Lzog/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFYoSTAP&rs=AOn4CLAyHWJaGNT7jSpMg8hzdqx0_XxK_Q",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/mh9ksJ1Lzog/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFYoSTAP&rs=AOn4CLCJknxsc4wTZIszxwK3P0_oRw9IfA",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "duration": 5502,
+      "view_count": 2500,
+      "timestamp": null,
+      "live_status": "was_live",
+      "availability": null,
+      "channel_url": null,
+      "uploader_url": null,
+      "creators": null,
+      "ie_key": "Youtube",
+      "id": "mh9ksJ1Lzog",
+      "_type": "url",
+      "url": "https://www.youtube.com/watch?v=mh9ksJ1Lzog",
+      "__x_forwarded_for_ip": null,
+      "_source": "streams",
+      "_source_position": 1
+    },
+    {
+      "title": "Sumadhwavijaya Marathi 11th Sep2026",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/wyubixFnl-s/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFUoRzAP&rs=AOn4CLA7A1d23o4U7pIuJJP95ozxDQEtuA",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/wyubixFnl-s/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFUoRzAP&rs=AOn4CLARhWT2K37aqduhatWP-frA2BfwCA",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "duration": 1578,
+      "view_count": 211,
+      "timestamp": null,
+      "live_status": "was_live",
+      "availability": null,
+      "channel_url": null,
+      "uploader_url": null,
+      "creators": null,
+      "ie_key": "Youtube",
+      "id": "wyubixFnl-s",
+      "_type": "url",
+      "url": "https://www.youtube.com/watch?v=wyubixFnl-s",
+      "__x_forwarded_for_ip": null,
+      "_source": "streams",
+      "_source_position": 2
+    },
+    {
+      "title": "Sumadhwavijaya Marathi 10th Sep2026",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/44P9enPaz7I/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFwoTjAP&rs=AOn4CLCv-UEEK-Z1mta7Lgjfq0dXZhRz-Q",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/44P9enPaz7I/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB_gmAAtAFigIMCAAQARhlIFwoTjAP&rs=AOn4CLDM5QUt7vhXA0PiqP_ItTO6-mATZg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "duration": 2325,
+      "view_count": 215,
+      "timestamp": null,
+      "live_status": "was_live",
+      "availability": null,
+      "channel_url": null,
+      "uploader_url": null,
+      "creators": null,
+      "ie_key": "Youtube",
+      "id": "44P9enPaz7I",
+      "_type": "url",
+      "url": "https://www.youtube.com/watch?v=44P9enPaz7I",
+      "__x_forwarded_for_ip": null,
+      "_source": "streams",
+      "_source_position": 3
+    },
     {
       "title": "Sandhya Shala Class3(slot2) 6th Sep2026",
       "thumbnails": [
@@ -25,7 +115,7 @@
         }
       ],
       "duration": 6037,
-      "view_count": 1300,
+      "view_count": 1500,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -38,7 +128,7 @@
       "url": "https://www.youtube.com/watch?v=6810aNatEy0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 1
+      "_source_position": 4
     },
     {
       "title": "Sandhya Shala Class 3 (slot1) 5th Sep2026",
@@ -55,7 +145,7 @@
         }
       ],
       "duration": 5837,
-      "view_count": 2200,
+      "view_count": 2400,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -68,7 +158,7 @@
       "url": "https://www.youtube.com/watch?v=dhK4_Svjy0U",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 2
+      "_source_position": 5
     },
     {
       "title": "Sumadhwavijaya Marathi - 3rd Sep2026",
@@ -85,7 +175,7 @@
         }
       ],
       "duration": 2220,
-      "view_count": 234,
+      "view_count": 270,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -98,7 +188,7 @@
       "url": "https://www.youtube.com/watch?v=CUIrNKGnVNY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 3
+      "_source_position": 6
     },
     {
       "title": "Sandhya Shala Class 2 ( Repeat)- 28th Aug 2026",
@@ -115,7 +205,7 @@
         }
       ],
       "duration": 6043,
-      "view_count": 1400,
+      "view_count": 1500,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -128,7 +218,7 @@
       "url": "https://www.youtube.com/watch?v=zbOVSea4q8M",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 4
+      "_source_position": 7
     },
     {
       "title": "Sandhya Shala Class2 - 27th Aug 2026",
@@ -145,7 +235,7 @@
         }
       ],
       "duration": 6559,
-      "view_count": 7000,
+      "view_count": 7100,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -158,7 +248,7 @@
       "url": "https://www.youtube.com/watch?v=Ud8W8NBAlAM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 5
+      "_source_position": 8
     },
     {
       "title": "Sumadhwavijaya Marathi 26th Aug 2026",
@@ -175,7 +265,7 @@
         }
       ],
       "duration": 1591,
-      "view_count": 106,
+      "view_count": 111,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -188,7 +278,7 @@
       "url": "https://www.youtube.com/watch?v=06iNO-yjt68",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 6
+      "_source_position": 9
     },
     {
       "title": "Sumadhwavijaya Marathi 25th Aug 2026",
@@ -205,7 +295,7 @@
         }
       ],
       "duration": 2315,
-      "view_count": 189,
+      "view_count": 191,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -218,7 +308,7 @@
       "url": "https://www.youtube.com/watch?v=dzhnKEGZFwI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 7
+      "_source_position": 10
     },
     {
       "title": "Sandhya Shala Module1 Class1- 22nd Aug 2026",
@@ -235,7 +325,7 @@
         }
       ],
       "duration": 6451,
-      "view_count": 1500,
+      "view_count": 1700,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -248,7 +338,7 @@
       "url": "https://www.youtube.com/watch?v=kDJDS2RZZqU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 8
+      "_source_position": 11
     },
     {
       "title": "Sandhya Shala Module1-Class1-21st Aug 2026",
@@ -265,7 +355,7 @@
         }
       ],
       "duration": 6504,
-      "view_count": 1700,
+      "view_count": 1900,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -278,7 +368,7 @@
       "url": "https://www.youtube.com/watch?v=eofsHe6Vuxk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 9
+      "_source_position": 12
     },
     {
       "title": "Sumadhwavijaya Marathi 20th Aug 2026",
@@ -295,7 +385,7 @@
         }
       ],
       "duration": 2027,
-      "view_count": 285,
+      "view_count": 420,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -308,7 +398,7 @@
       "url": "https://www.youtube.com/watch?v=XI1p-C4kUhw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 10
+      "_source_position": 13
     },
     {
       "title": "Sumadhwavijaya Marathi 18th Aug 2026",
@@ -338,7 +428,7 @@
       "url": "https://www.youtube.com/watch?v=2RNaoaaP2Xo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 11
+      "_source_position": 14
     },
     {
       "title": "Sumadhwavijaya Marathi 17th Aug 2026",
@@ -355,7 +445,7 @@
         }
       ],
       "duration": 2289,
-      "view_count": 58,
+      "view_count": 59,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -368,7 +458,7 @@
       "url": "https://www.youtube.com/watch?v=hkvFD-GdwBQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 12
+      "_source_position": 15
     },
     {
       "title": "Sumadhwavijaya Marathi 14th Aug 2026",
@@ -385,7 +475,7 @@
         }
       ],
       "duration": 2483,
-      "view_count": 109,
+      "view_count": 112,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -398,7 +488,7 @@
       "url": "https://www.youtube.com/watch?v=CetDxo9qS1U",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 13
+      "_source_position": 16
     },
     {
       "title": "Sandhyavandana Shala Onboarding session 12th Aug 2026",
@@ -415,7 +505,7 @@
         }
       ],
       "duration": 3572,
-      "view_count": 283,
+      "view_count": 324,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -428,7 +518,7 @@
       "url": "https://www.youtube.com/watch?v=1d5ZCFUGiT8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 14
+      "_source_position": 17
     },
     {
       "title": "Sandhyavandana Shala Onboarding session -12th Aug 2026",
@@ -445,7 +535,7 @@
         }
       ],
       "duration": 4207,
-      "view_count": 884,
+      "view_count": 929,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -458,7 +548,7 @@
       "url": "https://www.youtube.com/watch?v=cQvHGTAp-qE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 15
+      "_source_position": 18
     },
     {
       "title": "Sumadhwavijaya Marathi 12th Aug 2026",
@@ -488,7 +578,7 @@
       "url": "https://www.youtube.com/watch?v=6xBnpW-lf2g",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 16
+      "_source_position": 19
     },
     {
       "title": "Sandhyavandana Shala -Onboarding session1 -11th Aug 2026",
@@ -518,7 +608,7 @@
       "url": "https://www.youtube.com/watch?v=OLEOCYxZz2g",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 17
+      "_source_position": 20
     },
     {
       "title": "Sumadhwavijaya Marathi 11th Aug 2026",
@@ -535,7 +625,7 @@
         }
       ],
       "duration": 2211,
-      "view_count": 54,
+      "view_count": 55,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -548,7 +638,7 @@
       "url": "https://www.youtube.com/watch?v=INd_l3fSnW4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 18
+      "_source_position": 21
     },
     {
       "title": "Sumadhwavijaya Marathi 7th Aug 2026",
@@ -578,7 +668,7 @@
       "url": "https://www.youtube.com/watch?v=4IUwdijserk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 19
+      "_source_position": 22
     },
     {
       "title": "SriKrishnaashtottarashatanama stotra day3 6th Aug 2026",
@@ -595,7 +685,7 @@
         }
       ],
       "duration": 1801,
-      "view_count": 55,
+      "view_count": 57,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -608,7 +698,7 @@
       "url": "https://www.youtube.com/watch?v=_YJHrZjWQhQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 20
+      "_source_position": 23
     },
     {
       "title": "Sumadhwavijaya Marathi 6th Aug 2026",
@@ -638,7 +728,7 @@
       "url": "https://www.youtube.com/watch?v=JAjc8g3pdMw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 21
+      "_source_position": 24
     },
     {
       "title": "SriKrishnaAshtottarashatanamastotra Day2 5th Aug 2026",
@@ -655,7 +745,7 @@
         }
       ],
       "duration": 2030,
-      "view_count": 43,
+      "view_count": 44,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -668,7 +758,7 @@
       "url": "https://www.youtube.com/watch?v=Pb6oDcMeLVE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 22
+      "_source_position": 25
     },
     {
       "title": "SriKrishna Ashtottarashatanama stotra 4th Aug 2026",
@@ -685,7 +775,7 @@
         }
       ],
       "duration": 2272,
-      "view_count": 33,
+      "view_count": 34,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -698,7 +788,7 @@
       "url": "https://www.youtube.com/watch?v=k9hCOznEcQg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 23
+      "_source_position": 26
     },
     {
       "title": "SriJayateertha Swamiji ( Teekacharya) Charitra,Mahima-Marathi-2nd Aug 2026",
@@ -715,7 +805,7 @@
         }
       ],
       "duration": 5884,
-      "view_count": 269,
+      "view_count": 276,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -728,7 +818,7 @@
       "url": "https://www.youtube.com/watch?v=5On2RYgO1AA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 24
+      "_source_position": 27
     },
     {
       "title": "SriJayateertha Swamiji Charitra ,Mahima1st Aug 2026",
@@ -745,7 +835,7 @@
         }
       ],
       "duration": 5160,
-      "view_count": 191,
+      "view_count": 195,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -758,7 +848,7 @@
       "url": "https://www.youtube.com/watch?v=ewyYTS-yvww",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 25
+      "_source_position": 28
     },
     {
       "title": "Sumadhwavijaya Marathi 31st July 2026",
@@ -788,7 +878,7 @@
       "url": "https://www.youtube.com/watch?v=cvMff2O_BNw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 26
+      "_source_position": 29
     },
     {
       "title": "Sumadhwavijaya Marathi 29th July 2026 GuruPoornima",
@@ -818,7 +908,7 @@
       "url": "https://www.youtube.com/watch?v=gD1jpvc9bGg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 27
+      "_source_position": 30
     },
     {
       "title": "SriJayateertha stuti Day3 ,20th July 2026",
@@ -848,7 +938,7 @@
       "url": "https://www.youtube.com/watch?v=RDSoJySPqe8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 28
+      "_source_position": 31
     },
     {
       "title": "Jayateertha Stuti Day2 16thJuly",
@@ -878,7 +968,7 @@
       "url": "https://www.youtube.com/watch?v=a6d-RkFLjbg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 29
+      "_source_position": 32
     },
     {
       "title": "SriJayateertha Stuti Day1 - 17th July 2026",
@@ -908,7 +998,7 @@
       "url": "https://www.youtube.com/watch?v=iJq8wBTmVzE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 30
+      "_source_position": 33
     },
     {
       "title": "Sumadhwavijaya Marathi 5th sarga mangala 17th July2026",
@@ -938,7 +1028,7 @@
       "url": "https://www.youtube.com/watch?v=2Um60BwIq8A",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 31
+      "_source_position": 34
     },
     {
       "title": "Sumadhwavijaya Marathi 14July 2026",
@@ -968,7 +1058,7 @@
       "url": "https://www.youtube.com/watch?v=CRh8sA-po3s",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 32
+      "_source_position": 35
     },
     {
       "title": "Sumadhwavijaya Marathi 13July 2026",
@@ -998,7 +1088,7 @@
       "url": "https://www.youtube.com/watch?v=lIWAaeiykd4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 33
+      "_source_position": 36
     },
     {
       "title": "Manimanjari Kannada Mangala 4th Sarga -10th July 2026",
@@ -1015,7 +1105,7 @@
         }
       ],
       "duration": 2111,
-      "view_count": 69,
+      "view_count": 70,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -1028,7 +1118,7 @@
       "url": "https://www.youtube.com/watch?v=mzbO_5OwalQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 34
+      "_source_position": 37
     },
     {
       "title": "Manimanjari Kannada 9th July 2026",
@@ -1058,7 +1148,7 @@
       "url": "https://www.youtube.com/watch?v=K2XROp9nfcI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 35
+      "_source_position": 38
     },
     {
       "title": "Manimanjari Kannada 9th July 2026",
@@ -1088,7 +1178,7 @@
       "url": "https://www.youtube.com/watch?v=vXTyn3tf_dA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 36
+      "_source_position": 39
     },
     {
       "title": "Manimanjari Kannada 7th July 2026",
@@ -1118,7 +1208,7 @@
       "url": "https://www.youtube.com/watch?v=pixBidHgYFQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 37
+      "_source_position": 40
     },
     {
       "title": "Sumadhwavijaya Marath 7July 2026",
@@ -1148,7 +1238,7 @@
       "url": "https://www.youtube.com/watch?v=jXJ4sur30kc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 38
+      "_source_position": 41
     },
     {
       "title": "Manimanjari Kannada 6th July 2026",
@@ -1178,7 +1268,7 @@
       "url": "https://www.youtube.com/watch?v=gRN8WvSlEBg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 39
+      "_source_position": 42
     },
     {
       "title": "Sumadhwavijaya Marathi 5th July2026",
@@ -1208,7 +1298,7 @@
       "url": "https://www.youtube.com/watch?v=a4ZzyaK8HZk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 40
+      "_source_position": 43
     },
     {
       "title": "Sumadhwavijaya Marathi 4th June 2026",
@@ -1238,7 +1328,7 @@
       "url": "https://www.youtube.com/watch?v=p9dC7xehuIw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 41
+      "_source_position": 44
     },
     {
       "title": "Manimanjari Kannada 2nd July 2026",
@@ -1268,7 +1358,7 @@
       "url": "https://www.youtube.com/watch?v=x24uEoCIyd4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 42
+      "_source_position": 45
     },
     {
       "title": "Manimanjari Kannada 30th June 2026",
@@ -1285,7 +1375,7 @@
         }
       ],
       "duration": 2440,
-      "view_count": 168,
+      "view_count": 169,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -1298,7 +1388,7 @@
       "url": "https://www.youtube.com/watch?v=ahoU6cp3kR0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 43
+      "_source_position": 46
     },
     {
       "title": "Sumadhwavijaya Marathi 30th June 2026",
@@ -1328,7 +1418,7 @@
       "url": "https://www.youtube.com/watch?v=PjF-3EbSTwI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 44
+      "_source_position": 47
     },
     {
       "title": "Manimanjari Kannada 29th June2026",
@@ -1358,7 +1448,7 @@
       "url": "https://www.youtube.com/watch?v=0GAkY8XYdDg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 45
+      "_source_position": 48
     },
     {
       "title": "SriSriSripadarajateertha and SriSriSatyabhinvateertha Charitra,mahima- 28th Jun 2026",
@@ -1388,7 +1478,7 @@
       "url": "https://www.youtube.com/watch?v=kRtB8hIev4U",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 46
+      "_source_position": 49
     },
     {
       "title": "Sumadhwavijaya Marathi 27th June 2026",
@@ -1418,7 +1508,7 @@
       "url": "https://www.youtube.com/watch?v=vPnlwgsKPac",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 47
+      "_source_position": 50
     },
     {
       "title": "Manimanjari Kannada 26th June 2026",
@@ -1448,7 +1538,7 @@
       "url": "https://www.youtube.com/watch?v=L5zlOOCe7lQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 48
+      "_source_position": 51
     },
     {
       "title": "Sumadhwavijaya Marathi 26th June 2026",
@@ -1478,7 +1568,7 @@
       "url": "https://www.youtube.com/watch?v=EAwdujcfMLg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 49
+      "_source_position": 52
     },
     {
       "title": "Manimanjari Kannada 24th June 2026",
@@ -1508,7 +1598,7 @@
       "url": "https://www.youtube.com/watch?v=EdbYS0IPZk8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 50
+      "_source_position": 53
     },
     {
       "title": "Manimanjari Kannada 23rd June 2026",
@@ -1525,7 +1615,7 @@
         }
       ],
       "duration": 2326,
-      "view_count": 145,
+      "view_count": 146,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -1538,7 +1628,7 @@
       "url": "https://www.youtube.com/watch?v=s_J_fbSbGaY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 51
+      "_source_position": 54
     },
     {
       "title": "Sumadhwavijaya Marathi Day59 23rd June 2026",
@@ -1568,7 +1658,7 @@
       "url": "https://www.youtube.com/watch?v=6E8G_Utjs8w",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 52
+      "_source_position": 55
     },
     {
       "title": "Sumadhwavijaya Marathi Day 58 -21st June 2026",
@@ -1598,7 +1688,7 @@
       "url": "https://www.youtube.com/watch?v=65PV5kaMZTQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 53
+      "_source_position": 56
     },
     {
       "title": "Sumadhwavijaya Marathi Day57 20th June 2026",
@@ -1628,7 +1718,7 @@
       "url": "https://www.youtube.com/watch?v=G4hE7Z4UMCk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 54
+      "_source_position": 57
     },
     {
       "title": "Manimanjari kannada Day24 !9th June 2026",
@@ -1658,7 +1748,7 @@
       "url": "https://www.youtube.com/watch?v=W0I6bA_eWX8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 55
+      "_source_position": 58
     },
     {
       "title": "Sumadhwavijaya Marathi 19th June Day 57",
@@ -1688,7 +1778,7 @@
       "url": "https://www.youtube.com/watch?v=CLMIKfnetp4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 56
+      "_source_position": 59
     },
     {
       "title": "Manimanjari Kannada Day 24 -18th June 2026",
@@ -1718,7 +1808,7 @@
       "url": "https://www.youtube.com/watch?v=YCD3x5tg7hc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 57
+      "_source_position": 60
     },
     {
       "title": "Manimanjari Kannada Day 23 , 17th June 2026",
@@ -1748,7 +1838,7 @@
       "url": "https://www.youtube.com/watch?v=KFOMIgqsj7Q",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 58
+      "_source_position": 61
     },
     {
       "title": "manimanjari Day 22-28th May 2026",
@@ -1765,7 +1855,7 @@
         }
       ],
       "duration": 1473,
-      "view_count": 14,
+      "view_count": 15,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -1778,7 +1868,7 @@
       "url": "https://www.youtube.com/watch?v=sNepLgLpJYo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 59
+      "_source_position": 62
     },
     {
       "title": "Manimanjari Day21 - 25May2026",
@@ -1808,7 +1898,7 @@
       "url": "https://www.youtube.com/watch?v=0w2WgLVyHtc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 60
+      "_source_position": 63
     },
     {
       "title": "Sumadhwavijaya Marathi 23rd May 2026",
@@ -1838,7 +1928,7 @@
       "url": "https://www.youtube.com/watch?v=XTBk0wjF740",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 61
+      "_source_position": 64
     },
     {
       "title": "Manimanjari kannada Day20 - 22nd May 2026",
@@ -1868,7 +1958,7 @@
       "url": "https://www.youtube.com/watch?v=64iSquskqWs",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 62
+      "_source_position": 65
     },
     {
       "title": "Sumadhwavijaya Marathi 21st May 2026",
@@ -1898,7 +1988,7 @@
       "url": "https://www.youtube.com/watch?v=pMmYdPtBWPo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 63
+      "_source_position": 66
     },
     {
       "title": "Manimanjari Day20 -20th May 2026",
@@ -1928,7 +2018,7 @@
       "url": "https://www.youtube.com/watch?v=rdlM7R582Rk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 64
+      "_source_position": 67
     },
     {
       "title": "manimanjariDay19-18th May 2026",
@@ -1958,7 +2048,7 @@
       "url": "https://www.youtube.com/watch?v=yJJaATuKaoI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 65
+      "_source_position": 68
     },
     {
       "title": "Manimanjari Kannada Day 18 ,15th May 2026",
@@ -1988,7 +2078,7 @@
       "url": "https://www.youtube.com/watch?v=dB5UzyLVDfM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 66
+      "_source_position": 69
     },
     {
       "title": "Manimanjari Day17 -11th May 2026",
@@ -2018,7 +2108,7 @@
       "url": "https://www.youtube.com/watch?v=JO5h6XrwrEo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 67
+      "_source_position": 70
     },
     {
       "title": "Manimanjari Day 16 -May 8th 2026",
@@ -2048,7 +2138,7 @@
       "url": "https://www.youtube.com/watch?v=mGqBuSw7PBw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 68
+      "_source_position": 71
     },
     {
       "title": "Sumadhwavijaya marathi-8th May2026",
@@ -2078,7 +2168,7 @@
       "url": "https://www.youtube.com/watch?v=db_r2gjxfqc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 69
+      "_source_position": 72
     },
     {
       "title": "Manimanjari kannada day15- 7th May 2026",
@@ -2108,7 +2198,7 @@
       "url": "https://www.youtube.com/watch?v=LLu_mfsahpE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 70
+      "_source_position": 73
     },
     {
       "title": "Sumadhwavijaya Marathi 7th May 2026",
@@ -2138,7 +2228,7 @@
       "url": "https://www.youtube.com/watch?v=ubSWIGudwxA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 71
+      "_source_position": 74
     },
     {
       "title": "Manimanjari Kannada Day 14 6th May 2026",
@@ -2168,7 +2258,7 @@
       "url": "https://www.youtube.com/watch?v=kXzNg7jP53A",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 72
+      "_source_position": 75
     },
     {
       "title": "Manimanjari Kannada Day 13 5th May",
@@ -2198,7 +2288,7 @@
       "url": "https://www.youtube.com/watch?v=UJtZ5ivSG0A",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 73
+      "_source_position": 76
     },
     {
       "title": "Sumadhwavijaya Marathi 4th April 2026",
@@ -2228,7 +2318,7 @@
       "url": "https://www.youtube.com/watch?v=k5i2GIR8TOI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 74
+      "_source_position": 77
     },
     {
       "title": "Manimanjari Day12 1st May 2026",
@@ -2258,7 +2348,7 @@
       "url": "https://www.youtube.com/watch?v=oj53rw9ZXnU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 75
+      "_source_position": 78
     },
     {
       "title": "manimanjari Kannada day11 ,30th April2026",
@@ -2288,7 +2378,7 @@
       "url": "https://www.youtube.com/watch?v=7PBzucxbrp8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 76
+      "_source_position": 79
     },
     {
       "title": "Sumadhwavijaya Marathi 29th April 2026",
@@ -2318,7 +2408,7 @@
       "url": "https://www.youtube.com/watch?v=QXRpcQ2pnI8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 77
+      "_source_position": 80
     },
     {
       "title": "Manimanjari Kannada Day10-28th April 2026",
@@ -2335,7 +2425,7 @@
         }
       ],
       "duration": 2005,
-      "view_count": 191,
+      "view_count": 192,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -2348,7 +2438,7 @@
       "url": "https://www.youtube.com/watch?v=maBE8ieOFx4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 78
+      "_source_position": 81
     },
     {
       "title": "Sumadhwavijaya Marathi 28th April 2026",
@@ -2378,7 +2468,7 @@
       "url": "https://www.youtube.com/watch?v=KQdRv6OB0O8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 79
+      "_source_position": 82
     },
     {
       "title": "Manimanjari Kannada Day9 -21st April 2026",
@@ -2408,7 +2498,7 @@
       "url": "https://www.youtube.com/watch?v=qpVwA3rD70I",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 80
+      "_source_position": 83
     },
     {
       "title": "Sumadhwavijaya Marathi 21st April 2026",
@@ -2438,7 +2528,7 @@
       "url": "https://www.youtube.com/watch?v=0DQWgLUzVno",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 81
+      "_source_position": 84
     },
     {
       "title": "Manimanjari Kannada Day8- 20th April 2026",
@@ -2468,7 +2558,7 @@
       "url": "https://www.youtube.com/watch?v=IdESzpzXaFc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 82
+      "_source_position": 85
     },
     {
       "title": "Sumadhwavijaya Marathi 20th April 2026",
@@ -2485,7 +2575,7 @@
         }
       ],
       "duration": 2807,
-      "view_count": 54,
+      "view_count": 55,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -2498,7 +2588,7 @@
       "url": "https://www.youtube.com/watch?v=DR2iJ5YryVc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 83
+      "_source_position": 86
     },
     {
       "title": "Manimanjari Kannada Day7- 17th April 2026",
@@ -2528,7 +2618,7 @@
       "url": "https://www.youtube.com/watch?v=i1qin5cZL_w",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 84
+      "_source_position": 87
     },
     {
       "title": "Sumadhwavijaya Marathi 17th April 2026",
@@ -2558,7 +2648,7 @@
       "url": "https://www.youtube.com/watch?v=f7bDXeC7v0I",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 85
+      "_source_position": 88
     },
     {
       "title": "Manimanjari day6-16th April 2026",
@@ -2588,7 +2678,7 @@
       "url": "https://www.youtube.com/watch?v=6xq3w2O0vWg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 86
+      "_source_position": 89
     },
     {
       "title": "Sumadhwavijaya marathi 16th April 2026",
@@ -2618,7 +2708,7 @@
       "url": "https://www.youtube.com/watch?v=kiAgKVjVeyo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 87
+      "_source_position": 90
     },
     {
       "title": "Manimanjari Kannada- Day5 -10th April",
@@ -2648,7 +2738,7 @@
       "url": "https://www.youtube.com/watch?v=8isrt9ldeQo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 88
+      "_source_position": 91
     },
     {
       "title": "Sumadhwavijaya Marathi 10th April 2026",
@@ -2678,7 +2768,7 @@
       "url": "https://www.youtube.com/watch?v=vL_jFUP5gBg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 89
+      "_source_position": 92
     },
     {
       "title": "manimanjari kannada Day4-9th April 2026",
@@ -2708,7 +2798,7 @@
       "url": "https://www.youtube.com/watch?v=Au1VPWNlbIE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 90
+      "_source_position": 93
     },
     {
       "title": "Sumadhwavijaya Marathi 9th April2026",
@@ -2738,7 +2828,7 @@
       "url": "https://www.youtube.com/watch?v=MIYTKmEVcSI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 91
+      "_source_position": 94
     },
     {
       "title": "Manimanjari Kannada Day3 6th April 2026",
@@ -2768,7 +2858,7 @@
       "url": "https://www.youtube.com/watch?v=ymqPqSX25lQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 92
+      "_source_position": 95
     },
     {
       "title": "Sumadhwavijaya Marathi 6th April 2026",
@@ -2798,7 +2888,7 @@
       "url": "https://www.youtube.com/watch?v=IiedKe97GC4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 93
+      "_source_position": 96
     },
     {
       "title": "Manimanjari Kannada day2-4th April2026",
@@ -2815,7 +2905,7 @@
         }
       ],
       "duration": 2119,
-      "view_count": 121,
+      "view_count": 122,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -2828,7 +2918,7 @@
       "url": "https://www.youtube.com/watch?v=S8cSAvPApHI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 94
+      "_source_position": 97
     },
     {
       "title": "Manimanjari Kannada Day1-3rd April2026",
@@ -2845,7 +2935,7 @@
         }
       ],
       "duration": 2043,
-      "view_count": 249,
+      "view_count": 253,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -2858,7 +2948,7 @@
       "url": "https://www.youtube.com/watch?v=EU5sh0Pij3c",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 95
+      "_source_position": 98
     },
     {
       "title": "Sumadhwavijaya Marathi 3rd April 2026",
@@ -2888,7 +2978,7 @@
       "url": "https://www.youtube.com/watch?v=zHuxBF-HqKg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 96
+      "_source_position": 99
     },
     {
       "title": "Sumadhwavijaya Marathi 2nd April 2026",
@@ -2918,7 +3008,7 @@
       "url": "https://www.youtube.com/watch?v=WjPUJVYJOSc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 97
+      "_source_position": 100
     },
     {
       "title": "Sandhyavandana Satsanga Kondapur",
@@ -2935,7 +3025,7 @@
         }
       ],
       "duration": 3659,
-      "view_count": 81,
+      "view_count": 80,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -2948,7 +3038,7 @@
       "url": "https://www.youtube.com/watch?v=2pgCytAh2EM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 98
+      "_source_position": 101
     },
     {
       "title": "Sumadhwavijaya Marathi 31March 2026",
@@ -2978,7 +3068,7 @@
       "url": "https://www.youtube.com/watch?v=1dhfiOAAKFo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 99
+      "_source_position": 102
     },
     {
       "title": "Sumadhwavijaya Marathi 30th March 2026",
@@ -3008,7 +3098,7 @@
       "url": "https://www.youtube.com/watch?v=PQmiLLyTPWY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 100
+      "_source_position": 103
     },
     {
       "title": "SriSatyadhyana Teertha Jeevan Charitra Mahima in Marathi-27thMarch 2026",
@@ -3025,7 +3115,7 @@
         }
       ],
       "duration": 3853,
-      "view_count": 110,
+      "view_count": 111,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -3038,7 +3128,7 @@
       "url": "https://www.youtube.com/watch?v=B90eM1suC0k",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 101
+      "_source_position": 104
     },
     {
       "title": "Sumadhwavijaya Marathi 26th March 2026",
@@ -3068,7 +3158,7 @@
       "url": "https://www.youtube.com/watch?v=3hd-ev3xj78",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 102
+      "_source_position": 105
     },
     {
       "title": "Sumadhwavijaya Marathi 25th March 2026",
@@ -3098,7 +3188,7 @@
       "url": "https://www.youtube.com/watch?v=dFlWoBARqMc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 103
+      "_source_position": 106
     },
     {
       "title": "Sumadhwavijaya Marathi 24th March 2026",
@@ -3128,7 +3218,7 @@
       "url": "https://www.youtube.com/watch?v=jMYvVTZvoG0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 104
+      "_source_position": 107
     },
     {
       "title": "Parabhavanama Samvatsara Panchanga Shravana 19thMarch2026",
@@ -3158,7 +3248,7 @@
       "url": "https://www.youtube.com/watch?v=VaPhnntvDcY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 105
+      "_source_position": 108
     },
     {
       "title": "Sumadhwavijaya Marathi 18th March 2026",
@@ -3188,7 +3278,7 @@
       "url": "https://www.youtube.com/watch?v=HHIN6p1jkXo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 106
+      "_source_position": 109
     },
     {
       "title": "SuMadhwavijaya Marathi 17th March 2026",
@@ -3218,7 +3308,7 @@
       "url": "https://www.youtube.com/watch?v=nNFaNi1uGsQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 107
+      "_source_position": 110
     },
     {
       "title": "Sumadhwavijaya Marathi 16thMarch 2026",
@@ -3235,7 +3325,7 @@
         }
       ],
       "duration": 2961,
-      "view_count": 166,
+      "view_count": 179,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -3248,7 +3338,7 @@
       "url": "https://www.youtube.com/watch?v=Q79MOVLL1Yw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 108
+      "_source_position": 111
     },
     {
       "title": "Sumadhwavijaya Marathi 13th March 2026",
@@ -3278,7 +3368,7 @@
       "url": "https://www.youtube.com/watch?v=Mp0ACSJMa8E",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 109
+      "_source_position": 112
     },
     {
       "title": "Sumadhwavijaya Marathi 12th March 2026",
@@ -3295,7 +3385,7 @@
         }
       ],
       "duration": 1918,
-      "view_count": 69,
+      "view_count": 71,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -3308,7 +3398,7 @@
       "url": "https://www.youtube.com/watch?v=MLfnmtfdkPk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 110
+      "_source_position": 113
     },
     {
       "title": "Sumadhwavijaya Marathi 12th March 2026",
@@ -3338,7 +3428,7 @@
       "url": "https://www.youtube.com/watch?v=HDMGNTxcM-0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 111
+      "_source_position": 114
     },
     {
       "title": "Sumadhwavijaya Marathi 11thMarch 2026",
@@ -3368,7 +3458,7 @@
       "url": "https://www.youtube.com/watch?v=uylBRtKr8Iw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 112
+      "_source_position": 115
     },
     {
       "title": "Sumadhwavijaya Marathi 10th March 2026",
@@ -3398,7 +3488,7 @@
       "url": "https://www.youtube.com/watch?v=IVxD2IQk9mM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 113
+      "_source_position": 116
     },
     {
       "title": "Sumadhwavijaya Marathi 6th March 2026",
@@ -3428,7 +3518,7 @@
       "url": "https://www.youtube.com/watch?v=6rMUX6KJs3A",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 114
+      "_source_position": 117
     },
     {
       "title": "Sumadhwavijaya Marathi 6th March 2026",
@@ -3458,7 +3548,7 @@
       "url": "https://www.youtube.com/watch?v=myl5uD4urNc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 115
+      "_source_position": 118
     },
     {
       "title": "SuMadhwavijaya Marathi 5th March 2026",
@@ -3488,7 +3578,7 @@
       "url": "https://www.youtube.com/watch?v=Z2T1TnZs2_k",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 116
+      "_source_position": 119
     },
     {
       "title": "Sumadhwavijaya Marathi 4th March 2026",
@@ -3518,7 +3608,7 @@
       "url": "https://www.youtube.com/watch?v=ijDQnbqGIhY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 117
+      "_source_position": 120
     },
     {
       "title": "Sumadhwavijaya Marathi 2nd March 2026",
@@ -3535,7 +3625,7 @@
         }
       ],
       "duration": 2496,
-      "view_count": 81,
+      "view_count": 82,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -3548,7 +3638,7 @@
       "url": "https://www.youtube.com/watch?v=oS2i-l6IOLc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 118
+      "_source_position": 121
     },
     {
       "title": "Sumadhwavijaya Marathi 1st March 2026",
@@ -3578,7 +3668,7 @@
       "url": "https://www.youtube.com/watch?v=ZzV4Xm-Sf-o",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 119
+      "_source_position": 122
     },
     {
       "title": "Sumadhwavijaya Marathi 28th Feb 2026",
@@ -3608,7 +3698,7 @@
       "url": "https://www.youtube.com/watch?v=YoOzsbo5QHY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 120
+      "_source_position": 123
     },
     {
       "title": "Sumadhwavijaya Marathi 26th Feb 2026",
@@ -3638,7 +3728,7 @@
       "url": "https://www.youtube.com/watch?v=Vc88VIufL0E",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 121
+      "_source_position": 124
     },
     {
       "title": "Sumadhwavijaya Marathi 23rd Feb 2026",
@@ -3668,7 +3758,7 @@
       "url": "https://www.youtube.com/watch?v=yMU-MljIpdw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 122
+      "_source_position": 125
     },
     {
       "title": "SuMadhwavijaya Marathi 22nd Feb 2026",
@@ -3698,7 +3788,7 @@
       "url": "https://www.youtube.com/watch?v=gjYGAw1RIKI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 123
+      "_source_position": 126
     },
     {
       "title": "Sumadhwavijaya Marathi 14th Feb 2026",
@@ -3728,7 +3818,7 @@
       "url": "https://www.youtube.com/watch?v=8o37Mxf-62U",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 124
+      "_source_position": 127
     },
     {
       "title": "Sumadhwavijaya Marathi 12th Feb 2026",
@@ -3758,7 +3848,7 @@
       "url": "https://www.youtube.com/watch?v=zlsWTr-q1d8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 125
+      "_source_position": 128
     },
     {
       "title": "Sumadhwavijaya Marathi 11th Feb 2026",
@@ -3788,7 +3878,7 @@
       "url": "https://www.youtube.com/watch?v=9wbA_9jwC9I",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 126
+      "_source_position": 129
     },
     {
       "title": "Sumadhwavijaya Marathi Day14-9th Feb2026",
@@ -3818,7 +3908,7 @@
       "url": "https://www.youtube.com/watch?v=b4EYQfg3Vgs",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 127
+      "_source_position": 130
     },
     {
       "title": "Sumadhwavijaya Marathi Day14 -6th Feb 26",
@@ -3848,7 +3938,7 @@
       "url": "https://www.youtube.com/watch?v=1ccV6LR12Fs",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 128
+      "_source_position": 131
     },
     {
       "title": "SuMadhwavijaya Marathi Day13-4th Feb2026",
@@ -3878,7 +3968,7 @@
       "url": "https://www.youtube.com/watch?v=5UpotJxmYdg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 129
+      "_source_position": 132
     },
     {
       "title": "Sumadhwavijaya Marathi Day12- 2nd Feb 2026",
@@ -3908,7 +3998,7 @@
       "url": "https://www.youtube.com/watch?v=9Sc1eqf9kjM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 130
+      "_source_position": 133
     },
     {
       "title": "SriSatyagnanateertha Charitra MahimaMarathi -1st Feb mangala",
@@ -3938,7 +4028,7 @@
       "url": "https://www.youtube.com/watch?v=sV21hTytu0w",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 131
+      "_source_position": 134
     },
     {
       "title": "SriSriSatyaGnanateertha Charitra Mahima in Marathi 31st Jan 2026",
@@ -3968,7 +4058,7 @@
       "url": "https://www.youtube.com/watch?v=UnFM6QRh7Hc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 132
+      "_source_position": 135
     },
     {
       "title": "Sumdhwavijaya Marathi Sarga2-Day11-30Jan2026",
@@ -3998,7 +4088,7 @@
       "url": "https://www.youtube.com/watch?v=O9KOVBKgQjE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 133
+      "_source_position": 136
     },
     {
       "title": "SuMadhwavijaya Day11-28th Jan 2026",
@@ -4028,7 +4118,7 @@
       "url": "https://www.youtube.com/watch?v=TOum1wbnRq0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 134
+      "_source_position": 137
     },
     {
       "title": "Sumadhwavijaya Marathi Day10-27th Jan 2026",
@@ -4058,7 +4148,7 @@
       "url": "https://www.youtube.com/watch?v=-PNbzm29ARY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 135
+      "_source_position": 138
     },
     {
       "title": "Sumadhwavijaya Marathi day9-25th Jan 2026",
@@ -4088,7 +4178,7 @@
       "url": "https://www.youtube.com/watch?v=qxpwM-idOVA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 136
+      "_source_position": 139
     },
     {
       "title": "Sumadhwavijaya Day7- 24th Jan 2026",
@@ -4118,7 +4208,7 @@
       "url": "https://www.youtube.com/watch?v=HoN97YzfSUc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 137
+      "_source_position": 140
     },
     {
       "title": "SuMadhwavijaya Day7-21st Jan 2026",
@@ -4148,7 +4238,7 @@
       "url": "https://www.youtube.com/watch?v=6Untz9cCGvM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 138
+      "_source_position": 141
     },
     {
       "title": "Sumadhwavijaya marathi Day6-19th Jan26",
@@ -4178,7 +4268,7 @@
       "url": "https://www.youtube.com/watch?v=hn0-Np6atXE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 139
+      "_source_position": 142
     },
     {
       "title": "Sumadhwavijaya Day5 16th Jan 26",
@@ -4208,7 +4298,7 @@
       "url": "https://www.youtube.com/watch?v=pf_M-AEN99E",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 140
+      "_source_position": 143
     },
     {
       "title": "Sumadhwavijay-Marathi-Day4-15thJan26",
@@ -4238,7 +4328,7 @@
       "url": "https://www.youtube.com/watch?v=555zFWs6GGA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 141
+      "_source_position": 144
     },
     {
       "title": "Sumadhwavijaya Day 3 -14th Jan26",
@@ -4268,7 +4358,7 @@
       "url": "https://www.youtube.com/watch?v=zUgmj0vKSw8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 142
+      "_source_position": 145
     },
     {
       "title": "Sumadhwavijaya Marathi-day2-12thJan26",
@@ -4298,7 +4388,7 @@
       "url": "https://www.youtube.com/watch?v=O0Ghctl1VMA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 143
+      "_source_position": 146
     },
     {
       "title": "Sumadhawavijaya Marathi Day1-11th Jan26",
@@ -4315,7 +4405,7 @@
         }
       ],
       "duration": 3886,
-      "view_count": 352,
+      "view_count": 357,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -4328,7 +4418,7 @@
       "url": "https://www.youtube.com/watch?v=dPThhZyeH2I",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 144
+      "_source_position": 147
     },
     {
       "title": "NKHK SriRaghoottama Teertha Charitre + Parayana",
@@ -4358,7 +4448,7 @@
       "url": "https://www.youtube.com/watch?v=7KBJQnEDNIM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 145
+      "_source_position": 148
     },
     {
       "title": "Marathi - Utpatti Ekadashi katha - 16th Nov",
@@ -4388,7 +4478,7 @@
       "url": "https://www.youtube.com/watch?v=YbVqXX7ywJk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 146
+      "_source_position": 149
     },
     {
       "title": "Pranayama and Dhyana Marathi Satsanga 12th Oct 2025",
@@ -4418,7 +4508,7 @@
       "url": "https://www.youtube.com/watch?v=S_AlMTCHjlI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 147
+      "_source_position": 150
     },
     {
       "title": "Sandhyaonline -17th August 2025",
@@ -4435,7 +4525,7 @@
         }
       ],
       "duration": 6005,
-      "view_count": 509,
+      "view_count": 510,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -4448,7 +4538,7 @@
       "url": "https://www.youtube.com/watch?v=ZIEGQiINJcw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 148
+      "_source_position": 151
     },
     {
       "title": "SriRaghavendra swamincha Charitra ,mahima - 3rd Aug 2025",
@@ -4465,7 +4555,7 @@
         }
       ],
       "duration": 6682,
-      "view_count": 262,
+      "view_count": 264,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -4478,7 +4568,7 @@
       "url": "https://www.youtube.com/watch?v=ZolOn6Jrp-w",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 149
+      "_source_position": 152
     },
     {
       "title": "Sandhyavandana-ONLINE-Kannada-3rd Aug 2025",
@@ -4508,7 +4598,7 @@
       "url": "https://www.youtube.com/watch?v=yUnSVjNTGlE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 150
+      "_source_position": 153
     },
     {
       "title": "SriRaghavendra Swamincha Charitra ,Mahima-DakshiniMarathi 2nd Aug 2025",
@@ -4538,7 +4628,7 @@
       "url": "https://www.youtube.com/watch?v=hkjCmiopE7M",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 151
+      "_source_position": 154
     },
     {
       "title": "SrijayateerthaStuti -Shloka 14,15,16-Artha-Marathi -28th July 2025 Mangala",
@@ -4568,7 +4658,7 @@
       "url": "https://www.youtube.com/watch?v=aIYoPXEipc4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 152
+      "_source_position": 155
     },
     {
       "title": "SriJayateerthastiti-shloka12,13-Artha-Marathi",
@@ -4598,7 +4688,7 @@
       "url": "https://www.youtube.com/watch?v=2Sdb_IhQypo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 153
+      "_source_position": 156
     },
     {
       "title": "SriJayateerthastuti-shloka10,11-Marathi-artha-25thJuly2025",
@@ -4628,7 +4718,7 @@
       "url": "https://www.youtube.com/watch?v=Ls6b2jkkbe0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 154
+      "_source_position": 157
     },
     {
       "title": "SriJayateerthastuti-shloka8,9-artha-Marathi",
@@ -4658,7 +4748,7 @@
       "url": "https://www.youtube.com/watch?v=DU6AMmICpTk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 155
+      "_source_position": 158
     },
     {
       "title": "SriJayateerthastuti -artha-marathi-shloka 6,7- 23July2025",
@@ -4688,7 +4778,7 @@
       "url": "https://www.youtube.com/watch?v=cDMyqRXOn8s",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 156
+      "_source_position": 159
     },
     {
       "title": "Srijayateerthastuti - marathi - artha -shloka 4,5-20th July 2025",
@@ -4718,7 +4808,7 @@
       "url": "https://www.youtube.com/watch?v=s3E0tqWAKT0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 157
+      "_source_position": 160
     },
     {
       "title": "Sandhyavandana-ONLINE- kannada-day2-20thJuly2025",
@@ -4748,7 +4838,7 @@
       "url": "https://www.youtube.com/watch?v=dA0jeaxVFkw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 158
+      "_source_position": 161
     },
     {
       "title": "Srijayateerthastuti-Shloka3 - Marathi artha-18th July 2025",
@@ -4778,7 +4868,7 @@
       "url": "https://www.youtube.com/watch?v=ICoS_Xb7Er0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 159
+      "_source_position": 162
     },
     {
       "title": "-Artha-Marathi-Shloka2-SriJayateerthastuti",
@@ -4808,7 +4898,7 @@
       "url": "https://www.youtube.com/watch?v=nKuu16YNE-g",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 160
+      "_source_position": 163
     },
     {
       "title": "SriJayateerthastuti artha-Marathi-Shloka1-Day1-16th July 2025",
@@ -4838,7 +4928,7 @@
       "url": "https://www.youtube.com/watch?v=mQt31SV3Ytw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 161
+      "_source_position": 164
     },
     {
       "title": "Teekacharya's charitra in Marathi -Day2- 13th July 2025",
@@ -4868,7 +4958,7 @@
       "url": "https://www.youtube.com/watch?v=imRci11Ezpg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 162
+      "_source_position": 165
     },
     {
       "title": "NKHK-Sandhyavandanakannada Online-day1-13th July2025",
@@ -4898,7 +4988,7 @@
       "url": "https://www.youtube.com/watch?v=H3WvfkcdeYA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 163
+      "_source_position": 166
     },
     {
       "title": "SriTeekacharya Charitra and mahima-Marathi-12th July2025",
@@ -4928,7 +5018,7 @@
       "url": "https://www.youtube.com/watch?v=JGUmLHow8QQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 164
+      "_source_position": 167
     },
     {
       "title": "NKHK SriRaghoottamaTeertha stotra 1st April",
@@ -4958,7 +5048,7 @@
       "url": "https://www.youtube.com/watch?v=D5hQ2vN7z_M",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 165
+      "_source_position": 168
     },
     {
       "title": "NKHK SriRaghoottamastotra Kannada 31st March",
@@ -4988,7 +5078,7 @@
       "url": "https://www.youtube.com/watch?v=EbTF5i57ELM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 166
+      "_source_position": 169
     },
     {
       "title": "SriRaghottamaTeertha stotra managala 24th March 2025",
@@ -5018,7 +5108,7 @@
       "url": "https://www.youtube.com/watch?v=ZDO9qYNXYAk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 167
+      "_source_position": 170
     },
     {
       "title": "SriRaghoottamastotra artha",
@@ -5048,7 +5138,7 @@
       "url": "https://www.youtube.com/watch?v=hb96QtUfoGI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 168
+      "_source_position": 171
     },
     {
       "title": "SriRaghoottamastotra Artha",
@@ -5078,7 +5168,7 @@
       "url": "https://www.youtube.com/watch?v=CVajxnNdm2M",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 169
+      "_source_position": 172
     },
     {
       "title": "SriSriRaghoottamateertha Stotra - Marathi class- 23rd Feb",
@@ -5108,7 +5198,7 @@
       "url": "https://www.youtube.com/watch?v=7oe12NjhZMo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 170
+      "_source_position": 173
     },
     {
       "title": "SriRaghoottama stotra -Marathi -09th Feb 2025",
@@ -5138,7 +5228,7 @@
       "url": "https://www.youtube.com/watch?v=LQsUQBsp8EI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 171
+      "_source_position": 174
     },
     {
       "title": "Sandhyaonline 5th Jan 2025",
@@ -5155,7 +5245,7 @@
         }
       ],
       "duration": 6333,
-      "view_count": 227,
+      "view_count": 228,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5168,7 +5258,7 @@
       "url": "https://www.youtube.com/watch?v=yD2g0eaGojI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 172
+      "_source_position": 175
     },
     {
       "title": "sandhyaonline 29th Dec 2024",
@@ -5198,7 +5288,7 @@
       "url": "https://www.youtube.com/watch?v=OO4_u5cyB9s",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 173
+      "_source_position": 176
     },
     {
       "title": "Sandhyaonline 15th Dec",
@@ -5228,7 +5318,7 @@
       "url": "https://www.youtube.com/watch?v=pDOsgnL1sqc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 174
+      "_source_position": 177
     },
     {
       "title": "sandhyaonline 8th Dec 2024",
@@ -5258,7 +5348,7 @@
       "url": "https://www.youtube.com/watch?v=2rqWFPNo3o4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 175
+      "_source_position": 178
     },
     {
       "title": "Sandhyaonline 1st Dec 2024",
@@ -5288,7 +5378,7 @@
       "url": "https://www.youtube.com/watch?v=UyOb9D1ubIY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 176
+      "_source_position": 179
     },
     {
       "title": "Sandhyaonline 24th Nov",
@@ -5318,7 +5408,7 @@
       "url": "https://www.youtube.com/watch?v=dzBqdBf-dEY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 177
+      "_source_position": 180
     },
     {
       "title": "SandhyaOnline 17th Nov",
@@ -5348,7 +5438,7 @@
       "url": "https://www.youtube.com/watch?v=ZArZUFSNhaU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 178
+      "_source_position": 181
     },
     {
       "title": "sandhyaonline 3rd Nov",
@@ -5378,7 +5468,7 @@
       "url": "https://www.youtube.com/watch?v=4DMautED52c",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 179
+      "_source_position": 182
     },
     {
       "title": "Sandhyavandana Online Oct 2024",
@@ -5408,7 +5498,7 @@
       "url": "https://www.youtube.com/watch?v=UKSWDE-dpSE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 180
+      "_source_position": 183
     },
     {
       "title": "Sandhyavandana online Oct 2024 -",
@@ -5425,7 +5515,7 @@
         }
       ],
       "duration": 82,
-      "view_count": 63,
+      "view_count": 64,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5438,7 +5528,7 @@
       "url": "https://www.youtube.com/watch?v=BLF9TaukiFs",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 181
+      "_source_position": 184
     },
     {
       "title": "Satyatma Sandhya- Devapooja 31st Dec 2023",
@@ -5468,7 +5558,7 @@
       "url": "https://www.youtube.com/watch?v=vzbSl_Cz8_k",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 182
+      "_source_position": 185
     },
     {
       "title": "Satyatma Sandya Deva Pooja 17th Dec 2023",
@@ -5498,7 +5588,7 @@
       "url": "https://www.youtube.com/watch?v=d7NXkCw5-B0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 183
+      "_source_position": 186
     },
     {
       "title": "NKHK Marathi Srinivasa Kalyana Mangala Day2 22nd Oct 2023",
@@ -5528,7 +5618,7 @@
       "url": "https://www.youtube.com/watch?v=VRxv-rmn1gE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 184
+      "_source_position": 187
     },
     {
       "title": "Satyatmasandhya Marathi day4 - 22nd Oct 2023",
@@ -5545,7 +5635,7 @@
         }
       ],
       "duration": 4557,
-      "view_count": 78,
+      "view_count": 80,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5558,7 +5648,7 @@
       "url": "https://www.youtube.com/watch?v=rmIU7GJQn9Y",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 185
+      "_source_position": 188
     },
     {
       "title": "NKHK marathi Srinivasa kalyana Day1- 21st Oct 2023",
@@ -5588,7 +5678,7 @@
       "url": "https://www.youtube.com/watch?v=nZQ_72_DCPQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 186
+      "_source_position": 189
     },
     {
       "title": "NKHK marathi DevaPooja Day 3 - 8th Oct 2023",
@@ -5605,7 +5695,7 @@
         }
       ],
       "duration": 5290,
-      "view_count": 168,
+      "view_count": 173,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5618,7 +5708,7 @@
       "url": "https://www.youtube.com/watch?v=k5nNcT1oANE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 187
+      "_source_position": 190
     },
     {
       "title": "NKHK DevaPooja Day2 - Oct 2nd 2023",
@@ -5635,7 +5725,7 @@
         }
       ],
       "duration": 4825,
-      "view_count": 301,
+      "view_count": 302,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5648,7 +5738,7 @@
       "url": "https://www.youtube.com/watch?v=m6VOYHjtjTw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 188
+      "_source_position": 191
     },
     {
       "title": "NKHK Marathi DevaPooja day1-  24th Sept 2023",
@@ -5665,7 +5755,7 @@
         }
       ],
       "duration": 6133,
-      "view_count": 419,
+      "view_count": 423,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5678,7 +5768,7 @@
       "url": "https://www.youtube.com/watch?v=vbU7y600-AM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 189
+      "_source_position": 192
     },
     {
       "title": "Satyatma Sandhya Marathi -sayam Sandhya 17th Sept",
@@ -5695,7 +5785,7 @@
         }
       ],
       "duration": 6058,
-      "view_count": 116,
+      "view_count": 118,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5708,7 +5798,7 @@
       "url": "https://www.youtube.com/watch?v=S-QDEwVy6BI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 190
+      "_source_position": 193
     },
     {
       "title": "SatyatmaSandhya Marathi 10th Sept 2023",
@@ -5725,7 +5815,7 @@
         }
       ],
       "duration": 7000,
-      "view_count": 133,
+      "view_count": 135,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5738,7 +5828,7 @@
       "url": "https://www.youtube.com/watch?v=7dH8Lnewp0M",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 191
+      "_source_position": 194
     },
     {
       "title": "SriKrishnashtaka Stotra by Sri VadirajaTeertha - 3rd Sept",
@@ -5768,7 +5858,7 @@
       "url": "https://www.youtube.com/watch?v=CUHw9O-XSDs",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 192
+      "_source_position": 195
     },
     {
       "title": "Satyatma Sandhya Marathi 3rd Aug",
@@ -5798,7 +5888,7 @@
       "url": "https://www.youtube.com/watch?v=Gm83lEBWuEc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 193
+      "_source_position": 196
     },
     {
       "title": "Satyatmasandhya Marathi 27Aug",
@@ -5828,7 +5918,7 @@
       "url": "https://www.youtube.com/watch?v=2g1tpA74KuI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 194
+      "_source_position": 197
     },
     {
       "title": "Satyatma Sandhya marathi 13th Aug 2023",
@@ -5845,7 +5935,7 @@
         }
       ],
       "duration": 7056,
-      "view_count": 520,
+      "view_count": 525,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5858,7 +5948,7 @@
       "url": "https://www.youtube.com/watch?v=ZcAZJi7E2JA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 195
+      "_source_position": 198
     },
     {
       "title": "NKHK Marathi Ganesha Dwadashanama stotra",
@@ -5888,7 +5978,7 @@
       "url": "https://www.youtube.com/watch?v=7zheiYGAFT8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 196
+      "_source_position": 199
     },
     {
       "title": "satyatmaSandhya Marathi 30th July 2023",
@@ -5918,7 +6008,7 @@
       "url": "https://www.youtube.com/watch?v=wD7xDIlcaoM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 197
+      "_source_position": 200
     },
     {
       "title": "NKHK Marathi AdhikaMasa Mahima 16th July 2023",
@@ -5948,7 +6038,7 @@
       "url": "https://www.youtube.com/watch?v=3bhLGsLOurk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 198
+      "_source_position": 201
     },
     {
       "title": "Satyatma Sandhya Marathi 16th July",
@@ -5965,7 +6055,7 @@
         }
       ],
       "duration": 6305,
-      "view_count": 441,
+      "view_count": 443,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -5978,7 +6068,7 @@
       "url": "https://www.youtube.com/watch?v=H44HOgn1g40",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 199
+      "_source_position": 202
     },
     {
       "title": "NKHK Kannada Adhika masa Mahatmya Day1- 12th July",
@@ -6008,7 +6098,7 @@
       "url": "https://www.youtube.com/watch?v=dgpJf_9eZ7Q",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 200
+      "_source_position": 203
     },
     {
       "title": "NKHK marathi Satsanga Sri Purushottama Stotra 9th july 2023",
@@ -6038,7 +6128,7 @@
       "url": "https://www.youtube.com/watch?v=L10yy5MWyjc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 201
+      "_source_position": 204
     },
     {
       "title": "Satyatma Sandhya batch1 - Sri Vishnusahasranama 9th July 2023",
@@ -6055,7 +6145,7 @@
         }
       ],
       "duration": 4304,
-      "view_count": 625,
+      "view_count": 626,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6068,7 +6158,7 @@
       "url": "https://www.youtube.com/watch?v=FUPpFq172rk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 202
+      "_source_position": 205
     },
     {
       "title": "Satyatma Sandhya Marathi Day2 - 9th July 2023",
@@ -6085,7 +6175,7 @@
         }
       ],
       "duration": 4800,
-      "view_count": 684,
+      "view_count": 775,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6098,7 +6188,7 @@
       "url": "https://www.youtube.com/watch?v=dPoZbs6l2Ic",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 203
+      "_source_position": 206
     },
     {
       "title": "28Moorthi Marathi Mangala 2nd July",
@@ -6128,7 +6218,7 @@
       "url": "https://www.youtube.com/watch?v=rrageTyTAac",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 204
+      "_source_position": 207
     },
     {
       "title": "Satyatma sandhya Marathi Day1 -2nd July",
@@ -6158,7 +6248,7 @@
       "url": "https://www.youtube.com/watch?v=p-TP9cWB1Kc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 205
+      "_source_position": 208
     },
     {
       "title": "28Moorti 27th June - Mangala",
@@ -6188,7 +6278,7 @@
       "url": "https://www.youtube.com/watch?v=qH5R56T9ImU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 206
+      "_source_position": 209
     },
     {
       "title": "28Moorthi Marathi Day3 - 25th June 2023",
@@ -6218,7 +6308,7 @@
       "url": "https://www.youtube.com/watch?v=oD-WPBeDu64",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 207
+      "_source_position": 210
     },
     {
       "title": "NKHK Jamshedpur satsang 25th June 2023",
@@ -6248,7 +6338,7 @@
       "url": "https://www.youtube.com/watch?v=cwog-PtWY2s",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 208
+      "_source_position": 211
     },
     {
       "title": "Satyatma Sandhya Kannada Final Day 24th June 2023",
@@ -6278,7 +6368,7 @@
       "url": "https://www.youtube.com/watch?v=zngLVgpavXA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 209
+      "_source_position": 212
     },
     {
       "title": "28Moorthi kannada Day3 - 21 June 2023",
@@ -6308,7 +6398,7 @@
       "url": "https://www.youtube.com/watch?v=M6jdmOI38w0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 210
+      "_source_position": 213
     },
     {
       "title": "28Moorthi Kannada day2 -20th June 2023",
@@ -6338,7 +6428,7 @@
       "url": "https://www.youtube.com/watch?v=qbbvkQNzfa0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 211
+      "_source_position": 214
     },
     {
       "title": "28Moorthi Marathi Day2 18th June",
@@ -6368,7 +6458,7 @@
       "url": "https://www.youtube.com/watch?v=ctpq_ahOQHU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 212
+      "_source_position": 215
     },
     {
       "title": "Satyatma Sandhya Batch1 - 18th June 2023",
@@ -6398,7 +6488,7 @@
       "url": "https://www.youtube.com/watch?v=6-5ume6DZn8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 213
+      "_source_position": 216
     },
     {
       "title": "NKHK kannada 28 Moorti stuti day1 13th June",
@@ -6428,7 +6518,7 @@
       "url": "https://www.youtube.com/watch?v=bdEAwaHNda8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 214
+      "_source_position": 217
     },
     {
       "title": "NKHK Marathi 28 Moorthi Session 1- 11Th June",
@@ -6458,7 +6548,7 @@
       "url": "https://www.youtube.com/watch?v=jMsvD9BpTlE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 215
+      "_source_position": 218
     },
     {
       "title": "Satyatma sandhya English - anusandhana in Sandhya -26th March 23",
@@ -6488,7 +6578,7 @@
       "url": "https://www.youtube.com/watch?v=ypU_yIP3U2I",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 216
+      "_source_position": 219
     },
     {
       "title": "Satyatma Sandhya Kannada anusandhana 25th March 23",
@@ -6505,7 +6595,7 @@
         }
       ],
       "duration": 4205,
-      "view_count": 370,
+      "view_count": 381,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6518,7 +6608,7 @@
       "url": "https://www.youtube.com/watch?v=b4aFJLtvyiM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 217
+      "_source_position": 220
     },
     {
       "title": "pratah Sankalpa Gadya Day 23 - 11th Mar",
@@ -6535,7 +6625,7 @@
         }
       ],
       "duration": 2598,
-      "view_count": 142,
+      "view_count": 143,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6548,7 +6638,7 @@
       "url": "https://www.youtube.com/watch?v=LMnMCK6gmSA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 218
+      "_source_position": 221
     },
     {
       "title": "Prathah Sankalpa Gadya - Day 18 - Jan 21st",
@@ -6578,7 +6668,7 @@
       "url": "https://www.youtube.com/watch?v=LAxEZAy-6Tc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 219
+      "_source_position": 222
     },
     {
       "title": "Satyatma Sandhya English - session 10 - 15th jan 2023",
@@ -6608,7 +6698,7 @@
       "url": "https://www.youtube.com/watch?v=YolyjEzLp-E",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 220
+      "_source_position": 223
     },
     {
       "title": "Satyatma Sandhya Kannada session 14th Jan 2023",
@@ -6638,7 +6728,7 @@
       "url": "https://www.youtube.com/watch?v=TckmFbbimzk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 221
+      "_source_position": 224
     },
     {
       "title": "Prathah sankalpa Gadya - JAN 14th - Day 17",
@@ -6668,7 +6758,7 @@
       "url": "https://www.youtube.com/watch?v=1yrUce1Zc-I",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 222
+      "_source_position": 225
     },
     {
       "title": "Pratah Sankalpa Gadya - Day14 - Dec 24th",
@@ -6685,7 +6775,7 @@
         }
       ],
       "duration": 2774,
-      "view_count": 193,
+      "view_count": 194,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6698,7 +6788,7 @@
       "url": "https://www.youtube.com/watch?v=bult3oFcrjw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 223
+      "_source_position": 226
     },
     {
       "title": "Pratah Sankalpa Gadya - Dec17th - Day13",
@@ -6715,7 +6805,7 @@
         }
       ],
       "duration": 2895,
-      "view_count": 160,
+      "view_count": 161,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6728,7 +6818,7 @@
       "url": "https://www.youtube.com/watch?v=tiYISoHt8w0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 224
+      "_source_position": 227
     },
     {
       "title": "Pratah Sankalpa Gadya - Dec 10th - Day 12",
@@ -6745,7 +6835,7 @@
         }
       ],
       "duration": 2710,
-      "view_count": 206,
+      "view_count": 208,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6758,7 +6848,7 @@
       "url": "https://www.youtube.com/watch?v=ioSWky5gNgY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 225
+      "_source_position": 228
     },
     {
       "title": "Prathah Sankalpa Gadya - Dec 3rd - Day 11",
@@ -6775,7 +6865,7 @@
         }
       ],
       "duration": 2737,
-      "view_count": 192,
+      "view_count": 195,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6788,7 +6878,7 @@
       "url": "https://www.youtube.com/watch?v=AwY8EDBUSNE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 226
+      "_source_position": 229
     },
     {
       "title": "satyatma Sandhya English session 9 - 27th Nov 2022",
@@ -6805,7 +6895,7 @@
         }
       ],
       "duration": 5276,
-      "view_count": 188,
+      "view_count": 191,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6818,7 +6908,7 @@
       "url": "https://www.youtube.com/watch?v=gG_HVusoTDo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 227
+      "_source_position": 230
     },
     {
       "title": "Satyatma Sandhya Kannada session 9",
@@ -6848,7 +6938,7 @@
       "url": "https://www.youtube.com/watch?v=quuWrWdD7VU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 228
+      "_source_position": 231
     },
     {
       "title": "Prathah Sankalpa Gadya - Nov 26th - Day 10",
@@ -6865,7 +6955,7 @@
         }
       ],
       "duration": 3011,
-      "view_count": 230,
+      "view_count": 234,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6878,7 +6968,7 @@
       "url": "https://www.youtube.com/watch?v=P1h9G4Wh734",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 229
+      "_source_position": 232
     },
     {
       "title": "Satyatma Sandhya English 8 - 20th Nov 2022",
@@ -6908,7 +6998,7 @@
       "url": "https://www.youtube.com/watch?v=E5x2EiQwRFM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 230
+      "_source_position": 233
     },
     {
       "title": "Satyatma Sandhya Kannada session 8 -19th Nov 2022",
@@ -6938,7 +7028,7 @@
       "url": "https://www.youtube.com/watch?v=JVv3dw7VTZU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 231
+      "_source_position": 234
     },
     {
       "title": "Prathak Sankalpa Gadya - Nov 19th - Day9",
@@ -6955,7 +7045,7 @@
         }
       ],
       "duration": 2782,
-      "view_count": 217,
+      "view_count": 218,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -6968,7 +7058,7 @@
       "url": "https://www.youtube.com/watch?v=xauSaPisqzc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 232
+      "_source_position": 235
     },
     {
       "title": "Satyatma Sandhya Kannada 6th session 12th Nov",
@@ -6998,7 +7088,7 @@
       "url": "https://www.youtube.com/watch?v=YX3yH-AQx3s",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 233
+      "_source_position": 236
     },
     {
       "title": "Satyatma Sandhya English session 7 - 6th Nov 2022",
@@ -7028,7 +7118,7 @@
       "url": "https://www.youtube.com/watch?v=t1soM5PCEx8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 234
+      "_source_position": 237
     },
     {
       "title": "Prataha Sankalpa Gadya 5th Nov - Day 7",
@@ -7045,7 +7135,7 @@
         }
       ],
       "duration": 2409,
-      "view_count": 286,
+      "view_count": 288,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7058,7 +7148,7 @@
       "url": "https://www.youtube.com/watch?v=UiA6-CnxJWo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 235
+      "_source_position": 238
     },
     {
       "title": "Satyatma Sandhya English session 6 - 30th October 2022",
@@ -7088,7 +7178,7 @@
       "url": "https://www.youtube.com/watch?v=RJqGfzPYnFc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 236
+      "_source_position": 239
     },
     {
       "title": "Satyatma Sandhya kannada session 5 - 29th October",
@@ -7105,7 +7195,7 @@
         }
       ],
       "duration": 5773,
-      "view_count": 343,
+      "view_count": 344,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7118,7 +7208,7 @@
       "url": "https://www.youtube.com/watch?v=aL1_c07MkAI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 237
+      "_source_position": 240
     },
     {
       "title": "Satyatma Sandhya English session 5 - 23 Oct 2022",
@@ -7148,7 +7238,7 @@
       "url": "https://www.youtube.com/watch?v=43pCAoKwd5I",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 238
+      "_source_position": 241
     },
     {
       "title": "Satyatma Sandhya Session 4 - 22nd Oct",
@@ -7178,7 +7268,7 @@
       "url": "https://www.youtube.com/watch?v=wYKTo6WUVoM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 239
+      "_source_position": 242
     },
     {
       "title": "Satyatma sandhya English Session 4 - 16th Oct",
@@ -7208,7 +7298,7 @@
       "url": "https://www.youtube.com/watch?v=cXRq1Fms2mw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 240
+      "_source_position": 243
     },
     {
       "title": "satyatma sandhya kannada day4 15th Oct",
@@ -7238,7 +7328,7 @@
       "url": "https://www.youtube.com/watch?v=qHVhssaaMVI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 241
+      "_source_position": 244
     },
     {
       "title": "Pratah Sankalpa Gadya Day 4 - 15th Oct",
@@ -7255,7 +7345,7 @@
         }
       ],
       "duration": 2520,
-      "view_count": 618,
+      "view_count": 626,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7268,7 +7358,7 @@
       "url": "https://www.youtube.com/watch?v=geWtLnCFXvo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 242
+      "_source_position": 245
     },
     {
       "title": "Satyatma Sandhya English Session 3- 9th October",
@@ -7285,7 +7375,7 @@
         }
       ],
       "duration": 6387,
-      "view_count": 578,
+      "view_count": 581,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7298,7 +7388,7 @@
       "url": "https://www.youtube.com/watch?v=dv5uXY4mbPI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 243
+      "_source_position": 246
     },
     {
       "title": "Satyatma Sandhya kannada Day3 - 8th Oct 2022",
@@ -7328,7 +7418,7 @@
       "url": "https://www.youtube.com/watch?v=zM6OHBGqMFs",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 244
+      "_source_position": 247
     },
     {
       "title": "Pratah Sankalpa Gadya Day3- 8th Oct",
@@ -7345,7 +7435,7 @@
         }
       ],
       "duration": 2388,
-      "view_count": 761,
+      "view_count": 777,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7358,7 +7448,7 @@
       "url": "https://www.youtube.com/watch?v=EaTq9lzhTj8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 245
+      "_source_position": 248
     },
     {
       "title": "Prataha sankalpa Gadya Day2 - 6th Oct 2022",
@@ -7375,7 +7465,7 @@
         }
       ],
       "duration": 1017,
-      "view_count": 788,
+      "view_count": 796,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7388,7 +7478,7 @@
       "url": "https://www.youtube.com/watch?v=wO_sONZDn3o",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 246
+      "_source_position": 249
     },
     {
       "title": "Prataha Sankalpa Gadya - Day1- 5th Oct",
@@ -7418,7 +7508,7 @@
       "url": "https://www.youtube.com/watch?v=mdEw4fcmyWk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 247
+      "_source_position": 250
     },
     {
       "title": "Satyatma Sandhya English Day 2/  2nd October",
@@ -7435,7 +7525,7 @@
         }
       ],
       "duration": 5055,
-      "view_count": 641,
+      "view_count": 643,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7448,7 +7538,7 @@
       "url": "https://www.youtube.com/watch?v=wIp1dIa787c",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 248
+      "_source_position": 251
     },
     {
       "title": "Satyatma Sandhya Kannada day 3  --- 1 th Oct",
@@ -7478,7 +7568,7 @@
       "url": "https://www.youtube.com/watch?v=oq2Fkv1_RSk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 249
+      "_source_position": 252
     },
     {
       "title": "Satyatma Sandhya Kannada Friday batch Day1",
@@ -7495,7 +7585,7 @@
         }
       ],
       "duration": 5588,
-      "view_count": 929,
+      "view_count": 931,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7508,7 +7598,7 @@
       "url": "https://www.youtube.com/watch?v=wEFfQeYprEQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 250
+      "_source_position": 253
     },
     {
       "title": "NKHK kannada Srinivasakalyana Tatwagalu SriVadirajacharya Karanam 28th Sept",
@@ -7538,7 +7628,7 @@
       "url": "https://www.youtube.com/watch?v=pclLLxcYBm0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 251
+      "_source_position": 254
     },
     {
       "title": "NKHK kannada Srinivasa kalyana dalli tatwagalu 27th Sep",
@@ -7568,7 +7658,7 @@
       "url": "https://www.youtube.com/watch?v=LcJ2gsL3PAo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 252
+      "_source_position": 255
     },
     {
       "title": "Satyatma Sandhya English Day1 25th Sept",
@@ -7585,7 +7675,7 @@
         }
       ],
       "duration": 5220,
-      "view_count": 565,
+      "view_count": 568,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7598,7 +7688,7 @@
       "url": "https://www.youtube.com/watch?v=QL-LY2r1HeQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 253
+      "_source_position": 256
     },
     {
       "title": "NKHK Marathi Vighnesh sandhi 25th Sept",
@@ -7628,7 +7718,7 @@
       "url": "https://www.youtube.com/watch?v=ydbtbSCjNAM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 254
+      "_source_position": 257
     },
     {
       "title": "Satyatma sandhya kannada Day2 24th Sept 2022",
@@ -7645,7 +7735,7 @@
         }
       ],
       "duration": 5427,
-      "view_count": 604,
+      "view_count": 606,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7658,7 +7748,7 @@
       "url": "https://www.youtube.com/watch?v=xp-jjD8ZOTY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 255
+      "_source_position": 258
     },
     {
       "title": "SatyatmaSandhya kannada Saturday 17th Sept 2022",
@@ -7675,7 +7765,7 @@
         }
       ],
       "duration": 5128,
-      "view_count": 346,
+      "view_count": 347,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -7688,7 +7778,7 @@
       "url": "https://www.youtube.com/watch?v=UqO6wtiVWug",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 256
+      "_source_position": 259
     },
     {
       "title": "NKHK marathi Vighnesha sandhi 11th Sept 2022",
@@ -7718,7 +7808,7 @@
       "url": "https://www.youtube.com/watch?v=2WAiSP9s-50",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 257
+      "_source_position": 260
     },
     {
       "title": "satyatma batch 2 & 3 - 10th Sept",
@@ -7748,7 +7838,7 @@
       "url": "https://www.youtube.com/watch?v=KBINRXyD9Yg",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 258
+      "_source_position": 261
     },
     {
       "title": "NKHK marathi Vighnesha sandhi 4th sept",
@@ -7778,7 +7868,7 @@
       "url": "https://www.youtube.com/watch?v=mY_AEON4C5Q",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 259
+      "_source_position": 262
     },
     {
       "title": "NKHK marathi Vighnesha sandhi 21Aug 2022",
@@ -7808,7 +7898,7 @@
       "url": "https://www.youtube.com/watch?v=taLTtNm8uKc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 260
+      "_source_position": 263
     },
     {
       "title": "NKHK kannada KrishnaStotra day2 17th Aug",
@@ -7838,7 +7928,7 @@
       "url": "https://www.youtube.com/watch?v=mbBCGBFeFlU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 261
+      "_source_position": 264
     },
     {
       "title": "NKHK kannada SriKrishna Stotra 16th Aug",
@@ -7868,7 +7958,7 @@
       "url": "https://www.youtube.com/watch?v=imFR7KiAwiY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 262
+      "_source_position": 265
     },
     {
       "title": "NKHK Kannada Vighnesha Sandhi Mangala 9th Aug 2022",
@@ -7898,7 +7988,7 @@
       "url": "https://www.youtube.com/watch?v=NRx-YZyhZ7c",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 263
+      "_source_position": 266
     },
     {
       "title": "NKHK marathi Vighnesha sandhi 31st July 2022",
@@ -7928,7 +8018,7 @@
       "url": "https://www.youtube.com/watch?v=usi052S2DUc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 264
+      "_source_position": 267
     },
     {
       "title": "NKHK kannada Vighnesha Sandhi 27th July 2022",
@@ -7958,7 +8048,7 @@
       "url": "https://www.youtube.com/watch?v=-RpS7a9dKgQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 265
+      "_source_position": 268
     },
     {
       "title": "NKHK Kannada SriVighnesha sandhi 26th July",
@@ -7988,7 +8078,7 @@
       "url": "https://www.youtube.com/watch?v=SogZlzLTccQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 266
+      "_source_position": 269
     },
     {
       "title": "NKHK Marathi Dwadasha Stotra day1",
@@ -8018,7 +8108,7 @@
       "url": "https://www.youtube.com/watch?v=8JnMcAX0JRw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 267
+      "_source_position": 270
     },
     {
       "title": "NKHK kannada Vighnesh sandhi shloka 13.14 - 6th July",
@@ -8048,7 +8138,7 @@
       "url": "https://www.youtube.com/watch?v=GxxAAMKI4Pc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 268
+      "_source_position": 271
     },
     {
       "title": "NKHK Kannada Vighnesh Sandhi 5th July",
@@ -8078,7 +8168,7 @@
       "url": "https://www.youtube.com/watch?v=n4DoE457h5U",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 269
+      "_source_position": 272
     },
     {
       "title": "NKHK marathi SriVighnesha Sandhi 3rd July",
@@ -8108,7 +8198,7 @@
       "url": "https://www.youtube.com/watch?v=OIPr7lFejDA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 270
+      "_source_position": 273
     },
     {
       "title": "NKHK marathi 2nd June 2022",
@@ -8138,7 +8228,7 @@
       "url": "https://www.youtube.com/watch?v=U_3bX9JCBFw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 271
+      "_source_position": 274
     },
     {
       "title": "NKHK Marathi 25th June Narasimhastuti",
@@ -8168,7 +8258,7 @@
       "url": "https://www.youtube.com/watch?v=doI35IIbbTI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 272
+      "_source_position": 275
     },
     {
       "title": "NKHK Kannada Vighnesha Sandhi 22nd June",
@@ -8198,7 +8288,7 @@
       "url": "https://www.youtube.com/watch?v=iWgPZHXKSZc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 273
+      "_source_position": 276
     },
     {
       "title": "NKHK Marathi Navabrindavana Chintana 19th June",
@@ -8228,7 +8318,7 @@
       "url": "https://www.youtube.com/watch?v=6Tpu2c1AmNQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 274
+      "_source_position": 277
     },
     {
       "title": "NKHK VighneshSandhi Day4 15 June",
@@ -8258,7 +8348,7 @@
       "url": "https://www.youtube.com/watch?v=kuXrAG8Sf1s",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 275
+      "_source_position": 278
     },
     {
       "title": "NKHK Vighnesh Sandhi Day 3 14 June",
@@ -8288,7 +8378,7 @@
       "url": "https://www.youtube.com/watch?v=791ulvFZ36g",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 276
+      "_source_position": 279
     },
     {
       "title": "NKHK Marathi Sri Sri  Raghuvaryateertha Stuti 12June",
@@ -8318,7 +8408,7 @@
       "url": "https://www.youtube.com/watch?v=FpkvtK-4gcY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 277
+      "_source_position": 280
     },
     {
       "title": "NKHK Marathi narasimha Stuti 11June",
@@ -8348,7 +8438,7 @@
       "url": "https://www.youtube.com/watch?v=E5uGVcpLD64",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 278
+      "_source_position": 281
     },
     {
       "title": "NKHK Kannada Harikathamruta sara Day 2-  8th June",
@@ -8378,7 +8468,7 @@
       "url": "https://www.youtube.com/watch?v=v_QyikGTyIo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 279
+      "_source_position": 282
     },
     {
       "title": "NKHK Kannada Vighnesh Sandhi",
@@ -8408,7 +8498,7 @@
       "url": "https://www.youtube.com/watch?v=mhOLCtifN-U",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 280
+      "_source_position": 283
     },
     {
       "title": "NKHK Marathi Tulasi Stotra Day2 29 may",
@@ -8438,7 +8528,7 @@
       "url": "https://www.youtube.com/watch?v=Pj3u4LciwOo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 281
+      "_source_position": 284
     },
     {
       "title": "NKHK marati Tulasi 22nd May",
@@ -8468,7 +8558,7 @@
       "url": "https://www.youtube.com/watch?v=RjgBtXbG4gY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 282
+      "_source_position": 285
     },
     {
       "title": "NKHK marathi Navavrindavana 6th Feb",
@@ -8498,7 +8588,7 @@
       "url": "https://www.youtube.com/watch?v=KrVPozAd9no",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 283
+      "_source_position": 286
     },
     {
       "title": "NKHK Marathi Navavrindavana part1",
@@ -8528,7 +8618,7 @@
       "url": "https://www.youtube.com/watch?v=7zL6bZqzcZ4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 284
+      "_source_position": 287
     },
     {
       "title": "NKHK Kannada Navabrindavana mahima Part2",
@@ -8558,7 +8648,7 @@
       "url": "https://www.youtube.com/watch?v=LPtUz18bLtQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 285
+      "_source_position": 288
     },
     {
       "title": "NKHK Kannada navabrindavana Kshetra mahima",
@@ -8588,7 +8678,7 @@
       "url": "https://www.youtube.com/watch?v=AIj2xZ4hzco",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 286
+      "_source_position": 289
     },
     {
       "title": "NKHK kannada Anusandhana+Dhyana",
@@ -8618,7 +8708,7 @@
       "url": "https://www.youtube.com/watch?v=M_UY2qkx6Gk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 287
+      "_source_position": 290
     },
     {
       "title": "NKHK Anusandhana+Dhyana 19th Dec",
@@ -8648,7 +8738,7 @@
       "url": "https://www.youtube.com/watch?v=HGfdH6qIw0k",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 288
+      "_source_position": 291
     },
     {
       "title": "NKHK marathi - taratamya - 28th Nov",
@@ -8678,7 +8768,7 @@
       "url": "https://www.youtube.com/watch?v=20GMDmvFzz8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 289
+      "_source_position": 292
     },
     {
       "title": "NKHK Marathi - on Taratamya 21Nov 2021",
@@ -8708,7 +8798,7 @@
       "url": "https://www.youtube.com/watch?v=PbO8S1NRSuM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 290
+      "_source_position": 293
     },
     {
       "title": "NKHK kannada Srinivasa kalyana mangala 20th Oct 2021",
@@ -8738,7 +8828,7 @@
       "url": "https://www.youtube.com/watch?v=98n8sXYMHE4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 291
+      "_source_position": 294
     },
     {
       "title": "NKHK Kannada Srinivasa Kalyana Day3 mangala 19th Oct",
@@ -8768,7 +8858,7 @@
       "url": "https://www.youtube.com/watch?v=HEcT5b9hi1M",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 292
+      "_source_position": 295
     },
     {
       "title": "NKHK marathi Srinivasa kalyana mangala 17th Oct",
@@ -8798,7 +8888,7 @@
       "url": "https://www.youtube.com/watch?v=R16sddJuSMQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 293
+      "_source_position": 296
     },
     {
       "title": "NKHK Kannada Srinivasa Kalyana Day2 13th Oct",
@@ -8828,7 +8918,7 @@
       "url": "https://www.youtube.com/watch?v=CCnqGipOmxQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 294
+      "_source_position": 297
     },
     {
       "title": "NKHK Kannada Srinivasa Kalyana 12th Oct",
@@ -8845,7 +8935,7 @@
         }
       ],
       "duration": 3760,
-      "view_count": 124,
+      "view_count": 126,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -8858,7 +8948,7 @@
       "url": "https://www.youtube.com/watch?v=hnaxd_H69GU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 295
+      "_source_position": 298
     },
     {
       "title": "NKHK marathi Srinivasa Kalyana",
@@ -8888,7 +8978,7 @@
       "url": "https://www.youtube.com/watch?v=9aEOhGcfnxc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 296
+      "_source_position": 299
     },
     {
       "title": "NKHK Satsanga Pushpahasa 12th Sept 2021",
@@ -8918,7 +9008,7 @@
       "url": "https://www.youtube.com/watch?v=pmS7x3JYoZY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 297
+      "_source_position": 300
     },
     {
       "title": "NKHK Marathi 11th Sept.2021",
@@ -8948,7 +9038,7 @@
       "url": "https://www.youtube.com/watch?v=jOO3eBCr7iE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 298
+      "_source_position": 301
     },
     {
       "title": "NKHK Marathi Pushpahasa 22nd Aug",
@@ -8978,7 +9068,7 @@
       "url": "https://www.youtube.com/watch?v=rI3kjoGjuAE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 299
+      "_source_position": 302
     },
     {
       "title": "NKHK Marathi Satsanga \"Paranjyothi\" Part 2- 15th Aug 2021",
@@ -9008,7 +9098,7 @@
       "url": "https://www.youtube.com/watch?v=StQZDl5EukM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 300
+      "_source_position": 303
     },
     {
       "title": "NKHK Sandhya Marathi 14th Aug",
@@ -9025,7 +9115,7 @@
         }
       ],
       "duration": 1899,
-      "view_count": 74,
+      "view_count": 75,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9038,7 +9128,7 @@
       "url": "https://www.youtube.com/watch?v=c6lVtLM22x4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 301
+      "_source_position": 304
     },
     {
       "title": "NKHK Marathi Paranjyothi 8th Aug 2021",
@@ -9068,7 +9158,7 @@
       "url": "https://www.youtube.com/watch?v=kAc11tBOnoA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 302
+      "_source_position": 305
     },
     {
       "title": "NKHK Kannada SriTeekachrayara Charitre Day3 3rd Aug 2021",
@@ -9098,7 +9188,7 @@
       "url": "https://www.youtube.com/watch?v=LFxw5wTnsto",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 303
+      "_source_position": 306
     },
     {
       "title": "NKHK Marathi SriTeekacharya Charitra 1st Aug 2021",
@@ -9128,7 +9218,7 @@
       "url": "https://www.youtube.com/watch?v=k9yL2sLIt1o",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 304
+      "_source_position": 307
     },
     {
       "title": "NKHK Kannada SriTeekacharyara charitre Day2",
@@ -9158,7 +9248,7 @@
       "url": "https://www.youtube.com/watch?v=iYxFXwf_uuI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 305
+      "_source_position": 308
     },
     {
       "title": "NKHK Kannada Sri Teekacharyara Charitre Day2 28th July",
@@ -9188,7 +9278,7 @@
       "url": "https://www.youtube.com/watch?v=0YQ88JVHcrM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 306
+      "_source_position": 309
     },
     {
       "title": "NKHK Kannada SriTeekacharyara charitre mahima 27th July",
@@ -9218,7 +9308,7 @@
       "url": "https://www.youtube.com/watch?v=pJnmp1Qi-Xo",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 307
+      "_source_position": 310
     },
     {
       "title": "NKHK marathi 17th July 2021",
@@ -9248,7 +9338,7 @@
       "url": "https://www.youtube.com/watch?v=6PHWExuS2b4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 308
+      "_source_position": 311
     },
     {
       "title": "NKHK kannada karyashala 11th July 2021",
@@ -9278,7 +9368,7 @@
       "url": "https://www.youtube.com/watch?v=GnbFc8sh804",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 309
+      "_source_position": 312
     },
     {
       "title": "Marathi Sandhya Anusandhana 3rd July 2021",
@@ -9308,7 +9398,7 @@
       "url": "https://www.youtube.com/watch?v=JhIvP3cMvoI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 310
+      "_source_position": 313
     },
     {
       "title": "NKHK Marathi Satsanga Sri Sripadarajara charitra 27th June 2021",
@@ -9338,7 +9428,7 @@
       "url": "https://www.youtube.com/watch?v=-J0Q7HQ-LbI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 311
+      "_source_position": 314
     },
     {
       "title": "sandhyavandana Part2 NKHK 27June 2021",
@@ -9368,7 +9458,7 @@
       "url": "https://www.youtube.com/watch?v=883vDhuxzhM",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 312
+      "_source_position": 315
     },
     {
       "title": "NKHK Kannada Satsanga Sri Sri Satyabhinava Teerthara Charitre/Mahima",
@@ -9398,7 +9488,7 @@
       "url": "https://www.youtube.com/watch?v=0NOgydhptRw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 313
+      "_source_position": 316
     },
     {
       "title": "NKHK Satsanga Sri Sripadarajara Mahima 23June2021",
@@ -9428,7 +9518,7 @@
       "url": "https://www.youtube.com/watch?v=b14Pp63z-do",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 314
+      "_source_position": 317
     },
     {
       "title": "NKHK-Spl.Satsanga -GO Mahima-Pt.Sri Sanjeevaacharya 16th June",
@@ -9458,7 +9548,7 @@
       "url": "https://www.youtube.com/watch?v=xdoNNw_m6HE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 315
+      "_source_position": 318
     },
     {
       "title": "Marathi Satsanga 13th June Ramapanchakam",
@@ -9488,7 +9578,7 @@
       "url": "https://www.youtube.com/watch?v=NdJQ7cmSeuI",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 316
+      "_source_position": 319
     },
     {
       "title": "Marathi Satsanga 30th May",
@@ -9518,7 +9608,7 @@
       "url": "https://www.youtube.com/watch?v=RnIG-rGXLO4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 317
+      "_source_position": 320
     },
     {
       "title": "NKHK Dhyana Day1 Marathi 16th May 2021",
@@ -9548,7 +9638,7 @@
       "url": "https://www.youtube.com/watch?v=AMaTn9XgvPw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 318
+      "_source_position": 321
     },
     {
       "title": "NKHK Dhyana Day2 14th May 2021",
@@ -9578,7 +9668,7 @@
       "url": "https://www.youtube.com/watch?v=vn4HRCP7Ptk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 319
+      "_source_position": 322
     },
     {
       "title": "NKHK Dhyana day1 13th May 2021",
@@ -9608,7 +9698,7 @@
       "url": "https://www.youtube.com/watch?v=yheudmgodT4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 320
+      "_source_position": 323
     },
     {
       "title": "NKHK Satsanga 12th May",
@@ -9638,7 +9728,7 @@
       "url": "https://www.youtube.com/watch?v=3Km59EwAJaY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 321
+      "_source_position": 324
     },
     {
       "title": "Naham Karta Hari Karta's Personal Meeting Room",
@@ -9655,7 +9745,7 @@
         }
       ],
       "duration": 4654,
-      "view_count": 440,
+      "view_count": 442,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9668,7 +9758,7 @@
       "url": "https://www.youtube.com/watch?v=qOYke65V12Q",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 322
+      "_source_position": 325
     },
     {
       "title": "kannada satsanga 14th April",
@@ -9698,7 +9788,7 @@
       "url": "https://www.youtube.com/watch?v=8wegu7tsvpY",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 323
+      "_source_position": 326
     },
     {
       "title": "Marathi saturday 10th April",
@@ -9715,7 +9805,7 @@
         }
       ],
       "duration": 2548,
-      "view_count": 42,
+      "view_count": 43,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9728,7 +9818,7 @@
       "url": "https://www.youtube.com/watch?v=mxIyeGEf_kc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 324
+      "_source_position": 327
     },
     {
       "title": "Manimanjari 7th April Kannada",
@@ -9745,7 +9835,7 @@
         }
       ],
       "duration": 2679,
-      "view_count": 388,
+      "view_count": 389,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9758,7 +9848,7 @@
       "url": "https://www.youtube.com/watch?v=6eL-526cEdQ",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 325
+      "_source_position": 328
     },
     {
       "title": "Devapooja 4th April Kannada",
@@ -9775,7 +9865,7 @@
         }
       ],
       "duration": 9107,
-      "view_count": 323,
+      "view_count": 324,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9788,7 +9878,7 @@
       "url": "https://www.youtube.com/watch?v=zVAvPE_BWjc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 326
+      "_source_position": 329
     },
     {
       "title": "Devara Pooja -Kannada- Mangala -28th March",
@@ -9805,7 +9895,7 @@
         }
       ],
       "duration": 7606,
-      "view_count": 1900,
+      "view_count": 2000,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9818,7 +9908,7 @@
       "url": "https://www.youtube.com/watch?v=EteSQHE4m5U",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 327
+      "_source_position": 330
     },
     {
       "title": "DevaPooja 27th March Marathi",
@@ -9835,7 +9925,7 @@
         }
       ],
       "duration": 5506,
-      "view_count": 92,
+      "view_count": 93,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9848,7 +9938,7 @@
       "url": "https://www.youtube.com/watch?v=T9_AHXlyrOs",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 328
+      "_source_position": 331
     },
     {
       "title": "Kannada satsanga 24th March 2021",
@@ -9878,7 +9968,7 @@
       "url": "https://www.youtube.com/watch?v=Az3_i9X9tOU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 329
+      "_source_position": 332
     },
     {
       "title": "Marathi satsanga 21st March",
@@ -9908,7 +9998,7 @@
       "url": "https://www.youtube.com/watch?v=jC1WfNDElkk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 330
+      "_source_position": 333
     },
     {
       "title": "Deva Pooja 21st March -Kannada",
@@ -9925,7 +10015,7 @@
         }
       ],
       "duration": 7641,
-      "view_count": 392,
+      "view_count": 396,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9938,7 +10028,7 @@
       "url": "https://www.youtube.com/watch?v=a0IlwTlGzb8",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 331
+      "_source_position": 334
     },
     {
       "title": "Devapooja March 20th Marathi",
@@ -9955,7 +10045,7 @@
         }
       ],
       "duration": 3876,
-      "view_count": 43,
+      "view_count": 44,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9968,7 +10058,7 @@
       "url": "https://www.youtube.com/watch?v=3XG_97UQzJc",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 332
+      "_source_position": 335
     },
     {
       "title": "Deva Pooja 20th March Marathi",
@@ -9985,7 +10075,7 @@
         }
       ],
       "duration": 51,
-      "view_count": 43,
+      "view_count": 44,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -9998,7 +10088,7 @@
       "url": "https://www.youtube.com/watch?v=VhLT9RQBKY0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 333
+      "_source_position": 336
     },
     {
       "title": "Deva Pooja - kannada - 14th March 2021",
@@ -10028,7 +10118,7 @@
       "url": "https://www.youtube.com/watch?v=xbDBXFBXzWE",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 334
+      "_source_position": 337
     },
     {
       "title": "Devapooja 13th march -Marathi",
@@ -10045,7 +10135,7 @@
         }
       ],
       "duration": 6696,
-      "view_count": 104,
+      "view_count": 107,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -10058,7 +10148,7 @@
       "url": "https://www.youtube.com/watch?v=j3PWLmt5eRk",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 335
+      "_source_position": 338
     },
     {
       "title": "Devapooja -7th March -Kannada",
@@ -10075,7 +10165,7 @@
         }
       ],
       "duration": 4476,
-      "view_count": 252,
+      "view_count": 254,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -10088,7 +10178,7 @@
       "url": "https://www.youtube.com/watch?v=lr9GOLQAYyU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 336
+      "_source_position": 339
     },
     {
       "title": "Naham Karta Hari Karta's Personal Meeting Room",
@@ -10105,7 +10195,7 @@
         }
       ],
       "duration": 6136,
-      "view_count": 267,
+      "view_count": 269,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -10118,7 +10208,7 @@
       "url": "https://www.youtube.com/watch?v=m6lbFZHTHCU",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 337
+      "_source_position": 340
     },
     {
       "title": "Naham Karta Hari Karta's Personal Meeting Room",
@@ -10135,7 +10225,7 @@
         }
       ],
       "duration": 7866,
-      "view_count": 294,
+      "view_count": 295,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -10148,7 +10238,7 @@
       "url": "https://www.youtube.com/watch?v=qs-YnFL_vFA",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 338
+      "_source_position": 341
     },
     {
       "title": "Naham Karta Hari Karta's Personal Meeting Room",
@@ -10165,7 +10255,7 @@
         }
       ],
       "duration": 6211,
-      "view_count": 194,
+      "view_count": 196,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -10178,7 +10268,7 @@
       "url": "https://www.youtube.com/watch?v=3cSDLKHnJYw",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 339
+      "_source_position": 342
     },
     {
       "title": "Sri Gopaladasara Charitre Day3 -Mangala",
@@ -10195,7 +10285,7 @@
         }
       ],
       "duration": 5491,
-      "view_count": 82,
+      "view_count": 83,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -10208,7 +10298,7 @@
       "url": "https://www.youtube.com/watch?v=yYfdqm4j0F0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 340
+      "_source_position": 343
     },
     {
       "title": "Sri Gopaladasara Charitre Day 2 Feb 3rd.",
@@ -10238,7 +10328,7 @@
       "url": "https://www.youtube.com/watch?v=x2rxjq4-7d0",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 341
+      "_source_position": 344
     },
     {
       "title": "Sri Gopaladasara Jeevana Charitre 2nd Feb",
@@ -10255,7 +10345,7 @@
         }
       ],
       "duration": 4821,
-      "view_count": 166,
+      "view_count": 169,
       "timestamp": null,
       "live_status": "was_live",
       "availability": null,
@@ -10268,7 +10358,157 @@
       "url": "https://www.youtube.com/watch?v=pQZm7EtnAT4",
       "__x_forwarded_for_ip": null,
       "_source": "streams",
-      "_source_position": 342
+      "_source_position": 345
+    },
+    {
+      "title": "Day 107 Bhagavata Saroddhara -19/Sept/2026 - धर्मोपदेशप्रकरण ---239_2--by Sri Vijayananda",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/fxOblHhXu1U/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB2AiAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLDt4fvtJQJp-vkHMoY-rCQ9EsChUA",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/fxOblHhXu1U/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB2AiAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLA3Zd-I9WiyTtxMtNQULzn0rDe9kg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "duration": 2487,
+      "view_count": 4,
+      "timestamp": null,
+      "live_status": null,
+      "availability": null,
+      "channel_url": null,
+      "uploader_url": null,
+      "creators": null,
+      "ie_key": "Youtube",
+      "id": "fxOblHhXu1U",
+      "_type": "url",
+      "url": "https://www.youtube.com/watch?v=fxOblHhXu1U",
+      "__x_forwarded_for_ip": null,
+      "_source": "videos",
+      "_source_position": 1
+    },
+    {
+      "title": "Day 106 Bhagavata Saroddhara -12/Sept/2026 - धर्मोपदेशप्रकरण --238-239--by Sri Vijayananda",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/1juuw_fcacw/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB-giAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLBqDoznu0aM-Zcavh8G8X5DXS0d-Q",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/1juuw_fcacw/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB-giAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLBrr6BvDcU8Q6Wk6a5-zr14g33xLg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "duration": 3293,
+      "view_count": 2,
+      "timestamp": null,
+      "live_status": null,
+      "availability": null,
+      "channel_url": null,
+      "uploader_url": null,
+      "creators": null,
+      "ie_key": "Youtube",
+      "id": "1juuw_fcacw",
+      "_type": "url",
+      "url": "https://www.youtube.com/watch?v=1juuw_fcacw",
+      "__x_forwarded_for_ip": null,
+      "_source": "videos",
+      "_source_position": 2
+    },
+    {
+      "title": "Day 105 Bhagavata Saroddhara -09/Sept/2026 - धर्मोपदेशप्रकरण - 236-237---by Sri Vijayananda",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/XTIJCZUX13A/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB2AiAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLARH3b2zlbL1_uAMiGq1strj0jGoA",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/XTIJCZUX13A/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB2AiAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLAiMK5qADfO74-egfYb9pu7FhzwSg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "duration": 3594,
+      "view_count": 7,
+      "timestamp": null,
+      "live_status": null,
+      "availability": null,
+      "channel_url": null,
+      "uploader_url": null,
+      "creators": null,
+      "ie_key": "Youtube",
+      "id": "XTIJCZUX13A",
+      "_type": "url",
+      "url": "https://www.youtube.com/watch?v=XTIJCZUX13A",
+      "__x_forwarded_for_ip": null,
+      "_source": "videos",
+      "_source_position": 3
+    },
+    {
+      "title": "Day 104 Bhagavata Saroddhara -24/Aug/2026 - अध्यात्मप्रकरण - 234---by Sri Vijayananda",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/tapFhXLaAUA/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB2AiAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLAjLFnq8xd1Ceugf1HfxhcPvLa0Ow",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/tapFhXLaAUA/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB2AiAAtAFigIMCAAQARhlIGUoZTAP&rs=AOn4CLBdpgCVUGkcaZA69ts8HGO8soDiEQ",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "duration": 3819,
+      "view_count": 5,
+      "timestamp": null,
+      "live_status": null,
+      "availability": null,
+      "channel_url": null,
+      "uploader_url": null,
+      "creators": null,
+      "ie_key": "Youtube",
+      "id": "tapFhXLaAUA",
+      "_type": "url",
+      "url": "https://www.youtube.com/watch?v=tapFhXLaAUA",
+      "__x_forwarded_for_ip": null,
+      "_source": "videos",
+      "_source_position": 4
+    },
+    {
+      "title": "Day 103 Bhagavata Saroddhara -8/Sept/2026 - अध्यात्मप्रकरण - 230---by Sri Vijayananda",
+      "thumbnails": [
+        {
+          "url": "https://i.ytimg.com/vi/0_xuEqMte4U/hq720.jpg?sqp=-oaymwE2COgCEMoBSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB-giAAtAFigIMCAAQARhaIF4oZTAP&rs=AOn4CLAphZtvzRJF93jSPLP9MqXbGmpElw",
+          "height": 202,
+          "width": 360
+        },
+        {
+          "url": "https://i.ytimg.com/vi/0_xuEqMte4U/hq720.jpg?sqp=-oaymwE2CNAFEJQDSFXyq4qpAygIARUAAIhCGAFwAcABBvABAfgB-giAAtAFigIMCAAQARhaIF4oZTAP&rs=AOn4CLBZ-tbzlbXAOQJPZc2WjjjP4kc1Xg",
+          "height": 404,
+          "width": 720
+        }
+      ],
+      "duration": 3504,
+      "view_count": 3,
+      "timestamp": null,
+      "live_status": null,
+      "availability": null,
+      "channel_url": null,
+      "uploader_url": null,
+      "creators": null,
+      "ie_key": "Youtube",
+      "id": "0_xuEqMte4U",
+      "_type": "url",
+      "url": "https://www.youtube.com/watch?v=0_xuEqMte4U",
+      "__x_forwarded_for_ip": null,
+      "_source": "videos",
+      "_source_position": 5
     },
     {
       "title": "Day 102 Bhagavata Saroddhara -25/Jul/2026 - अध्यात्मप्रकरण - 227-229--by Sri Vijayananda",
@@ -10285,7 +10525,7 @@
         }
       ],
       "duration": 3658,
-      "view_count": 38,
+      "view_count": 42,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -10298,7 +10538,7 @@
       "url": "https://www.youtube.com/watch?v=EqclQ17Hlzs",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 1
+      "_source_position": 6
     },
     {
       "title": "Day 101 Bhagavata Saroddhara -18/Jul/2026 - अध्यात्मप्रकरण - 223--by Sri Vijayananda",
@@ -10328,7 +10568,7 @@
       "url": "https://www.youtube.com/watch?v=2FXTqqT2lTQ",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 2
+      "_source_position": 7
     },
     {
       "title": "Day 100 Bhagavata Saroddhara -11/Jul/2026 - अध्यात्मप्रकरण - 222--by Sri Vijayananda",
@@ -10345,7 +10585,7 @@
         }
       ],
       "duration": 3092,
-      "view_count": 22,
+      "view_count": 23,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -10358,7 +10598,7 @@
       "url": "https://www.youtube.com/watch?v=6T-eZ3O-7Nc",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 3
+      "_source_position": 8
     },
     {
       "title": "Day 99 Bhagavata Saroddhara -04/Jul/2026 - बिम्बोपासकगुरुप्राप्ति - 221--by Sri Vijayananda",
@@ -10388,7 +10628,7 @@
       "url": "https://www.youtube.com/watch?v=GbPhQG37bjg",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 4
+      "_source_position": 9
     },
     {
       "title": "Day 98 Bhagavata Saroddhara -28/Jun/2026 - बिम्बोपासकगुरुप्राप्ति - 219--by Sri Vijayananda",
@@ -10405,7 +10645,7 @@
         }
       ],
       "duration": 3931,
-      "view_count": 16,
+      "view_count": 18,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -10418,7 +10658,7 @@
       "url": "https://www.youtube.com/watch?v=ujVc2BpN2YM",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 5
+      "_source_position": 10
     },
     {
       "title": "Day 97 Bhagavata Saroddhara -20/Jun/2026 - बिम्बोपासकगुरुप्राप्ति - 217--by Sri Vijayananda",
@@ -10448,7 +10688,7 @@
       "url": "https://www.youtube.com/watch?v=-SBeOJ0dZvY",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 6
+      "_source_position": 11
     },
     {
       "title": "Day 96 Bhagavata Saroddhara -16/Jun/2026 - बिम्बोपासकगुरुप्राप्ति - 215--by Sri Vijayananda",
@@ -10478,7 +10718,7 @@
       "url": "https://www.youtube.com/watch?v=vwGJyDWD6s4",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 7
+      "_source_position": 12
     },
     {
       "title": "Day 95 Bhagavata Saroddhara -09/Jun/2026 - बिम्बोपासकगुरुप्राप्ति - 212-by Sri Vijayananda",
@@ -10508,7 +10748,7 @@
       "url": "https://www.youtube.com/watch?v=8HNlaG9xgSg",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 8
+      "_source_position": 13
     },
     {
       "title": "Day 94 Bhagavata Saroddhara -25/Apr/2026 - बिम्बोपासकगुरुप्राप्ति - 210-211-by Sri Vijayananda",
@@ -10538,7 +10778,7 @@
       "url": "https://www.youtube.com/watch?v=XKxw1zmQvck",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 9
+      "_source_position": 14
     },
     {
       "title": "Day 93 Bhagavata Saroddhara -18/Apr/2026 - बिम्बोपासकगुरुप्राप्ति - 209-by Sri Vijayananda",
@@ -10555,7 +10795,7 @@
         }
       ],
       "duration": 3693,
-      "view_count": 19,
+      "view_count": 20,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -10568,7 +10808,7 @@
       "url": "https://www.youtube.com/watch?v=BwNHv5MNxTI",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 10
+      "_source_position": 15
     },
     {
       "title": "Day 92 Bhagavata Saroddhara -11/Apr/2026 - ध्यानप्रकरण - 204-208-by Sri Vijayananda",
@@ -10598,7 +10838,7 @@
       "url": "https://www.youtube.com/watch?v=V7vb6ja5MIk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 11
+      "_source_position": 16
     },
     {
       "title": "Day 91 Bhagavata Saroddhara -04/Apr/2026 - ध्यानप्रकरण - 202-204-by Sri Vijayananda",
@@ -10628,7 +10868,7 @@
       "url": "https://www.youtube.com/watch?v=6AJTYdISC80",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 12
+      "_source_position": 17
     },
     {
       "title": "Day 90 Bhagavata Saroddhara -21/Mar/2026 - ध्यानप्रकरण - 200-201-by Sri Vijayananda",
@@ -10658,7 +10898,7 @@
       "url": "https://www.youtube.com/watch?v=r4YTKQT4qHQ",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 13
+      "_source_position": 18
     },
     {
       "title": "Day 89 Bhagavata Saroddhara -28/Feb/2026 - ध्यानप्रकरण - 200-by Sri Vijayananda",
@@ -10688,7 +10928,7 @@
       "url": "https://www.youtube.com/watch?v=07bG8qC_9Z8",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 14
+      "_source_position": 19
     },
     {
       "title": "Day 88 Bhagavata Saroddhara -21/Feb/2026 - देहप्रशंसाप्रकरणम् - 193-195-by Sri Vijayananda",
@@ -10718,7 +10958,7 @@
       "url": "https://www.youtube.com/watch?v=ii0QjNPGLVE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 15
+      "_source_position": 20
     },
     {
       "title": "Day 87 Bhagavata Saroddhara -14/Feb/2026 - कालप्रशंसाप्रकरणम् - 191-192-by Sri Vijayananda",
@@ -10748,7 +10988,7 @@
       "url": "https://www.youtube.com/watch?v=RzUsRaUba-A",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 16
+      "_source_position": 21
     },
     {
       "title": "Day 86 Bhagavata Saroddhara -25/Jan/2026 - देशप्रशंसाप्रकरणम् - 187-189-by Sri Vijayananda",
@@ -10778,7 +11018,7 @@
       "url": "https://www.youtube.com/watch?v=_i6bGauW4HE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 17
+      "_source_position": 22
     },
     {
       "title": "Day 85 Bhagavata Saroddhara -18/Jan/2026 - निवृत्तकर्मकरण+देशप्रशंसा 184-186-by Sri Vijayananda",
@@ -10808,7 +11048,7 @@
       "url": "https://www.youtube.com/watch?v=ecvvjW09iPA",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 18
+      "_source_position": 23
     },
     {
       "title": "Day 84 Bhagavata Saroddhara -27/Dec/2025 - निवृत्तकर्मकरणप्रकरणं- 180-183-by Sri Vijayananda",
@@ -10838,7 +11078,7 @@
       "url": "https://www.youtube.com/watch?v=yGPK9cD0DGk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 19
+      "_source_position": 24
     },
     {
       "title": "Day 83 Bhagavata Saroddhara -06/Dec/2025 - निवृत्तकर्मकरणप्रकरणं- 178-179-by Sri Vijayananda",
@@ -10868,7 +11108,7 @@
       "url": "https://www.youtube.com/watch?v=mqry44WMhlk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 20
+      "_source_position": 25
     },
     {
       "title": "Day 82 Bhagavata Saroddhara -29/Nov/2025 - प्रवृत्तकर्मत्याग- 177-by Sri Vijayananda",
@@ -10898,7 +11138,7 @@
       "url": "https://www.youtube.com/watch?v=mtu4HmP-xfw",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 21
+      "_source_position": 26
     },
     {
       "title": "Day 81- Bhagavata Saroddhara -22/Nov/2025 - प्रवृत्तकर्मत्याग- 174-176- by Sri Vijayananda",
@@ -10928,7 +11168,7 @@
       "url": "https://www.youtube.com/watch?v=S5H6cQt21GE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 22
+      "_source_position": 27
     },
     {
       "title": "Day 79- Bhagavata Saroddhara -1st Nov 2025 - ब्रह्मोपदेशप्रकरण- 169-171- by Sri Vijayananda",
@@ -10958,7 +11198,7 @@
       "url": "https://www.youtube.com/watch?v=DqaUXSSdLKY",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 23
+      "_source_position": 28
     },
     {
       "title": "Day 80- Bhagavata Saroddhara -15/Nov/2025 - प्रवृत्तकर्मत्याग- 172-173- by Sri Vijayananda",
@@ -10988,7 +11228,7 @@
       "url": "https://www.youtube.com/watch?v=kmWF1GX3sKE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 24
+      "_source_position": 29
     },
     {
       "title": "Day 78- Bhagavata Saroddhara -28th June 2025 - ब्रह्मोपदेशप्रकरण- 168-2- by Sri Vijayananda",
@@ -11018,7 +11258,7 @@
       "url": "https://www.youtube.com/watch?v=bWwpkOd-Ulk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 25
+      "_source_position": 30
     },
     {
       "title": "Day 77- Bhagavata Saroddhara -14th June 2025 - ब्रह्मोपदेशप्रकरण- 168-1- by Sri Vijayananda",
@@ -11048,7 +11288,7 @@
       "url": "https://www.youtube.com/watch?v=PQAqZE-Ppxc",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 26
+      "_source_position": 31
     },
     {
       "title": "Day 76- Bhagavata Saroddhara -8th June 2025 - ब्रह्मोपदेशप्रकरण- 167- by Sri Vijayananda",
@@ -11078,7 +11318,7 @@
       "url": "https://www.youtube.com/watch?v=1ZizrKd1PKM",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 27
+      "_source_position": 32
     },
     {
       "title": "Day 75- Bhagavata Saroddhara -31st May 2025 - ब्रह्मोपदेशप्रकरण- 166- by Sri Vijayananda",
@@ -11108,7 +11348,7 @@
       "url": "https://www.youtube.com/watch?v=lm4ls5bOl08",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 28
+      "_source_position": 33
     },
     {
       "title": "Day 74- Bhagavata Saroddhara -18th May 2025 - ब्रह्मोपदेशप्रकरण- 164-165- by Sri Vijayananda",
@@ -11138,7 +11378,7 @@
       "url": "https://www.youtube.com/watch?v=EL31KXsNUVE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 29
+      "_source_position": 34
     },
     {
       "title": "Day 73- Bhagavata Saroddhara -27th April 2025 - ब्रह्मोपदेशप्रकरण- 163- by Sri Vijayananda",
@@ -11168,7 +11408,7 @@
       "url": "https://www.youtube.com/watch?v=MERqr3CjqRY",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 30
+      "_source_position": 35
     },
     {
       "title": "Day 73- Bhagavata Saroddhara - 5th April 2025 - ब्रह्मोपदेशप्रकरण- 163- by Sri Vijayananda",
@@ -11198,7 +11438,7 @@
       "url": "https://www.youtube.com/watch?v=Y2bSnmLPsgk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 31
+      "_source_position": 36
     },
     {
       "title": "Day 72- Bhagavata Saroddhara - 29th March 2025 - ब्रह्मोपदेशप्रकरण- 162- by Sri Vijayananda",
@@ -11228,7 +11468,7 @@
       "url": "https://www.youtube.com/watch?v=cXmcxtMgWY4",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 32
+      "_source_position": 37
     },
     {
       "title": "Day 71- Bhagavata Saroddhara - 8th March 2025 - ब्रह्मोपदेशप्रकरण- 160-161 by Sri Vijayananda",
@@ -11258,7 +11498,7 @@
       "url": "https://www.youtube.com/watch?v=IgmO1zIXzjs",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 33
+      "_source_position": 38
     },
     {
       "title": "Day 69- Bhagavata Saroddhara - 22nd Feb 2025 - ब्रह्मोपदेशप्रकरण- 158-2-by Sri Vijayananda",
@@ -11288,7 +11528,7 @@
       "url": "https://www.youtube.com/watch?v=8m2z2uzIpWg",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 34
+      "_source_position": 39
     },
     {
       "title": "Day 70- Bhagavata Saroddhara - 1st March 2025 - ब्रह्मोपदेशप्रकरण- 159-1-by Sri Vijayananda",
@@ -11318,7 +11558,7 @@
       "url": "https://www.youtube.com/watch?v=GaLjhN-Vj2w",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 35
+      "_source_position": 40
     },
     {
       "title": "Day 68- Bhagavata Saroddhara -15th Feb 2024 - ब्रह्मोपदेशप्रकरण- 158-1- by Sri Vijayananda",
@@ -11348,7 +11588,7 @@
       "url": "https://www.youtube.com/watch?v=WeHc82KzM_c",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 36
+      "_source_position": 41
     },
     {
       "title": "Day 67- Bhagavata Saroddhara -28th Dec 2024 - ब्रह्मोपदेशप्रकरण- 157- by Sri Vijayananda",
@@ -11378,7 +11618,7 @@
       "url": "https://www.youtube.com/watch?v=YFjnKVnS2oE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 37
+      "_source_position": 42
     },
     {
       "title": "Day 66- Bhagavata Saroddhara -25th Jan 2025 - ब्रह्मोपदेशप्रकरण- 154-156- by Sri Vijayananda",
@@ -11408,7 +11648,7 @@
       "url": "https://www.youtube.com/watch?v=sjRSFcOZANg",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 38
+      "_source_position": 43
     },
     {
       "title": "Day 65- Bhagavata Saroddhara -28th Dec 2024 - ब्रह्मोपदेशप्रकरण- 152-153- by Sri Vijayananda",
@@ -11438,7 +11678,7 @@
       "url": "https://www.youtube.com/watch?v=Rx9O7kUOE1s",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 39
+      "_source_position": 44
     },
     {
       "title": "Day 64- Bhagavata Saroddhara -7th Dec 2024 - ब्रह्मोपदेशप्रकरण- 150-151- by Sri Vijayananda",
@@ -11468,7 +11708,7 @@
       "url": "https://www.youtube.com/watch?v=LC4tkuF3Ioo",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 40
+      "_source_position": 45
     },
     {
       "title": "Day 63- Bhagavata Saroddhara -3oth Nov 2024 - ब्रह्मोपदेशप्रकरण- 149- by Sri Vijayananda",
@@ -11498,7 +11738,7 @@
       "url": "https://www.youtube.com/watch?v=77VSTz4yAc0",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 41
+      "_source_position": 46
     },
     {
       "title": "Day 62- Bhagavata Saroddhara -23rd Nov 2024 - ब्रह्मोपदेशप्रकरण- 148- by Sri Vijayananda",
@@ -11528,7 +11768,7 @@
       "url": "https://www.youtube.com/watch?v=d5ETcVaLR64",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 42
+      "_source_position": 47
     },
     {
       "title": "Day 61- Bhagavata Saroddhara -9th Nov 2024 - ब्रह्मोपदेशप्रकरण- 147- by Sri Vijayananda",
@@ -11558,7 +11798,7 @@
       "url": "https://www.youtube.com/watch?v=prE-MOVPLG8",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 43
+      "_source_position": 48
     },
     {
       "title": "Day 60- Bhagavata Saroddhara -26th Oct 2024 - इन्द्रियजयप्रकरण- 144-146- by Sri Vijayananda",
@@ -11588,7 +11828,7 @@
       "url": "https://www.youtube.com/watch?v=-J_ISVtwFXk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 44
+      "_source_position": 49
     },
     {
       "title": "Day 59- Bhagavata Saroddhara -20th Oct 2024 - इन्द्रियजयप्रकरण- 141-143- by Sri Vijayananda",
@@ -11618,7 +11858,7 @@
       "url": "https://www.youtube.com/watch?v=eEN46PfWtpE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 45
+      "_source_position": 50
     },
     {
       "title": "Day 58- Bhagavata Saroddhara -12th Oct 2024 - इन्द्रियजयप्रकरण- 139-140- by Sri Vijayananda",
@@ -11648,7 +11888,7 @@
       "url": "https://www.youtube.com/watch?v=Sgd9KL5K35M",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 46
+      "_source_position": 51
     },
     {
       "title": "Day 57- Bhagavata Saroddhara -5th Oct 2024 - इन्द्रियजयप्रकरण- 138-  by Sri Vijayananda",
@@ -11678,7 +11918,7 @@
       "url": "https://www.youtube.com/watch?v=rYZgNEbl8DU",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 47
+      "_source_position": 52
     },
     {
       "title": "Day 56- Bhagavata Saroddhara -28th Sept 2024 - महन्निन्दावर्जनप्रकरण- 136-137-  by Sri Vijayananda",
@@ -11708,7 +11948,7 @@
       "url": "https://www.youtube.com/watch?v=F3ofXtUHOR8",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 48
+      "_source_position": 53
     },
     {
       "title": "Day 55- Bhagavata Saroddhara -15th Aug 2024 - आत्मप्रशंसावर्जनम्- 133-135 -  by Sri Vijayananda",
@@ -11738,7 +11978,7 @@
       "url": "https://www.youtube.com/watch?v=fl4h2XQVkKk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 49
+      "_source_position": 54
     },
     {
       "title": "Day 53- Bhagavata Saroddhara -29th June 2024 - महन्निन्दावर्जनप्रकरण- 132(1) -  by Sri Vijayananda",
@@ -11768,7 +12008,7 @@
       "url": "https://www.youtube.com/watch?v=j8Z_JJx5YsY",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 50
+      "_source_position": 55
     },
     {
       "title": "Day 54- Bhagavata Saroddhara -13th July 2024 - महन्निन्दावर्जनप्रकरण- 132(2)-  by Sri Vijayananda",
@@ -11798,7 +12038,7 @@
       "url": "https://www.youtube.com/watch?v=BSjiDL8fnjI",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 51
+      "_source_position": 56
     },
     {
       "title": "Day 52- Bhagavata Saroddhara -22nd June 2024 - महन्निन्दावर्जनप्रकरण- 129-131 -  by Sri Vijayananda",
@@ -11828,7 +12068,7 @@
       "url": "https://www.youtube.com/watch?v=z8iANcYgV14",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 52
+      "_source_position": 57
     },
     {
       "title": "Day 51- Bhagavata Saroddhara -1st June 2024 - महन्निन्दावर्जनप्रकरण- 126-128 -  by Sri Vijayananda",
@@ -11858,7 +12098,7 @@
       "url": "https://www.youtube.com/watch?v=phko28ruQ_A",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 53
+      "_source_position": 58
     },
     {
       "title": "Day 49- Bhagavata Saroddhara -19th May 2024 - महत्सेवाप्रशंसाप्रकरण- 119-121 -  by Sri Vijayananda",
@@ -11888,7 +12128,7 @@
       "url": "https://www.youtube.com/watch?v=bA9UbqRDmkQ",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 54
+      "_source_position": 59
     },
     {
       "title": "Day 50- Bhagavata Saroddhara -26th May 2024 - महन्निन्दावर्जनप्रकरण- 122-125 -  by Sri Vijayananda",
@@ -11918,7 +12158,7 @@
       "url": "https://www.youtube.com/watch?v=SBhU8FBoA98",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 55
+      "_source_position": 60
     },
     {
       "title": "Day 47- Bhagavata Saroddhara -4th May 2024 - महत्सेवाप्रशमशाप्ररण- 115-116 -  by Sri Vijayananda",
@@ -11948,7 +12188,7 @@
       "url": "https://www.youtube.com/watch?v=dewDcQlFQ1o",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 56
+      "_source_position": 61
     },
     {
       "title": "Day 48- Bhagavata Saroddhara -12th May 2024 - महत्सेवाप्रशंसाप्रकरण- 117-118 -  by Sri Vijayananda",
@@ -11978,7 +12218,7 @@
       "url": "https://www.youtube.com/watch?v=eDg49EbvqRI",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 57
+      "_source_position": 62
     },
     {
       "title": "Day 46- Bhagavata Saroddhara -20th April 2024 - महत्सेवाप्रशमशाप्ररण- 112-114 -  by Sri Vijayananda",
@@ -12008,7 +12248,7 @@
       "url": "https://www.youtube.com/watch?v=3_LP5gMeRpo",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 58
+      "_source_position": 63
     },
     {
       "title": "Day 45- Bhagavata Saroddhara -13th April 2024 - महत्समागमप्रकरण-Shloka 107-111 -  by Sri Vijayananda",
@@ -12038,7 +12278,7 @@
       "url": "https://www.youtube.com/watch?v=pJeBFGkbj7U",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 59
+      "_source_position": 64
     },
     {
       "title": "Day 44- Bhagavata Saroddhara - 6th April 2024 - महत्समागमप्रकरण-Shloka 104-105 -  by Sri Vijayananda",
@@ -12068,7 +12308,7 @@
       "url": "https://www.youtube.com/watch?v=1F3zCmvMlZg",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 60
+      "_source_position": 65
     },
     {
       "title": "Day 43- Bhagavata Saroddhara - 30th Mar 2024 - महत्समागमप्रकरण-Shloka 102-103 -  by Sri Vijayananda",
@@ -12098,7 +12338,7 @@
       "url": "https://www.youtube.com/watch?v=RPQfxph9COE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 61
+      "_source_position": 66
     },
     {
       "title": "Day 42- Bhagavata Saroddhara -23rdMar 2024 - Shloka 100-101 -  by Sri Vijayananda",
@@ -12128,7 +12368,7 @@
       "url": "https://www.youtube.com/watch?v=UnHojAwal14",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 62
+      "_source_position": 67
     },
     {
       "title": "Day 41- Bhagavata Saroddhara -16thMar 2024 - Shloka 98-99 -  by Sri Vijayananda",
@@ -12158,7 +12398,7 @@
       "url": "https://www.youtube.com/watch?v=AC5Pfpm3sZo",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 63
+      "_source_position": 68
     },
     {
       "title": "Day 40- Bhagavata Saroddhara -24thFeb  2024 - Shloka 96-97 -  by Sri Vijayananda",
@@ -12188,7 +12428,7 @@
       "url": "https://www.youtube.com/watch?v=ztRCdjrgNFc",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 64
+      "_source_position": 69
     },
     {
       "title": "Day 39- Bhagavata Saroddhara -17thFeb  2024 - Shloka 94-95 -  by Sri Vijayananda",
@@ -12218,7 +12458,7 @@
       "url": "https://www.youtube.com/watch?v=Ty6sIcC1vD8",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 65
+      "_source_position": 70
     },
     {
       "title": "Day 38- Bhagavata Saroddhara -10thFeb  2024 - Shloka 92-93 -  by Sri Vijayananda",
@@ -12248,7 +12488,7 @@
       "url": "https://www.youtube.com/watch?v=njwziALGsjA",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 66
+      "_source_position": 71
     },
     {
       "title": "Day 37- Bhagavata Saroddhara -3rdFeb  2024 - Shloka 88-91 -  by Sri Vijayananda",
@@ -12278,7 +12518,7 @@
       "url": "https://www.youtube.com/watch?v=jDOxVPyvbaU",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 67
+      "_source_position": 72
     },
     {
       "title": "Day 36- Bhagavata Saroddhara -28th Jan  2024 - Shloka 85-87 -  by Sri Vijayananda",
@@ -12308,7 +12548,7 @@
       "url": "https://www.youtube.com/watch?v=m-Up2q__su8",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 68
+      "_source_position": 73
     },
     {
       "title": "Day 35- Bhagavata Saroddhara -21st Jan  2024 - Shloka 82-84 -  by Sri Vijayananda",
@@ -12338,7 +12578,7 @@
       "url": "https://www.youtube.com/watch?v=8vJATAjQEFQ",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 69
+      "_source_position": 74
     },
     {
       "title": "Day 34- Bhagavata Saroddhara -14th Jan  2024 - Shloka 79-81 -  by Sri Vijayananda",
@@ -12368,7 +12608,7 @@
       "url": "https://www.youtube.com/watch?v=OF4FjEUQaHc",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 70
+      "_source_position": 75
     },
     {
       "title": "Day 33- Bhagavata Saroddhara -6th Jan  2024 - Shloka 76-78 -  by Sri Vijayananda",
@@ -12398,7 +12638,7 @@
       "url": "https://www.youtube.com/watch?v=_gHJd7Gc2Cs",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 71
+      "_source_position": 76
     },
     {
       "title": "Day 32(2) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 72- by Sri Vijayananda",
@@ -12428,7 +12668,7 @@
       "url": "https://www.youtube.com/watch?v=kNBwZwdg8ek",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 72
+      "_source_position": 77
     },
     {
       "title": "Day 32(4) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 74- by Sri Vijayananda",
@@ -12458,7 +12698,7 @@
       "url": "https://www.youtube.com/watch?v=tZItsQ493Nw",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 73
+      "_source_position": 78
     },
     {
       "title": "Day 32(5) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 75- by Sri Vijayananda",
@@ -12488,7 +12728,7 @@
       "url": "https://www.youtube.com/watch?v=Kv6_atigPL8",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 74
+      "_source_position": 79
     },
     {
       "title": "Day 32(3) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 73- by Sri Vijayananda",
@@ -12518,7 +12758,7 @@
       "url": "https://www.youtube.com/watch?v=jDPLX0SDP-0",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 75
+      "_source_position": 80
     },
     {
       "title": "Day 32(1) - Bhagavata Saroddhara -23th Dec  2023 - Shloka 71- by Sri Vijayananda",
@@ -12548,7 +12788,7 @@
       "url": "https://www.youtube.com/watch?v=CayhiC4J_Js",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 76
+      "_source_position": 81
     },
     {
       "title": "Day 31 - Bhagavata Saroddhara -16th Dec  2023 - Shloka 69-70 - by Sri Vijayananda",
@@ -12578,7 +12818,7 @@
       "url": "https://www.youtube.com/watch?v=yTAti5sqdP8",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 77
+      "_source_position": 82
     },
     {
       "title": "Day 30 - Bhagavata Saroddhara - 9th Dec  2023 - Shloka 66-68 - by Sri Vijayananda",
@@ -12608,7 +12848,7 @@
       "url": "https://www.youtube.com/watch?v=ESPJCTDgsHE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 78
+      "_source_position": 83
     },
     {
       "title": "Day 29 - Bhagavata Saroddhara - 19th Nov  2023 - Shloka 63-65 - by Sri Vijayananda",
@@ -12638,7 +12878,7 @@
       "url": "https://www.youtube.com/watch?v=llyQJEDgFkI",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 79
+      "_source_position": 84
     },
     {
       "title": "Day 28 - Bhagavata Saroddhara - 11th Nov  2023 - Shloka 60-62 - by Sri Vijayananda",
@@ -12668,7 +12908,7 @@
       "url": "https://www.youtube.com/watch?v=WlHkRyyEU1E",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 80
+      "_source_position": 85
     },
     {
       "title": "Day 27 - Bhagavata Saroddhara - 4th Nov  2023 - Shloka 57-59 - by Sri Vijayananda",
@@ -12685,7 +12925,7 @@
         }
       ],
       "duration": 3393,
-      "view_count": 32,
+      "view_count": 35,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -12698,7 +12938,7 @@
       "url": "https://www.youtube.com/watch?v=kdqIHXitmxk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 81
+      "_source_position": 86
     },
     {
       "title": "Day 26 - Bhagavata Saroddhara - 28th Oct  2023 - Shloka 56 - by Sri Vijayananda",
@@ -12715,7 +12955,7 @@
         }
       ],
       "duration": 2972,
-      "view_count": 43,
+      "view_count": 49,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -12728,7 +12968,7 @@
       "url": "https://www.youtube.com/watch?v=OG6vigucoXM",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 82
+      "_source_position": 87
     },
     {
       "title": "Day 25 - Bhagavata Saroddhara - 23rd  Oct  2023 - Shloka 53-55 - by Sri Vijayananda",
@@ -12745,7 +12985,7 @@
         }
       ],
       "duration": 2488,
-      "view_count": 41,
+      "view_count": 43,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -12758,7 +12998,7 @@
       "url": "https://www.youtube.com/watch?v=CVBXgrdWMBI",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 83
+      "_source_position": 88
     },
     {
       "title": "Day 24 - Bhagavata Saroddhara - 14th Oct  2023 - Shloka 51-52 - by Sri Vijayananda",
@@ -12788,7 +13028,7 @@
       "url": "https://www.youtube.com/watch?v=Ge4Dx8l6ZoE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 84
+      "_source_position": 89
     },
     {
       "title": "Day 23 - Bhagavata Saroddhara - 7th Oct  2023 - Shloka 49-50 - by Sri Vijayananda",
@@ -12818,7 +13058,7 @@
       "url": "https://www.youtube.com/watch?v=Qw6J51Wk53M",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 85
+      "_source_position": 90
     },
     {
       "title": "Day 22 - Bhagavata Saroddhara - 1st Oct  2023 - Shloka 48(2)- by Sri Vijayananda",
@@ -12848,7 +13088,7 @@
       "url": "https://www.youtube.com/watch?v=gNv03gYR-hM",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 86
+      "_source_position": 91
     },
     {
       "title": "Day 21 - Bhagavata Saroddhara - 24th sep  2023 - Shloka 48(1)- by Sri Vijayananda",
@@ -12878,7 +13118,7 @@
       "url": "https://www.youtube.com/watch?v=kIldviWr4CI",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 87
+      "_source_position": 92
     },
     {
       "title": "Rushi Panchami | 19th September 2023",
@@ -12895,7 +13135,7 @@
         }
       ],
       "duration": 4003,
-      "view_count": 468,
+      "view_count": 470,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -12908,7 +13148,7 @@
       "url": "https://www.youtube.com/watch?v=Yc1UTYaM7Do",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 88
+      "_source_position": 93
     },
     {
       "title": "Day 20 - Bhagavata Saroddhara -17th sep  2023 - Shloka 45-47 - by Sri Vijayananda",
@@ -12938,7 +13178,7 @@
       "url": "https://www.youtube.com/watch?v=D1iyUyTAk7A",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 89
+      "_source_position": 94
     },
     {
       "title": "Day 19- Bhagavata Saroddhara -10th sep  2023 - Shloka 43-44 - by Sri Vijayananda",
@@ -12968,7 +13208,7 @@
       "url": "https://www.youtube.com/watch?v=ngGRSazn7HA",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 90
+      "_source_position": 95
     },
     {
       "title": "Day 18- Bhagavata Saroddhara -26th Aug  2023 - Shloka 40-42 - by Sri Vijayananda",
@@ -12998,7 +13238,7 @@
       "url": "https://www.youtube.com/watch?v=mvUhl1hztZo",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 91
+      "_source_position": 96
     },
     {
       "title": "Day 17- Bhagavata Saroddhara -19th Aug  2023 - Shloka 39 - by Sri Vijayananda",
@@ -13015,7 +13255,7 @@
         }
       ],
       "duration": 1679,
-      "view_count": 47,
+      "view_count": 48,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13028,7 +13268,7 @@
       "url": "https://www.youtube.com/watch?v=4o8ec96QX34",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 92
+      "_source_position": 97
     },
     {
       "title": "Day 16- Bhagavata Saroddhara -12th Aug  2023 - Shloka 34-38 - by Sri Vijayananda",
@@ -13058,7 +13298,7 @@
       "url": "https://www.youtube.com/watch?v=j2P746LYSeU",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 93
+      "_source_position": 98
     },
     {
       "title": "Day 14- Bhagavata Saroddhara -29th July  2023 - Shloka 28-30 - by Sri Vijayananda",
@@ -13088,7 +13328,7 @@
       "url": "https://www.youtube.com/watch?v=3anhAns-hiU",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 94
+      "_source_position": 99
     },
     {
       "title": "Day 15- Bhagavata Saroddhara -5th  Aug  2023 - Shloka 31-33 - by Sri Vijayananda",
@@ -13118,7 +13358,7 @@
       "url": "https://www.youtube.com/watch?v=SdtKWxuEZ74",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 95
+      "_source_position": 100
     },
     {
       "title": "Day 13- Bhagavata Saroddhara -15th July  2023 - Shloka 27 - by Sri Vijayananda",
@@ -13148,7 +13388,7 @@
       "url": "https://www.youtube.com/watch?v=X6-_3hHAcLc",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 96
+      "_source_position": 101
     },
     {
       "title": "Day 12- Bhagavata Saroddhara -25th June  2023 - Shloka 26 - by Sri Vijayananda",
@@ -13178,7 +13418,7 @@
       "url": "https://www.youtube.com/watch?v=hQ6tn2r2J2I",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 97
+      "_source_position": 102
     },
     {
       "title": "Day 13- Bhagavata Saroddhara -15th July  2023 - Shloka 27  - by Sri Vijayananda",
@@ -13208,7 +13448,7 @@
       "url": "https://www.youtube.com/watch?v=5JrsVoSiBLc",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 98
+      "_source_position": 103
     },
     {
       "title": "Day 11- Bhagavata Saroddhara -17th June  2023 - Shloka 23 to 25 - by Sri Vijayananda",
@@ -13238,7 +13478,7 @@
       "url": "https://www.youtube.com/watch?v=fwIVl8uR8nY",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 99
+      "_source_position": 104
     },
     {
       "title": "Day 10- Bhagavata Saroddhara -10th June  2023 - Shloka 20 to 22 - by Sri Vijayananda",
@@ -13268,7 +13508,7 @@
       "url": "https://www.youtube.com/watch?v=c4Bz8Pe5Zjw",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 100
+      "_source_position": 105
     },
     {
       "title": "Day 9- Bhagavata Saroddhara -4th June  2023 - Shloka 17 to 19 - by Sri Vijayananda",
@@ -13298,7 +13538,7 @@
       "url": "https://www.youtube.com/watch?v=0mCfGtTf7oM",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 101
+      "_source_position": 106
     },
     {
       "title": "Day 8- Bhagavata Saroddhara -27th May  2023 - Shloka 14 to 16 - by Sri Vijayananda",
@@ -13328,7 +13568,7 @@
       "url": "https://www.youtube.com/watch?v=BsX2F2Uz41o",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 102
+      "_source_position": 107
     },
     {
       "title": "Day 7- Bhagavata Saroddhara -20th May  2023 - Shloka 10 to13 - by Sri Vijayananda",
@@ -13358,7 +13598,7 @@
       "url": "https://www.youtube.com/watch?v=QqMmi8Aj95g",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 103
+      "_source_position": 108
     },
     {
       "title": "Day 6- Bhagavata Saroddhara - 13th May 2023 - Shloka 9 - by Sri Vijayananda",
@@ -13388,7 +13628,7 @@
       "url": "https://www.youtube.com/watch?v=W-yzdUKFjtI",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 104
+      "_source_position": 109
     },
     {
       "title": "Day 5- Bhagavata Saroddhara - 29th April 2023 - Shloka 6 - by Sri Vijayananda",
@@ -13418,7 +13658,7 @@
       "url": "https://www.youtube.com/watch?v=jZuoX0h1Yvc",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 105
+      "_source_position": 110
     },
     {
       "title": "Day 4- Bhagavata Saroddhara - 22nd April 2023 - Shloka 4&5 - by Sri Vijayananda",
@@ -13435,7 +13675,7 @@
         }
       ],
       "duration": 2935,
-      "view_count": 113,
+      "view_count": 114,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13448,7 +13688,7 @@
       "url": "https://www.youtube.com/watch?v=-2XEzHhcwws",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 106
+      "_source_position": 111
     },
     {
       "title": "Day 3- Bhagavata Saroddhara - 15th April 2023 - Shloka 3 - by Sri Vijayananda",
@@ -13465,7 +13705,7 @@
         }
       ],
       "duration": 2808,
-      "view_count": 184,
+      "view_count": 188,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13478,7 +13718,7 @@
       "url": "https://www.youtube.com/watch?v=iq0lO3Qqujk",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 107
+      "_source_position": 112
     },
     {
       "title": "Day 2- Bhagavata Saroddhara - 9th April 2023 - Shloka 1&2 - by Sri Vijayananda",
@@ -13508,7 +13748,7 @@
       "url": "https://www.youtube.com/watch?v=X3bhrM0isog",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 108
+      "_source_position": 113
     },
     {
       "title": "Day 1- Bhagavata Saroddhara - 8th April 2023 - Shloka 1 - by Sri Vijayananda",
@@ -13525,7 +13765,7 @@
         }
       ],
       "duration": 2855,
-      "view_count": 670,
+      "view_count": 678,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13538,7 +13778,7 @@
       "url": "https://www.youtube.com/watch?v=VpkJRP7Vz2E",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 109
+      "_source_position": 114
     },
     {
       "title": "Day 26- Pratahsankalpa gadya 1st April -  2023",
@@ -13555,7 +13795,7 @@
         }
       ],
       "duration": 4170,
-      "view_count": 243,
+      "view_count": 244,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13568,7 +13808,7 @@
       "url": "https://www.youtube.com/watch?v=H_ukTfc1Rb4",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 110
+      "_source_position": 115
     },
     {
       "title": "Day 25- Pratahsankalpa gadya 25th March-  2023",
@@ -13598,7 +13838,7 @@
       "url": "https://www.youtube.com/watch?v=ueIaNSilNPY",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 111
+      "_source_position": 116
     },
     {
       "title": "Day 24- Pratahsankalpa gadya - 18th Mar 2023",
@@ -13615,7 +13855,7 @@
         }
       ],
       "duration": 3075,
-      "view_count": 147,
+      "view_count": 148,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13628,7 +13868,7 @@
       "url": "https://www.youtube.com/watch?v=LPJn6dci1dw",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 112
+      "_source_position": 117
     },
     {
       "title": "Day 21 -Prathah Sankalpa Gadya -  Feb 18th",
@@ -13645,7 +13885,7 @@
         }
       ],
       "duration": 2485,
-      "view_count": 143,
+      "view_count": 145,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13658,7 +13898,7 @@
       "url": "https://www.youtube.com/watch?v=W8Aet_VOFPY",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 113
+      "_source_position": 118
     },
     {
       "title": "Day 22 Prathah Sankalpa Gadya - - Mar 4th",
@@ -13688,7 +13928,7 @@
       "url": "https://www.youtube.com/watch?v=QC_LPl4-v5k",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 114
+      "_source_position": 119
     },
     {
       "title": "Day 20 - Prathah Sankalpa Gadya -- Feb 11th",
@@ -13718,7 +13958,7 @@
       "url": "https://www.youtube.com/watch?v=fWfbEsh2E2Y",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 115
+      "_source_position": 120
     },
     {
       "title": "Day 19 - Prathah Sankalpa Gadya - Feb 4th",
@@ -13748,7 +13988,7 @@
       "url": "https://www.youtube.com/watch?v=-2EKSbIhhpg",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 116
+      "_source_position": 121
     },
     {
       "title": "Day16 - Prathah Sankalpa Gadya - Jan7th",
@@ -13778,7 +14018,7 @@
       "url": "https://www.youtube.com/watch?v=oyoAp0PeY2o",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 117
+      "_source_position": 122
     },
     {
       "title": "Day15 - Prathah Sankalpa Gadya - Dec 31st",
@@ -13808,7 +14048,7 @@
       "url": "https://www.youtube.com/watch?v=pPtyXFBMHns",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 118
+      "_source_position": 123
     },
     {
       "title": "Day 8 - Prathah Sankalpa Gadya - Nov 12th",
@@ -13825,7 +14065,7 @@
         }
       ],
       "duration": 2638,
-      "view_count": 242,
+      "view_count": 245,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13838,7 +14078,7 @@
       "url": "https://www.youtube.com/watch?v=QsIRAnUITyE",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 119
+      "_source_position": 124
     },
     {
       "title": "Day 6 - Pratah Sankalpa Gadya - October 29th 2022 -",
@@ -13855,7 +14095,7 @@
         }
       ],
       "duration": 2389,
-      "view_count": 384,
+      "view_count": 388,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13868,7 +14108,7 @@
       "url": "https://www.youtube.com/watch?v=pMfJk7mm6vM",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 120
+      "_source_position": 125
     },
     {
       "title": "Satyatmatheertharu - Mahamangalarati - 1",
@@ -13898,7 +14138,7 @@
       "url": "https://www.youtube.com/watch?v=42Ch0hQkVjQ",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 121
+      "_source_position": 126
     },
     {
       "title": "Satyatmatheertharu",
@@ -13923,7 +14163,7 @@
       "url": "https://www.youtube.com/watch?v=coWBbQ6NM8M",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 122
+      "_source_position": 127
     },
     {
       "title": "Vedavyasa Puja at Uttaradi Mutt",
@@ -13935,7 +14175,7 @@
         }
       ],
       "duration": 404,
-      "view_count": 2400,
+      "view_count": 2500,
       "timestamp": null,
       "live_status": null,
       "availability": null,
@@ -13948,7 +14188,7 @@
       "url": "https://www.youtube.com/watch?v=PRZOdFwtayA",
       "__x_forwarded_for_ip": null,
       "_source": "videos",
-      "_source_position": 123
+      "_source_position": 128
     }
   ]
 }
