@@ -149,22 +149,22 @@ rules; `search.html` holds only rendering. `DESIGN.md` explains why each of them
 does — read the relevant section before changing behaviour, because most of the odd-looking rules
 exist to handle a specific real title.
 
-**Known-good numbers**, as of the 2026-09-23 scan of both tabs. The same counts are
+**Known-good numbers**, as of the 2026-10-11 scan of both tabs. The same counts are
 asserted by `BASELINE` at the top of `tests/test_pipeline.py` — when the channel gains
 videos those tests will fail on purpose, and both places should be updated together — useful as a baseline for "did this change more
 than I expected":
 
 | | |
 |---|---|
-| Videos | 473 (345 from /streams, 128 from /videos) |
-| Categories | 40 |
-| Sequences | 55 (41 with 2+ videos) |
-| Date range | 2015-03-30 to 2026-09-19 |
+| Videos | 485 (357 from /streams, 128 from /videos) |
+| Categories | 41 |
+| Sequences | 56 (42 with 2+ videos) |
+| Date range | 2015-03-30 to 2026-10-10 |
 | Unresolved dates | 0 |
 | Month-precision dates | 3 |
 | Uncategorized | 1 |
-| Videos with an assumed language | 93 — 92 "Kannada, assumed", 1 "Marathi, assumed" |
+| Videos with an assumed language | 99 — 98 "Kannada, assumed", 1 "Marathi, assumed" |
 | Largest series | Bhagavata Saroddhara, 113 videos, sessions 1-107 |
-| Sequences ordered by session number | 5 |
+| Sequences ordered by session number | 6 |
 | Sequences carrying a note | 16 |
 | Date/order disagreements | 20, all from typos in the source titles |

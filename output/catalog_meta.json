@@ -2,14 +2,14 @@
   "channel": "Sripad K",
   "channel_url": "https://www.youtube.com/channel/UC06VQ5SSISjb-QI0iE0OWag",
   "tabs": {
-    "streams": 345,
+    "streams": 357,
     "videos": 128
   },
-  "scanned_on": "2026-09-23",
+  "scanned_on": "2026-10-11",
   "refresh_interval_days": 14,
-  "next_scan_due": "2026-10-07",
-  "video_count": 473,
-  "category_count": 40,
-  "newest_video_date": "2026-09-19",
+  "next_scan_due": "2026-10-25",
+  "video_count": 485,
+  "category_count": 41,
+  "newest_video_date": "2026-10-10",
   "oldest_video_date": "2015-03-30"
 }

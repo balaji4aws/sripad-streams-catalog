@@ -3,15 +3,15 @@
     "channel": "Sripad K",
     "channel_url": "https://www.youtube.com/channel/UC06VQ5SSISjb-QI0iE0OWag",
     "tabs": {
-      "streams": 345,
+      "streams": 357,
       "videos": 128
     },
-    "scanned_on": "2026-09-23",
+    "scanned_on": "2026-10-11",
     "refresh_interval_days": 14,
-    "next_scan_due": "2026-10-07",
-    "video_count": 473,
-    "category_count": 40,
-    "newest_video_date": "2026-09-19",
+    "next_scan_due": "2026-10-25",
+    "video_count": 485,
+    "category_count": 41,
+    "newest_video_date": "2026-10-10",
     "oldest_video_date": "2015-03-30"
   },
   "groups": [
@@ -324,7 +324,7 @@
           "video_id": "VpkJRP7Vz2E",
           "url": "https://www.youtube.com/watch?v=VpkJRP7Vz2E",
           "duration_min": 47.6,
-          "view_count": 678
+          "view_count": 688
         },
         {
           "seq": 2,
@@ -334,7 +334,7 @@
           "video_id": "X3bhrM0isog",
           "url": "https://www.youtube.com/watch?v=X3bhrM0isog",
           "duration_min": 46.7,
-          "view_count": 223
+          "view_count": 225
         },
         {
           "seq": 3,
@@ -344,7 +344,7 @@
           "video_id": "iq0lO3Qqujk",
           "url": "https://www.youtube.com/watch?v=iq0lO3Qqujk",
           "duration_min": 46.8,
-          "view_count": 188
+          "view_count": 189
         },
         {
           "seq": 4,
@@ -354,7 +354,7 @@
           "video_id": "-2XEzHhcwws",
           "url": "https://www.youtube.com/watch?v=-2XEzHhcwws",
           "duration_min": 48.9,
-          "view_count": 114
+          "view_count": 116
         },
         {
           "seq": 5,
@@ -594,7 +594,7 @@
           "video_id": "kdqIHXitmxk",
           "url": "https://www.youtube.com/watch?v=kdqIHXitmxk",
           "duration_min": 56.5,
-          "view_count": 35
+          "view_count": 39
         },
         {
           "seq": 29,
@@ -604,7 +604,7 @@
           "video_id": "WlHkRyyEU1E",
           "url": "https://www.youtube.com/watch?v=WlHkRyyEU1E",
           "duration_min": 45.9,
-          "view_count": 58
+          "view_count": 62
         },
         {
           "seq": 30,
@@ -614,7 +614,7 @@
           "video_id": "llyQJEDgFkI",
           "url": "https://www.youtube.com/watch?v=llyQJEDgFkI",
           "duration_min": 40.7,
-          "view_count": 54
+          "view_count": 59
         },
         {
           "seq": 31,
@@ -624,7 +624,7 @@
           "video_id": "ESPJCTDgsHE",
           "url": "https://www.youtube.com/watch?v=ESPJCTDgsHE",
           "duration_min": 54.8,
-          "view_count": 28
+          "view_count": 33
         },
         {
           "seq": 32,
@@ -634,7 +634,7 @@
           "video_id": "yTAti5sqdP8",
           "url": "https://www.youtube.com/watch?v=yTAti5sqdP8",
           "duration_min": 55.6,
-          "view_count": 26
+          "view_count": 28
         },
         {
           "seq": 33,
@@ -1024,7 +1024,7 @@
           "video_id": "sjRSFcOZANg",
           "url": "https://www.youtube.com/watch?v=sjRSFcOZANg",
           "duration_min": 59.5,
-          "view_count": 13
+          "view_count": 14
         },
         {
           "seq": 72,
@@ -1164,7 +1164,7 @@
           "video_id": "DqaUXSSdLKY",
           "url": "https://www.youtube.com/watch?v=DqaUXSSdLKY",
           "duration_min": 61.2,
-          "view_count": 22
+          "view_count": 23
         },
         {
           "seq": 86,
@@ -1384,7 +1384,7 @@
           "video_id": "2FXTqqT2lTQ",
           "url": "https://www.youtube.com/watch?v=2FXTqqT2lTQ",
           "duration_min": 55.2,
-          "view_count": 15
+          "view_count": 16
         },
         {
           "seq": 108,
@@ -1394,7 +1394,7 @@
           "video_id": "EqclQ17Hlzs",
           "url": "https://www.youtube.com/watch?v=EqclQ17Hlzs",
           "duration_min": 61.0,
-          "view_count": 42
+          "view_count": 43
         },
         {
           "seq": 109,
@@ -1404,7 +1404,7 @@
           "video_id": "0_xuEqMte4U",
           "url": "https://www.youtube.com/watch?v=0_xuEqMte4U",
           "duration_min": 58.4,
-          "view_count": 3
+          "view_count": 6
         },
         {
           "seq": 110,
@@ -1414,7 +1414,7 @@
           "video_id": "tapFhXLaAUA",
           "url": "https://www.youtube.com/watch?v=tapFhXLaAUA",
           "duration_min": 63.6,
-          "view_count": 5
+          "view_count": 10
         },
         {
           "seq": 111,
@@ -1424,7 +1424,7 @@
           "video_id": "XTIJCZUX13A",
           "url": "https://www.youtube.com/watch?v=XTIJCZUX13A",
           "duration_min": 59.9,
-          "view_count": 7
+          "view_count": 10
         },
         {
           "seq": 112,
@@ -1434,7 +1434,7 @@
           "video_id": "1juuw_fcacw",
           "url": "https://www.youtube.com/watch?v=1juuw_fcacw",
           "duration_min": 54.9,
-          "view_count": 2
+          "view_count": 10
         },
         {
           "seq": 113,
@@ -1444,7 +1444,7 @@
           "video_id": "fxOblHhXu1U",
           "url": "https://www.youtube.com/watch?v=fxOblHhXu1U",
           "duration_min": 41.5,
-          "view_count": 4
+          "view_count": 19
         }
       ]
     },
@@ -1453,7 +1453,7 @@
       "language": "marathi",
       "language_assumed": false,
       "label": "Sumadhwavijaya (Marathi)",
-      "count": 86,
+      "count": 92,
       "assumed_count": 0,
       "notes": [],
       "search_words": [
@@ -1479,11 +1479,13 @@
         "22nd",
         "23rd",
         "24th",
+        "25sep2026",
         "25th",
         "26",
         "26th",
         "27th",
         "28th",
+        "28thsep2026",
         "29th",
         "2nd",
         "3",
@@ -1533,8 +1535,10 @@
         "march",
         "may",
         "may2026",
+        "oct",
         "sarga",
         "sarga2",
+        "sep",
         "sep2026",
         "sumadhawavijaya",
         "sumadhwavijay",
@@ -1544,17 +1548,17 @@
       "videos": [
         {
           "seq": 1,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-11",
           "title": "Sumadhawavijaya Marathi Day1-11th Jan26",
           "video_id": "dPThhZyeH2I",
           "url": "https://www.youtube.com/watch?v=dPThhZyeH2I",
           "duration_min": 64.8,
-          "view_count": 357
+          "view_count": 361
         },
         {
           "seq": 2,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-12",
           "title": "Sumadhwavijaya Marathi-day2-12thJan26",
           "video_id": "O0Ghctl1VMA",
@@ -1564,7 +1568,7 @@
         },
         {
           "seq": 3,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-14",
           "title": "Sumadhwavijaya Day 3 -14th Jan26",
           "video_id": "zUgmj0vKSw8",
@@ -1574,7 +1578,7 @@
         },
         {
           "seq": 4,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-15",
           "title": "Sumadhwavijay-Marathi-Day4-15thJan26",
           "video_id": "555zFWs6GGA",
@@ -1584,17 +1588,17 @@
         },
         {
           "seq": 5,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-16",
           "title": "Sumadhwavijaya Day5 16th Jan 26",
           "video_id": "pf_M-AEN99E",
           "url": "https://www.youtube.com/watch?v=pf_M-AEN99E",
           "duration_min": 42.6,
-          "view_count": 148
+          "view_count": 150
         },
         {
           "seq": 6,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-19",
           "title": "Sumadhwavijaya marathi Day6-19th Jan26",
           "video_id": "hn0-Np6atXE",
@@ -1604,7 +1608,7 @@
         },
         {
           "seq": 7,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-21",
           "title": "SuMadhwavijaya Day7-21st Jan 2026",
           "video_id": "6Untz9cCGvM",
@@ -1614,7 +1618,7 @@
         },
         {
           "seq": 8,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-24",
           "title": "Sumadhwavijaya Day7- 24th Jan 2026",
           "video_id": "HoN97YzfSUc",
@@ -1624,7 +1628,7 @@
         },
         {
           "seq": 9,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-25",
           "title": "Sumadhwavijaya Marathi day9-25th Jan 2026",
           "video_id": "qxpwM-idOVA",
@@ -1634,7 +1638,7 @@
         },
         {
           "seq": 10,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-27",
           "title": "Sumadhwavijaya Marathi Day10-27th Jan 2026",
           "video_id": "-PNbzm29ARY",
@@ -1644,7 +1648,7 @@
         },
         {
           "seq": 11,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-28",
           "title": "SuMadhwavijaya Day11-28th Jan 2026",
           "video_id": "TOum1wbnRq0",
@@ -1654,7 +1658,7 @@
         },
         {
           "seq": 12,
-          "total": 86,
+          "total": 92,
           "date": "2026-01-30",
           "title": "Sumdhwavijaya Marathi Sarga2-Day11-30Jan2026",
           "video_id": "O9KOVBKgQjE",
@@ -1664,7 +1668,7 @@
         },
         {
           "seq": 13,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-02",
           "title": "Sumadhwavijaya Marathi Day12- 2nd Feb 2026",
           "video_id": "9Sc1eqf9kjM",
@@ -1674,7 +1678,7 @@
         },
         {
           "seq": 14,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-04",
           "title": "SuMadhwavijaya Marathi Day13-4th Feb2026",
           "video_id": "5UpotJxmYdg",
@@ -1684,7 +1688,7 @@
         },
         {
           "seq": 15,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-06",
           "title": "Sumadhwavijaya Marathi Day14 -6th Feb 26",
           "video_id": "1ccV6LR12Fs",
@@ -1694,7 +1698,7 @@
         },
         {
           "seq": 16,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-09",
           "title": "Sumadhwavijaya Marathi Day14-9th Feb2026",
           "video_id": "b4EYQfg3Vgs",
@@ -1704,7 +1708,7 @@
         },
         {
           "seq": 17,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-11",
           "title": "Sumadhwavijaya Marathi 11th Feb 2026",
           "video_id": "9wbA_9jwC9I",
@@ -1714,7 +1718,7 @@
         },
         {
           "seq": 18,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-12",
           "title": "Sumadhwavijaya Marathi 12th Feb 2026",
           "video_id": "zlsWTr-q1d8",
@@ -1724,7 +1728,7 @@
         },
         {
           "seq": 19,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-14",
           "title": "Sumadhwavijaya Marathi 14th Feb 2026",
           "video_id": "8o37Mxf-62U",
@@ -1734,7 +1738,7 @@
         },
         {
           "seq": 20,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-22",
           "title": "SuMadhwavijaya Marathi 22nd Feb 2026",
           "video_id": "gjYGAw1RIKI",
@@ -1744,7 +1748,7 @@
         },
         {
           "seq": 21,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-23",
           "title": "Sumadhwavijaya Marathi 23rd Feb 2026",
           "video_id": "yMU-MljIpdw",
@@ -1754,7 +1758,7 @@
         },
         {
           "seq": 22,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-26",
           "title": "Sumadhwavijaya Marathi 26th Feb 2026",
           "video_id": "Vc88VIufL0E",
@@ -1764,7 +1768,7 @@
         },
         {
           "seq": 23,
-          "total": 86,
+          "total": 92,
           "date": "2026-02-28",
           "title": "Sumadhwavijaya Marathi 28th Feb 2026",
           "video_id": "YoOzsbo5QHY",
@@ -1774,7 +1778,7 @@
         },
         {
           "seq": 24,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-01",
           "title": "Sumadhwavijaya Marathi 1st March 2026",
           "video_id": "ZzV4Xm-Sf-o",
@@ -1784,7 +1788,7 @@
         },
         {
           "seq": 25,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-02",
           "title": "Sumadhwavijaya Marathi 2nd March 2026",
           "video_id": "oS2i-l6IOLc",
@@ -1794,7 +1798,7 @@
         },
         {
           "seq": 26,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-04",
           "title": "Sumadhwavijaya Marathi 4th March 2026",
           "video_id": "ijDQnbqGIhY",
@@ -1804,7 +1808,7 @@
         },
         {
           "seq": 27,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-05",
           "title": "SuMadhwavijaya Marathi 5th March 2026",
           "video_id": "Z2T1TnZs2_k",
@@ -1814,7 +1818,7 @@
         },
         {
           "seq": 28,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-06",
           "title": "Sumadhwavijaya Marathi 6th March 2026",
           "video_id": "myl5uD4urNc",
@@ -1824,7 +1828,7 @@
         },
         {
           "seq": 29,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-06",
           "title": "Sumadhwavijaya Marathi 6th March 2026",
           "video_id": "6rMUX6KJs3A",
@@ -1834,7 +1838,7 @@
         },
         {
           "seq": 30,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-10",
           "title": "Sumadhwavijaya Marathi 10th March 2026",
           "video_id": "IVxD2IQk9mM",
@@ -1844,7 +1848,7 @@
         },
         {
           "seq": 31,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-11",
           "title": "Sumadhwavijaya Marathi 11thMarch 2026",
           "video_id": "uylBRtKr8Iw",
@@ -1854,7 +1858,7 @@
         },
         {
           "seq": 32,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-12",
           "title": "Sumadhwavijaya Marathi 12th March 2026",
           "video_id": "HDMGNTxcM-0",
@@ -1864,17 +1868,17 @@
         },
         {
           "seq": 33,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-12",
           "title": "Sumadhwavijaya Marathi 12th March 2026",
           "video_id": "MLfnmtfdkPk",
           "url": "https://www.youtube.com/watch?v=MLfnmtfdkPk",
           "duration_min": 32.0,
-          "view_count": 71
+          "view_count": 72
         },
         {
           "seq": 34,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-13",
           "title": "Sumadhwavijaya Marathi 13th March 2026",
           "video_id": "Mp0ACSJMa8E",
@@ -1884,7 +1888,7 @@
         },
         {
           "seq": 35,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-16",
           "title": "Sumadhwavijaya Marathi 16thMarch 2026",
           "video_id": "Q79MOVLL1Yw",
@@ -1894,27 +1898,27 @@
         },
         {
           "seq": 36,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-17",
           "title": "SuMadhwavijaya Marathi 17th March 2026",
           "video_id": "nNFaNi1uGsQ",
           "url": "https://www.youtube.com/watch?v=nNFaNi1uGsQ",
           "duration_min": 44.6,
-          "view_count": 60
+          "view_count": 61
         },
         {
           "seq": 37,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-18",
           "title": "Sumadhwavijaya Marathi 18th March 2026",
           "video_id": "HHIN6p1jkXo",
           "url": "https://www.youtube.com/watch?v=HHIN6p1jkXo",
           "duration_min": 47.9,
-          "view_count": 34
+          "view_count": 40
         },
         {
           "seq": 38,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-24",
           "title": "Sumadhwavijaya Marathi 24th March 2026",
           "video_id": "jMYvVTZvoG0",
@@ -1924,7 +1928,7 @@
         },
         {
           "seq": 39,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-25",
           "title": "Sumadhwavijaya Marathi 25th March 2026",
           "video_id": "dFlWoBARqMc",
@@ -1934,17 +1938,17 @@
         },
         {
           "seq": 40,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-26",
           "title": "Sumadhwavijaya Marathi 26th March 2026",
           "video_id": "3hd-ev3xj78",
           "url": "https://www.youtube.com/watch?v=3hd-ev3xj78",
           "duration_min": 49.6,
-          "view_count": 27
+          "view_count": 29
         },
         {
           "seq": 41,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-30",
           "title": "Sumadhwavijaya Marathi 30th March 2026",
           "video_id": "PQmiLLyTPWY",
@@ -1954,7 +1958,7 @@
         },
         {
           "seq": 42,
-          "total": 86,
+          "total": 92,
           "date": "2026-03-31",
           "title": "Sumadhwavijaya Marathi 31March 2026",
           "video_id": "1dhfiOAAKFo",
@@ -1964,7 +1968,7 @@
         },
         {
           "seq": 43,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-02",
           "title": "Sumadhwavijaya Marathi 2nd April 2026",
           "video_id": "WjPUJVYJOSc",
@@ -1974,7 +1978,7 @@
         },
         {
           "seq": 44,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-03",
           "title": "Sumadhwavijaya Marathi 3rd April 2026",
           "video_id": "zHuxBF-HqKg",
@@ -1984,7 +1988,7 @@
         },
         {
           "seq": 45,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-06",
           "title": "Sumadhwavijaya Marathi 6th April 2026",
           "video_id": "IiedKe97GC4",
@@ -1994,7 +1998,7 @@
         },
         {
           "seq": 46,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-09",
           "title": "Sumadhwavijaya Marathi 9th April2026",
           "video_id": "MIYTKmEVcSI",
@@ -2004,7 +2008,7 @@
         },
         {
           "seq": 47,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-10",
           "title": "Sumadhwavijaya Marathi 10th April 2026",
           "video_id": "vL_jFUP5gBg",
@@ -2014,17 +2018,17 @@
         },
         {
           "seq": 48,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-16",
           "title": "Sumadhwavijaya marathi 16th April 2026",
           "video_id": "kiAgKVjVeyo",
           "url": "https://www.youtube.com/watch?v=kiAgKVjVeyo",
           "duration_min": 38.6,
-          "view_count": 58
+          "view_count": 59
         },
         {
           "seq": 49,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-17",
           "title": "Sumadhwavijaya Marathi 17th April 2026",
           "video_id": "f7bDXeC7v0I",
@@ -2034,7 +2038,7 @@
         },
         {
           "seq": 50,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-20",
           "title": "Sumadhwavijaya Marathi 20th April 2026",
           "video_id": "DR2iJ5YryVc",
@@ -2044,17 +2048,17 @@
         },
         {
           "seq": 51,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-21",
           "title": "Sumadhwavijaya Marathi 21st April 2026",
           "video_id": "0DQWgLUzVno",
           "url": "https://www.youtube.com/watch?v=0DQWgLUzVno",
           "duration_min": 34.6,
-          "view_count": 61
+          "view_count": 62
         },
         {
           "seq": 52,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-28",
           "title": "Sumadhwavijaya Marathi 28th April 2026",
           "video_id": "KQdRv6OB0O8",
@@ -2064,17 +2068,17 @@
         },
         {
           "seq": 53,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-29",
           "title": "Sumadhwavijaya Marathi 29th April 2026",
           "video_id": "QXRpcQ2pnI8",
           "url": "https://www.youtube.com/watch?v=QXRpcQ2pnI8",
           "duration_min": 34.6,
-          "view_count": 41
+          "view_count": 42
         },
         {
           "seq": 54,
-          "total": 86,
+          "total": 92,
           "date": "2026-04-04",
           "title": "Sumadhwavijaya Marathi 4th April 2026",
           "video_id": "k5i2GIR8TOI",
@@ -2084,7 +2088,7 @@
         },
         {
           "seq": 55,
-          "total": 86,
+          "total": 92,
           "date": "2026-05-07",
           "title": "Sumadhwavijaya Marathi 7th May 2026",
           "video_id": "ubSWIGudwxA",
@@ -2094,17 +2098,17 @@
         },
         {
           "seq": 56,
-          "total": 86,
+          "total": 92,
           "date": "2026-05-08",
           "title": "Sumadhwavijaya marathi-8th May2026",
           "video_id": "db_r2gjxfqc",
           "url": "https://www.youtube.com/watch?v=db_r2gjxfqc",
           "duration_min": 34.9,
-          "view_count": 25
+          "view_count": 26
         },
         {
           "seq": 57,
-          "total": 86,
+          "total": 92,
           "date": "2026-05-21",
           "title": "Sumadhwavijaya Marathi 21st May 2026",
           "video_id": "pMmYdPtBWPo",
@@ -2114,7 +2118,7 @@
         },
         {
           "seq": 58,
-          "total": 86,
+          "total": 92,
           "date": "2026-05-23",
           "title": "Sumadhwavijaya Marathi 23rd May 2026",
           "video_id": "XTBk0wjF740",
@@ -2124,17 +2128,17 @@
         },
         {
           "seq": 59,
-          "total": 86,
+          "total": 92,
           "date": "2026-06-19",
           "title": "Sumadhwavijaya Marathi 19th June Day 57",
           "video_id": "CLMIKfnetp4",
           "url": "https://www.youtube.com/watch?v=CLMIKfnetp4",
           "duration_min": 32.9,
-          "view_count": 84
+          "view_count": 85
         },
         {
           "seq": 60,
-          "total": 86,
+          "total": 92,
           "date": "2026-06-20",
           "title": "Sumadhwavijaya Marathi Day57 20th June 2026",
           "video_id": "G4hE7Z4UMCk",
@@ -2144,17 +2148,17 @@
         },
         {
           "seq": 61,
-          "total": 86,
+          "total": 92,
           "date": "2026-06-21",
           "title": "Sumadhwavijaya Marathi Day 58 -21st June 2026",
           "video_id": "65PV5kaMZTQ",
           "url": "https://www.youtube.com/watch?v=65PV5kaMZTQ",
           "duration_min": 40.4,
-          "view_count": 64
+          "view_count": 65
         },
         {
           "seq": 62,
-          "total": 86,
+          "total": 92,
           "date": "2026-06-23",
           "title": "Sumadhwavijaya Marathi Day59 23rd June 2026",
           "video_id": "6E8G_Utjs8w",
@@ -2164,7 +2168,7 @@
         },
         {
           "seq": 63,
-          "total": 86,
+          "total": 92,
           "date": "2026-06-26",
           "title": "Sumadhwavijaya Marathi 26th June 2026",
           "video_id": "EAwdujcfMLg",
@@ -2174,7 +2178,7 @@
         },
         {
           "seq": 64,
-          "total": 86,
+          "total": 92,
           "date": "2026-06-27",
           "title": "Sumadhwavijaya Marathi 27th June 2026",
           "video_id": "vPnlwgsKPac",
@@ -2184,7 +2188,7 @@
         },
         {
           "seq": 65,
-          "total": 86,
+          "total": 92,
           "date": "2026-06-30",
           "title": "Sumadhwavijaya Marathi 30th June 2026",
           "video_id": "PjF-3EbSTwI",
@@ -2194,7 +2198,7 @@
         },
         {
           "seq": 66,
-          "total": 86,
+          "total": 92,
           "date": "2026-06-04",
           "title": "Sumadhwavijaya Marathi 4th June 2026",
           "video_id": "p9dC7xehuIw",
@@ -2204,7 +2208,7 @@
         },
         {
           "seq": 67,
-          "total": 86,
+          "total": 92,
           "date": "2026-07-05",
           "title": "Sumadhwavijaya Marathi 5th July2026",
           "video_id": "a4ZzyaK8HZk",
@@ -2214,7 +2218,7 @@
         },
         {
           "seq": 68,
-          "total": 86,
+          "total": 92,
           "date": "2026-07-07",
           "title": "Sumadhwavijaya Marath 7July 2026",
           "video_id": "jXJ4sur30kc",
@@ -2224,7 +2228,7 @@
         },
         {
           "seq": 69,
-          "total": 86,
+          "total": 92,
           "date": "2026-07-13",
           "title": "Sumadhwavijaya Marathi 13July 2026",
           "video_id": "lIWAaeiykd4",
@@ -2234,7 +2238,7 @@
         },
         {
           "seq": 70,
-          "total": 86,
+          "total": 92,
           "date": "2026-07-14",
           "title": "Sumadhwavijaya Marathi 14July 2026",
           "video_id": "CRh8sA-po3s",
@@ -2244,7 +2248,7 @@
         },
         {
           "seq": 71,
-          "total": 86,
+          "total": 92,
           "date": "2026-07-17",
           "title": "Sumadhwavijaya Marathi 5th sarga mangala 17th July2026",
           "video_id": "2Um60BwIq8A",
@@ -2254,47 +2258,47 @@
         },
         {
           "seq": 72,
-          "total": 86,
+          "total": 92,
           "date": "2026-07-29",
           "title": "Sumadhwavijaya Marathi 29th July 2026 GuruPoornima",
           "video_id": "gD1jpvc9bGg",
           "url": "https://www.youtube.com/watch?v=gD1jpvc9bGg",
           "duration_min": 39.6,
-          "view_count": 41
+          "view_count": 42
         },
         {
           "seq": 73,
-          "total": 86,
+          "total": 92,
           "date": "2026-07-31",
           "title": "Sumadhwavijaya Marathi 31st July 2026",
           "video_id": "cvMff2O_BNw",
           "url": "https://www.youtube.com/watch?v=cvMff2O_BNw",
           "duration_min": 38.0,
-          "view_count": 47
+          "view_count": 48
         },
         {
           "seq": 74,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-06",
           "title": "Sumadhwavijaya Marathi 6th Aug 2026",
           "video_id": "JAjc8g3pdMw",
           "url": "https://www.youtube.com/watch?v=JAjc8g3pdMw",
           "duration_min": 36.9,
-          "view_count": 69
+          "view_count": 71
         },
         {
           "seq": 75,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-07",
           "title": "Sumadhwavijaya Marathi 7th Aug 2026",
           "video_id": "4IUwdijserk",
           "url": "https://www.youtube.com/watch?v=4IUwdijserk",
           "duration_min": 31.6,
-          "view_count": 39
+          "view_count": 42
         },
         {
           "seq": 76,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-11",
           "title": "Sumadhwavijaya Marathi 11th Aug 2026",
           "video_id": "INd_l3fSnW4",
@@ -2304,7 +2308,7 @@
         },
         {
           "seq": 77,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-12",
           "title": "Sumadhwavijaya Marathi 12th Aug 2026",
           "video_id": "6xBnpW-lf2g",
@@ -2314,17 +2318,17 @@
         },
         {
           "seq": 78,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-14",
           "title": "Sumadhwavijaya Marathi 14th Aug 2026",
           "video_id": "CetDxo9qS1U",
           "url": "https://www.youtube.com/watch?v=CetDxo9qS1U",
           "duration_min": 41.4,
-          "view_count": 112
+          "view_count": 115
         },
         {
           "seq": 79,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-17",
           "title": "Sumadhwavijaya Marathi 17th Aug 2026",
           "video_id": "hkvFD-GdwBQ",
@@ -2334,7 +2338,7 @@
         },
         {
           "seq": 80,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-18",
           "title": "Sumadhwavijaya Marathi 18th Aug 2026",
           "video_id": "2RNaoaaP2Xo",
@@ -2344,63 +2348,123 @@
         },
         {
           "seq": 81,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-20",
           "title": "Sumadhwavijaya Marathi 20th Aug 2026",
           "video_id": "XI1p-C4kUhw",
           "url": "https://www.youtube.com/watch?v=XI1p-C4kUhw",
           "duration_min": 33.8,
-          "view_count": 420
+          "view_count": 434
         },
         {
           "seq": 82,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-25",
           "title": "Sumadhwavijaya Marathi 25th Aug 2026",
           "video_id": "dzhnKEGZFwI",
           "url": "https://www.youtube.com/watch?v=dzhnKEGZFwI",
           "duration_min": 38.6,
-          "view_count": 191
+          "view_count": 194
         },
         {
           "seq": 83,
-          "total": 86,
+          "total": 92,
           "date": "2026-08-26",
           "title": "Sumadhwavijaya Marathi 26th Aug 2026",
           "video_id": "06iNO-yjt68",
           "url": "https://www.youtube.com/watch?v=06iNO-yjt68",
           "duration_min": 26.5,
-          "view_count": 111
+          "view_count": 115
         },
         {
           "seq": 84,
-          "total": 86,
+          "total": 92,
           "date": "2026-09-03",
           "title": "Sumadhwavijaya Marathi - 3rd Sep2026",
           "video_id": "CUIrNKGnVNY",
           "url": "https://www.youtube.com/watch?v=CUIrNKGnVNY",
           "duration_min": 37.0,
-          "view_count": 270
+          "view_count": 289
         },
         {
           "seq": 85,
-          "total": 86,
+          "total": 92,
           "date": "2026-09-10",
           "title": "Sumadhwavijaya Marathi 10th Sep2026",
           "video_id": "44P9enPaz7I",
           "url": "https://www.youtube.com/watch?v=44P9enPaz7I",
           "duration_min": 38.8,
-          "view_count": 215
+          "view_count": 232
         },
         {
           "seq": 86,
-          "total": 86,
+          "total": 92,
           "date": "2026-09-11",
           "title": "Sumadhwavijaya Marathi 11th Sep2026",
           "video_id": "wyubixFnl-s",
           "url": "https://www.youtube.com/watch?v=wyubixFnl-s",
           "duration_min": 26.3,
-          "view_count": 211
+          "view_count": 223
+        },
+        {
+          "seq": 87,
+          "total": 92,
+          "date": "2026-09-23",
+          "title": "Sumadhwavijaya Marathi 23rd Sep 2026",
+          "video_id": "BJdRN0FubC8",
+          "url": "https://www.youtube.com/watch?v=BJdRN0FubC8",
+          "duration_min": 35.3,
+          "view_count": 202
+        },
+        {
+          "seq": 88,
+          "total": 92,
+          "date": "2026-09-25",
+          "title": "Sumadhwavijaya Marathi 25Sep2026",
+          "video_id": "hs8K4Qs674w",
+          "url": "https://www.youtube.com/watch?v=hs8K4Qs674w",
+          "duration_min": 34.3,
+          "view_count": 276
+        },
+        {
+          "seq": 89,
+          "total": 92,
+          "date": "2026-09-28",
+          "title": "Sumadhwavijaya Marathi 28thSep2026",
+          "video_id": "DQRZ7BJ3sI0",
+          "url": "https://www.youtube.com/watch?v=DQRZ7BJ3sI0",
+          "duration_min": 35.5,
+          "view_count": 216
+        },
+        {
+          "seq": 90,
+          "total": 92,
+          "date": "2026-09-30",
+          "title": "Sumadhwavijaya Marathi 30th Sep 2026",
+          "video_id": "vCcmKLGVgJI",
+          "url": "https://www.youtube.com/watch?v=vCcmKLGVgJI",
+          "duration_min": 23.4,
+          "view_count": 163
+        },
+        {
+          "seq": 91,
+          "total": 92,
+          "date": "2026-10-04",
+          "title": "Sumadhwavijaya Marathi 4th Oct 2026",
+          "video_id": "kyLSIq3jAPY",
+          "url": "https://www.youtube.com/watch?v=kyLSIq3jAPY",
+          "duration_min": 41.0,
+          "view_count": 203
+        },
+        {
+          "seq": 92,
+          "total": 92,
+          "date": "2026-10-09",
+          "title": "Sumadhwavijaya Marathi 9th Oct 2026",
+          "video_id": "UejeqMNPPZs",
+          "url": "https://www.youtube.com/watch?v=UejeqMNPPZs",
+          "duration_min": 34.4,
+          "view_count": 139
         }
       ]
     },
@@ -2498,7 +2562,7 @@
           "video_id": "EU5sh0Pij3c",
           "url": "https://www.youtube.com/watch?v=EU5sh0Pij3c",
           "duration_min": 34.0,
-          "view_count": 253
+          "view_count": 257
         },
         {
           "seq": 3,
@@ -2638,7 +2702,7 @@
           "video_id": "LLu_mfsahpE",
           "url": "https://www.youtube.com/watch?v=LLu_mfsahpE",
           "duration_min": 35.1,
-          "view_count": 112
+          "view_count": 113
         },
         {
           "seq": 17,
@@ -2688,7 +2752,7 @@
           "video_id": "rdlM7R582Rk",
           "url": "https://www.youtube.com/watch?v=rdlM7R582Rk",
           "duration_min": 20.0,
-          "view_count": 26
+          "view_count": 27
         },
         {
           "seq": 22,
@@ -2718,7 +2782,7 @@
           "video_id": "sNepLgLpJYo",
           "url": "https://www.youtube.com/watch?v=sNepLgLpJYo",
           "duration_min": 24.6,
-          "view_count": 15
+          "view_count": 16
         },
         {
           "seq": 25,
@@ -2818,7 +2882,7 @@
           "video_id": "gRN8WvSlEBg",
           "url": "https://www.youtube.com/watch?v=gRN8WvSlEBg",
           "duration_min": 31.9,
-          "view_count": 47
+          "view_count": 48
         },
         {
           "seq": 35,
@@ -2858,7 +2922,7 @@
           "video_id": "mzbO_5OwalQ",
           "url": "https://www.youtube.com/watch?v=mzbO_5OwalQ",
           "duration_min": 35.2,
-          "view_count": 70
+          "view_count": 71
         }
       ]
     },
@@ -2949,7 +3013,7 @@
           "video_id": "mdEw4fcmyWk",
           "url": "https://www.youtube.com/watch?v=mdEw4fcmyWk",
           "duration_min": 25.1,
-          "view_count": 1700
+          "view_count": 1800
         },
         {
           "seq": 2,
@@ -2959,7 +3023,7 @@
           "video_id": "wO_sONZDn3o",
           "url": "https://www.youtube.com/watch?v=wO_sONZDn3o",
           "duration_min": 16.9,
-          "view_count": 796
+          "view_count": 817
         },
         {
           "seq": 3,
@@ -2969,7 +3033,7 @@
           "video_id": "EaTq9lzhTj8",
           "url": "https://www.youtube.com/watch?v=EaTq9lzhTj8",
           "duration_min": 39.8,
-          "view_count": 777
+          "view_count": 782
         },
         {
           "seq": 4,
@@ -2979,7 +3043,7 @@
           "video_id": "geWtLnCFXvo",
           "url": "https://www.youtube.com/watch?v=geWtLnCFXvo",
           "duration_min": 42.0,
-          "view_count": 626
+          "view_count": 628
         },
         {
           "seq": 5,
@@ -2989,7 +3053,7 @@
           "video_id": "pMfJk7mm6vM",
           "url": "https://www.youtube.com/watch?v=pMfJk7mm6vM",
           "duration_min": 39.8,
-          "view_count": 388
+          "view_count": 390
         },
         {
           "seq": 6,
@@ -2999,7 +3063,7 @@
           "video_id": "UiA6-CnxJWo",
           "url": "https://www.youtube.com/watch?v=UiA6-CnxJWo",
           "duration_min": 40.1,
-          "view_count": 288
+          "view_count": 289
         },
         {
           "seq": 7,
@@ -3009,7 +3073,7 @@
           "video_id": "QsIRAnUITyE",
           "url": "https://www.youtube.com/watch?v=QsIRAnUITyE",
           "duration_min": 44.0,
-          "view_count": 245
+          "view_count": 247
         },
         {
           "seq": 8,
@@ -3019,7 +3083,7 @@
           "video_id": "xauSaPisqzc",
           "url": "https://www.youtube.com/watch?v=xauSaPisqzc",
           "duration_min": 46.4,
-          "view_count": 218
+          "view_count": 221
         },
         {
           "seq": 9,
@@ -3049,7 +3113,7 @@
           "video_id": "ioSWky5gNgY",
           "url": "https://www.youtube.com/watch?v=ioSWky5gNgY",
           "duration_min": 45.2,
-          "view_count": 208
+          "view_count": 209
         },
         {
           "seq": 12,
@@ -3059,7 +3123,7 @@
           "video_id": "tiYISoHt8w0",
           "url": "https://www.youtube.com/watch?v=tiYISoHt8w0",
           "duration_min": 48.2,
-          "view_count": 161
+          "view_count": 162
         },
         {
           "seq": 13,
@@ -3069,7 +3133,7 @@
           "video_id": "bult3oFcrjw",
           "url": "https://www.youtube.com/watch?v=bult3oFcrjw",
           "duration_min": 46.2,
-          "view_count": 194
+          "view_count": 203
         },
         {
           "seq": 14,
@@ -3079,7 +3143,7 @@
           "video_id": "pPtyXFBMHns",
           "url": "https://www.youtube.com/watch?v=pPtyXFBMHns",
           "duration_min": 35.9,
-          "view_count": 143
+          "view_count": 145
         },
         {
           "seq": 15,
@@ -3089,7 +3153,7 @@
           "video_id": "oyoAp0PeY2o",
           "url": "https://www.youtube.com/watch?v=oyoAp0PeY2o",
           "duration_min": 43.9,
-          "view_count": 179
+          "view_count": 183
         },
         {
           "seq": 16,
@@ -3109,7 +3173,7 @@
           "video_id": "LAxEZAy-6Tc",
           "url": "https://www.youtube.com/watch?v=LAxEZAy-6Tc",
           "duration_min": 46.4,
-          "view_count": 159
+          "view_count": 163
         },
         {
           "seq": 18,
@@ -3119,7 +3183,7 @@
           "video_id": "-2EKSbIhhpg",
           "url": "https://www.youtube.com/watch?v=-2EKSbIhhpg",
           "duration_min": 42.8,
-          "view_count": 107
+          "view_count": 108
         },
         {
           "seq": 19,
@@ -3159,7 +3223,7 @@
           "video_id": "LMnMCK6gmSA",
           "url": "https://www.youtube.com/watch?v=LMnMCK6gmSA",
           "duration_min": 43.3,
-          "view_count": 143
+          "view_count": 144
         },
         {
           "seq": 23,
@@ -3278,7 +3342,7 @@
           "video_id": "UqO6wtiVWug",
           "url": "https://www.youtube.com/watch?v=UqO6wtiVWug",
           "duration_min": 85.5,
-          "view_count": 347
+          "view_count": 348
         },
         {
           "seq": 3,
@@ -3288,7 +3352,7 @@
           "video_id": "xp-jjD8ZOTY",
           "url": "https://www.youtube.com/watch?v=xp-jjD8ZOTY",
           "duration_min": 90.5,
-          "view_count": 606
+          "view_count": 611
         },
         {
           "seq": 4,
@@ -3298,7 +3362,7 @@
           "video_id": "wEFfQeYprEQ",
           "url": "https://www.youtube.com/watch?v=wEFfQeYprEQ",
           "duration_min": 93.1,
-          "view_count": 931
+          "view_count": 934
         },
         {
           "seq": 5,
@@ -3308,7 +3372,7 @@
           "video_id": "oq2Fkv1_RSk",
           "url": "https://www.youtube.com/watch?v=oq2Fkv1_RSk",
           "duration_min": 93.3,
-          "view_count": 428
+          "view_count": 429
         },
         {
           "seq": 6,
@@ -3338,7 +3402,7 @@
           "video_id": "wYKTo6WUVoM",
           "url": "https://www.youtube.com/watch?v=wYKTo6WUVoM",
           "duration_min": 46.0,
-          "view_count": 348
+          "view_count": 349
         },
         {
           "seq": 9,
@@ -3358,7 +3422,7 @@
           "video_id": "YX3yH-AQx3s",
           "url": "https://www.youtube.com/watch?v=YX3yH-AQx3s",
           "duration_min": 43.9,
-          "view_count": 182
+          "view_count": 183
         },
         {
           "seq": 11,
@@ -3388,7 +3452,7 @@
           "video_id": "TckmFbbimzk",
           "url": "https://www.youtube.com/watch?v=TckmFbbimzk",
           "duration_min": 37.8,
-          "view_count": 146
+          "view_count": 148
         },
         {
           "seq": 14,
@@ -3398,7 +3462,7 @@
           "video_id": "b4aFJLtvyiM",
           "url": "https://www.youtube.com/watch?v=b4aFJLtvyiM",
           "duration_min": 70.1,
-          "view_count": 381
+          "view_count": 394
         },
         {
           "seq": 15,
@@ -3428,7 +3492,7 @@
           "video_id": "FUPpFq172rk",
           "url": "https://www.youtube.com/watch?v=FUPpFq172rk",
           "duration_min": 71.7,
-          "view_count": 626
+          "view_count": 627
         },
         {
           "seq": 18,
@@ -3438,7 +3502,189 @@
           "video_id": "vzbSl_Cz8_k",
           "url": "https://www.youtube.com/watch?v=vzbSl_Cz8_k",
           "duration_min": 101.0,
-          "view_count": 379
+          "view_count": 380
+        }
+      ]
+    },
+    {
+      "category": "Sandhya Shala (Onboarding/Classes)",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Sandhya Shala (Onboarding/Classes) (Kannada, assumed)",
+      "count": 13,
+      "assumed_count": 13,
+      "notes": [],
+      "search_words": [
+        "10oct",
+        "11th",
+        "12th",
+        "2",
+        "2026",
+        "21st",
+        "22nd",
+        "26th",
+        "27th",
+        "28th",
+        "3",
+        "3rd",
+        "4",
+        "5",
+        "5th",
+        "6",
+        "6th",
+        "aug",
+        "class",
+        "class1",
+        "class2",
+        "class3",
+        "class4",
+        "classes",
+        "kannada",
+        "module1",
+        "oct",
+        "onboarding",
+        "repeat",
+        "sandhya",
+        "sandhyashala",
+        "sandhyavandana",
+        "sep",
+        "sep2026",
+        "session",
+        "session1",
+        "shala",
+        "slot1",
+        "slot2"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 13,
+          "date": "2026-08-11",
+          "title": "Sandhyavandana Shala -Onboarding session1 -11th Aug 2026",
+          "video_id": "OLEOCYxZz2g",
+          "url": "https://www.youtube.com/watch?v=OLEOCYxZz2g",
+          "duration_min": 53.1,
+          "view_count": 1500
+        },
+        {
+          "seq": 2,
+          "total": 13,
+          "date": "2026-08-12",
+          "title": "Sandhyavandana Shala Onboarding session -12th Aug 2026",
+          "video_id": "cQvHGTAp-qE",
+          "url": "https://www.youtube.com/watch?v=cQvHGTAp-qE",
+          "duration_min": 70.1,
+          "view_count": 973
+        },
+        {
+          "seq": 3,
+          "total": 13,
+          "date": "2026-08-12",
+          "title": "Sandhyavandana Shala Onboarding session 12th Aug 2026",
+          "video_id": "1d5ZCFUGiT8",
+          "url": "https://www.youtube.com/watch?v=1d5ZCFUGiT8",
+          "duration_min": 59.5,
+          "view_count": 368
+        },
+        {
+          "seq": 4,
+          "total": 13,
+          "date": "2026-08-21",
+          "title": "Sandhya Shala Module1-Class1-21st Aug 2026",
+          "video_id": "eofsHe6Vuxk",
+          "url": "https://www.youtube.com/watch?v=eofsHe6Vuxk",
+          "duration_min": 108.4,
+          "view_count": 2100
+        },
+        {
+          "seq": 5,
+          "total": 13,
+          "date": "2026-08-22",
+          "title": "Sandhya Shala Module1 Class1- 22nd Aug 2026",
+          "video_id": "kDJDS2RZZqU",
+          "url": "https://www.youtube.com/watch?v=kDJDS2RZZqU",
+          "duration_min": 107.5,
+          "view_count": 1800
+        },
+        {
+          "seq": 6,
+          "total": 13,
+          "date": "2026-08-27",
+          "title": "Sandhya Shala Class2 - 27th Aug 2026",
+          "video_id": "Ud8W8NBAlAM",
+          "url": "https://www.youtube.com/watch?v=Ud8W8NBAlAM",
+          "duration_min": 109.3,
+          "view_count": 7200
+        },
+        {
+          "seq": 7,
+          "total": 13,
+          "date": "2026-08-28",
+          "title": "Sandhya Shala Class 2 ( Repeat)- 28th Aug 2026",
+          "video_id": "zbOVSea4q8M",
+          "url": "https://www.youtube.com/watch?v=zbOVSea4q8M",
+          "duration_min": 100.7,
+          "view_count": 1600
+        },
+        {
+          "seq": 8,
+          "total": 13,
+          "date": "2026-09-05",
+          "title": "Sandhya Shala Class 3 (slot1) 5th Sep2026",
+          "video_id": "dhK4_Svjy0U",
+          "url": "https://www.youtube.com/watch?v=dhK4_Svjy0U",
+          "duration_min": 97.3,
+          "view_count": 2500
+        },
+        {
+          "seq": 9,
+          "total": 13,
+          "date": "2026-09-06",
+          "title": "Sandhya Shala Class3(slot2) 6th Sep2026",
+          "video_id": "6810aNatEy0",
+          "url": "https://www.youtube.com/watch?v=6810aNatEy0",
+          "duration_min": 100.6,
+          "view_count": 1600
+        },
+        {
+          "seq": 10,
+          "total": 13,
+          "date": "2026-09-12",
+          "title": "Sandhya Shala Class4 12th Sep2026",
+          "video_id": "mh9ksJ1Lzog",
+          "url": "https://www.youtube.com/watch?v=mh9ksJ1Lzog",
+          "duration_min": 91.7,
+          "view_count": 2700
+        },
+        {
+          "seq": 11,
+          "total": 13,
+          "date": "2026-09-26",
+          "title": "SandhyaShala Class 4 26th Sep 2026",
+          "video_id": "3fiARgK7kTY",
+          "url": "https://www.youtube.com/watch?v=3fiARgK7kTY",
+          "duration_min": 103.2,
+          "view_count": 5100
+        },
+        {
+          "seq": 12,
+          "total": 13,
+          "date": "2026-10-03",
+          "title": "SandhyaShala Class 5 / 3rd Oct 2026",
+          "video_id": "QBGIIcs1fZ8",
+          "url": "https://www.youtube.com/watch?v=QBGIIcs1fZ8",
+          "duration_min": 104.1,
+          "view_count": 508
+        },
+        {
+          "seq": 13,
+          "total": 13,
+          "date": "2026-10-10",
+          "title": "Sandhya Shala Class 6 - 10Oct 2026",
+          "video_id": "AHi1jQ4H6DM",
+          "url": "https://www.youtube.com/watch?v=AHi1jQ4H6DM",
+          "duration_min": 107.3,
+          "view_count": 384
         }
       ]
     },
@@ -3555,7 +3801,7 @@
           "video_id": "pDOsgnL1sqc",
           "url": "https://www.youtube.com/watch?v=pDOsgnL1sqc",
           "duration_min": 104.5,
-          "view_count": 100
+          "view_count": 104
         },
         {
           "seq": 9,
@@ -3575,7 +3821,7 @@
           "video_id": "yD2g0eaGojI",
           "url": "https://www.youtube.com/watch?v=yD2g0eaGojI",
           "duration_min": 105.5,
-          "view_count": 228
+          "view_count": 230
         },
         {
           "seq": 11,
@@ -3595,7 +3841,7 @@
           "video_id": "yUnSVjNTGlE",
           "url": "https://www.youtube.com/watch?v=yUnSVjNTGlE",
           "duration_min": 110.0,
-          "view_count": 501
+          "view_count": 511
         },
         {
           "seq": 13,
@@ -3605,7 +3851,7 @@
           "video_id": "ZIEGQiINJcw",
           "url": "https://www.youtube.com/watch?v=ZIEGQiINJcw",
           "duration_min": 100.1,
-          "view_count": 510
+          "view_count": 513
         }
       ]
     },
@@ -3664,7 +3910,7 @@
           "video_id": "QL-LY2r1HeQ",
           "url": "https://www.youtube.com/watch?v=QL-LY2r1HeQ",
           "duration_min": 87.0,
-          "view_count": 568
+          "view_count": 572
         },
         {
           "seq": 2,
@@ -3674,7 +3920,7 @@
           "video_id": "wIp1dIa787c",
           "url": "https://www.youtube.com/watch?v=wIp1dIa787c",
           "duration_min": 84.2,
-          "view_count": 643
+          "view_count": 644
         },
         {
           "seq": 3,
@@ -3684,7 +3930,7 @@
           "video_id": "dv5uXY4mbPI",
           "url": "https://www.youtube.com/watch?v=dv5uXY4mbPI",
           "duration_min": 106.5,
-          "view_count": 581
+          "view_count": 584
         },
         {
           "seq": 4,
@@ -3704,7 +3950,7 @@
           "video_id": "43pCAoKwd5I",
           "url": "https://www.youtube.com/watch?v=43pCAoKwd5I",
           "duration_min": 68.5,
-          "view_count": 304
+          "view_count": 305
         },
         {
           "seq": 6,
@@ -3714,7 +3960,7 @@
           "video_id": "RJqGfzPYnFc",
           "url": "https://www.youtube.com/watch?v=RJqGfzPYnFc",
           "duration_min": 76.0,
-          "view_count": 182
+          "view_count": 183
         },
         {
           "seq": 7,
@@ -3734,7 +3980,7 @@
           "video_id": "E5x2EiQwRFM",
           "url": "https://www.youtube.com/watch?v=E5x2EiQwRFM",
           "duration_min": 73.9,
-          "view_count": 208
+          "view_count": 209
         },
         {
           "seq": 9,
@@ -3744,7 +3990,7 @@
           "video_id": "gG_HVusoTDo",
           "url": "https://www.youtube.com/watch?v=gG_HVusoTDo",
           "duration_min": 87.9,
-          "view_count": 191
+          "view_count": 194
         },
         {
           "seq": 10,
@@ -3754,7 +4000,7 @@
           "video_id": "YolyjEzLp-E",
           "url": "https://www.youtube.com/watch?v=YolyjEzLp-E",
           "duration_min": 51.9,
-          "view_count": 281
+          "view_count": 285
         },
         {
           "seq": 11,
@@ -3764,150 +4010,7 @@
           "video_id": "ypU_yIP3U2I",
           "url": "https://www.youtube.com/watch?v=ypU_yIP3U2I",
           "duration_min": 75.4,
-          "view_count": 366
-        }
-      ]
-    },
-    {
-      "category": "Sandhya Shala (Onboarding/Classes)",
-      "language": "kannada",
-      "language_assumed": true,
-      "label": "Sandhya Shala (Onboarding/Classes) (Kannada, assumed)",
-      "count": 10,
-      "assumed_count": 10,
-      "notes": [],
-      "search_words": [
-        "11th",
-        "12th",
-        "2",
-        "2026",
-        "21st",
-        "22nd",
-        "27th",
-        "28th",
-        "3",
-        "5th",
-        "6th",
-        "aug",
-        "class",
-        "class1",
-        "class2",
-        "class3",
-        "class4",
-        "classes",
-        "kannada",
-        "module1",
-        "onboarding",
-        "repeat",
-        "sandhya",
-        "sandhyavandana",
-        "sep2026",
-        "session",
-        "session1",
-        "shala",
-        "slot1",
-        "slot2"
-      ],
-      "videos": [
-        {
-          "seq": 1,
-          "total": 10,
-          "date": "2026-08-11",
-          "title": "Sandhyavandana Shala -Onboarding session1 -11th Aug 2026",
-          "video_id": "OLEOCYxZz2g",
-          "url": "https://www.youtube.com/watch?v=OLEOCYxZz2g",
-          "duration_min": 53.1,
-          "view_count": 1400
-        },
-        {
-          "seq": 2,
-          "total": 10,
-          "date": "2026-08-12",
-          "title": "Sandhyavandana Shala Onboarding session -12th Aug 2026",
-          "video_id": "cQvHGTAp-qE",
-          "url": "https://www.youtube.com/watch?v=cQvHGTAp-qE",
-          "duration_min": 70.1,
-          "view_count": 929
-        },
-        {
-          "seq": 3,
-          "total": 10,
-          "date": "2026-08-12",
-          "title": "Sandhyavandana Shala Onboarding session 12th Aug 2026",
-          "video_id": "1d5ZCFUGiT8",
-          "url": "https://www.youtube.com/watch?v=1d5ZCFUGiT8",
-          "duration_min": 59.5,
-          "view_count": 324
-        },
-        {
-          "seq": 4,
-          "total": 10,
-          "date": "2026-08-21",
-          "title": "Sandhya Shala Module1-Class1-21st Aug 2026",
-          "video_id": "eofsHe6Vuxk",
-          "url": "https://www.youtube.com/watch?v=eofsHe6Vuxk",
-          "duration_min": 108.4,
-          "view_count": 1900
-        },
-        {
-          "seq": 5,
-          "total": 10,
-          "date": "2026-08-22",
-          "title": "Sandhya Shala Module1 Class1- 22nd Aug 2026",
-          "video_id": "kDJDS2RZZqU",
-          "url": "https://www.youtube.com/watch?v=kDJDS2RZZqU",
-          "duration_min": 107.5,
-          "view_count": 1700
-        },
-        {
-          "seq": 6,
-          "total": 10,
-          "date": "2026-08-27",
-          "title": "Sandhya Shala Class2 - 27th Aug 2026",
-          "video_id": "Ud8W8NBAlAM",
-          "url": "https://www.youtube.com/watch?v=Ud8W8NBAlAM",
-          "duration_min": 109.3,
-          "view_count": 7100
-        },
-        {
-          "seq": 7,
-          "total": 10,
-          "date": "2026-08-28",
-          "title": "Sandhya Shala Class 2 ( Repeat)- 28th Aug 2026",
-          "video_id": "zbOVSea4q8M",
-          "url": "https://www.youtube.com/watch?v=zbOVSea4q8M",
-          "duration_min": 100.7,
-          "view_count": 1500
-        },
-        {
-          "seq": 8,
-          "total": 10,
-          "date": "2026-09-05",
-          "title": "Sandhya Shala Class 3 (slot1) 5th Sep2026",
-          "video_id": "dhK4_Svjy0U",
-          "url": "https://www.youtube.com/watch?v=dhK4_Svjy0U",
-          "duration_min": 97.3,
-          "view_count": 2400
-        },
-        {
-          "seq": 9,
-          "total": 10,
-          "date": "2026-09-06",
-          "title": "Sandhya Shala Class3(slot2) 6th Sep2026",
-          "video_id": "6810aNatEy0",
-          "url": "https://www.youtube.com/watch?v=6810aNatEy0",
-          "duration_min": 100.6,
-          "view_count": 1500
-        },
-        {
-          "seq": 10,
-          "total": 10,
-          "date": "2026-09-12",
-          "title": "Sandhya Shala Class4 12th Sep2026",
-          "video_id": "mh9ksJ1Lzog",
-          "url": "https://www.youtube.com/watch?v=mh9ksJ1Lzog",
-          "duration_min": 91.7,
-          "view_count": 2500
+          "view_count": 369
         }
       ]
     },
@@ -3963,7 +4066,7 @@
           "video_id": "dPoZbs6l2Ic",
           "url": "https://www.youtube.com/watch?v=dPoZbs6l2Ic",
           "duration_min": 80.0,
-          "view_count": 775
+          "view_count": 811
         },
         {
           "seq": 3,
@@ -3973,7 +4076,7 @@
           "video_id": "H44HOgn1g40",
           "url": "https://www.youtube.com/watch?v=H44HOgn1g40",
           "duration_min": 105.1,
-          "view_count": 443
+          "view_count": 445
         },
         {
           "seq": 4,
@@ -3993,7 +4096,7 @@
           "video_id": "ZcAZJi7E2JA",
           "url": "https://www.youtube.com/watch?v=ZcAZJi7E2JA",
           "duration_min": 117.6,
-          "view_count": 525
+          "view_count": 527
         },
         {
           "seq": 6,
@@ -4013,7 +4116,7 @@
           "video_id": "Gm83lEBWuEc",
           "url": "https://www.youtube.com/watch?v=Gm83lEBWuEc",
           "duration_min": 108.4,
-          "view_count": 386
+          "view_count": 387
         },
         {
           "seq": 8,
@@ -4023,7 +4126,7 @@
           "video_id": "7dH8Lnewp0M",
           "url": "https://www.youtube.com/watch?v=7dH8Lnewp0M",
           "duration_min": 116.7,
-          "view_count": 135
+          "view_count": 136
         },
         {
           "seq": 9,
@@ -4033,7 +4136,7 @@
           "video_id": "S-QDEwVy6BI",
           "url": "https://www.youtube.com/watch?v=S-QDEwVy6BI",
           "duration_min": 101.0,
-          "view_count": 118
+          "view_count": 119
         },
         {
           "seq": 10,
@@ -4043,7 +4146,7 @@
           "video_id": "rmIU7GJQn9Y",
           "url": "https://www.youtube.com/watch?v=rmIU7GJQn9Y",
           "duration_min": 76.0,
-          "view_count": 80
+          "view_count": 83
         }
       ]
     },
@@ -4135,7 +4238,7 @@
           "video_id": "c6lVtLM22x4",
           "url": "https://www.youtube.com/watch?v=c6lVtLM22x4",
           "duration_min": 31.6,
-          "view_count": 75
+          "view_count": 76
         },
         {
           "seq": 6,
@@ -4486,7 +4589,7 @@
           "video_id": "xbDBXFBXzWE",
           "url": "https://www.youtube.com/watch?v=xbDBXFBXzWE",
           "duration_min": 154.5,
-          "view_count": 2000
+          "view_count": 2100
         },
         {
           "seq": 3,
@@ -4496,7 +4599,7 @@
           "video_id": "a0IlwTlGzb8",
           "url": "https://www.youtube.com/watch?v=a0IlwTlGzb8",
           "duration_min": 127.3,
-          "view_count": 396
+          "view_count": 397
         },
         {
           "seq": 4,
@@ -4733,7 +4836,7 @@
           "video_id": "vbU7y600-AM",
           "url": "https://www.youtube.com/watch?v=vbU7y600-AM",
           "duration_min": 102.2,
-          "view_count": 423
+          "view_count": 424
         },
         {
           "seq": 6,
@@ -4743,7 +4846,7 @@
           "video_id": "k5nNcT1oANE",
           "url": "https://www.youtube.com/watch?v=k5nNcT1oANE",
           "duration_min": 88.2,
-          "view_count": 173
+          "view_count": 176
         }
       ]
     },
@@ -4812,7 +4915,7 @@
           "video_id": "CUHw9O-XSDs",
           "url": "https://www.youtube.com/watch?v=CUHw9O-XSDs",
           "duration_min": 86.5,
-          "view_count": 246
+          "view_count": 247
         },
         {
           "seq": 4,
@@ -4822,7 +4925,7 @@
           "video_id": "k9hCOznEcQg",
           "url": "https://www.youtube.com/watch?v=k9hCOznEcQg",
           "duration_min": 37.9,
-          "view_count": 34
+          "view_count": 35
         },
         {
           "seq": 5,
@@ -4832,7 +4935,7 @@
           "video_id": "Pb6oDcMeLVE",
           "url": "https://www.youtube.com/watch?v=Pb6oDcMeLVE",
           "duration_min": 33.8,
-          "view_count": 44
+          "view_count": 45
         },
         {
           "seq": 6,
@@ -4842,7 +4945,7 @@
           "video_id": "_YJHrZjWQhQ",
           "url": "https://www.youtube.com/watch?v=_YJHrZjWQhQ",
           "duration_min": 30.0,
-          "view_count": 57
+          "view_count": 62
         }
       ]
     },
@@ -5205,7 +5308,7 @@
           "video_id": "ewyYTS-yvww",
           "url": "https://www.youtube.com/watch?v=ewyYTS-yvww",
           "duration_min": 86.0,
-          "view_count": 195
+          "view_count": 202
         }
       ]
     },
@@ -5294,7 +5397,7 @@
           "video_id": "5On2RYgO1AA",
           "url": "https://www.youtube.com/watch?v=5On2RYgO1AA",
           "duration_min": 98.1,
-          "view_count": 276
+          "view_count": 278
         }
       ]
     },
@@ -5483,7 +5586,7 @@
           "video_id": "m6lbFZHTHCU",
           "url": "https://www.youtube.com/watch?v=m6lbFZHTHCU",
           "duration_min": 102.3,
-          "view_count": 269
+          "view_count": 271
         },
         {
           "seq": 4,
@@ -5493,7 +5596,7 @@
           "video_id": "qOYke65V12Q",
           "url": "https://www.youtube.com/watch?v=qOYke65V12Q",
           "duration_min": 77.6,
-          "view_count": 442
+          "view_count": 444
         }
       ]
     },
@@ -5683,6 +5786,60 @@
       ]
     },
     {
+      "category": "Mangalashtaka",
+      "language": "kannada",
+      "language_assumed": true,
+      "label": "Mangalashtaka (Kannada, assumed)",
+      "count": 3,
+      "assumed_count": 3,
+      "notes": [],
+      "search_words": [
+        "2026",
+        "24sep2026",
+        "25sep2026",
+        "28",
+        "day1",
+        "day2",
+        "day3",
+        "kannada",
+        "mangalashtaka",
+        "mangalshtaka",
+        "sep"
+      ],
+      "videos": [
+        {
+          "seq": 1,
+          "total": 3,
+          "date": "2026-09-24",
+          "title": "Mangalashtaka Day1 24Sep2026",
+          "video_id": "jvHyCly45F4",
+          "url": "https://www.youtube.com/watch?v=jvHyCly45F4",
+          "duration_min": 31.9,
+          "view_count": 642
+        },
+        {
+          "seq": 2,
+          "total": 3,
+          "date": "2026-09-25",
+          "title": "Mangalashtaka Day2 25Sep2026",
+          "video_id": "HaEL0W_hSyc",
+          "url": "https://www.youtube.com/watch?v=HaEL0W_hSyc",
+          "duration_min": 31.6,
+          "view_count": 239
+        },
+        {
+          "seq": 3,
+          "total": 3,
+          "date": "2026-09-28",
+          "title": "mangalshtaka Day3 28 Sep 2026",
+          "video_id": "q3tvGeWoYqU",
+          "url": "https://www.youtube.com/watch?v=q3tvGeWoYqU",
+          "duration_min": 25.4,
+          "view_count": 200
+        }
+      ]
+    },
+    {
       "category": "Navabrindavana Mahima (NKHK)",
       "language": "marathi",
       "language_assumed": false,
@@ -5784,7 +5941,7 @@
           "video_id": "sV21hTytu0w",
           "url": "https://www.youtube.com/watch?v=sV21hTytu0w",
           "duration_min": 86.2,
-          "view_count": 189
+          "view_count": 190
         },
         {
           "seq": 3,
@@ -5794,7 +5951,7 @@
           "video_id": "B90eM1suC0k",
           "url": "https://www.youtube.com/watch?v=B90eM1suC0k",
           "duration_min": 64.2,
-          "view_count": 111
+          "view_count": 112
         }
       ]
     },
@@ -5829,7 +5986,7 @@
           "video_id": "pQZm7EtnAT4",
           "url": "https://www.youtube.com/watch?v=pQZm7EtnAT4",
           "duration_min": 80.3,
-          "view_count": 169
+          "view_count": 170
         },
         {
           "seq": 2,
@@ -5904,7 +6061,7 @@
           "video_id": "RDSoJySPqe8",
           "url": "https://www.youtube.com/watch?v=RDSoJySPqe8",
           "duration_min": 39.6,
-          "view_count": 28
+          "view_count": 30
         }
       ]
     },
@@ -5968,7 +6125,7 @@
           "video_id": "kRtB8hIev4U",
           "url": "https://www.youtube.com/watch?v=kRtB8hIev4U",
           "duration_min": 88.1,
-          "view_count": 162
+          "view_count": 166
         }
       ]
     },
@@ -6129,7 +6286,7 @@
           "video_id": "883vDhuxzhM",
           "url": "https://www.youtube.com/watch?v=883vDhuxzhM",
           "duration_min": 71.9,
-          "view_count": 111
+          "view_count": 112
         },
         {
           "seq": 2,
@@ -6175,7 +6332,7 @@
           "video_id": "hkjCmiopE7M",
           "url": "https://www.youtube.com/watch?v=hkjCmiopE7M",
           "duration_min": 92.8,
-          "view_count": 451
+          "view_count": 452
         },
         {
           "seq": 2,
@@ -6185,7 +6342,7 @@
           "video_id": "ZolOn6Jrp-w",
           "url": "https://www.youtube.com/watch?v=ZolOn6Jrp-w",
           "duration_min": 111.4,
-          "view_count": 264
+          "view_count": 273
         }
       ]
     },
@@ -6228,7 +6385,7 @@
           "video_id": "7oe12NjhZMo",
           "url": "https://www.youtube.com/watch?v=7oe12NjhZMo",
           "duration_min": 47.7,
-          "view_count": 163
+          "view_count": 164
         }
       ]
     },
@@ -6310,7 +6467,7 @@
           "video_id": "20GMDmvFzz8",
           "url": "https://www.youtube.com/watch?v=20GMDmvFzz8",
           "duration_min": 72.3,
-          "view_count": 102
+          "view_count": 103
         }
       ]
     },
@@ -6563,7 +6720,7 @@
           "video_id": "VaPhnntvDcY",
           "url": "https://www.youtube.com/watch?v=VaPhnntvDcY",
           "duration_min": 72.3,
-          "view_count": 459
+          "view_count": 464
         }
       ]
     },
@@ -6625,7 +6782,7 @@
           "video_id": "pmS7x3JYoZY",
           "url": "https://www.youtube.com/watch?v=pmS7x3JYoZY",
           "duration_min": 61.1,
-          "view_count": 76
+          "view_count": 77
         }
       ]
     },
@@ -6710,7 +6867,7 @@
           "video_id": "2pgCytAh2EM",
           "url": "https://www.youtube.com/watch?v=2pgCytAh2EM",
           "duration_min": 61.0,
-          "view_count": 80
+          "view_count": 86
         }
       ]
     },

@@ -34,7 +34,7 @@ RAW_PLAYLIST = catalog_paths.RAW_PLAYLIST
 # first checked the change is the one you expected. Nothing else in the suite
 # hardcodes a count.
 BASELINE: dict[str, Any] = {
-    "videos_per_tab": {"streams": 345, "videos": 128},
+    "videos_per_tab": {"streams": 357, "videos": 128},
     "month_precision_dates": 3,
     "max_uncategorized": 1,
     "split_series_sessions": 25,   # Pratah Sankalpa Gadya, spanning both tabs

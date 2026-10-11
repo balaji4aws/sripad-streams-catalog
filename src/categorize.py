@@ -84,7 +84,10 @@ RULES: list[tuple[str, list[str]]] = [
     ("SriSatyatma Teertha (Darshana/Mangalarati)", ["satyatmatheertharu", "satyatma teertharu"]),
     ("Rushi Panchami", ["rushi panchami", "rishi panchami"]),
     ("Mutt Utsava / Puja", ["uttaradi mutt", "vedavyasa puja"]),
-    ("Sandhya Shala (Onboarding/Classes)", ["sandhya shala", "sandhyavandana shala"]),
+    # "SandhyaShala" with no space appeared from Class 4 onwards, while the
+    # spaced form carried on alongside it, so the series was splitting in two.
+    ("Sandhya Shala (Onboarding/Classes)",
+     ["sandhya shala", "sandhyashala", "sandhyavandana shala"]),
     ("Sumadhwavijaya (Marathi)", ["sumadhwavijaya", "sumadhwavijay", "sumadhawavijaya", "sumdhwavijaya"]),
     ("Manimanjari (Kannada)", ["manimanjari"]),
     ("Satyatma Sandhya", ["satyatma sandhya", "satyatmasandhya", "satyatma batch"]),
@@ -118,6 +121,9 @@ RULES: list[tuple[str, list[str]]] = [
     # sessions covering both. They are one short strand of teaching, and three
     # near-empty categories only made it harder to find.
     ("Dhyana & Anusandhana (NKHK)", ["dhyana", "anusandhana"]),
+    # A new series from Sep 2026. The channel spells it both ways - the Day 3
+    # title drops the first "a" - so both forms are listed.
+    ("Mangalashtaka", ["mangalashtaka", "mangalshtaka"]),
     ("Narasimha Stuti/Stotra", ["narasimha"]),
     ("Purushottama Stotra", ["purushottama"]),
     ("Tulasi Stotra", ["tulasi"]),

@@ -281,6 +281,20 @@ class CategorizeTests(unittest.TestCase):
                 self.assertEqual(categorize_title(title),
                                  "SriJayateertha (Teekacharya) Charitra & Mahima")
 
+    def test_the_closed_up_sandhya_shala_spelling_still_matches(self):
+        """"SandhyaShala" with no space arrived with Class 4 and matched nothing,
+        leaving a hole where Classes 4 and 5 should sit in the class order."""
+        for title in ("SandhyaShala Class 4 26th Sep 2026", "SandhyaShala Class 5 / 3rd Oct 2026"):
+            with self.subTest(title=title):
+                self.assertEqual(categorize_title(title), "Sandhya Shala (Onboarding/Classes)")
+
+    def test_both_mangalashtaka_spellings_land_in_one_series(self):
+        """The Day 3 title drops the first "a", so one series was spelled two ways."""
+        for title in ("Mangalashtaka Day1 24Sep2026", "Mangalashtaka Day2 25Sep2026",
+                      "mangalshtaka Day3 28 Sep 2026"):
+            with self.subTest(title=title):
+                self.assertEqual(categorize_title(title), "Mangalashtaka")
+
     def test_unmatched_title_is_not_forced_into_a_series(self):
         self.assertEqual(categorize_title("something entirely unrelated"), UNCATEGORIZED)
 
